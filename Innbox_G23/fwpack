@@ -1,0 +1,2 @@
+unsquashfs -d rootfs_extracted/ mtd5
+mksquashfs rootfs_extracted/ rootfs_new.img -comp lzma -b 131072 -always-use-fragments -no-recovery -noappend

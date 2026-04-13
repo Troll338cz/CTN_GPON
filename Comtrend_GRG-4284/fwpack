@@ -1,0 +1,2 @@
+unsquashfs -d rootfs_extracted/ mtd7
+mksquashfs rootfs_extracted/ rootfs_new.img -comp xz -b 131072 -always-use-fragments -no-recovery -noappend
