@@ -1,0 +1,945 @@
+NOTICE:  BL1: GLOBAL_STRAP 0x9888
+NOTICE:  BL1: Fabric Clock Speed 250 MHz
+NOTICE:  BL1: OTP Clock Speed 62 MHz
+NOTICE:  BL1: CPU Clock Speed 666 MHz
+NOTICE:  BL1: I/O Clock 100 MHz
+NOTICE:  BL1: PER Clock 125 MHz
+NOTICE:  Secure Boot Firmware - Cortina Access Inc.
+NOTICE:  BL1: v1.3(release):035fe7c
+NOTICE:  BL1: Built : 01:26:04, Jul 27 2020
+NOTICE:  boot from serial NAND flash - 2x plane select
+NOTICE:  SERIAL_NAND: ID: 0x142c00
+NOTICE:  SERIAL_NAND: chip_id MICRON
+NOTICE:  SERIAL_NAND: Sizes - oob 0x80, page 0x800, block 0x20000
+NOTICE:  SERIAL_NAND: plane_select_bit 0x1000
+NOTICE:  Platform initialized
+NOTICE:  ROTPK undeployed
+NOTICE:  BL1: Booting BL2
+NOTICE:  Reduce Power for SFU
+NOTICE:  boot from serial NAND flash - 2x plane select
+NOTICE:  SERIAL_NAND: ID: 0x142c00
+NOTICE:  SERIAL_NAND: chip_id MICRON
+NOTICE:  SERIAL_NAND: Sizes - oob 0x80, page 0x800, block 0x20000
+NOTICE:  SERIAL_NAND: plane_select_bit 0x1000
+NOTICE:  Chip Sub-Revision G
+NOTICE:  Saturn2 SFU
+NOTICE:  DIAGNOSTIC_TASK ON
+NOTICE:  DDR3L-1.35V 933MHz
+NOTICE:  PAD_BUS_0=0x5dd80000
+NOTICE:  PAD_CTRL_PROG=0xc000000
+NOTICE:  rzq_480code:0xa
+NOTICE:  # PAD_ZCTRL_STATUS: 0x80028576  ==> NOTICE:  TTCN[TTFN]=0x5[0x0]; [CPMSB,TTCP][TTFP]=0x0,0x5[0x0]
+NOTICE:  # PAD_ZCTRL_STATUS: 0x80028533  ==> NOTICE:  TTCN[TTFN]=0x5[0x0]; [CPMSB,TTCP][TTFP]=0x0,0x5[0x0]
+NOTICE:  # PAD_ZCTRL_STATUS: 0x80092276  ==> NOTICE:  TTCN[TTFN]=0x2[0x2]; [CPMSB,TTCP][TTFP]=0x0,0x2[0x1]
+NOTICE:  # PAD_ZCTRL_STATUS: 0x80092233  ==> NOTICE:  TTCN[TTFN]=0x2[0x2]; [CPMSB,TTCP][TTFP]=0x0,0x2[0x1]
+NOTICE:  WriteLeveling PI of DRAM_CK moved 0 tick
+NOTICE:  ddr_write_leveling: 0
+NOTICE:  ddr_write_leveling: 0
+NOTICE:  ddr_write_leveling: 2002
+NOTICE:  Initial dqs_in_dly_start_value is 14[3~25]
+NOTICE:  ddr_ck_training:DIAG_ID=2: PLL_PI0 starting value 0x2021200
+NOTICE:  ddr_ck_training:DIAG_ID=2: PLL_PI1 starting value 0x10909
+NOTICE:  ddr_ck_training:FREQ=933; DIAG_ID=2: going left 14 ticks; going right 14 ticks
+NOTICE:  ddr_wr_data_training: min_reg_pi_dq[0]: 4; max_reg_pi_dq[0]: 16
+NOTICE:  ddr_ck_training:DIAG_ID=3: PLL_PI0 starting value 0x2021200
+NOTICE:  ddr_ck_training:DIAG_ID=3: PLL_PI1 starting value 0x10909
+NOTICE:  ddr_ck_training:FREQ=933; DIAG_ID=3: going left 14 ticks; going right 14 ticks
+NOTICE:  find_shortest_dq DQ0 delay = 3
+NOTICE:  find_shortest_dq DQ1 delay = 2
+NOTICE:  find_shortest_dq DQ2 delay = 1
+NOTICE:  find_shortest_dq DQ3 delay = 2
+NOTICE:  find_shortest_dq DQ4 delay = 3
+NOTICE:  find_shortest_dq DQ5 delay = 0
+NOTICE:  find_shortest_dq DQ6 delay = 3
+NOTICE:  find_shortest_dq DQ7 delay = 1
+NOTICE:  find_shortest_dq DQ8 delay = 0
+NOTICE:  find_shortest_dq DQ9 delay = 2
+NOTICE:  find_shortest_dq DQ10 delay = 1
+NOTICE:  find_shortest_dq DQ11 delay = 3
+NOTICE:  find_shortest_dq DQ12 delay = 3
+NOTICE:  find_shortest_dq DQ13 delay = 3
+NOTICE:  find_shortest_dq DQ14 delay = 0
+NOTICE:  find_shortest_dq DQ15 delay = 0
+NOTICE:  DM0 delay = 2
+NOTICE:  DM1 delay = 2
+NOTICE:  ddr_wr_data_training: min_reg_pi_dq[0]: 3; max_reg_pi_dq[0]: 16
+NOTICE:  ddr_ck_training:DIAG_ID=31: PLL_PI0 starting value 0x2021200
+NOTICE:  ddr_ck_training:DIAG_ID=31: PLL_PI1 starting value 0x10909
+NOTICE:  ddr_ck_training:FREQ=933; DIAG_ID=31: going left 14 ticks; going right 14 ticks
+NOTICE:  ddr_dqs_gating: dqs_en gating trained as: 2
+NOTICE:  ddr_dqs_gating: dqs_en gating trained as: 2
+NOTICE:  ddr_ck_training:DIAG_ID=4: PLL_PI0 starting value 0x2021200
+NOTICE:  ddr_ck_training:DIAG_ID=4: PLL_PI1 starting value 0x10909
+NOTICE:  ddr_ck_training:FREQ=933; DIAG_ID=4: going left 14 ticks; going right 14 ticks
+NOTICE:  rising_dqs_in_dly[0]: 2~31=16
+NOTICE:  rising_dqs_in_dly[1]: 1~31=16
+NOTICE:  rising_dqs_in_dly[2]: 2~31=16
+NOTICE:  rising_dqs_in_dly[3]: 1~31=16
+NOTICE:  falling_dqs_in_dly[0]:0~27=13
+NOTICE:  falling_dqs_in_dly[1]:0~27=13
+NOTICE:  falling_dqs_in_dly[2]:0~28=14
+NOTICE:  falling_dqs_in_dly[3]:0~27=13
+NOTICE:  rising_dqs_in_dly[4]: 1~31=16
+NOTICE:  rising_dqs_in_dly[5]: 2~31=16
+NOTICE:  rising_dqs_in_dly[6]: 2~31=16
+NOTICE:  rising_dqs_in_dly[7]: 2~31=16
+NOTICE:  falling_dqs_in_dly[4]:0~27=13
+NOTICE:  falling_dqs_in_dly[5]:0~27=13
+NOTICE:  falling_dqs_in_dly[6]:0~27=13
+NOTICE:  falling_dqs_in_dly[7]:0~29=14
+NOTICE:  rising_dqs_in_dly[8]: 3~31=17
+NOTICE:  rising_dqs_in_dly[9]: 2~31=16
+NOTICE:  rising_dqs_in_dly[10]: 4~31=17
+NOTICE:  rising_dqs_in_dly[11]: 2~31=16
+NOTICE:  falling_dqs_in_dly[8]:0~30=15
+NOTICE:  falling_dqs_in_dly[9]:0~28=14
+NOTICE:  falling_dqs_in_dly[10]:0~30=15
+NOTICE:  falling_dqs_in_dly[11]:0~28=14
+NOTICE:  rising_dqs_in_dly[12]: 2~31=16
+NOTICE:  rising_dqs_in_dly[13]: 3~31=17
+NOTICE:  rising_dqs_in_dly[14]: 3~31=17
+NOTICE:  rising_dqs_in_dly[15]: 4~31=17
+NOTICE:  falling_dqs_in_dly[12]:0~28=14
+NOTICE:  falling_dqs_in_dly[13]:0~29=14
+NOTICE:  falling_dqs_in_dly[14]:0~28=14
+NOTICE:  falling_dqs_in_dly[15]:0~30=15
+NOTICE:  ddr_ck_training:DIAG_ID=5: PLL_PI0 starting value 0x2021200
+NOTICE:  ddr_ck_training:DIAG_ID=5: PLL_PI1 starting value 0x10909
+NOTICE:  ddr_ck_training:FREQ=933; DIAG_ID=5: going left 14 ticks; going right 14 ticks
+NOTICE:  DDR Size: 256MB
+NOTICE:  Start DDR scan ...
+NOTICE:  DDR scan done
+NOTICE:  DDR Init done...
+NOTICE:  BL2: v1.3(release):a2f00ac
+NOTICE:  BL2: Built : 11:31:03, Feb 23 2022
+NOTICE:  ROTPK undeployed
+
+
+U-Boot 2020.04 (Apr 08 2024 - 03:51:29 +0000)Saturn-SoC
+
+DRAM:  256 MiB
+Cold Start...!!!
+WDT:   Started with servicing (60s timeout)
+QSPI:  Serial Flash ctrl has probed
+SPI NAND: MT29F1G01ABAFD  (0x2c142c)
+   spare: 0x80      (128B)
+    page: 0x800     (2KB)
+   block: 0x20000   (128KB)
+    chip: 0x8000000(128MB)
+    Mode: Q/4
+Loading Environment from spi-nand0... OK
+In:    serial@0xb2224148
+Out:   serial@0xb2224148
+Err:   serial@0xb2224148
+Net:   ca_ni_ofdata_to_platdata: priv->glb_base_addr for index 0 is 0xbc100000
+ca_ni_ofdata_to_platdata: priv->per_mdio_base_addr for index 1 is 0xb22240d8
+ca_ni_ofdata_to_platdata: priv->ni_hv_base_addr for index 2 is 0xb4004000
+ca_ni_fix_gphy: phy_addr=1, read register 19, value=0x0
+rtl8211_internal_config: initialize RTL8211 internal done.
+Could not get PHY for ethnet@0xb4000000: addr 5
+ca_phy_probe: There is no external phy device
+ca_phy_probe: auto_scan_active_port=0
+ca77xx_eth_initialize: active_port=3, phy_addr=1
+ca77xx_eth_initialize: phy_id=0x1cc900, phy_id & PHY_ID_MASK=0x1cc900
+eth0: ethnet@0xb4000000
+Hit any key to stop autoboot:  1 . . . 0 
+Image Selecting...
+Could not find a valid device for spi0.0
+Reading 6291456 byte(s) (3072 page(s)) at offset 0x03600000
+Reading 131072 byte(s) (64 page(s)) at offset 0x03500000
+
+## Booting kernel from Legacy Image at 85100000 ...
+   Image Name:   Linux-4.14.275.saturn2-sfu-r2.2.
+   Image Type:   MIPS Linux Kernel Image (lzma compressed)
+   Data Size:    1997710 Bytes = 1.9 MiB
+   Load Address: 80010000
+   Entry Point:  80476e68
+   Verifying Checksum ... OK
+## Flattened Device Tree blob at 85000000
+   Booting using the fdt blob at 0x85000000
+   Uncompressing Kernel Image
+   
+Linux version 4.14.275.saturn2-sfu-r2.2.1.3 (oe-user@oe-host) (gcc version 9.2.0 (GCC)) #1 Thu Feb 29 05:47:21 UTC 2024
+MIPS: machine is Sheipa Platform
+bootconsole [early0] enabled
+CPU0 revision is: 0000dc02 (Taroko)
+MIPS: machine is Cortina Access Saturn2 SFU
+Determined physical RAM map:
+ memory: 10000000 @ 00000000 (usable)
+Initrd not found or empty - disabling initrd
+icache: 64kB/32B, dcache: 32kB/32B, scache: 0kB/0B
+Zone ranges:
+  Normal   [mem 0x0000000000000000-0x000000000fffffff]
+Movable zone start for each node
+Early memory node ranges
+  node   0: [mem 0x0000000000000000-0x000000000fffffff]
+Initmem setup node 0 [mem 0x0000000000000000-0x000000000fffffff]
+Built 1 zonelists, mobility grouping on.  Total pages: 65024
+Kernel command line: console=ttyS0,115200 ubi.mtd=rootfs0 root=/dev/mtdblock10 rootfstype=squashfs mtdparts=spi0.0:4M@0x0(ssb),2M(uboot-env),1M(dtb1),6M(kernel1),40M(rootfs1),1M(dtb0),6M(kernel0),40M(rootfs0),20M(userdata),8M(logdata)
+PID hash table entries: 1024 (order: 0, 4096 bytes)
+Dentry cache hash table entries: 32768 (order: 5, 131072 bytes)
+Inode-cache hash table entries: 16384 (order: 4, 65536 bytes)
+Memory: 164308K/262144K available (4528K kernel code, 184K rwdata, 840K rodata, 200K init, 210K bss, 97836K reserved, 0K cma-reserved)
+SLUB: HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+NR_IRQS: 128
+clocksource: MIPS: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 2866890672 ns
+sched_clock: 32 bits at 666MHz, resolution 1ns, wraps every 3221225471ns
+Console: colour dummy device 80x25
+Calibrating delay loop... 666.41 BogoMIPS (lpj=3332096)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+devtmpfs: initialized
+random: get_random_u32 called from bucket_table_alloc+0x100/0x2e4 with crng_init=0
+clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+futex hash table entries: 256 (order: -1, 3072 bytes)
+pinctrl core: initialized pinctrl subsystem
+NET: Registered protocol family 16
+sram b8000000.sram: could not get address for node /sram@B8000000/secured-sram@0x3C000
+sram: probe of b8000000.sram failed with error -22
+pps_core: LinuxPPS API ver. 1 registered
+pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+PTP clock support registered
+clocksource: Switched to clocksource MIPS
+NET: Registered protocol family 2
+IP idents hash table entries: 4096 (order: 3, 32768 bytes)
+TCP established hash table entries: 2048 (order: 1, 8192 bytes)
+TCP bind hash table entries: 2048 (order: 1, 8192 bytes)
+TCP: Hash tables configured (established 2048 bind 2048)
+UDP hash table entries: 256 (order: 0, 4096 bytes)
+UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+NET: Registered protocol family 1
+workingset: timestamp_bits=30 max_order=16 bucket_order=0
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+Block layer SCSI generic (bsg) driver version 0.4 loaded (major 250)
+io scheduler noop registered
+io scheduler deadline registered
+io scheduler cfq registered (default)
+io scheduler mq-deadline registered
+io scheduler kyber registered
+ca77xx-gpio b2224280.gpio-controller: resource - [mem 0xb2224280-0xb222430f flags 0x200] mapped at 0xb2224280
+ca77xx-gpio b2224280.gpio-controller: id 0
+ca77xx-gpio b2224280.gpio-controller: Setting up IRQs for GPIO bank 0
+ca77xx-gpio b2224280.gpio-controller: Setting up IRQs for GPIO bank 1
+ca77xx-gpio b2224280.gpio-controller: Setting up IRQs for GPIO bank 2
+ca77xx-gpio b2224280.gpio-controller: Setting up IRQs for GPIO bank 3
+of_fixed_clk: probe of io_clk failed with error -17
+Saturn revision=47
+ca_soc bc100000.soc: Vendor ID: 0x8f3
+ca_soc bc100000.soc: Chip ID: 0x<removed>
+ca_soc bc100000.soc: Chip Rev: 71
+ca_soc bc100000.soc: PON Rev: G
+ca_soc bc100000.soc: CPLL: 2000.00 MHZ
+ca_soc bc100000.soc: CPU Clock: 666.66 MHZ
+ca_soc bc100000.soc: Core Clock: 333.33 MHZ
+ca_soc bc100000.soc: EAXI Clock: 200.00 MHZ
+ca_soc bc100000.soc: I/O Clock: 100.00 MHZ
+ca_soc bc100000.soc: Eth Ref 2 Clock: 250.00 MHZ
+i2c /dev entries driver
+ca77xx-i2c b2224120.i2c: resource - [mem 0xb2224120-0xb2224147 flags 0x200] mapped at 0xb2224120
+ca77xx-i2c b2224120.i2c: invalid timeout on /i2c@b2224120
+ca77xx-i2c b2224120.i2c: invalid retries on /i2c@b2224120
+ca77xx-i2c b2224120.i2c: irq 27
+ca77xx-reset bc100028.reset-controller: resource - [mem 0xbc100028-0xbc10002b flags 0x200] mapped at 0xbc100028
+ca77xx-reset bc100028.reset-controller: init-state 0x4f28022e
+ca77xx-reset bc100050.reset-controller: resource - [mem 0xbc100050-0xbc100053 flags 0x200] mapped at 0xbc100050
+b2224148.uart: ttyS0 at I/O 0x0 (irq = 19, base_baud = 7812500) is a Cortina UART0
+console [ttyS0] enabled
+console [ttyS0] enabled
+bootconsole [early0] disabled
+bootconsole [early0] disabled
+b2224178.uart: ttyS1 at I/O 0x0 (irq = 20, base_baud = 7812500) is a Cortina UART1
+IPC: host cpu is PE0 , thisCPU=0x1 
+IPC: list physical start from: 0x2810000
+IPC: list virtual start from: 0xa2810000
+IPC: list size: 0x4800
+IPC: Debug:...Clearing memory.... from 0xa2811800
+IPC: version is 100
+IPC: irq = 26
+ca_pelog_probe
+pelog0: shm physical address : 0x2800000
+pelog0: shm virtual address : 0xa2800000
+pelog0: shm size: 0x800
+pelog1: shm physical address : 0x2800800
+pelog1: shm virtual address : 0xa2800800
+pelog1: shm size: 0x800
+mtdoops: mtd device (mtddev=name/number) must be supplied
+ca_set_mux: group:98 reg_off:0 bit_off:18
+ca-qspi b2223000.sf-ctrl: ca-qspi resource - [mem 0xb2223000-0xb222304f flags 0x200] mapped at 0xb2223000
+spi-nand spi0.0: model_name: MT29F1G01ABAFD
+spi-nand spi0.0: Micron SPI NAND found, detected raw ID 002c142c
+spi-nand spi0.0: 128 MiB, block size: 128 KiB, page size: 2048, OOB size: 128
+10 cmdlinepart partitions found on MTD device spi0.0
+Creating 10 MTD partitions on "spi0.0":
+0x000000000000-0x000000400000 : "ssb"
+0x000000400000-0x000000600000 : "uboot-env"
+0x000000600000-0x000000700000 : "dtb1"
+0x000000700000-0x000000d00000 : "kernel1"
+0x000000d00000-0x000003500000 : "rootfs1"
+0x000003500000-0x000003600000 : "dtb0"
+0x000003600000-0x000003c00000 : "kernel0"
+0x000003c00000-0x000006400000 : "rootfs0"
+0x000006400000-0x000007800000 : "userdata"
+0x000007800000-0x000008000000 : "logdata"
+ca-qspi b2223000.sf-ctrl: spi-flash controller probed, while mode_bits=0x0a00
+spi-ca77xx b2224098.spi: resource - [mem 0xb2224098-0xb22240d7 flags 0x200] mapped at 0xb2224098
+spi-ca77xx b2224098.spi: irq 22
+ca-mdio b22240d8.mdio: resource - [mem 0xb22240d8-0xb222411f flags 0x200] mapped at 0xb22240d8
+ca-mdio b22240d8.mdio: peri_clock:125000000, speed:4000000
+ca-mdio b22240d8.mdio: mii-bus mdio@b22240d8 has registered
+cortina_thermal bc100184.thermal: SoC Temperature= 38
+Synopsys Designware Multimedia Card Interface Driver
+Netfilter messages via NETLINK v0.30.
+nfnl_acct: registering with nfnetlink.
+nf_conntrack version 0.5.0 (3072 buckets, 12288 max)
+ctnetlink v0.93: registering with nfnetlink.
+xt_time: kernel timezone is -0000
+ip_tables: (C) 2000-2006 Netfilter Core Team
+NET: Registered protocol family 10
+Segment Routing with IPv6
+ip6_tables: (C) 2000-2006 Netfilter Core Team
+sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+NET: Registered protocol family 17
+bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+8021q: 802.1Q VLAN Support v1.8
+ubi0: attaching mtd7
+ubi0: scanning is finished
+ubi0: attached mtd7 (name "rootfs0", size 40 MiB)
+ubi0: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+ubi0: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+ubi0: VID header offset: 2048 (aligned 2048), data offset: 4096
+ubi0: good PEBs: 320, bad PEBs: 0, corrupted PEBs: 0
+ubi0: user volume: 1, internal volumes: 1, max. volumes count: 128
+ubi0: max/mean erase counter: 1/0, WL threshold: 4096, image sequence number: 1076180957
+ubi0: available PEBs: 157, total reserved PEBs: 163, PEBs reserved for bad PEB handling: 20
+ubi0: background thread "ubi_bgt0d" started, PID 30
+random: fast init done
+VFS: Mounted root (squashfs filesystem) readonly on device 31:10.
+devtmpfs: mounted
+Freeing unused kernel memory: 200K
+This architecture does not have kernel memory protection.
+INIT: version 2.88 booting
+INIT: /etc/inittab[31]: missing id field
+ubi1: attaching mtd8
+ubi1: scanning is finished
+ubi1: attached mtd8 (name "userdata", size 20 MiB)
+ubi1: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+ubi1: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+ubi1: VID header offset: 2048 (aligned 2048), data offset: 4096
+ubi1: good PEBs: 160, bad PEBs: 0, corrupted PEBs: 0
+ubi1: user volume: 1, internal volumes: 1, max. volumes count: 128
+ubi1: max/mean erase counter: 4/2, WL threshold: 4096, image sequence number: 1360204808
+ubi1: available PEBs: 0, total reserved PEBs: 160, PEBs reserved for bad PEB handling: 20
+ubi1: background thread "ubi_bgt1d" started, PID 45
+UBI device number 1, total 160 LEBs (20316160 bytes, 19.3 MiB), available 0 LEBs (0 bytes), LEB size 126976 bytes (124.0 KiB)
+UBIFS (ubi1:0): background thread "ubifs_bgt1_0" started, PID 53
+UBIFS (ubi1:0): recovery needed
+UBIFS (ubi1:0): recovery completed
+UBIFS (ubi1:0): UBIFS: mounted UBI device 1, volume 0, name "userdata"
+UBIFS (ubi1:0): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+UBIFS (ubi1:0): FS size: 15998976 bytes (15 MiB, 126 LEBs), journal size 2920448 bytes (2 MiB, 23 LEBs)
+UBIFS (ubi1:0): reserved for root: 0 bytes (0 KiB)
+UBIFS (ubi1:0): media format: w4/r0 (latest is w5/r0), UUID 5BA1955E-751A-4450-B92B-6C994B780430, small LPT model
+overlayfs over rootfs successfully
+mtd9: 00800000 00020000 "logdata"
+ubi2: attaching mtd9
+ubi2: scanning is finished
+ubi2: attached mtd9 (name "logdata", size 8 MiB)
+ubi2: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+ubi2: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+ubi2: VID header offset: 2048 (aligned 2048), data offset: 4096
+ubi2: good PEBs: 64, bad PEBs: 0, corrupted PEBs: 0
+ubi2: user volume: 0, internal volumes: 1, max. volumes count: 128
+ubi2: max/mean erase counter: 2/1, WL threshold: 4096, image sequence number: 3374009960
+ubi2: available PEBs: 40, total reserved PEBs: 24, PEBs reserved for bad PEB handling: 20
+ubi2: background thread "ubi_bgt2d" started, PID 65
+UBI device number 2, total 64 LEBs (8126464 bytes, 7.7 MiB), available 40 LEBs (5079040 bytes, 4.8 MiB), LEB size 126976 bytes (124.0 KiB)
+no ubi volume named "logdata"
+ubi2: detaching mtd9
+ubi2: mtd9 is detached
+mount logdata failed
+ubidetach: error!: cannot detach mtd9
+           error 19 (No such device)
+moung logdata failed
+Starting udev
+udevd[81]: starting version 3.2.8
+random: udevd: uninitialized urandom read (16 bytes read)
+random: udevd: uninitialized urandom read (16 bytes read)
+random: udevd: uninitialized urandom read (16 bytes read)
+udevd[81]: specified group 'tty' unknown
+udevd[81]: specified group 'dialout' unknown
+udevd[81]: specified group 'kmem' unknown
+udevd[81]: specified group 'input' unknown
+udevd[81]: specified group 'video' unknown
+udevd[81]: specified group 'audio' unknown
+udevd[81]: specified group 'lp' unknown
+udevd[81]: specified group 'disk' unknown
+udevd[81]: specified group 'cdrom' unknown
+udevd[82]: starting eudev-3.2.8
+ubi1 error: ubi_open_volume: cannot open device 1, volume 0, error -16
+ubi1 error: ubi_open_volume: cannot open device 1, volume 0, error -16
+ca_plat_kernel: loading out-of-tree module taints kernel.
+ca-log: init calog-ioctl-dev OK (max_level 9, default_level 4)
+ca-pal: init ca_pal_ioctl OK
+otp_reg mem_resource.start=0xba000800 - end=0xba00080f
+otp_reg resource - mapped at 0xba000800
+otp_mem mem_resource.start=0xba000000 - end=0xba0003ff
+otp_mem resource - mapped at 0xba000000
+ca-peri: get MDIO bus success
+libscfg: module license 'Proprietary' taints kernel.
+Disabling lock debugging due to kernel taint
+SCFG initialize start.
+SCFG initialize done.
+ca_ni_proprietary_init_module: Enter..
+ca_ne_gpl:ca_ni_init_module_probe:2514: Cortina Network Interface Driver 0.0.1
+ca_cfg_init: CFG is loaded successfully.
+Enter <ca77xx_pon_probe, 1083>
+ca-pon: proc files init OK.
+ca-pon: load PON_MAC_MODE: XGSPON
+ca-pon: load PON_VOQ_MODE: 0
+ca-pon: load VENDOR_ID: KAON (HEX = 0x4b414f4e)
+ca-pon: load VSSN: 0xa1b2c3d4
+ca-pon: load BWMP_RSP_TM: 0x1543
+ca-pon: load REGISTRATION_ID: (HEX = 00 00 00 00 00 00 00 00 ... 00 00 00 00 00 00 00 00)
+ca-pon: load VERSION: V1.0 (HEX = <removed>)
+ca-pon: load ACTP_TOZ: 0x13880
+ca-pon: load ACTP_TO23: 0x1f40
+ca-pon: load ACTP_TO4: 0x13880
+ca-pon: load ACTP_TO5: 0x13880
+ca-pon: load CFG_ID_PON_LASER_ALIGN: 0x20.
+ca-pon: load OLT_TYPE: COMMON (HEX = 0x5)
+ca-pon: Device Tree load start
+ca-pon: Dying Gasp IRQ setup OK!
+ca-pon: LAO IRQ setup OK!
+ca-pon: found 1 interrupts in Device Tree
+ca-pon: interrupt 0 index is 10
+ca-pon: Device Tree load OK
+ca_ni_pon_los_detect_init: LOS irq=48
+ca_pmx_request_gpio: offset:d reg_off:8 bit_off:d
+ca_ni_pon_los_detect_init: pon_los_gpio=0x8fd334d0
+End <ca77xx_pon_probe, 1106>
+ca_ne_reg_init: mem_resource for NI registers=[mem 0xd0000000-0xd0009fff]
+ca_ne_reg_init: ca_ne_reg_base=0xd0000000
+ca_ne_reg_init: mem_resource for GLOBAL NETWORK ENGINE INTRRUPT registers=[mem 0x441000a4-0x441000b3]
+ca_ne_reg_init: ca_ne_glb_ne_intr_reg_base=0x441000a4
+ca_ne_reg_init: resource for XRAM=[mem 0xf4500000-0xf4501fff]
+ca_ne_reg_init: ca_xram_reg_base=0xc0bea000
+ca_ne_reg_init: mem_resource for DMA LSO registers=[mem 0xd000a000-0xd000a8ff]
+ca_ne_reg_init: ca_dma_lso_reg_base=0xd000a000
+ca_ne_reg_init: resource for DDR=[mem 0x06b00000-0x0b9fffff]
+ca_ne_reg_init: ca_ne_ddr_coherent_reserved_size=0x4f00000
+ca_ne_reg_init: ca_ne_ddr_coherent_base=0x06b00000, ca_ne_ddr_coherent_phy_base=0x6b00000
+ca_ne_reg_init: mem_resource for ASIC GPHY registers=[mem 0xd000b000-0xd000bfff]
+ca_ne_reg_init: ca_ne_phy_reg_base=0xd000b000
+ca_ne_reg_init: mem_resource for XFI registers=[mem 0xd000c000-0xd000e123]
+ca_ne_reg_init: ca_ne_xfi_reg_base=0xd000c000
+ca_ne_reg_init: mem_resource for PTP registers=[mem 0xd000e000-0xd000e03f]
+ca_ne_reg_init: ca_ne_ptp_reg_base=0xd000e000
+ca_ni_global_reset: Do dma_reset..!!!
+ca_ni_global_reset: Do external RESET for RTL8367SB HSGMII mode....
+ca_system_mm_init: sram pool unavailable!
+aal_l3qm_get_packing_size: buf_size=16384
+aal_l3qm_get_packing_size: buf_size=16384
+aal_l3qm_create_sram_map: total required SRAM size 0x0
+aal_l3qm_dump_sram_map: Dump SRAM map...
+aal_l3qm_create_ddr_map: ddr_coherent_phy_base=0x06b00000, ddr_noncache_base=0x  (null), ddr_noncache_phy_base=0x  (null)
+aal_l3qm_create_ddr_map: total size of DDR noncache consumed=0x0
+aal_l3qm_create_ddr_map: total size of DDR coherent consumed=0x4e04000
+[ DDR coherent ]
+DEEPQ pool0 buffer start addr = 0x86b00000
+DEEPQ pool0 buffer physical addr = 0x6b00000
+DEEPQ pool0 buffer count = 2496
+DEEPQ pool0 buffer size = 16384
+DEEPQ pool0 consumed size = 0x2700000
+DEEPQ pool1 buffer start addr = 0x89200000
+DEEPQ pool1 buffer physical addr = 0x9200000
+DEEPQ pool1 buffer count = 2496
+DEEPQ pool1 buffer size = 16384
+DEEPQ pool1 consumed size = 0x2700000
+[ Memory from dma_alloc_coherent() ]
+CPU RX FIFO buffer start addr = 0xaeb38000
+CPU RX FIFO buffer physical addr = 0xeb38000
+CPU RX FIFO consumed size = 0x4000
+=================ca_ni_init_config================
+ca_load_init: ca_ne_ddr_noncache_base=  (null)
+ca_load_init: ca_ne_ddr_noncache_phy_base=0x0, ca_ne_ddr_coherent_phy_base=0x0
+ca_load_init: ca_ne_mac_addr0=00:00:00:00:00:00, ca_ne_mac_addr1=00:00:00:00:00:00
+==================================================
+ca_load_init: cfg_ne_use_build_skb=1
+ca_load_init: cfg_ne_napi_budget=16
+ca_load_init: cfg_ne_tx_timer_enable=0
+ca_load_init: cfg_ne_use_qm_eq_refill_int=0
+ca_load_init: cfg_l3qm_eq_profile_cpu_pool0_eq_id=0
+ca_load_init: cfg_l3qm_eq_profile_cpu_pool1_eq_id=1
+ca_load_init: cfg_l3qm_eq_profile_cpu_use_fbm=0
+ca_load_init: cfg_l3qm_eq_profile_cpu_pool0_fbm_pool_id=6
+ca_load_init: cfg_l3qm_eq_profile_cpu_pool1_fbm_pool_id=7
+ca_load_init: cfg_l3qm_eq_profile_cpu_pool0_buf_count=768
+ca_load_init: cfg_l3qm_eq_profile_cpu_pool1_buf_count=768
+ca_load_init: cfg_ne_use_qm_eq_refill_tasklet=0
+ca_load_init: cfg_epon_onu_mode=0
+ca_ni_read_drv_config: index=0
+ca_ni_read_drv_config: my_mac_index = 0
+ca_ni_read_drv_config: cpu_port_id = 0
+ca_ni_read_drv_config: egress_cpu_port_id = 0
+ca_ni_read_drv_config: i=0, num_cpu_port=1, cfg_eth_intf_name[index]=eth0
+ca_ni_load_driver_init: i=0
+ca_ni_read_drv_config: index=1
+ca_ni_read_drv_config: my_mac_index = -1
+ca_ni_read_drv_config: cpu_port_id = 1
+ca_ni_read_drv_config: egress_cpu_port_id = 0
+ca_ni_load_driver_init: i=1
+ca_ni_read_drv_config: index=2
+ca_ni_read_drv_config: my_mac_index = -1
+ca_ni_read_drv_config: cpu_port_id = 2
+ca_ni_read_drv_config: egress_cpu_port_id = 0
+ca_ni_load_driver_init: i=2
+ca_ni_read_drv_config: index=3
+ca_ni_read_drv_config: my_mac_index = -1
+ca_ni_read_drv_config: cpu_port_id = 3
+ca_ni_read_drv_config: egress_cpu_port_id = 0
+ca_ni_load_driver_init: i=3
+ca_ni_read_drv_config: index=4
+ca_ni_read_drv_config: my_mac_index = -1
+ca_ni_read_drv_config: cpu_port_id = 4
+ca_ni_read_drv_config: egress_cpu_port_id = 0
+ca_ni_load_driver_init: i=4
+ca_ni_read_drv_config: index=5
+ca_ni_read_drv_config: my_mac_index = -1
+ca_ni_read_drv_config: cpu_port_id = 5
+ca_ni_read_drv_config: egress_cpu_port_id = 0
+ca_ni_load_driver_init: i=5
+ca_ni_read_drv_config: index=6
+ca_ni_read_drv_config: my_mac_index = -1
+ca_ni_read_drv_config: cpu_port_id = 6
+ca_ni_read_drv_config: egress_cpu_port_id = 0
+ca_ni_load_driver_init: i=6
+ca_ni_read_drv_config: index=7
+ca_ni_read_drv_config: my_mac_index = -1
+ca_ni_read_drv_config: cpu_port_id = 7
+ca_ni_read_drv_config: egress_cpu_port_id = 1
+ca_ni_load_driver_init: i=7
+ca_ni_load_driver_init: ca_ni_num_intf=1
+ca_ni_load_driver_init: index=0
+ca_ni_load_driver_init: driver_startup_config.enable = 1
+ca_ni_load_driver_init: driver_startup_config.my_mac_index = 0
+ca_ni_load_driver_init: driver_startup_config.egress_cpu_port_id = 0
+ca_ni_load_driver_init: driver_startup_config.cpu_port_id[0] = 0
+ca_phy_param_load: param dev=8fc7a010 cell=8f668ec0
+ca_phy_param_load: buf=8f668ee0, len=4
+ca_phy_param_load: read phy_param buf=8f668ee0 len=4
+ca_phy_cal_load: calibration dev=8fc7a010 cell=8f668ee0
+ca_phy_cal_load: read phy_k_data buf=8f668ec0 len=32
+rc_cal_len(0): 0xcccc
+amp_cal(0):    0x5579
+adc0_cal(0):   0x8999
+r_cal(0):      0x0009
+reserved(0):   0x0000
+rc_cal_len(1): 0x0000
+amp_cal(1):    0x0000
+adc0_cal(1):   0x0000
+r_cal(1):      0x0000
+reserved(1):   0x0000
+rc_cal_len(2): 0x0000
+amp_cal(2):    0x0000
+adc0_cal(2):   0x0000
+r_cal(2):      0x0000
+reserved(2):   0x0000
+rc_cal_len(3): 0x0000
+amp_cal(3):    0x0000
+adc0_cal(3):   0x0000
+r_cal(3):      0x0000
+reserved(3):   0x0000
+PON I2C BUF/MUX init Fail 
+ca-pon: init XGPON global resource OK
+ca-pon: init PON_RX_LOS_POLARITY_INVERT as 0.
+ca-pon: init PON Tx laser polarity as 1
+ca-pon: init PON SerDes (mode: XGPON_SYM_25M, reversion G)
+ca-pon: load PON SerDes configuration from SerDes file successfully
+INFO: PON SERDES Rx clock status = 0x5c01.
+aal_psds_out_of_reset: Failed to do psds_sync
+__psds_gbox_init  rx_bit_order 1, tx_bit_order 1
+ca-psds: init PON SerDes OK
+ca-psds: SerDes BENOUT state(1)
+ca-pon: init XGPON SERDES OK
+ca-pon: init XGPON global control OK
+ca-pon: init XGPON common configuration OK
+Create xgopn unsync reset timer thread success 0.
+ca-pon: init XGPON activation FSM OK
+ca-pon: init XGPON Key exchange FSM OK
+ca-pon: init XGPON DSFP  OK
+ca-pon: init XGPON PLOAM  OK
+ca-pon: init XGPON BWMP  OK
+ca-pon: init XGPON ACTP  OK
+ca-pon: init XGPON USBG  OK
+ca-pon: init PDC OK
+ca-puc: buffer limit selection high bits(0x00000000 0x00000000)
+ca-puc: buffer limit selection(0x55555555 0x55555555 0xaaaaaaaa 0xaaaaaaaa)
+cfg_pon_voq_mode = 0, cfg_pon_upstream_use_deep_queue = 1
+ca-puc: initialization was done.
+aal_puc_init 5126: after PUC_init PUC interrupt = 0x1
+ca-pon: init XGPON DP OK
+ca-pon: init XGPON interrupt OK
+aal_xgpon_dsfp_rxmac_ctrl_set(): invalid max_pkt_size 12288
+ca_gpon_cb_init(): init done!
+ca-pon: IRQ 10 setup successfully.
+aal_pon_los_handle 2725: RX los, perform cdr reset, los_status 1
+aal_pon_los_handle 2726: isDsyncReceivedAfterLods -1
+__ngpon2_cdr_reset 4526: start!
+__ngpon2_cdr_reset 4592: Done!
+ca-pon: init OK!
+ca_ni_init_module_probe: ca_ni_pre_init() is done successfully!
+ca-l2-qm : EQ-0(0), EQ-1(8K) - system uses 8K * 64bytes buffer configuration.
+ca-l2-qm : port private buffer number is 29
+L2_TM : enable ES for port 00, 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, 13, 15
+L2_TE : initialize WRED profile & selection table ... 
+done.
+L3_TE : initialize WRED profile & selection table ... 
+done.
+ca-l2tm-cb: initialize VoQ based buffer profile & selection table ...
+ca-l2tm-cb: initialization was done.
+ca-l3-te-cb: initialize Deep-Q VoQ based buffer profile & selection table ...
+Init L3 LPB IDX table OK
+=== device_id 0 ===
+=== L3FE_STG0_CTRL : 0x001c787d ===
+lpb_idx_mode=1
+mac_fltr_fail_pkt_mru_chk_en=0
+mru_chk_fail_pkt_l2_lkup_dis=1
+other_mac_pkt_keep_lspid_en=1
+wan_lspid=0x07
+use_lspid_ovwr_o_lspid=0
+spcl_pkt_keep_old=1
+wan_lspid_1=0x07
+msk_my_mac_match_en_for_lspid_upd=1
+keep_lspid_unchange=1
+=== L3FE_STG0_LDPID_MAP : 0x03985907 ===
+rule_0=0x07, lpb_idx_0=0
+rule_1=0x19, lpb_idx_1=1
+rule_2=0x18, lpb_idx_2=2
+default, lpb_idx_3=3
+=== L3FE_STG0_LPB_TBL_0 : 0x18100190 ===
+lspid=0x18, default_ldpid=0x19
+special_en=1, special_sel=0
+mac_da_match_en=0, mac_da_match_mask=0, t1_ctrl=0, t5_ctrl=15
+=== L3FE_STG0_LPB_TBL_1 : 0x19180180 ===
+lspid=0x19, default_ldpid=0x18
+special_en=1, special_sel=1
+mac_da_match_en=0, mac_da_match_mask=0, t1_ctrl=1, t5_ctrl=15
+=== L3FE_STG0_LPB_TBL_2 : 0x18100190 ===
+lspid=0x18, default_ldpid=0x19
+special_en=1, special_sel=0
+mac_da_match_en=0, mac_da_match_mask=0, t1_ctrl=0, t5_ctrl=15
+=== L3FE_STG0_LPB_TBL_3 : 0x1a180190 ===
+stg0_lpb_tbl_hi.wrd=0x1a180190
+lspid=0x1a, default_ldpid=0x19
+special_en=1, special_sel=1
+mac_da_match_en=0, mac_da_match_mask=0, t1_ctrl=0, t5_ctrl=15
+=== L3FE_STG0_LPB_IDX_TBL ===
+lspid=0, lpb_profile=1; lspid=1, lpb_profile=1
+lspid=2, lpb_profile=1; lspid=3, lpb_profile=1
+lspid=4, lpb_profile=1; lspid=5, lpb_profile=1
+lspid=6, lpb_profile=1; lspid=7, lpb_profile=0
+lspid=8, lpb_profile=1; lspid=9, lpb_profile=1
+lspid=10, lpb_profile=1; lspid=11, lpb_profile=1
+lspid=12, lpb_profile=1; lspid=13, lpb_profile=1
+lspid=14, lpb_profile=1; lspid=15, lpb_profile=1
+lspid=16, lpb_profile=1; lspid=17, lpb_profile=1
+lspid=18, lpb_profile=1; lspid=19, lpb_profile=1
+lspid=20, lpb_profile=1; lspid=21, lpb_profile=1
+lspid=22, lpb_profile=1; lspid=23, lpb_profile=1
+lspid=24, lpb_profile=1; lspid=25, lpb_profile=1
+lspid=26, lpb_profile=1; lspid=27, lpb_profile=1
+lspid=28, lpb_profile=1; lspid=29, lpb_profile=1
+lspid=30, lpb_profile=1; lspid=31, lpb_profile=1
+lspid=32, lpb_profile=0; lspid=33, lpb_profile=0
+lspid=34, lpb_profile=0; lspid=35, lpb_profile=0
+lspid=36, lpb_profile=0; lspid=37, lpb_profile=0
+lspid=38, lpb_profile=0; lspid=39, lpb_profile=0
+lspid=40, lpb_profile=0; lspid=41, lpb_profile=0
+lspid=42, lpb_profile=0; lspid=43, lpb_profile=0
+lspid=44, lpb_profile=0; lspid=45, lpb_profile=0
+lspid=46, lpb_profile=0; lspid=47, lpb_profile=0
+lspid=48, lpb_profile=0; lspid=49, lpb_profile=0
+lspid=50, lpb_profile=0; lspid=51, lpb_profile=0
+lspid=52, lpb_profile=0; lspid=53, lpb_profile=0
+lspid=54, lpb_profile=0; lspid=55, lpb_profile=0
+lspid=56, lpb_profile=0; lspid=57, lpb_profile=0
+lspid=58, lpb_profile=0; lspid=59, lpb_profile=0
+lspid=60, lpb_profile=0; lspid=61, lpb_profile=0
+lspid=62, lpb_profile=0; lspid=63, lpb_profile=0
+aal_l3_cls_tbl_init: L3 CLS WAN DEF FIB initialization success
+aal_l3_cls_tbl_init: L3 CLS LAN DEF FIB initialization success
+aal_datapath_bridge_mode: CLS rule for PPPoE discovery packet (ethertype 0x8863) from WAN to L2FE is created, entry_idx 0.
+aal_datapath_bridge_mode: CLS rule for PPPoE session packet (ethertype 0x8864) from WAN to L2FE is created, entry_idx 0.
+aal_ni_reset: reset NI done!
+aal_ni_init_tx_dma_lso: i = 0, vp_control.wrd=0xff
+aal_ni_init_tx_dma_lso: i = 1, vp_control.wrd=0xff
+aal_ni_init_ni: ======= NI_HV_GLB_INTERNAL_PORT_ID_CFG=0x20 ==============
+ca-ne: GPON LINK event handler __pon_link_evt_dp_handler registered
+ca-ne: load CA_CFG_ID_GE_PORT_BIT_MAP: 0x0
+ca-ne: load CA_CFG_ID_XGE_PORT_BIT_MAP: 0x20.
+ca-ne: Valid Ethernet ports bitmap : 0x20
+ca-ne: ethernet port 5 interface id: 12 interface type:  USXGMII
+ca-ne: load CA_CFG_ID_UNI_PORT_SCAN_BIT_MAP: 0x78
+ca-ne: load Ethernet port SCFG OK
+ca-ne: disalbe all ethernet ports OK
+ca-ne: auto detect Ethernet PHY start ...
+ca-ne: read Ethernet PHY 1 IDs(0x1c 0xc900): phy_oui 0x732, phy_model 0x10 .
+ca-ne: detect Eth PHY RTL8211 at PHY addr 1
+ca-ne: attch PHY addr 1 to port 3 driver
+ca-ne: read Ethernet PHY 8 IDs(0x1c 0xcaf3): phy_oui 0x732, phy_model 0x2f .
+ca-ne: detect Eth PHY RTL8261I at PHY addr 8
+__eth_phy_rtl8261n_init:1344 for SDK 3.6.8
+[_phy_rtl826xb_patch:505]U0 P8 826XB fwpr patch done. ret:0x0 cnt:660
+[_phy_rtl826xb_patch:528]U0 P8 826XB fwlm patch done. ret:0x0 cnt:154
+[_phy_rtl826xb_patch:604]U0 P8 826XB afe patch done. ret:0x0 cnt:15
+[_phy_rtl826xb_patch:611]U0 P8 826XB top patch done. ret:0x0 cnt:14
+[_phy_rtl826xb_patch:618]U0 P8 826XB sds patch done. ret:0x0 cnt:101
+__eth_phy_rtl8261n_init: It's a RTL8261N found at PHY addr 8, call phy_826xb_init()
+__eth_phy_rtl8261n_init:1356 result:0
+ca-ne: attch PHY addr 8 to port 5 driver
+ca-ne: detect Ethernet PHY done, find 2 PHYs
+ca-ne: load XFI ports scfg on chip (verndor-id: 0x8f3, version : 0x47 (G)...
+ca-ne: load scfg 608 OK, bitmap=0x1
+ca-ne: load 484 OK, XFI 0 is connected to USXGMII(12)
+ca-ne: load 482 OK, XFI 0 is connected to phy_addr(8)
+ca-ne: init XFI 0 OK, speed 3
+ca-ne: init XFI 1 OK, speed 2
+ETH Port API is NOT initialized ready
+aal_xfi_autoneg_set: port 5 get fail ret = 19
+ca-ne: detect 10G PHY interface with XFI rate matching mode
+ca-ne: init intergrated PHY start
+ca-ne: intergrated phy 1 reg 31 = 0xbc6
+ca-ne: intergrated phy 1 reg 16 = 0x0
+ca-ne: intergrated phy 1 reg 18 = 0x0
+ca-ne: intergrated phy 1 reg 22 = 0x0
+ca-ne: intergrated phy 1 reg 31 = 0xa42
+ca-ne: intergrated org phy 24(0xa43) reg 24 = 0x2198
+ca-ne: intergrated phy 24(0xa43) reg 24 = 0x2198
+ca-ne: intergrated phy 1 reg 0 = 0x1140
+aal_phy_eee_enable_set: phy_addr=1, orig page 0xA43 reg 25=0x40
+aal_phy_eee_enable_set: phy_addr=1, after clear bit 5, page 0xA43 reg 25=0x40
+ca-ne: init intergrated PHY OK
+ca-ne: aal_ni_reset_intf init ...  OK NI_HV_GLB_INTF_RST_CONFIG = 0x0
+aal_port_init:
+aal_port_init: done
+FDB init OK
+ca-ne: init QoS OK
+init SFU SATURN L2FE,L3FE done.
+ca-ne: init special packet OK
+ca_mirror_init mirror_vlan:2018
+aal_l3qm_check_init_done: ===========================Enter========================
+aal_l3qm_get_buffer_size_index: buffer_size=16384 is not defined!!
+aal_l3qm_get_buffer_size_index: buffer_size=16384 is not defined!!
+aal_l3qm_check_bid_start: aal_l3qm_bid_entry_count=4
+[0]: eqid=0 bid_start=256 bid_count=768
+next_bid_start=0
+[1]: eqid=1 bid_start=1024 bid_count=768
+next_bid_start=1024
+total_bid_count=1536
+[2]: eqid=4 bid_start=2000 bid_count=2496
+next_bid_start=1792
+total_bid_count=4032
+[3]: eqid=5 bid_start=4496 bid_count=2496
+next_bid_start=4496
+total_bid_count=6528
+aal_l3qm_init_cpu_epp: p_eq_profile->rx_fifo_phy_start_addr=0xeb38000
+CA_IPC:register succesfull:session_id[8] session 8f319700 msg_count 5 
+
+CA_IPC:register succesfull:session_id[1] session 8f319780 msg_count 1 
+
+ca_tunnel_ipc_init: Register IPC for PE.
+ca_tunnel_init: Tunnel API is initialized.
+ca-ne: start restore Ethernet ports configuration from SCFG
+ca-ne: ca_eth_ports_restore: Enable port 5 OK
+ca_ni_init_module_probe: ca_init() is done successfully!
+ca_ni_init_module_probe: ca_ni_post_init() is done successfully!
+ca_ni_init_module_probe: call phy_cal_load()......
+start to write eFuse data to port 0 phy_addr 1
+start to write eFuse data to port 1 phy_addr 2
+start to write eFuse data to port 2 phy_addr 3
+start to write eFuse data to port 3 phy_addr 4
+ca-ne: phy_cal_load return 0
+ca_ni_init_port_configs: port_cfg_infos[0].irq[0]=28
+ca_ni_init_port_configs: port_cfg_infos[1].irq[0]=29
+ca_ni_init_port_configs: port_cfg_infos[2].irq[0]=30
+ca_ni_init_port_configs: port_cfg_infos[3].irq[0]=31
+ca_ni_init_port_configs: port_cfg_infos[4].irq[0]=32
+ca_ni_init_port_configs: port_cfg_infos[5].irq[0]=33
+ca_ni_init_port_configs: port_cfg_infos[6].irq[0]=34
+ca_ni_init_port_configs: port_cfg_infos[7].irq[0]=35
+ca_ni_init_cpu_ports: ca_ni_num_intf=1
+ca_ni_init_cpu_ports: port_cfg_infos[0].irq[0]=28
+ca_ni_enable_ports: Disable port 3
+ca_ni_enable_ports: Disable port 4
+ca_ni_enable_ports: Disable port 7
+ca_ni_dump_intfs: ===================== interface 0 ===================
+ni_info_data.dev[i]=0x8f303000, cep=0x8f3034c0
+cpu_port[0]=0, port_cfg_infos[0].irq[0]=28
+port_id[0]=3
+port_id[1]=4
+port_id[2]=7
+MAC ADDR=98:39:10:aa:bb:cc
+duplex=0x1, flowctrl=0x2, tx_ldpid=7
+ca_ni_init_module_probe: ======= after CPU pool bid count=768 =======
+ca_ni_init_module_probe: ni_info_data.refill_req_8=36, ni_info_data.refill_req_9=37
+ca_ni_get_chip_revision: data.chip_revision=71
+ca_ni_dma_lso_init_startup_config: ca_ni_chip_revision=71
+ca_ni_dma_lso_init_startup_config: CFG_ID_DMA_LSO_ACE_TEST=0
+ca_ni_dma_lso_init_startup_config: CFG_ID_PON_VOQ_MODE=0
+ca_ni_dma_lso_init_startup_config: CFG_ID_PON_REPORT_MODE=1
+ca_ni_ptp_init: Cortina PTP driver is ready.
+ca_ni_netlink_rx_thread_create: =========kthread_create() OK, rx_thread=0x8eb5e4c0=======================
+ca-pon: Enable NI_HV_MACSEC NANDI_RX interrupt : 0x000000fe
+ca-pon: Enable NI_HV_MACSEC NANDI_TX interrupt : 0x000000fe
+ca_ni_macsec_init: Cortina NI MACSEC driver is ready.
+ca_ni_init_module: platform_driver_register() return ret=0
+[NL_RX_THREAD]
+aipc: register chrdev(244,0)
+aipc: create device successed
+aipc: create dsp console device failed
+aipc: init done
+aipc_module_mem_init: mem_resource for voip ipc=[mem 0xb2224000-0xb222401f]
+aipc_module_mem_init: ca_voip_ipc_per_int_base=b2224000
+aipc_module_mem_init: mem_resource for voip dsp boot ins=[mem 0x40000000-0x4000000f]
+aipc_module_mem_init: ca_voip_dsp_boot_ins_base=c0c25000
+aipc_module_mem_init: ca_voip_ipc_phy_base=0x02700000
+aipc_module_mem_init: ca_voip_ipc_mem_base=0xc0c80000
+aipc: start aipc irq init
+aipc_cpu_irq_ca_init: irq = 24
+aipc: Request IRQ for IPC OK
+sdk ioctl init success
+kioctl init success
+chown: unknown user/group root:tty
+hwclock: can't open '/dev/misc/rtc': No such file or directory
+Thu Feb 29 06:47:45 UTC 2024
+hwclock: can't open '/dev/misc/rtc': No such file or directory
+urandom_read: 1 callbacks suppressed
+random: dd: uninitialized urandom read (512 bytes read)
+INIT: Entering runlevel: 5
+Configuring network interfaces... ca_ni_enable_ports: Disable port 3
+ca_ni_enable_ports: Disable port 4
+ca_ni_enable_ports: Disable port 7
+done.
+mld_sendpack: find MLD report message.
+Starting system message bus: start-stop-daemon: unknown user messagebus
+dbus.
+mld_sendpack: find MLD report message.
+mld_sendpack: find MLD report message.
+mld_sendpack: find MLD report message.
+Starting Dropbear SSH server: random: dropbear: uninitialized urandom read (32 bytes read)
+dropbear.
+hwclock: can't open '/dev/misc/rtc': No such file or directory
+Starting syslogd/klogd: done
+Starting watchdog daemon...done
+Start ca-app ... ##########################      Prepare new dsp.img      ##########################
+ca-event: init OK (max_event_num 27)
+app dev mode:1, scfg mode:[XGS-PON]
+ca-log: init usr log OK (module_num 21, max_log_num 1024, save_log_timer 3 seconds)
+<ca_app_basic_init, 134>g_dev_mode:5
+ca-app: init basic OK
+install gpio cli
+install led cli
+install stp cli
+ca-app: init cli OKca_pmx_request_gpio: offset:9 reg_off:8 bit_off:9
+
+APP CFG: 0x2004  Board Info: 0x1ca_pmx_request_gpio: offset:c reg_off:8 bit_off:c
+ 
+/etc/PON_TX_PWR_CTRL_TIMER_INTV is not exist
+gpio/set-active_lowca_pmx_request_gpio: offset:5 reg_off:8 bit_off:5
+: No such file or directory
+gpio/set-active_loca_pmx_request_gpio: offset:6 reg_off:8 bit_off:6
+w: No such file or directory
+gpio/set-active_loca_pmx_request_gpio: offset:0 reg_off:8 bit_off:0
+w: No such file or directory
+ca_pmx_request_gpio: offset:2 reg_off:8 bit_off:2
+gpio/set-active_low: No such file oca_pmx_request_gpio: offset:7 reg_off:8 bit_off:7
+r directory
+gpio/set-active_low: ca_pmx_request_gpio: offset:8 reg_off:8 bit_off:8
+No such file or directory
+gpio/set-active_low: No such file or directory
+gpio/set-active_low: No such file or directory
+ca-app: init gpio OK
+LED_RX_PWR_LEVEL_L_30
+ca-app: init led OK
+ca-app: create thread: gpio OK
+enter ca gpio entry
+## Error: "usr_pwd" not defined
+## Error: "spt_pwd" not defined
+ifup: interface lo already configured
+ifup: interface eth0 already configured
+
+
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+sh: /sbin/httpd: not found
+kaon_net_svc_access_lan_ip_access_init : CFG_ID_LAN_IP_ACCESS-0
+ca-app: init kaon_mgmt OK
+ca-app: init opm OK
+ca-app: create thread: opm OK
+[MC]:mc_load_file: filename=/etc/ca-mcast.conf,fd=7,size(0x4e0)
+ca_rx_register: old SIGINT, sigint_act.sa_handler=(nil), ret=0
+ca_rx_register: new SIGINT, sigint_act.sa_handler=(nil), signal_ret=(nil)
+ca_rx_register: old SIGTERM, sigint_act.sa_handler=(nil), ret=0
+ca_rx_register: new SIGTERM, sigterm_act.sa_handler=(nil), signal_ret=(nil)
+ca_read_proc_rx_use_mq: iros_ca_rx_use_mq=0x0
+ca_read_proc_ni_debug: ni_debug=0x0
+Netlink sent 48 bytes
+MC:init IGMP module end
+
+MC:build time(Feb 29 2024,06:11:47),version(1.5.1),check in code date(2022/02/10 18:51), ret=0x0
+ca-app: init igmp OK
+ca-app: dev mode unmatch, skip module:[oam]
+aipc: write image successful. size=2652272 rc=2652272 wc=2652272 da=0x22a0400 remain=0
+
+ifmode 2
+ext_clk 1
+clk_enhance 1
+divisor 12
+pclk 4096
+spi_cs 0
+metadata 0x0
+aipc: (0528)aipc_dev_ioctl  boot dsp
+aipc: (0530)aipc_dev_ioctl  boot dsp done
+
+Wait DSP 0/1 booting ......
+Wait DSP ok. wait_cnt=0
+DSP 0 Software Ready!
+All DSP Software Ready. VoIP Defer Init done. 
+##########################        Loaded  dsp.img        ##########################
+done.
+Starting easycwmpd: mask(0x20000010)
+ca-app: init omci OK
+ca-app: init analysis OK
+ca-app: init omci_pm OK
+ca-app: dev mode unmatch, skip module:[timesync]
+ca-app: create thread: igmp OK
+ca-app: dev mode unmatch, skip thread:[oam]
+ca-app: create thread: omci OK
+ca-app: create thread: analysis OK
+ca-app: create thread: omci_pm OK
+ca-app: dev mode unmatch, skip thread:[timesync]
+[MC]:mc_cfg_init: CFG initialize start.
+[MC]:mc_load_file: filename=/etc/ca-mcast.conf,fd=11,size(0x4e0)
+
+[MC]:Success update attr crandom: easycwmpd: uninitialized urandom read (4 bytes read)
+onfig in mc_parserandom: datamodel: uninitialized urandom read (4 bytes read)
+_cfg_file 431
+
+[MC]:Success update protocol config in mc_parse_cfg_file 441
+[MC]:mc_load_file: filename=/etc/ca-mcast.conf,fd=11,size(0x4e0)
+[MC]:mc_cfg_init: CFG initialize done.
+random: datamodel: uninitialized urandom read (4 bytes read)
+OK
+INIT: no more processes left in this runlevel
+## Error: "gpon_disable_tx" not defined
+ca-app: init restoration OK
+ca-app: init done
+random: crng init done
+random: 1 urandom warning(s) missed due to ratelimiting
+
+
+
+< No TTY Shell >
