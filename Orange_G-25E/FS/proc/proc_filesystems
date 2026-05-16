@@ -1,0 +1,13 @@
+nodev	sysfs
+nodev	rootfs
+nodev	bdev
+nodev	proc
+nodev	sockfs
+nodev	pipefs
+nodev	futexfs
+nodev	tmpfs
+nodev	eventpollfs
+	ext2
+	cramfs
+nodev	ramfs
+nodev	jffs2

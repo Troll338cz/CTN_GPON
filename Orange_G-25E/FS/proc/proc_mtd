@@ -1,0 +1,6 @@
+dev:    size   erasesize  name
+mtd0: 00200000 00020000 "config"
+mtd1: 00500000 00020000 "ImageA"
+mtd2: 00500000 00020000 "ImageB"
+mtd3: 00080000 00020000 "bootload"
+mtd4: 00380000 00020000 "ImageC"

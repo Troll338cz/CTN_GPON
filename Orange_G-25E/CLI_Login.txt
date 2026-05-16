@@ -1,0 +1,19 @@
+
+Taken from ImageB, CIG login works on both (backdoor)
+
+CIG Login:
+ontmanuonly! / ontmanuonly!ontmanuonly!!
+
+Guest Login: 
+guest / guest
+
+Normal Login:
+ont / gpon234
+
+Super Login:
+root / huigu309
+
+"#ONT/system/misc/bob>unlock" command:
+bosa(cig08)
+
+
