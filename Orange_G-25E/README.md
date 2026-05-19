@@ -6,7 +6,7 @@
 | Flash Size      | 16 MB                                                                      |
 | CPU             | MIPS 4KEc V6.8 MIPS Goldenrod evaluation board                             |
 | CPU Clock       | 200MHz                                                                     |
-| Bootloader      | U-Boot 2022.10                                                             |
+| Bootloader      | U-Boot CIG custom 2007                                                     |
 | System          | Linux version 2.6.15 (root@localhost.localdomain) (gcc version 4.0.2)      |
 | Ethernet ports  | 4x 100Base-T                                                               |
 | PHY Ethernet    | 88E0645-TAH1                                                               |
@@ -137,7 +137,7 @@ eth0      Link encap:Ethernet  HWaddr 00:19:C7:AA:BB:CC
           collisions:0 txqueuelen:1000 
           RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
 # or from U-boot
-setenv adminen 1
+eeprom set adminen 1
 
 ```
 
