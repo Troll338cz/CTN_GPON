@@ -11,3 +11,4 @@
 - You can download encrypted config from device
 - Has special jffs mtd mounted at /var/protect/ 
 - No clue on how to mount yaffs from dump
+- 128MB Flash is wasted on mips firmware that usualy fits even with dualboot into 16MB

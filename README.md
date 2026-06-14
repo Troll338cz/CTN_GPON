@@ -9,7 +9,7 @@ Firmware collection for cheap GPON bridges
 | Iskratel Innbox G23	| ✅ | ✅ | ⚠ | ❓ | ❌ | Cetin |
 | Kaon PM1191			| ✅ | ❌ | ❓ | ❌ | ❓ | T-Mobile |
 | Orange G-25E			| ✅ | ✅ | ❓ | ❓ | ❌ | Orange.sk |
-| Sercomm FG1000R	(WIP)	| ❓ | ❌ | ❓ | ❓ | ✅ | TIM |
+| Sercomm FG1000R	(WIP)	| ✅ | ❌ | ❓ | ❓ | ✅ | TIM |
 | Sercomm RHG3006	(WIP)	| ❓ | ❌ | ❌ | ❓ | ✅ | Vodafone |
 | ZTE F6005	(WIP)			| ✅ | ✅ | ✅ | ❌ | ❌ | TIM |
 
