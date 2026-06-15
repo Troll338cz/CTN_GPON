@@ -1,0 +1,74 @@
+==============================================================
+Main Software Version
+XF6_4.0.03.02
+
+Standby Software Version
+XF6_4.0.03.02
+
+Vendor ID
+SCOM
+
+Version
+RHG3006v2
+
+SN
+SCOMa0510787
+
+SN Password
+Unknown
+
+LOID
+Unknown
+
+LOID Password
+Unknown
+
+Equipment ID
+RHG3006
+==============================================================
+Admin Status
+Unlock
+
+Battery Monitor
+False
+
+Security Mode
+Aes
+
+Security Capability
+Aes
+
+Product Code
+21317
+
+Survival Time
+N/A
+
+Startup Time
+Thu Jan 1 00:00:11 1970
+
+SysUpTime
+0d 0h 20m 42s
+
+Total Priority Queue Num
+88
+
+Total Traffic Schedule Num
+10
+
+Total Gem Port Num
+128
+
+Traffic Management Option
+Priotity&rate Controlled
+
+Operate Status
+Enable
+
+OMCC Version
+161
+
+Model
+N/A
+==============================================================
+Its fun having your own OLT :)

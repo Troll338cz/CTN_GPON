@@ -16,7 +16,7 @@ Firmware collection for cheap GPON bridges
 ## Notes
 Comtrend GRG-4284 - After flash works without issues, GPON/EPON tested, OMCI already patched with firmware unlock.
 
-Innbox G23 - Many hardcoded values in binaries, old 2.6 kernel. Patch might be possible.
+Innbox G23 - Many hardcoded values in binaries reset on reboot, old 2.6 kernel. Full patch might be possible.
 
 Comtrend GRG-4362 - Info in my other repo, XGS-PON.
 
@@ -32,9 +32,9 @@ G-25E - Old device, not worth looking into OMCI editing.
 ## TODO
 Zyxel CETIN devices - None sold used currently, and EcoNET bleh...
 
-Iskratel Innbox G24 - Expensive and not sold
+Iskratel Innbox G24 - Expensive and not sold used.
 
-Kaon PM1191 - Currently not intrested in working on this device, (and probably shouldn't since its ISP owned), probably possible
+Kaon PM1191 - Currently not intrested in working on this device, (and probably shouldn't since its ISP owned), probably possible.
 
 Flash GRG-4284 firmware into G23 - Crashed for me unsure why, hardware should support it.)
 
