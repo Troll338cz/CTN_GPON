@@ -41,6 +41,8 @@ def vos_md5_encode(data: str, key: bytes) -> bytes:
 
     return outer
 
+#	vos_hmac_md5_ssh("ZTEGa1b2c3d4-ont", 16)
+#	vos_hmac_md5_ssh("FTROA1B2C3D4", 8)
 def vos_hmac_md5_ssh(input_str: str, out_len: int = 16) -> str:
     result = [''] * out_len
     use_len = min(16, out_len)
