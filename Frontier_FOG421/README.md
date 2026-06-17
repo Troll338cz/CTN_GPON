@@ -96,7 +96,7 @@ Check image file CRC ... cal_crc (ed879a5f) ori_crc (aabbccdd) crc check error
 # I don't recomend upgrade from OS since you need really old FTP server and its tragicly slow compared to U-Boot
 ```
 
-# Get shell
+# Get shell on UART
 ```
 ONT>enable
 #ONT>?
@@ -125,7 +125,9 @@ lan0      Link encap:Ethernet  HWaddr E4:8E:10:AA:BB:CC
 # or from U-boot
 eeprom set adminen 1
 
-TODO: Interface works and telnet runs but iptables blocks it.
+TODO: Interface works and telnet runs but iptables blocks it. (Maybe needs TLF_TELNET_ENABLE=1?)
+TODO: CLI debug menu creds
+TODO: Telnet creds
 
 ```
 
