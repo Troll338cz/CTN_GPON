@@ -1,0 +1,114 @@
+Node 0, zone   Normal     13     22      8      3      4      4      3      3      2      3     16 
+
+dot1x-vlan:[-1].
+SWKernelR2630-CIG-R42114-10
+
+console=ttyS0,115200 mem=120M root=/dev/mtdblock3  mtdparts=nand:768K@0x80000(Boot1),0x200000@0x200000(Config1),28M@0x600000(ImageA),28M@0x3000000(ImageB),3M@0x5c00000(KernelA),768K@0x140000(Boot2),0x200000@0x400000(Config2),14M@0x2200000(Imagec1),14M@0x4c00000(Imagec2),1M@0x5a00000(eeprom1),1M@0x5b00000(eeprom2),3M@0x5f00000(KernelB),22M@0x6200000(rsv),8M@0x7800000(MidWare) rootfstype=cramfs reset=0 5srst=0 cali_wifi=0 MIB_MAJOR=0xac hasEeprom=0 MIB_MINOR=0x21
+
+system type		: RTL8672
+processor		: 0
+cpu model		: 56322
+BogoMIPS		: 595.96
+tlb_entries		: 64
+mips16 implemented	: yes
+
+Character devices:
+  1 mem
+  2 pty
+  3 ttyp
+  4 ttyS
+  5 /dev/tty
+  5 /dev/console
+  5 /dev/ptmx
+ 10 misc
+ 90 mtd
+101 kfc
+103 l2_drv
+108 ppp
+128 ptm
+136 pts
+150 voslog
+200 rtcore
+243 voip
+245 ponEvt
+246 gpon_drv
+251 ltq_tapi (dxs)
+252 dsp_console
+253 aipc_dev
+
+Block devices:
+259 blkext
+  7 loop
+ 31 mtdblock
+ 
+   7       0 loop0 0 0 0 0 0 0 0 0 0 0 0
+   7       1 loop1 0 0 0 0 0 0 0 0 0 0 0
+   7       2 loop2 0 0 0 0 0 0 0 0 0 0 0
+   7       3 loop3 0 0 0 0 0 0 0 0 0 0 0
+   7       4 loop4 0 0 0 0 0 0 0 0 0 0 0
+   7       5 loop5 0 0 0 0 0 0 0 0 0 0 0
+   7       6 loop6 0 0 0 0 0 0 0 0 0 0 0
+   7       7 loop7 0 0 0 0 0 0 0 0 0 0 0
+  31       0 mtdblock0 0 0 0 0 0 0 0 0 0 0 0
+  31       1 mtdblock1 0 0 0 0 0 0 0 0 0 0 0
+  31       2 mtdblock2 8 0 64 7 0 0 0 0 0 7 7
+  31       3 mtdblock3 1319 0 10552 1281 0 0 0 0 0 1279 1279
+  31       4 mtdblock4 0 0 0 0 0 0 0 0 0 0 0
+  31       5 mtdblock5 0 0 0 0 0 0 0 0 0 0 0
+  31       6 mtdblock6 0 0 0 0 0 0 0 0 0 0 0
+  31       7 mtdblock7 0 0 0 0 0 0 0 0 0 0 0
+  31       8 mtdblock8 0 0 0 0 0 0 0 0 0 0 0
+  31       9 mtdblock9 0 0 0 0 0 0 0 0 0 0 0
+  31      10 mtdblock10 0 0 0 0 0 0 0 0 0 0 0
+  31      11 mtdblock11 0 0 0 0 0 0 0 0 0 0 0
+  31      12 mtdblock12 0 0 0 0 0 0 0 0 0 0 0
+  31      13 mtdblock13 0 0 0 0 0 0 0 0 0 0 0
+  
+0-0	Linux           	[kernel]
+nodev	sysfs
+nodev	rootfs
+nodev	bdev
+nodev	proc
+nodev	sockfs
+nodev	pipefs
+nodev	tmpfs
+nodev	devpts
+	cramfs
+	squashfs
+nodev	ramfs
+nodev	jffs2
+nodev	autofs
+nodev	mqueue
+
+0
+           CPU0       
+  0:          5    ICTL-RTL8672  aipc_irq
+  8:          2    ICTL-RTL8672  apl_sw
+ 26:       4452    ICTL-RTL8672  eth0
+ 41:          0    ICTL-RTL8672  apl_gpio2
+ 42:          0    ICTL-RTL8672  apl_gpio
+ 43:    1967190    ICTL-RTL8672  rlx timer
+ 49:      56058    ICTL-RTL8672  serial
+
+ER0:          0
+ER1:          0
+ER2:          0
+
+dev:    size   erasesize  name
+mtd0: 000c0000 00020000 "Boot1"
+mtd1: 00200000 00020000 "Config1"
+mtd2: 01c00000 00020000 "ImageA"
+mtd3: 01c00000 00020000 "ImageB"
+mtd4: 00300000 00020000 "KernelA"
+mtd5: 000c0000 00020000 "Boot2"
+mtd6: 00200000 00020000 "Config2"
+mtd7: 00e00000 00020000 "Imagec1"
+mtd8: 00e00000 00020000 "Imagec2"
+mtd9: 00100000 00020000 "eeprom1"
+mtd10: 00100000 00020000 "eeprom2"
+mtd11: 00300000 00020000 "KernelB"
+mtd12: 01600000 00020000 "rsv"
+mtd13: 00800000 00020000 "MidWare"
+
+
+Linux version 2.6.30.9-cig-sfu-1 (shijuan@rgbusw-server) (gcc version 4.4.6 (Realtek RSDK-1.5.6p2) ) #1 Fri Nov 2 11:16:12 CST 2018

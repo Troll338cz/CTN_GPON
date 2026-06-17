@@ -12,6 +12,7 @@ Firmware collection for cheap GPON bridges
 | Sercomm FG1000R	(WIP)	| ✅ | ❌ | ❓ | ❓ | ✅ | TIM |
 | Sercomm RHG3006	(WIP)	| ❓ | ❌ | ❌ | ❓ | ✅ | Vodafone |
 | ZTE F6005	(WIP)			| ✅ | ✅ | ✅ | ❌ | ❌ | TIM |
+| Frontier FOG421			| ✅ | ❓ | ❓ | ❓ | ❌ | Frontier |
 
 ## Notes
 Comtrend GRG-4284 - After flash works without issues, GPON/EPON tested, OMCI already patched with firmware unlock.
