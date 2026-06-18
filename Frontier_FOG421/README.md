@@ -65,7 +65,7 @@ memsize     = 0x08000000
 flashstart  = 0xBD000000
 flashsize   = 0x10090828
 flashoffset = 0x00000000
-ethaddr     = E4:8E:10:33:E8:2C
+ethaddr     = E4:8E:10:aa:bb:cc
 ip_addr     = 192.168.100.1
 baudrate    = 115200 bps
 
