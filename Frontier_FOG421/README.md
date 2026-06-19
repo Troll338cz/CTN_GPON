@@ -5,8 +5,8 @@
 | DRAM            | 128 MB                                                                     |
 | Flash Size      | 128 MB                                                                     |
 | CPU Arch        | MIPSBE Realtek Lexra                                                       |
-| CPU Clock       | 200MHz                                                                     |
-| Bootloader      | U-Boot CIG custom 2011                                                     |
+| CPU Clock       | 700MHz                                                                     |
+| Bootloader      | U-Boot CIG custom RSDK 2011                                                |
 | System          | Linux 2.6.30.9-cig-sfu-1 (gcc version 4.4.6 (Realtek RSDK-1.5.6p2) )       |
 | Ethernet ports  | 4x 1000Base-T                                                              |
 | PHY Ethernet    | RTL8696GMAC                                                                |
@@ -69,6 +69,8 @@ ethaddr     = E4:8E:10:aa:bb:cc
 ip_addr     = 192.168.100.1
 baudrate    = 115200 bps
 
+md.b shown empty bytes, maybe nand command needed to copy to ram.
+
 ```
 
 # Modify firmware
@@ -98,6 +100,7 @@ Check image file CRC ... cal_crc (ed879a5f) ori_crc (aabbccdd) crc check error
 
 # Get shell on UART
 ```
+# No password on this device??
 ONT>enable
 #ONT>?
   Description: CLI Root
