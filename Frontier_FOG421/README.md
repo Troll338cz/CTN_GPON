@@ -10,7 +10,7 @@
 | System          | Linux 2.6.30.9-cig-sfu-1 (gcc version 4.4.6 (Realtek RSDK-1.5.6p2) )       |
 | Ethernet ports  | 4x 1000Base-T                                                              |
 | PHY Ethernet    | RTL8696GMAC                                                                |
-| Optics          | SC/APC (BOB30)                                                             |
+| Optics          | SEMTECH 25L95 SC/APC                                                          |
 | IP address      | 192.168.100.1/24                                                           |
 | Web Gui         | ❌                                                                         |
 | SSH             | ❌                                                                         |

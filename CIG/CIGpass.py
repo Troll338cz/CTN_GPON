@@ -1,7 +1,7 @@
 import hashlib
 
 #
-# Cleaned up disassembly fed to Claude for cleaner python rewrite
+# Cleaned up disassembly fed to Claude for python rewrite
 # Supports generation of classic CIG algorithm and new one
 # While it is possible to get a clean implementation in C with minimal effort, i couldn't be bothered this time for CIG stuff.
 # Zyxel's algorithms are fun, this is not...

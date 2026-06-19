@@ -2,16 +2,16 @@ Node 0, zone   Normal     13     22      8      3      4      4      3      3   
 
 dot1x-vlan:[-1].
 SWKernelR2630-CIG-R42114-10
-
+================================= /proc/cmdline
 console=ttyS0,115200 mem=120M root=/dev/mtdblock3  mtdparts=nand:768K@0x80000(Boot1),0x200000@0x200000(Config1),28M@0x600000(ImageA),28M@0x3000000(ImageB),3M@0x5c00000(KernelA),768K@0x140000(Boot2),0x200000@0x400000(Config2),14M@0x2200000(Imagec1),14M@0x4c00000(Imagec2),1M@0x5a00000(eeprom1),1M@0x5b00000(eeprom2),3M@0x5f00000(KernelB),22M@0x6200000(rsv),8M@0x7800000(MidWare) rootfstype=cramfs reset=0 5srst=0 cali_wifi=0 MIB_MAJOR=0xac hasEeprom=0 MIB_MINOR=0x21
-
+================================= /proc/cpuinfo
 system type		: RTL8672
 processor		: 0
 cpu model		: 56322
 BogoMIPS		: 595.96
 tlb_entries		: 64
 mips16 implemented	: yes
-
+=================================
 Character devices:
   1 mem
   2 pty
@@ -35,7 +35,7 @@ Character devices:
 251 ltq_tapi (dxs)
 252 dsp_console
 253 aipc_dev
-
+=================================
 Block devices:
 259 blkext
   7 loop
@@ -63,7 +63,7 @@ Block devices:
   31      11 mtdblock11 0 0 0 0 0 0 0 0 0 0 0
   31      12 mtdblock12 0 0 0 0 0 0 0 0 0 0 0
   31      13 mtdblock13 0 0 0 0 0 0 0 0 0 0 0
-  
+  =================================
 0-0	Linux           	[kernel]
 nodev	sysfs
 nodev	rootfs
@@ -79,7 +79,7 @@ nodev	ramfs
 nodev	jffs2
 nodev	autofs
 nodev	mqueue
-
+=================================
 0
            CPU0       
   0:          5    ICTL-RTL8672  aipc_irq
@@ -93,7 +93,7 @@ nodev	mqueue
 ER0:          0
 ER1:          0
 ER2:          0
-
+=================================
 dev:    size   erasesize  name
 mtd0: 000c0000 00020000 "Boot1"
 mtd1: 00200000 00020000 "Config1"
@@ -110,5 +110,5 @@ mtd11: 00300000 00020000 "KernelB"
 mtd12: 01600000 00020000 "rsv"
 mtd13: 00800000 00020000 "MidWare"
 
-
+=================================
 Linux version 2.6.30.9-cig-sfu-1 (shijuan@rgbusw-server) (gcc version 4.4.6 (Realtek RSDK-1.5.6p2) ) #1 Fri Nov 2 11:16:12 CST 2018
