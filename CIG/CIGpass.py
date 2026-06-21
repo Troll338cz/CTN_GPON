@@ -1,4 +1,4 @@
-import hashlib
+import hashlib, sys
 
 #
 # Cleaned up disassembly fed to Claude for python rewrite
@@ -67,7 +67,7 @@ def vos_hmac_md5_ssh(input_str: str, out_len: int = 16) -> str:
 	return ''.join(result)
 
 
-	if __name__ == "__main__":
+if __name__ == "__main__":
 	if(len(sys.argv) != 2 and len(sys.argv) != 3 ):
 		print(f"Missing SN.\nUsage: {sys.argv[0]} <GPON SN> (SSH User)")
 		sys.exit(1)
@@ -77,19 +77,19 @@ if __name__ == "__main__":
 	if(len(sys.argv) != 2 and len(sys.argv) != 3 ):
 		print(f"Missing SN.\nUsage: {sys.argv[0]} <GPON SN> (SSH User)")
 		sys.exit(1)
-		
-	# Convert this to "ZTEGaabbccdd" format
+
 	gpon_sn_raw = sys.argv[1]
-	if(len(sys.argv[1]) != 16 ):
+	if(len(gpon_sn_raw) != 12 ):
 		print(f"Invalid SN len.")
 		sys.exit(1)
 
+	# Convert this to "ZTEGaabbccdd" format
 	gpon_sn_vendor = gpon_sn_raw[0:4].upper()
-	gpon_sn_hex = gpon_sn_raw[4:16].lower()
+	gpon_sn_hex = gpon_sn_raw[4:12].lower()
 	if len(sys.argv) == 2:
 		gpon_sn = f"{gpon_sn_vendor}{gpon_sn_hex}-ont"	# ont hardcoded in ZTE
 	else:
 		gpon_sn = f"{gpon_sn_vendor}{gpon_sn_hex}-{sys.argv[2]}"
-	
+
 	out = vos_hmac_md5_ssh(gpon_sn, 16)
-	print(f"Root password for {gpon_sn_raw} is {out}")
+	print(f"Password for {gpon_sn_raw} is {out}")

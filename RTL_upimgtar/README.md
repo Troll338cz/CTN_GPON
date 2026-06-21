@@ -86,3 +86,5 @@ Update img.tar Done
 Warning: flash will be erased to size of file in tar, no checks against partitions are done! 
 
 If you have a copy of Realtek ASDK with U-Boot sources files cmd_upimgtar.c and multicast_upgrade.c contain all information needed about upgrade process.
+
+TODO: Provide fsu.sh scripts for all platforms to allow creation of tar updates
