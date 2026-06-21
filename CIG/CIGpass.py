@@ -16,55 +16,80 @@ PASSWORD_CHARS = "2345679abcdefghijkmnpqrstuvwxyzACDEFGHJKLMNPQRSTUVWXYZ"
 
 
 def vos_md5_encode(data: str, key: bytes) -> bytes:
-    """HMAC-MD5 as implemented in the C code (ipad=0x36, opad=0x5C, block=64)."""
-    key_bytes = key
-    # If key >= 65 bytes, pre-hash it
-    if len(key_bytes) >= 65:
-        key_bytes = hashlib.md5(key_bytes).digest()
+	"""HMAC-MD5 as implemented in the C code (ipad=0x36, opad=0x5C, block=64)."""
+	key_bytes = key
+	# If key >= 65 bytes, pre-hash it
+	if len(key_bytes) >= 65:
+		key_bytes = hashlib.md5(key_bytes).digest()
 
-    # Pad key to 64 bytes
-    k_ipad = bytearray(64)
-    k_opad = bytearray(64)
-    k_ipad[:len(key_bytes)] = key_bytes
-    k_opad[:len(key_bytes)] = key_bytes
+	# Pad key to 64 bytes
+	k_ipad = bytearray(64)
+	k_opad = bytearray(64)
+	k_ipad[:len(key_bytes)] = key_bytes
+	k_opad[:len(key_bytes)] = key_bytes
 
-    # XOR with ipad (0x36) and opad (0x5C)
-    for i in range(64):
-        k_ipad[i] ^= 0x36
-        k_opad[i] ^= 0x5C
+	# XOR with ipad (0x36) and opad (0x5C)
+	for i in range(64):
+		k_ipad[i] ^= 0x36
+		k_opad[i] ^= 0x5C
 
-    # Inner hash: MD5(k_ipad || data)
-    inner = hashlib.md5(bytes(k_ipad) + data.encode()).digest()
+	# Inner hash: MD5(k_ipad || data)
+	inner = hashlib.md5(bytes(k_ipad) + data.encode()).digest()
 
-    # Outer hash: MD5(k_opad || inner)
-    outer = hashlib.md5(bytes(k_opad) + inner).digest()
+	# Outer hash: MD5(k_opad || inner)
+	outer = hashlib.md5(bytes(k_opad) + inner).digest()
 
-    return outer
+	return outer
 
 #	vos_hmac_md5_ssh("ZTEGa1b2c3d4-ont", 16)
 #	vos_hmac_md5_ssh("FTROA1B2C3D4", 8)
 def vos_hmac_md5_ssh(input_str: str, out_len: int = 16) -> str:
-    result = [''] * out_len
-    use_len = min(16, out_len)
+	result = [''] * out_len
+	use_len = min(16, out_len)
 
-    # out_len == 8 makes C unhappy and appends null byte to end of both keys....
-    key1, key2 = HM_KEY1, HM_KEY2
-    if out_len == 8:
-        key1 = HM_KEY1 + bytes([out_len])
-        key2 = HM_KEY2 + bytes([out_len])
+	# out_len == 8 makes C unhappy and appends null byte to end of both keys....
+	key1, key2 = HM_KEY1, HM_KEY2
+	if out_len == 8:
+		key1 = HM_KEY1 + bytes([out_len])
+		key2 = HM_KEY2 + bytes([out_len])
 
-    # First half using HM_KEY1
-    digest1 = vos_md5_encode(input_str, key1)
-    for i in range(use_len):
-        result[i] = PASSWORD_CHARS[digest1[i] % 0x36]
+	# First half using HM_KEY1
+	digest1 = vos_md5_encode(input_str, key1)
+	for i in range(use_len):
+		result[i] = PASSWORD_CHARS[digest1[i] % 0x36]
 
-    if out_len >= 17:
-        # Second half using HM_KEY2
-        digest2 = vos_md5_encode(input_str, key2)
-        for j in range(out_len - 16):
-            result[16 + j] = PASSWORD_CHARS[digest2[j] % 0x36]
+	if out_len >= 17:
+		# Second half using HM_KEY2
+		digest2 = vos_md5_encode(input_str, key2)
+		for j in range(out_len - 16):
+			result[16 + j] = PASSWORD_CHARS[digest2[j] % 0x36]
 
-    return ''.join(result)
+	return ''.join(result)
 
 
+	if __name__ == "__main__":
+	if(len(sys.argv) != 2 and len(sys.argv) != 3 ):
+		print(f"Missing SN.\nUsage: {sys.argv[0]} <GPON SN> (SSH User)")
+		sys.exit(1)
 
+# CIG 16-char
+if __name__ == "__main__":
+	if(len(sys.argv) != 2 and len(sys.argv) != 3 ):
+		print(f"Missing SN.\nUsage: {sys.argv[0]} <GPON SN> (SSH User)")
+		sys.exit(1)
+		
+	# Convert this to "ZTEGaabbccdd" format
+	gpon_sn_raw = sys.argv[1]
+	if(len(sys.argv[1]) != 16 ):
+		print(f"Invalid SN len.")
+		sys.exit(1)
+
+	gpon_sn_vendor = gpon_sn_raw[0:4].upper()
+	gpon_sn_hex = gpon_sn_raw[4:16].lower()
+	if len(sys.argv) == 2:
+		gpon_sn = f"{gpon_sn_vendor}{gpon_sn_hex}-ont"	# ont hardcoded in ZTE
+	else:
+		gpon_sn = f"{gpon_sn_vendor}{gpon_sn_hex}-{sys.argv[2]}"
+	
+	out = vos_hmac_md5_ssh(gpon_sn, 16)
+	print(f"Root password for {gpon_sn_raw} is {out}")
