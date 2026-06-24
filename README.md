@@ -14,6 +14,7 @@ Firmware collection for cheap GPON bridges
 | ZTE F6005	(WIP)			| ✅ | ✅ | ✅ | ❌ | ❌ | TIM |
 | Frontier FOG421			| ✅ | ❓ | ❓ | ❓ | ❌ | Frontier |
 | Tenda HG1     			| ✅ | ✅ | ✅ | ✅ | ❌ | - |
+| Zyxel PM5100-T0 			| ✅ | ❓ | ❓ | ❓ | ❌ | Cetin |
 
 ## Notes
 Comtrend GRG-4284 - After flash works without issues, GPON/EPON tested, OMCI already patched with firmware unlock.
@@ -32,8 +33,6 @@ G-25E - Old device, not worth looking into OMCI editing.
 
 
 ## TODO
-Zyxel CETIN devices - None sold used currently, and EcoNET bleh...
-
 Iskratel Innbox G24 - Expensive and not sold used.
 
 Kaon PM1191 - Currently not intrested in working on this device, (and probably shouldn't since its ISP owned), probably possible.
