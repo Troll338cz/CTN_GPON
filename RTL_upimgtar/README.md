@@ -2,6 +2,8 @@ Quick look at Realtek tar file upgrade.
 
 Will be important to flash supported ONTs without needing serial.
 
+Note that not all devices have this feature enabled and in working state.
+
 Files:
 ```
 fwu.sh - Shell script when flashing from linux, depends on board if it has only simple dual boot or with dtb and ubi, ignored in U-Boot.
@@ -21,7 +23,7 @@ Tar file must be POSIX 1003.1-1990, uncompressed
 
 Take care when repacking rootfs since it needs to fit and follow specific parameters.
 
-Its unknown how this process works on UBI devices. Firmware sample welcome.
+On UBI devices volumes are written with U-Boot commands
 
 Example output:
 ```
@@ -85,6 +87,6 @@ Update img.tar Done
 
 Warning: flash will be erased to size of file in tar, no checks against partitions are done! 
 
-If you have a copy of Realtek ASDK with U-Boot sources files cmd_upimgtar.c and multicast_upgrade.c contain all information needed about upgrade process.
+If you have a copy of Realtek ASDK with U-Boot sources files "cmd_upimgtar.c" and "multicast_upgrade.c" contain all information needed about upgrade process.
 
-TODO: Provide fsw.sh scripts for all platforms to allow creation of tar updates
+TODO: Provide fwu.sh scripts for all platforms to allow creation of tar updates

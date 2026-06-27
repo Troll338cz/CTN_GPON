@@ -9,10 +9,10 @@ Firmware collection for cheap GPON bridges
 | Iskratel Innbox G23	| ✅ | ✅ | ⚠ | ❓ | ❌ | Cetin |
 | Kaon PM1191			| ✅ | ❌ | ❓ | ❌ | ❓ | T-Mobile |
 | Orange G-25E			| ✅ | ✅ | ❓ | ❓ | ❌ | Orange.sk |
-| Sercomm FG1000R	(WIP)	| ✅ | ❌ | ❓ | ❓ | ✅ | TIM |
-| Sercomm RHG3006	(WIP)	| ❓ | ❌ | ❌ | ❓ | ✅ | Vodafone |
-| ZTE F6005	(WIP)			| ✅ | ✅ | ✅ | ❌ | ❌ | TIM |
-| Frontier FOG421			| ✅ | ❓ | ❓ | ❓ | ❌ | Frontier |
+| Sercomm FG1000R	(WIP)	| ✅ | ❌ | ❓ | ❓ | ✅ | - |
+| Sercomm RHG3006	(WIP)	| ❓ | ❌ | ❌ | ❓ | ✅ | - |
+| ZTE F6005	(WIP)			| ✅ | ✅ | ✅ | ❌ | ❌ | - |
+| Frontier FOG421			| ✅ | ❓ | ❓ | ❓ | ❌ | - |
 | Tenda HG1     			| ✅ | ✅ | ✅ | ✅ | ❌ | - |
 | Zyxel PM5100-T0 			| ✅ | ❓ | ❓ | ❓ | ❌ | Cetin |
 
@@ -20,6 +20,8 @@ Firmware collection for cheap GPON bridges
 Comtrend GRG-4284 - After flash works without issues, GPON/EPON tested, OMCI already patched with firmware unlock.
 
 Innbox G23 - Many hardcoded values in binaries reset on reboot, old 2.6 kernel. Full patch might be possible.
+
+G-25E - Old device, not worth looking into OMCI editing.
 
 Comtrend GRG-4362 - Info in my other repo, XGS-PON.
 
@@ -29,7 +31,7 @@ Sercomm RHG3006 (Vodafone Fiber Station) - Secure boot, dont have tools to dump 
 
 ZTE F6005 - Writeup and firmware mod by @rgiorgiotech, missing unlocked bootloder files.
 
-G-25E - Old device, not worth looking into OMCI editing.
+Zyxel PM5100-T0 - For easy unlock SPI dump or known login is needed, per device password for bootloader and root user.
 
 
 ## TODO
