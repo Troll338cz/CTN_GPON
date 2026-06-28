@@ -21,24 +21,24 @@ Comtrend GRG-4284 - After flash works without issues, GPON/EPON tested, OMCI alr
 
 Innbox G23 - Many hardcoded values in binaries reset on reboot, old 2.6 kernel. Full patch might be possible.
 
-G-25E - Old device, not worth looking into OMCI editing.
+CIG G-25E - Old device, not worth looking into OMCI editing.
 
 Comtrend GRG-4362 - Info in my other repo, XGS-PON.
 
 Sercomm FG1000R - Secure boot, locked down firmware, probably will only provide dump.
 
-Sercomm RHG3006 (Vodafone Fiber Station) - Secure boot, dont have tools to dump currently.
+Sercomm RHG3006 (Vodafone Fiber Station) - Secure boot, don't have tools to dump currently.
 
 ZTE F6005 - Writeup and firmware mod by @rgiorgiotech, missing unlocked bootloder files.
 
-Zyxel PM5100-T0 - For easy unlock SPI dump or known login is needed, per device password for bootloader and root user.
+Zyxel PM5100-T0 - For easy unlock SPI dump or known login is needed, has per device password for bootloader and users.
 
 
 ## TODO
 Iskratel Innbox G24 - Expensive and not sold used.
 
-Kaon PM1191 - Currently not intrested in working on this device, (and probably shouldn't since its ISP owned), probably possible.
+Kaon PM1191 - Currently not intrested in working on this device, (and probably shouldn't since its ISP owned), no secure boot so mod is possible.
 
-Flash GRG-4284 firmware into G23 - Crashed for me unsure why, hardware should support it.)
+Flash GRG-4284 firmware into G23 - Crashed for me unsure why, hardware should support it.
 
 ISP testing - Info on Vodafone custom ONT support, look into CEZNET
