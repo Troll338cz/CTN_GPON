@@ -1,7 +1,29 @@
+|                 |                                                                            |
+| --------------- | -------------------------------------------------------------------------- |
+| CPU             | MediaTek/EcoNet EN7523OT                                                   |
+| DRAM            | 256 MB                                                                     |
+| Flash Size      | 128 MB W25N01G                                                             |
+| CPU Arch        | ARMv7 Processor rev 4 (v7l)                                                |
+| CPU Clock       | 200MHz                                                                     |
+| Bootloader      | U-Boot 2014.04-rc1 (Nov 24 2022 - 09:42:18) + zloader v2.0.6               |
+| System          | Linux 4.4.115 #1 SMP Thu Dec 1 14:17:37 CST 2022 armv7l GNU/Linux          |
+| Ethernet ports  | 1x 10/100/1000/25000 Base-T                                                |
+| PHY Ethernet    | Realtek RTL8221B                                                           |
+| Optics          | SC/APC Econet 7571                                                         |
+| IP address      | 192.168.0.1/24                                                             |
+| Web Gui         | ✅                                                                         |
+| SSH             | ✅                                                                         |
+| Telnet          | ✅                                                                         |
+| FTP             | ✅                                                                         |
+| Serial          | ✅                                                                         |
+| Serial baud     | 115200                                                                     |
+| Serial encoding | 8-N-1                                                                      | 
+| Form Factor     | ONT                                                                        |
+
 
 I hate Zyxel for making me desolder the SPI chip just to unlock this...
 
-Z-Loader now has a password, please just allow users full access instead of clowing with all the locks.
+Z-Loader now has a password, please just allow users full access instead of clowning with all the locks.
 
 Unlock this evil thing:
 
@@ -19,6 +41,21 @@ Unlock this evil thing:
 11. ATUR 192.168.1.XXX,V542ACBF1.1C0.bin
 12. Profit!, Zyxel firmware accepts ATCK passwords
 ```
+
+Usefull commands:
+
+```
+moscli mibdump <id> 	- omcicli mib get 
+moscli fakeok on|off	- OMCI_FAKE_OK alternative?
+moscli show counter omci - Recived/Send/Error counters
+moscli voipinfodump
+moscli appconfigdump	- GPON features info
+moscli iphostinfodump
+
+
+```
+
+
 
 Some fun stuff you can do:
 
