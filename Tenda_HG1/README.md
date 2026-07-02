@@ -3,7 +3,7 @@
 | --------------- | -------------------------------------------------------------------------- |
 | CPU             | Realtek RTL9601D                                                           |
 | DRAM            | 32 MB                                                                      |
-| Flash Size      | 16 MB                                                                      |
+| Flash Size      | 8 MB                                                                       |
 | CPU Arch        | MIPSBE Realtek Lexra                                                       |
 | CPU Clock       | 300MHz                                                                     |
 | Bootloader      | U-Boot RSDK 2011                                                           |
