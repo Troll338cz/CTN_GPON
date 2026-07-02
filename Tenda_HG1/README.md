@@ -7,14 +7,14 @@
 | CPU Arch        | MIPSBE Realtek Lexra                                                       |
 | CPU Clock       | 300MHz                                                                     |
 | Bootloader      | U-Boot RSDK 2011                                                           |
-| System          | Linux 2.6                                                                  |
+| System          | Linux 2.6       |
 | Ethernet ports  | 1x 1000Base-T                                                              |
 | Optics          | SC/APC                                                                     |
-| IP address      | 192.168.150.1/24                                                           |
+| IP address      | 192.168.1.1/24                                                             |
 | Web Gui         | ✅                                                                         |
-| SSH             | ✅                                                                         |
+| SSH             | ❌                                                                         |
 | Telnet          | ✅                                                                         |
-| FTP             | ✅                                                                         |
+| FTP             | ❌                                                                         |
 | Serial          | ✅                                                                         |
 | Serial baud     | 115200                                                                     |
 | Serial encoding | 8-N-1                                                                      | 

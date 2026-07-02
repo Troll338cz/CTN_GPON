@@ -128,7 +128,7 @@ lan0      Link encap:Ethernet  HWaddr E4:8E:10:AA:BB:CC
 # or from U-boot
 eeprom set adminen 1
 
-TLF_TELNET_ENABLE=1 can be set by adding sys.cfg into /mnt/rwdir bjt unlock tool still needed
+TLF_TELNET_ENABLE=1 can be set by adding sys.cfg into /mnt/rwdir but unlock tool still needed
 TODO: CLI debug submenu menu creds
 
 ```
