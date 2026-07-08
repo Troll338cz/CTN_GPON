@@ -1,9 +1,9 @@
 |                 |                                                                            |
 | --------------- | -------------------------------------------------------------------------- |
 | CPU             | MediaTek/EcoNet EN7523OT                                                   |
-| DRAM            | 256 MB                                                                     |
-| Flash Size      | 128 MB W25N01G                                                             |
-| CPU Arch        | ARMv7 Processor rev 4 (v7l)                                                |
+| DRAM            | 256 MB Winbond W623GU6MB                                                   |
+| Flash Size      | 128 MB Macronix W25N01G                                                    |
+| CPU Arch        | Dualcore ARMv7 Processor rev 4 (v7l)                                       |
 | CPU Clock       | 735MHz                                                                     |
 | Bootloader      | U-Boot 2014.04-rc1 (Nov 24 2022 - 09:42:18) + zloader v2.0.6               |
 | System          | Linux 4.4.115 #1 SMP Thu Dec 1 14:17:37 CST 2022 armv7l GNU/Linux          |

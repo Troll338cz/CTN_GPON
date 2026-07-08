@@ -42,3 +42,7 @@ Kaon PM1191 - Currently not intrested in working on this device, (and probably s
 Flash GRG-4284 firmware into G23 - Crashed for me unsure why, hardware should support it.
 
 ISP testing - Info on Vodafone custom ONT support, look into CEZNET
+
+Make archive with all Zyxel firmwares
+
+Vodafone PM7500
