@@ -59,7 +59,7 @@ Update engineer debug flag!
 ...TRX 1 : 0x174
 TRX 2 : 0x174
 ```
-- NOTE: I can't verify 100% if this works (it should), i set the flag with Version 1 and cant set it to 0 from zLodaer...
+- NOTE: Some evil ISPs might disable multicast!
 
 
 Usefull commands:
