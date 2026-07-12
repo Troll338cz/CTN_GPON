@@ -27,6 +27,7 @@ Z-Loader now has a password, please just allow users full access instead of clow
 
 Unlock this evil thing:
 
+## Version 1
 ```
 1. Obtain, decrypt and use the funny credentials from original firmware dump
 2. Dump /dev/mtd0 ( Or remove and dump flash )
@@ -42,6 +43,25 @@ Unlock this evil thing:
 12. Profit!, Zyxel firmware accepts ATCK passwords
 ```
 
+## Version 2
+- Connect modem to a Linux PC
+- Clone and build https://github.com/bmork/zyxel-hacks/
+- Bring up ethernet interface busybox ifconfig eth0 up
+- Start the zyeng tool as root sudo ./zyeng eth0
+- Power up the device and wait for the following output:
+```
+Multiboot server is available for download firmware image!
+Be patient, it should be finish in 12 minutes...
+No file need to download, stop multiboot service!
+
+
+Update engineer debug flag!
+...TRX 1 : 0x174
+TRX 2 : 0x174
+```
+- NOTE: I can't verify 100% if this works (it should), i set the flag with Version 1 and cant set it to 0 from zLodaer...
+
+
 Usefull commands:
 
 ```
@@ -55,9 +75,14 @@ moscli iphostinfodump
 Settings probably won't persist reboot
 
 ```
+U-Boot model id:
+```
+Other Feature Bits     :
+817145ac: 04050f04 00000000 00000000 00000000
+817145bc: 00000000 00000000 00000000
 
-
-
+0x45f4
+```
 Some fun stuff you can do:
 
 Patch Z-Loader to be without password by default
