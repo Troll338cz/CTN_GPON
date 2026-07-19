@@ -2,8 +2,8 @@
 |                 |                                                                            |
 | --------------- | -------------------------------------------------------------------------- |
 | CPU             | Econet                                                           |
-| DRAM            | 256 MB                                                                      |
-| Flash Size      | 128 MB                                                                      |
+| DRAM            | 256 MB                                                                     |
+| Flash Size      | 128 MB WINBOND W25N01G                                                     |
 | CPU Arch        | MIPS                                                       |
 | CPU Clock       | ? MHz                                                                     |
 | Bootloader      | Econet free bootbase                                                           |
