@@ -3661,7 +3661,7 @@
 			<M-O-1>
 				<disable t="boolean">0</disable>
 				<name>admin</name>
-				<password>U2FsdGVkX18C8hH0ADzGky2BdLI5McGYp/IhqX3jps6XMyFh7kkJhjuPyY8ZO+fo</password> = "c79@NkZ5LJgZ33+Lp6@%" <== same as Cetin????
+				<password>U2FsdGVkX18C8hH0ADzGky2BdLI5McGYp/IhqX3jps6XMyFh7kkJhjuPyY8ZO+fo</password> <!-- "c79@NkZ5LJgZ33+Lp6@%" same as Cetin???? -->
 				<group t="unsignedInt">0</group>
 				<menu>
 					<SystemOfEntries>1</SystemOfEntries>

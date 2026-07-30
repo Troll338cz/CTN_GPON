@@ -32,7 +32,7 @@ Sercomm RHG3006 (Vodafone Fiber Station) - Secure boot, don't have tools to dump
 
 ZTE F6005 - Writeup and firmware mod by @rgiorgiotech, missing unlocked bootloder files.
 
-Zyxel PM5100-T0 - For easy unlock SPI dump or known login is needed, has per device password for bootloader and users.
+Zyxel PM5100-T0 - For easy unlock zyeng, SPI dump or known login is needed, has per device password for bootloader and users.
 
 
 ## TODO
@@ -42,6 +42,6 @@ Flash GRG-4284 firmware into G23 - Crashed for me unsure why, hardware should su
 
 ISP testing - Info on Vodafone custom ONT support, look into CEZNET
 
-Make archive with all Zyxel firmwares
+Make archive with all Zyxel firmwares -  ✅  [Firmware files](https://files.qqwee.net/Zyxel/
 
 Vodafone PM7500

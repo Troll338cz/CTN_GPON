@@ -3926,7 +3926,7 @@
 			<M-O-1>
 				<disable t="boolean">0</disable>
 				<name>admin</name>
-				<password>U2FsdGVkX18C8hH0ADzGky2BdLI5McGYp/IhqX3jps6XMyFh7kkJhjuPyY8ZO+fo</password> = "c79@NkZ5LJgZ33+Lp6@%"
+				<password>U2FsdGVkX18C8hH0ADzGky2BdLI5McGYp/IhqX3jps6XMyFh7kkJhjuPyY8ZO+fo</password> <!-- "c79@NkZ5LJgZ33+Lp6@%" -->
 				<group t="unsignedInt">0</group>
 				<menu>
 					<SystemOfEntries>1</SystemOfEntries>
@@ -3941,7 +3941,7 @@
 			<M-O-2>
 				<disable t="boolean">1</disable>
 				<name>poweruser</name>
-				<password>U2FsdGVkX1/4SlfxMBT6MPWQo2qqtoVbHiCpJ23JlVU=</password> = "poweruser"
+				<password>U2FsdGVkX1/4SlfxMBT6MPWQo2qqtoVbHiCpJ23JlVU=</password> <!-- "poweruser" -->
 				<group t="unsignedInt">1</group>
 				<menu>
 					<NetworkOfEntries>7</NetworkOfEntries>
@@ -4010,7 +4010,7 @@
 			<M-O-3>
 				<disable t="boolean">1</disable>
 				<name>user</name>
-				<password>U2FsdGVkX1+YHnUrqJcMix5vYTbRFx3sfWPM8O1G078=</password> = "user"
+				<password>U2FsdGVkX1+YHnUrqJcMix5vYTbRFx3sfWPM8O1G078=</password> <!-- "user" -->
 				<group t="unsignedInt">2</group>
 				<menu>
 					<NetworkOfEntries>14</NetworkOfEntries>
@@ -4139,7 +4139,7 @@
 			<M-O-4>
 				<disable t="boolean">0</disable>
 				<name>manufacturer</name>
-				<password>**********</password> - disabled in code
+				<password>**********</password> <!-- disabled passwd -->
 				<group t="unsignedInt">99</group>
 				<menu>
 					<SystemOfEntries>7</SystemOfEntries>

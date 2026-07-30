@@ -40,6 +40,7 @@ sprintf "%s_%s_%s" hw_id customer buildrev
 
 """
 
+# same for datamodel_
 innda_ssl_dec("aes-256-cbc", "InnboxX24_Cetin_cdadf94603b0d7ecb346064b502c74b3b295a0c6", False, "defaultvalue_InnboxX24_Cetin.enc", "defaultvalue_InnboxX24_Cetin.gz")
 
 innda_ssl_dec("aes-256-cbc", "InnboxX24_Hyperoptics_cdadf94603b0d7ecb346064b502c74b3b295a0c6", False, "defaultvalue_InnboxX24_Hyperoptics.enc", "defaultvalue_InnboxX24_Hyperoptics.gz")
