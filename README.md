@@ -42,6 +42,6 @@ Flash GRG-4284 firmware into G23 - Crashed for me unsure why, hardware should su
 
 ISP testing - Info on Vodafone custom ONT support, look into CEZNET
 
-Make archive with all Zyxel firmwares -  ✅  [Firmware files](https://files.qqwee.net/Zyxel/
+Make archive with all Zyxel firmwares -  ✅  [Firmware files](https://files.qqwee.net/Zyxel/)
 
 Vodafone PM7500

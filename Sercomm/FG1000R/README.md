@@ -8,7 +8,7 @@
 - Replace /var/protect/scftmgr with a bash script, rename real one and launch it after your commands.
 - Add payload to /var/config/run_customized_sdk.sh, works on most Realtek devices, its an feature!
 
-Both need flash desolder and lot of work, just replace this ewaste....
+Both need flash desolder and lot of work, just replace this locked ewaste....
 
 ## Interesting stuff
 - You can download encrypted config from device

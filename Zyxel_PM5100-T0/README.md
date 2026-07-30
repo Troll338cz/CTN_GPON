@@ -21,7 +21,7 @@
 | Form Factor     | ONT                                                                        |
 
 
-I hate Zyxel for making me desolder the SPI chip just to unlock this...
+I hate Zyxel for making me desolder the SPI chip just to unlock this... (not needed if multicast works)
 
 Z-Loader now has a password, please just allow users full access instead of clowning with all the locks.
 

@@ -10,7 +10,7 @@
 | System          | Linux 2.6.30.9-cig-sfu-1 (gcc version 4.4.6 (Realtek RSDK-1.5.6p2) )       |
 | Ethernet ports  | 4x 1000Base-T                                                              |
 | PHY Ethernet    | RTL8696GMAC                                                                |
-| Optics          | SEMTECH 25L95 SC/APC                                                          |
+| Optics          | SEMTECH 25L95 SC/APC                                                       |
 | IP address      | 192.168.100.1/24                                                           |
 | Web Gui         | ❌                                                                         |
 | SSH             | ❌                                                                         |
@@ -65,7 +65,7 @@ memsize     = 0x08000000
 flashstart  = 0xBD000000
 flashsize   = 0x10090828
 flashoffset = 0x00000000
-ethaddr     = E4:8E:10:aa:bb:cc
+ethaddr     = E4:8E:10:AA:BB:CC
 ip_addr     = 192.168.100.1
 baudrate    = 115200 bps
 

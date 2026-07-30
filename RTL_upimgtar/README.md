@@ -1,10 +1,10 @@
-Quick look at Realtek tar file upgrade.
+Quick look at Realtek tar file and multicast upgrade.
 
 Will be important to flash supported ONTs without needing serial.
 
 Note that not all devices have this feature enabled and in working state.
 
-Files:
+Basic biles:
 ```
 fwu.sh - Shell script when flashing from linux, depends on board if it has only simple dual boot or with dtb and ubi, ignored in U-Boot.
 
@@ -25,7 +25,7 @@ Take care when repacking rootfs since it needs to fit and follow specific parame
 
 On UBI devices volumes are written with U-Boot commands
 
-Example output:
+Example output from Comtrend GRG-4284:
 ```
 9601D# tftp ${tftp_base} Comtrend.tar
 Using LUNA GMAC  device
