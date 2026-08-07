@@ -1,0 +1,6 @@
+From ENV mtd11 variable:
+
+fw_main_full_crc=340607dea7cc3a2f115164b5e9e3b571
+fw_slave_crc=db3ad7cdc9b1c2c116c5ee36cb3379f6
+fw_main_crc=db3ad7cdc9b1c2c116c5ee36cb3379f6
+fw_slave_full_crc=340607dea7cc3a2f115164b5e9e3b571
