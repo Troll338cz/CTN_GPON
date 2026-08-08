@@ -55,6 +55,14 @@ mtd15: 00240000 00020000 "reservearea"
 - Reset will fallback and rewrite customer=Iskatrel
 
 ## Unlock v2
-- Login as admin / c79@NkZ5LJgZ33+Lp6@% TODO:UART tested, SSH should work too
+- Login as admin / ```c79@NkZ5LJgZ33+Lp6@%``` TODO:UART tested, SSH should work too
 - Edit nvram tool TODO
 - Reset to unlock
+
+
+## Config edit
+```
+/userfs/bin/tcapi show GPON_ONU
+/userfs/bin/tcapi set GPON_ONU SerialNumber "AAAABBBBBBB"
+/userfs/bin/tcapi set GPON_ONU VendorId "KAON"
+```
