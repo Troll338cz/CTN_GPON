@@ -23,6 +23,8 @@
 Probably well capable hardware kept back by how awfull Econet and Iskatrel code is.
 Bootloader is useless.
 
+Repeated dissambly weakens low quality plastic screw posts resulting in loose cover.
+
 After unlock default ip changes to 192.168.1.1/24. 
 
 WebUI is now open, SSH and Telnet are disabled by default, enbale them in System -> Access Management -> IPv4
@@ -59,10 +61,25 @@ mtd15: 00240000 00020000 "reservearea"
 - Edit nvram tool TODO
 - Reset to unlock
 
+> ## ⚠️ Important
+> Do not write mtd9 with any tools present on device, it will brick the device!
+> Crash of main process is not recoverable due to missing login credentials, nand rewrite is needed to fix this!
 
 ## Config edit
 ```
+# Resets after reboot
 /userfs/bin/tcapi show GPON_ONU
 /userfs/bin/tcapi set GPON_ONU SerialNumber "AAAABBBBBBB"
 /userfs/bin/tcapi set GPON_ONU VendorId "KAON"
+
+# Cant save file
+/userfs/bin/cfg show root.GPON.ONU
+/userfs/bin/cfg set root.GPON.ONU SerialNumber ISKTABCD1234
+
+# Saves
+csmconf -s /InternetGatewayDevice/ManagementServer/EnableCWMP 0
+# Resets after reboot
+csmconf -s /InternetGatewayDevice/X_INNBOX_GPON/ONU/SerialNumber ISKTABCD1234
+csmctl savecfg
+
 ```
