@@ -54,11 +54,12 @@ mtd15: 00240000 00020000 "reservearea"
 - Dump SPI
 - Flip a byte in nvram "customer"
 - Write back 
-- Reset will fallback and rewrite customer=Iskatrel
+- Reset will fallback and rewrite customer=Iskratel
 
 ## Unlock v2
 - Login as admin / ```c79@NkZ5LJgZ33+Lp6@%``` TODO:UART tested, SSH should work too
-- Edit nvram tool TODO
+- fad config setenv customer Iskratel
+- fad config setenv customer_id Iskratel
 - Reset to unlock
 
 > ## ⚠️ Important
@@ -67,19 +68,20 @@ mtd15: 00240000 00020000 "reservearea"
 
 ## Config edit
 ```
-# Resets after reboot
+# Readout info
+# Many commands have no help to get all options
+# fad decompile has alot of helpfull code to learn from
 /userfs/bin/tcapi show GPON_ONU
-/userfs/bin/tcapi set GPON_ONU SerialNumber "AAAABBBBBBB"
-/userfs/bin/tcapi set GPON_ONU VendorId "KAON"
+# Set env value
+fad config setenv serial_gpon ISKTA1B2C3D4
 
-# Cant save file
-/userfs/bin/cfg show root.GPON.ONU
-/userfs/bin/cfg set root.GPON.ONU SerialNumber ISKTABCD1234
-
-# Saves
+# XML Edit
 csmconf -s /InternetGatewayDevice/ManagementServer/EnableCWMP 0
-# Resets after reboot
-csmconf -s /InternetGatewayDevice/X_INNBOX_GPON/ONU/SerialNumber ISKTABCD1234
 csmctl savecfg
+
+# Set "manufacturer" user password to admin one (and enable it)
+# SYSTEM -> Customization secret menu unlocked :)
+# Still does not allow to open hidden html pages
+csmconf -s sys.user.4.password  'U2FsdGVkX18C8hH0ADzGky2BdLI5McGYp/IhqX3jps6XMyFh7kkJhjuPyY8ZO+fo'
 
 ```
