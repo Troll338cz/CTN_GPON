@@ -45,7 +45,7 @@ void get_admin_password_16s(const char *input, size_t max_len)
 void get_admin_password(uint64_t input, size_t a4)
 {
     static const char charset[] = "iskratel23456789abcdefghijk";
-    static const char *lookup = &charset[8]; // Points to "23456789abcdefghijk" (19 chars)
+    static const char *lookup = &charset[8];
     const size_t lookup_len = 19;
 
     uint32_t digits[32] = {0};
@@ -278,12 +278,14 @@ int main(int argc, char *argv[]) {
         a = "3115002624";
         uint64_t v16;
         v16 = strtoull(a, 0, 10);
-	get_admin_password(v16, 9u);
+        get_admin_password(v16, 9u);
 
         wifi_passwd_generator(a, 10); // First char came out wrong, 0x4A instead of 0x46
 
         // SN type 10 or 13 char
         // 13 WiFi pw == SN
         // 10 %s%s "ISP Name from SSID allcaps" or "INNBOX",  SN
-        // WPS PIn 
+        // WPS PIN = SN last 8
+
+        // Many other use generate_ssl_passwd()
 }
