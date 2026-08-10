@@ -20,8 +20,9 @@
 | Serial encoding | 8-N-1                                                                      | 
 | Form Factor     | ONT                                                                        |
 
-Probably well capable hardware kept back by how awfull Econet and Iskatrel code is.
-Bootloader is useless.
+Probably well capable hardware kept back by how awfull Econet and Iskratel code is.
+
+Bootloader is useless for recovery.
 
 Repeated dissambly weakens low quality plastic screw posts resulting in loose cover.
 
@@ -32,21 +33,21 @@ WebUI is now open, SSH and Telnet are disabled by default, enbale them in System
 ## Flash layout
 ```
 dev:    size   erasesize  name
-mtd0: 00040000 00020000 "bootloader"
+mtd0: 00040000 00020000 "bootloader"		- Bootbase
 mtd1: 00040000 00020000 "romfile"
 mtd2: 0027c77b 00020000 "kernel"
 mtd3: 01320000 00020000 "rootfs"
-mtd4: 03000000 00020000 "tclinux"
+mtd4: 03000000 00020000 "tclinux"		- Image A
 mtd5: 03f80000 00020000 "kernel_slave"
 mtd6: 00000000 00000000 "rootfs_slave"
-mtd7: 03000000 00020000 "tclinux_slave"
-mtd8: 00100000 00020000 "config"
-mtd9: 00100000 00020000 "Equip"
-mtd10: 00100000 00020000 "WlanE2pData"
-mtd11: 00100000 00020000 "bootEnv"
-mtd12: 00100000 00020000 "VoiceLog"
-mtd13: 00100000 00020000 "SystemLog"
-mtd14: 00200000 00020000 "SaaS"
+mtd7: 03000000 00020000 "tclinux_slave"		- Image B
+mtd8: 00100000 00020000 "config"		- INNDACFG1
+mtd9: 00100000 00020000 "Equip"			- INNDAENV
+mtd10: 00100000 00020000 "WlanE2pData"		- Blank
+mtd11: 00100000 00020000 "bootEnv"		- INNDABOOT
+mtd12: 00100000 00020000 "VoiceLog"		- Blank
+mtd13: 00100000 00020000 "SystemLog"		
+mtd14: 00200000 00020000 "SaaS"			- /var/SaaS/ jffs2
 mtd15: 00240000 00020000 "reservearea"
 ```
 
@@ -57,8 +58,7 @@ mtd15: 00240000 00020000 "reservearea"
 - Reset will fallback and rewrite customer=Iskratel
 
 ## Unlock v2
-- Login as admin / ```c79@NkZ5LJgZ33+Lp6@%``` TODO:UART tested, SSH should work too
-- fad config setenv customer Iskratel
+- Login as admin / ```c79@NkZ5LJgZ33+Lp6@%``` TODO: UART tested, SSH should work too
 - fad config setenv customer_id Iskratel
 - Reset to unlock
 
@@ -81,7 +81,11 @@ csmctl savecfg
 
 # Set "manufacturer" user password to admin one (and enable it)
 # SYSTEM -> Customization secret menu unlocked :)
-# Still does not allow to open hidden html pages
+# Still does not allow to open all hidden html pages
 csmconf -s sys.user.4.password  'U2FsdGVkX18C8hH0ADzGky2BdLI5McGYp/IhqX3jps6XMyFh7kkJhjuPyY8ZO+fo'
 
 ```
+
+## Usefull links
+[Econet Linux](https://econet-linux.pkt.wiki/en/bootloader)
+[Econet GPL code](https://github.com/cjdelisle/EN751221-Linux26/)
