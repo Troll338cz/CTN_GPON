@@ -72,8 +72,16 @@ mtd15: 00240000 00020000 "reservearea"
 # Many commands have no help to get all options
 # fad decompile has alot of helpfull code to learn from
 /userfs/bin/tcapi show GPON_ONU
+/userfs/bin/tcapi show SysInfo_Entry
 # Set env value
 fad config setenv serial_gpon ISKTA1B2C3D4
+# Verify SN change
+csmconf -g /InternetGatewayDevice/X_INNBOX_GPON/ONU/SerialNumber
+csmconf -g /InternetGatewayDevice/X_INNBOX_GPON/ONU/VendorId
+csmconf -g /InternetGatewayDevice/X_INNBOX_GPON/ONU/Password
+csmconf -g /InternetGatewayDevice/X_INNBOX_GPON/ONU/VendorProCode
+csmconf -g /InternetGatewayDevice/X_INNBOX_GPON/ONU/OMCCVersion
+csmconf -g /InternetGatewayDevice/X_INNBOX_GPON/ONU/Version
 
 # XML Edit
 csmconf -s /InternetGatewayDevice/ManagementServer/EnableCWMP 0
