@@ -74,6 +74,7 @@ mtd15: 00240000 00020000 "reservearea"
 /userfs/bin/tcapi show GPON_ONU
 /userfs/bin/tcapi show SysInfo_Entry
 # Set env value
+# Set GPON SN + Vendor ID
 fad config setenv serial_gpon ISKTA1B2C3D4
 # Verify SN change
 csmconf -g /InternetGatewayDevice/X_INNBOX_GPON/ONU/SerialNumber
