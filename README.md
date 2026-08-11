@@ -6,7 +6,7 @@ Firmware collection for cheap GPON bridges
 | --------------- | ---------------|------------------|----------------------------|------|------- | -------- |
 | Comtrend GRG-4284 	| ✅ | ✅ | ✅ | ✅ | ❌ | Cetin |
 | Comtrend GRG-4362 	| ✅ | ✅ | ✅ | ❌ | ❌ | Cetin |
-| Iskratel Innbox G23	| ✅ | ✅ | ⚠ | ❓ | ❌ | Cetin |
+| Iskratel Innbox G23	| ✅ | ✅ | ✅ | ❓ | ❌ | Cetin |
 | Kaon PM1191			| ✅ | ❌ | ❓ | ❌ | ❓ | T-Mobile |
 | Orange G-25E			| ✅ | ✅ | ❓ | ❓ | ❌ | Orange.sk |
 | Sercomm FG1000R	(WIP)	| ✅ | ❌ | ❓ | ❓ | ✅ | - |
@@ -20,7 +20,7 @@ Firmware collection for cheap GPON bridges
 ## Notes
 Comtrend GRG-4284 - After flash works without issues, GPON/EPON tested, OMCI already patched with firmware unlock.
 
-Innbox G23 - Many hardcoded values in binaries reset on reboot, old 2.6 kernel. Full patch might be possible.
+Innbox G23 - Most hardcoded MIBs removed, old 2.6 kernel.
 
 CIG G-25E - Old device, not worth looking into OMCI editing.
 

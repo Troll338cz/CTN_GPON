@@ -25,11 +25,12 @@ HEADER_LEN = 28
 
 if len(sys.argv) != 4:
         print(f"{sys.argv[0]} encode|decode infile outfile")
+        print(f"{sys.argv[0]} verify infile null")
         sys.exit(1)
 
-ops = ["encode" , "decode" , "verify"]
+ops = ["encode", "decode", "verify"]
 if sys.argv[1] not in ops:
-        print('First argument must be "encode" or "decode" or "verify"')
+        print(f'First argument must be {', '.join(ops)}.')
         sys.exit(1)
 
 
@@ -41,7 +42,7 @@ if sys.argv[1] == "verify":
     fin = open(sys.argv[2], "rb")
     dats = fin.read()
     dlen = ( unpack('H', dats[24:26] )[0] + HEADER_LEN )
-    dats = dats.strip(b'\xff') # MTD padd
+    dats = dats.strip(b'\xff') # Dumped MTD padd
     if len(dats) == dlen:
         print(f"{sys.argv[2]} Test OK!")
     else:
@@ -61,7 +62,6 @@ if sys.argv[1] == "encode":
     fout = open(sys.argv[3], "wb")
     dats = fin.read()
     dlen = pack('H', ( len(dats) ))
-    print(dlen)
     header = b'INNDAENV' + b'\x00\x00\x00\x00\x00\x00\x00\x00\x1c\x00\x00\x00\x1c\x00\x00\x00' + dlen + b'\x00\x00'
     fout.write( header+dats )
     fout.close()

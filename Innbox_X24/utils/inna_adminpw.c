@@ -9,6 +9,11 @@
 #include <stdbool.h>
 #include <string.h>
 
+#include <openssl/evp.h>
+
+//	Build, libssl-dev needed:
+//	gcc inna_adminpw.c -g -lcrypto -o innapw
+
 //----- (0040B6F8) --------------------------------------------------------
 void get_admin_password_16s(const char *input, size_t max_len)
 {
@@ -155,7 +160,7 @@ void wifi_passwd_generator(const char *input_str, int max_len)
     }
 
     char result[11];
-    result[0] = charset2[accumulated[0] % 10];
+    result[0] = charset2[accumulated[0] % 19];
     for (int i = 1; i < 10; i++) {
         result[i] = charset3[accumulated[i] % 19];
     }
@@ -167,6 +172,53 @@ void wifi_passwd_generator(const char *input_str, int max_len)
     }
 
     printf("wifi_passwd_generator: %s\n", result);
+}
+
+// Rewriten, original version does stupid stuff hopefully right....
+char *generate_ssl_passwd(int pwd_type, char *buff, const char* serialn, const char* magicval, size_t buff_size)
+{
+  char v12[256]; // [sp+E8h] [-108h] BYREF
+
+  memset(v12, 0, sizeof(v12));
+
+  EVP_MD_CTX *context = EVP_MD_CTX_new();
+  const EVP_MD *md = EVP_sha256();
+  unsigned char hash[EVP_MAX_MD_SIZE];
+  unsigned int length_of_hash = 0;
+
+  if (context == NULL) {
+    fprintf(stderr, "Failed to create OpenSSL context.\n");
+    return NULL;
+  }
+
+  if (EVP_DigestInit_ex(context, md, NULL) &&
+    EVP_DigestUpdate(context, serialn, strlen(serialn)) &&
+    EVP_DigestUpdate(context, magicval, strlen(magicval)) &&
+    EVP_DigestFinal_ex(context, hash, &length_of_hash)) {
+  }
+  EVP_EncodeBlock(v12, hash, length_of_hash);
+  EVP_MD_CTX_free(context);
+
+
+  return strncpy(buff, v12, buff_size);
+}
+
+//----- (0040F7A4) --------------------------------------------------------
+char *admin_passwd_generator_other(char *buff, const char *serial, size_t buff_size)
+{
+  char ssl_out[32]; // [sp+30h] [-20h] BYREF
+
+  generate_ssl_passwd(1, ssl_out, serial, "Iskrateliadmin", 32u);
+  return strncpy(buff, ssl_out, buff_size);
+}
+
+//----- (0040F7A4) --------------------------------------------------------
+char *wifi_passwd_generator_other(char *buff, const char *serial, size_t buff_size)
+{
+  char ssl_out[32]; // [sp+30h] [-20h] BYREF
+
+  generate_ssl_passwd(1, ssl_out, serial, "Iskratelwifi", 32u);
+  return strncpy(buff, ssl_out, buff_size);
 }
 
 /*
@@ -269,23 +321,35 @@ LABEL_219:
 
 int main(int argc, char *argv[]) {
         const char* a;
-        // SN type 16 char (untested, couldn"t find example)
-        a = "1234567890123456";
-        get_admin_password_16s(a,9u);
-        wifi_passwd_generator_16s(a, 10);
-
-        // SN type 10 char
+        puts("-------------------------------------");
+        // SN type 10 char:
+        // Matches with Innbox_SN10.png
         a = "3115002624";
         uint64_t v16;
         v16 = strtoull(a, 0, 10);
         get_admin_password(v16, 9u);
+        wifi_passwd_generator(a, 10); // MTS Innbox G84, len = 8
 
-        wifi_passwd_generator(a, 10); // First char came out wrong, 0x4A instead of 0x46
+        puts("-------------------------------------");
 
-        // SN type 10 or 13 char
-        // 13 WiFi pw == SN
-        // 10 %s%s "ISP Name from SSID allcaps" or "INNBOX",  SN
-        // WPS PIN = SN last 8
-
-        // Many other use generate_ssl_passwd()
+        // SN type 16 char:
+        // Untested, couldn't find example
+        a = "1234567890123456";
+        get_admin_password_16s(a,9u);
+        wifi_passwd_generator_16s(a, 10);
+        puts("-------------------------------------");
+        // Untested:
+        char b[64];
+        memset(b, 0, sizeof(b));
+        // cfg_getstr(v40, 32, "/InternetGatewayDevice/DeviceInfo/Manufacturer"); == &g_env_manu -- See customerid.py to find your value
+        const char* v40 = "Iskratel";
+        printf( "admin_passwd_generator_other: %s\n", admin_passwd_generator_other(b, a, 8u));
+        printf( "wifi_passwd_generator_other: %s\n", wifi_passwd_generator_other(b, a, 10));
+        printf( "generate_ssl_passwd: %s\n", generate_ssl_passwd(1, b, a, v40, 0x10u));
+        puts("-------------------------------------");
+        // Other samples found
+        // Old SN type 10 or 13 char:
+        // 13 - WiFi pw == SN
+        // 10 - %s%s "ISP Name from SSID allcaps" or "INNBOX", SN
+        // WPS PIN = SN last 8, maybe needs tweak to follow WPS rules
 }
