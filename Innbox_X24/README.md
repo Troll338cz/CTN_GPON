@@ -30,6 +30,8 @@ After unlock default ip changes to 192.168.1.1/24.
 
 WebUI is now open, SSH and Telnet are disabled by default, enbale them in System -> Access Management -> IPv4
 
+Firmware looks to be clean TRX HRD2 with no signature, due to missing recovery options i won't be testing running custom images. RAM boot might work with method found by Econet Linux.
+
 ## Flash layout
 ```
 dev:    size   erasesize  name
@@ -69,7 +71,7 @@ mtd15: 00240000 00020000 "reservearea"
 ## Config edit
 ```
 # Readout info
-# Many commands have no help to get all options
+# Many commands have no help to get all arguments
 # fad decompile has alot of helpfull code to learn from
 /userfs/bin/tcapi show GPON_ONU
 /userfs/bin/tcapi show SysInfo_Entry
@@ -94,6 +96,8 @@ csmctl savecfg
 csmconf -s sys.user.4.password  'U2FsdGVkX18C8hH0ADzGky2BdLI5McGYp/IhqX3jps6XMyFh7kkJhjuPyY8ZO+fo'
 
 ```
+
+Fun fact: tclinux_slave mtd seems to contain fill patern suggesting that no firmware update was ever pushed (at least to my device).
 
 ## Usefull links
 [Econet Linux](https://econet-linux.pkt.wiki/en/bootloader)

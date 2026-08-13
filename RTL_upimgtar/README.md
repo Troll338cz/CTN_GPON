@@ -4,7 +4,7 @@ Will be important to flash supported ONTs without needing serial.
 
 Note that not all devices have this feature enabled and in working state.
 
-Basic biles:
+Basic files:
 ```
 fwu.sh - Shell script when flashing from linux, depends on board if it has only simple dual boot or with dtb and ubi, ignored in U-Boot.
 
@@ -14,16 +14,16 @@ hw_ver - Linux update only, HW_HWVER check.
 
 md5.txt - List of md5 sums for fwu.sh, Unix newlines, format md5 and filename seperated by a single space 
 
-rootfs - rootfs image, common squashfs should work with jffs2 and cramfs aswell.
+rootfs - rootfs image, mainly found squashfs, should work with jffs2 and cramfs aswell.
 
-uImage - u-boot kernel image
+uImage - uImage kernel file
 ```
 
 Tar file must be POSIX 1003.1-1990, uncompressed
 
-Take care when repacking rootfs since it needs to fit and follow specific parameters.
+Take care when repacking rootfs since it needs to fit and follow specific parameters. (Compression & block size)
 
-On UBI devices volumes are written with U-Boot commands
+On UBI devices volumes are written with U-Boot commands from env
 
 Example output from Comtrend GRG-4284:
 ```
@@ -88,5 +88,3 @@ Update img.tar Done
 Warning: flash will be erased to size of file in tar, no checks against partitions are done! 
 
 If you have a copy of Realtek ASDK with U-Boot sources files "cmd_upimgtar.c" and "multicast_upgrade.c" contain all information needed about upgrade process.
-
-TODO: Provide fwu.sh scripts for all platforms to allow creation of tar updates

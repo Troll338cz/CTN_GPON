@@ -12,6 +12,6 @@ Both need flash desolder and lot of work, just replace this locked ewaste....
 
 ## Interesting stuff
 - You can download encrypted config from device
-- Has special jffs mtd mounted at /var/protect/
-- No clue on how to mount yaffs from dump
+- Has special jffs2 mtd mounted at /var/protect/
+- BigEndian YAFFS unmountable?
 - 128MB Flash is wasted on mips firmware that usualy fits info 16MB even with dualboot

@@ -15,7 +15,7 @@ Firmware collection for cheap GPON bridges
 | Frontier FOG421			| ✅ | ❓ | ❓ | ❓ | ❌ | - |
 | Tenda HG1     			| ✅ | ✅ | ✅ | ✅ | ❌ | - |
 | Zyxel PM5100-T0 			| ✅ | ❓ | ❓ | ❓ | ❌ | Cetin |
-| Iskratel Innbox X24	| ✅ | ❓ | ❓ | ❌ | ❓ | Cetin |
+| Iskratel Innbox X24	| ✅ | ❓| ❌ |❓ | ❌ | ❓ | Cetin |
 
 ## Notes
 Comtrend GRG-4284 - After flash works without issues, GPON/EPON tested, OMCI already patched with firmware unlock.
@@ -34,6 +34,7 @@ ZTE F6005 - Writeup and firmware mod by @rgiorgiotech, missing unlocked bootlode
 
 Zyxel PM5100-T0 - For easy unlock zyeng, SPI dump or known login is needed, has per device password for bootloader and users.
 
+Innbox X24 - Limited by software and SDK, no good documentation.
 
 ## TODO
 Kaon PM1191 - Currently not intrested in working on this device, (and probably shouldn't since its ISP owned), no secure boot so mod is possible.
