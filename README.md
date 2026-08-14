@@ -15,7 +15,7 @@ Firmware collection for cheap GPON bridges
 | Frontier FOG421			| ✅ | ❓ | ❓ | ❓ | ❌ | - |
 | Tenda HG1     			| ✅ | ✅ | ✅ | ✅ | ❌ | - |
 | Zyxel PM5100-T0 			| ✅ | ❓ | ❓ | ❓ | ❌ | Cetin |
-| Iskratel Innbox X24	| ✅ | ❓| ❌ |❓ | ❌ | ❓ | Cetin |
+| Iskratel Innbox X24	| ✅ | ❓| ❌ | ❌ | ❓ | Cetin |
 
 ## Notes
 Comtrend GRG-4284 - After flash works without issues, GPON/EPON tested, OMCI already patched with firmware unlock.

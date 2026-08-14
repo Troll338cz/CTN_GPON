@@ -1,0 +1,4135 @@
+<Root>
+	<InternetGatewayDevice>
+		<DeviceSummary>InternetGatewayDevice:1.0[](Baseline:1, EthernetLAN:1, ADSLWAN:1, Time:1, IPPing:1)</DeviceSummary>
+		<DeviceInfo>
+			<Manufacturer>Kontron</Manufacturer>
+			<ManufacturerOUI>646EEA</ManufacturerOUI>
+			<ModelName>InnboxX24</ModelName>
+			<Description>Kontron Wirless Router, 11n 2x2 2.4GHz, 1 Ethernet Wan, 4GE LAN, 2FxS ports, 1USB H2.0, with power switch, wireless on/off, WPS buttons support, UPS connector</Description>
+			<ProductClass>InnboxX24</ProductClass>
+			<SerialNumber></SerialNumber>
+			<HardwareVersion>HA1</HardwareVersion>
+			<SoftwareVersion></SoftwareVersion>
+			<SpecVersion>1.0</SpecVersion>
+			<ProvisioningCode>WIAD.VER1</ProvisioningCode>
+			<UpTime t="unsignedInt"></UpTime>
+			<DeviceLog></DeviceLog>
+			<X_INNBOX_CopyrightYear></X_INNBOX_CopyrightYear>
+			<X_INNBOX_SoftwareBuildNo></X_INNBOX_SoftwareBuildNo>
+			<X_INNBOX_SoftwareBuildDate></X_INNBOX_SoftwareBuildDate>
+			<X_INNBOX_DSLDriverVersion></X_INNBOX_DSLDriverVersion>
+			<X_INNBOX_CID></X_INNBOX_CID>
+			<X_INNBOX_HWVER></X_INNBOX_HWVER>
+			<X_INNBOX_ApplicationLicense></X_INNBOX_ApplicationLicense>
+			<X_INNBOX_HuaweiOLTLicenseUnlock>0</X_INNBOX_HuaweiOLTLicenseUnlock>
+			<TftpServerConfigFileVersion t="unsignedInt">0</TftpServerConfigFileVersion>
+			<CfgWanTypeDescription></CfgWanTypeDescription>
+			<TemperatureStatus>
+				<TemperatureSensorNumberOfEntries t="unsignedInt">2</TemperatureSensorNumberOfEntries>
+				<TemperatureSensor t="MULTI">
+					<M-O-1>
+						<Name>CPU</Name>
+						<Status>Enabled</Status>
+						<Value t="int"></Value>
+					</M-O-1>
+					<M-O-2>
+						<Name>Laser</Name>
+						<Status>Enabled</Status>
+						<Value t="int"></Value>
+					</M-O-2>
+				</TemperatureSensor>
+			</TemperatureStatus>
+			<MemoryStatus>
+				<Total t="unsignedInt"></Total>
+				<Free t="unsignedInt"></Free>
+			</MemoryStatus>
+			<ProcessStatus>
+				<CPUUsage t="unsignedInt"></CPUUsage>
+			</ProcessStatus>
+			<AdditionalHardwareVersion></AdditionalHardwareVersion>
+			<AdditionalSoftwareVersion></AdditionalSoftwareVersion>
+			<SupportedDataModel>
+				<M-O-1>
+					<Alias></Alias>
+					<URL></URL>
+					<UUID></UUID>
+					<URN></URN>
+					<Features></Features>
+				</M-O-1>
+			</SupportedDataModel>
+		</DeviceInfo>
+		<DeviceConfig>
+			<PersistentData></PersistentData>
+			<ConfigFile></ConfigFile>
+			<X_INNBOX_ConfigVersion>4</X_INNBOX_ConfigVersion>
+		</DeviceConfig>
+		<GatewayInfo>
+			<ManufacturerOUI></ManufacturerOUI>
+			<ProductClass></ProductClass>
+			<SerialNumber></SerialNumber>
+		</GatewayInfo>
+		<ManagementServer>
+			<EnableCWMP t="boolean">1</EnableCWMP>
+			<URL></URL>
+			<X_INNBOX_ACSConfigureURL></X_INNBOX_ACSConfigureURL>
+			<X_INNBOX_OldACSConfigureURL></X_INNBOX_OldACSConfigureURL>
+			<Username>admin</Username>
+			<Password>admin</Password>
+			<PeriodicInformEnable t="boolean">1</PeriodicInformEnable>
+			<PeriodicInformInterval t="unsignedInt">108000</PeriodicInformInterval>
+			<PeriodicInformTime t="dateTime"></PeriodicInformTime>
+			<ParameterKey></ParameterKey>
+			<ConnectionRequestURL></ConnectionRequestURL>
+			<ConnectionRequestUsername>admin</ConnectionRequestUsername>
+			<ConnectionRequestPassword>admin</ConnectionRequestPassword>
+			<UpgradesManaged t="boolean">1</UpgradesManaged>
+			<ManageableDeviceNotificationLimit t="unsignedInt">0</ManageableDeviceNotificationLimit>
+			<CWMPRetryMinimumWaitInterval t="unsignedInt">5</CWMPRetryMinimumWaitInterval>
+			<CWMPRetryIntervalMultiplier t="unsignedInt">2000</CWMPRetryIntervalMultiplier>
+			<X_INNBOX_RemoteManagement>
+				<ICMPWANAllow t="int"></ICMPWANAllow>
+				<SSHLANAllow t="int"></SSHLANAllow>
+				<FTPLANAllow t="int"></FTPLANAllow>
+				<TFTPLANAllow t="int"></TFTPLANAllow>
+				<SNMPLANAllow t="int"></SNMPLANAllow>
+			</X_INNBOX_RemoteManagement>
+			<X_INNBOX_LogForACS t="boolean">0</X_INNBOX_LogForACS>
+			<X_INNBOX_TR069>
+				<ssl_mode>0</ssl_mode>
+				<port>51005</port>
+				<uri></uri>
+				<debug_level></debug_level>
+				<stun_listen_port>3478</stun_listen_port>
+				<inform_retry_mode>3</inform_retry_mode>
+				<connect_retry_mode>3</connect_retry_mode>
+				<inform_retry_interval>5</inform_retry_interval>
+				<inform_retry_interval2>10</inform_retry_interval2>
+				<max_inform_retry_interval>900</max_inform_retry_interval>
+				<connect_retry_interval>5</connect_retry_interval>
+				<connect_retry_interval2>10</connect_retry_interval2>
+				<max_connect_retry_interval>900</max_connect_retry_interval>
+				<wan_inf>runtime.ip_host.</wan_inf>
+				<externalip_num>1</externalip_num>
+				<event></event>
+			</X_INNBOX_TR069>
+			<ManageableDeviceNumberOfEntries t="unsignedInt"></ManageableDeviceNumberOfEntries>
+			<ManageableDevice t="MULTI"></ManageableDevice>
+			<UDPConnectionRequestAddress></UDPConnectionRequestAddress>
+			<UDPConnectionRequestAddressNotificationLimit t="unsignedInt">0</UDPConnectionRequestAddressNotificationLimit>
+			<STUNEnable t="boolean">0</STUNEnable>
+			<STUNServerAddress></STUNServerAddress>
+			<STUNServerPort t="unsignedInt">3478</STUNServerPort>
+			<STUNUsername></STUNUsername>
+			<STUNPassword></STUNPassword>
+			<STUNMaximumKeepAlivePeriod t="int"></STUNMaximumKeepAlivePeriod>
+			<STUNMinimumKeepAlivePeriod t="unsignedInt"></STUNMinimumKeepAlivePeriod>
+			<NATDetected t="boolean"></NATDetected>
+			<SupportedConnReqMethods></SupportedConnReqMethods>
+			<ConnReqXMPPConnection></ConnReqXMPPConnection>
+			<ConnReqAllowedJabberIDs></ConnReqAllowedJabberIDs>
+			<ConnReqJabberID></ConnReqJabberID>
+			<HTTPCompressionSupported></HTTPCompressionSupported>
+			<HTTPCompression>Disabled</HTTPCompression>
+			<LightweightNotificationProtocolsSupported></LightweightNotificationProtocolsSupported>
+			<LightweightNotificationProtocolsUsed></LightweightNotificationProtocolsUsed>
+			<UDPLightweightNotificationHost></UDPLightweightNotificationHost>
+			<UDPLightweightNotificationPort t="unsignedInt"></UDPLightweightNotificationPort>
+			<StandbyPolicy>
+				<CRUnawarenessMaxDuration t="int">-1</CRUnawarenessMaxDuration>
+				<MaxMissedPeriodic t="int">-1</MaxMissedPeriodic>
+				<NotifyMissedScheduled t="boolean">0</NotifyMissedScheduled>
+				<NetworkAwarenessCapable t="boolean"></NetworkAwarenessCapable>
+				<SelfTimerCapable t="boolean"></SelfTimerCapable>
+				<CRAwarenessRequested t="boolean">0</CRAwarenessRequested>
+				<PeriodicAwarenessRequested t="boolean">0</PeriodicAwarenessRequested>
+				<ScheduledAwarenessRequested t="boolean"></ScheduledAwarenessRequested>
+			</StandbyPolicy>
+		</ManagementServer>
+		<X_INNBOX_ActiveWANDevice></X_INNBOX_ActiveWANDevice>
+		<X_INNBOX_InternetActiveWANDevice></X_INNBOX_InternetActiveWANDevice>
+		<WANDeviceNumberOfEntries t="unsignedInt">1</WANDeviceNumberOfEntries>
+		<WANDevice t="MULTI" i="1">
+			<M-O-1>
+				<X_INNBOX_3GEnable t="boolean">1</X_INNBOX_3GEnable>
+				<X_INNBOX_Pin>1</X_INNBOX_Pin>
+				<X_INNBOX_PinNumber>1</X_INNBOX_PinNumber>
+				<X_INNBOX_PukNumber></X_INNBOX_PukNumber>
+				<X_INNBOX_3G_override t="boolean">0</X_INNBOX_3G_override>
+				<WANConnectionNumberOfEntries t="unsignedInt">1</WANConnectionNumberOfEntries>
+				<WANCommonInterfaceConfig>
+					<EnabledForInternet t="boolean">1</EnabledForInternet>
+					<WANAccessType>PON</WANAccessType>
+					<Layer1UpstreamMaxBitRate t="unsignedInt"></Layer1UpstreamMaxBitRate>
+					<Layer1DownstreamMaxBitRate t="unsignedInt"></Layer1DownstreamMaxBitRate>
+					<PhysicalLinkStatus></PhysicalLinkStatus>
+					<WANAccessProvider></WANAccessProvider>
+					<TotalBytesSent t="unsignedInt"></TotalBytesSent>
+					<TotalBytesReceived t="unsignedInt"></TotalBytesReceived>
+					<TotalPacketsSent t="unsignedInt"></TotalPacketsSent>
+					<TotalPacketsReceived t="unsignedInt"></TotalPacketsReceived>
+					<MaximumActiveConnections t="unsignedInt"></MaximumActiveConnections>
+					<NumberOfActiveConnections t="unsignedInt"></NumberOfActiveConnections>
+					<X_INNBOX_EnabledForInternetBackup t="boolean">0</X_INNBOX_EnabledForInternetBackup>
+					<Connection t="MULTI"></Connection>
+				</WANCommonInterfaceConfig>
+				<WANConnectionDevice t="MULTI" i="1">
+					<M-O-1>
+						<WANIPConnectionNumberOfEntries t="unsignedInt">0</WANIPConnectionNumberOfEntries>
+						<WANPPPConnectionNumberOfEntries t="unsignedInt">0</WANPPPConnectionNumberOfEntries>
+						<WANIPConnection t="MULTI"></WANIPConnection>
+						<WANPPPConnection t="MULTI"></WANPPPConnection>
+						<WANEthernetLinkConfig>
+							<Name>Ethernet</Name>
+							<EthernetLinkStatus></EthernetLinkStatus>
+							<Enable t="boolean">0</Enable>
+							<InterfaceName></InterfaceName>
+							<X_INNBOX_ConnectionMode t="unsignedInt">0</X_INNBOX_ConnectionMode>
+						</WANEthernetLinkConfig>
+						<WAN3GLinkConfig>
+							<Enable t="boolean">0</Enable>
+							<InterfaceName></InterfaceName>
+							<Name>3G</Name>
+							<LinkStatus></LinkStatus>
+							<AutoDialUp t="boolean">0</AutoDialUp>
+							<type>LTE</type>
+							<DialUpMTU t="unsignedInt">1500</DialUpMTU>
+							<Country></Country>
+							<ISP></ISP>
+							<DialNumber></DialNumber>
+							<APN></APN>
+							<MCC></MCC>
+							<MNC></MNC>
+							<Username></Username>
+							<Password></Password>
+							<SIMPINCode></SIMPINCode>
+							<AuthenticationProtocol>Auto</AuthenticationProtocol>
+							<PINStatus></PINStatus>
+							<NetworkStatus t="boolean"></NetworkStatus>
+							<PPP3GRestart t="unsignedInt">0</PPP3GRestart>
+							<UpTime t="unsignedInt">0</UpTime>
+							<LocalAddress t="unsignedInt">0.0.0.0</LocalAddress>
+							<PeerAddress t="unsignedInt">0.0.0.0</PeerAddress>
+							<PrimaryDNS t="unsignedInt">0.0.0.0</PrimaryDNS>
+							<SecondaryDNS t="unsignedInt">0.0.0.0</SecondaryDNS>
+							<X_INNBOX_ConnectionMode t="unsignedInt">0</X_INNBOX_ConnectionMode>
+							<X_INNBOX_FilterBridgeReference t="int">0</X_INNBOX_FilterBridgeReference>
+							<X_INNBOX_BridgeInterface></X_INNBOX_BridgeInterface>
+						</WAN3GLinkConfig>
+						<X_INNBOX_WANGPONLinkConfig>
+							<Enable t="boolean">1</Enable>
+							<Name>XPON</Name>
+							<ConnectionMode t="unsignedInt">1</ConnectionMode>
+							<InterfaceName>pon</InterfaceName>
+							<LinkStatus></LinkStatus>
+						</X_INNBOX_WANGPONLinkConfig>
+					</M-O-1>
+				</WANConnectionDevice>
+				<WANEthernetInterfaceConfig>
+					<Enable t="boolean">0</Enable>
+					<Status></Status>
+					<MACAddress></MACAddress>
+					<MaxBitRate>Auto</MaxBitRate>
+					<DuplexMode>Auto</DuplexMode>
+					<X_INNBOX_LastShowtimeStart t="unsignedInt"></X_INNBOX_LastShowtimeStart>
+					<X_INNBOX_LastShowtime t="unsignedInt"></X_INNBOX_LastShowtime>
+					<X_INNBOX_LineUpCount t="unsignedInt"></X_INNBOX_LineUpCount>
+					<Stats>
+						<BytesSent t="unsignedInt"></BytesSent>
+						<BytesReceived t="unsignedInt"></BytesReceived>
+						<PacketsSent t="unsignedInt"></PacketsSent>
+						<PacketsReceived t="unsignedInt"></PacketsReceived>
+					</Stats>
+					<InterfaceName></InterfaceName>
+					<ShapingRate t="int"></ShapingRate>
+					<ShapingBurstSize t="unsignedInt"></ShapingBurstSize>
+					<X_INNBOX_WANTxRateMode>Auto</X_INNBOX_WANTxRateMode>
+					<X_INNBOX_WANTxRateLimit t="unsignedInt">2500</X_INNBOX_WANTxRateLimit>
+				</WANEthernetInterfaceConfig>
+				<WAN3GInterfaceConfig>
+					<Enable t="boolean">0</Enable>
+					<Status></Status>
+					<MACAddress></MACAddress>
+					<InterfaceName>wan3g</InterfaceName>
+					<X_INNBOX_WANKeepAlive>
+						<Enable t="boolean"></Enable>
+						<TargetIPAddress></TargetIPAddress>
+						<IntervalTime t="unsignedInt"></IntervalTime>
+						<Threshold t="unsignedInt"></Threshold>
+					</X_INNBOX_WANKeepAlive>
+					<AutoDialUp t="boolean">0</AutoDialUp>
+					<AuthenticationProtocol>Auto</AuthenticationProtocol>
+					<APN></APN>
+					<DialNumber></DialNumber>
+				</WAN3GInterfaceConfig>
+				<X_INNBOX_WANPonInterfaceConfig>
+					<Enable t="boolean">1</Enable>
+					<Status></Status>
+					<InterfaceName>pon</InterfaceName>
+					<X_INNBOX_Stats>
+						<X_INNBOX_BytesSent t="unsignedInt"></X_INNBOX_BytesSent>
+						<X_INNBOX_BytesReceived t="unsignedInt"></X_INNBOX_BytesReceived>
+						<X_INNBOX_PacketsSent t="unsignedInt"></X_INNBOX_PacketsSent>
+						<X_INNBOX_PacketsReceived t="unsignedInt"></X_INNBOX_PacketsReceived>
+					</X_INNBOX_Stats>
+				</X_INNBOX_WANPonInterfaceConfig>
+			</M-O-1>
+		</WANDevice>
+		<Layer3Forwarding>
+			<DefaultConnectionService></DefaultConnectionService>
+			<X_INNBOX_DefaultConnectionServiceInf></X_INNBOX_DefaultConnectionServiceInf>
+			<X_INNBOX_DefaultConnectionServiceGateway></X_INNBOX_DefaultConnectionServiceGateway>
+			<X_INNBOX_DefaultConnectionServiceMask></X_INNBOX_DefaultConnectionServiceMask>
+			<X_INNBOX_ActiveDefaultInterface></X_INNBOX_ActiveDefaultInterface>
+			<ForwardNumberOfEntries t="unsignedInt">0</ForwardNumberOfEntries>
+			<Forwarding t="MULTI"></Forwarding>
+			<X_INNBOX_RIPMode t="boolean">0</X_INNBOX_RIPMode>
+			<X_INNBOX_RIPNumberOfEntries t="unsignedInt">0</X_INNBOX_RIPNumberOfEntries>
+			<X_INNBOX_RIP t="MULTI"></X_INNBOX_RIP>
+		</Layer3Forwarding>
+		<X_INNBOX_DMZHostConfig>
+			<Enable t="boolean"></Enable>
+			<Interface></Interface>
+			<IPAddress></IPAddress>
+		</X_INNBOX_DMZHostConfig>
+		<LANDeviceNumberOfEntries t="unsignedInt">1</LANDeviceNumberOfEntries>
+		<LANDevice t="MULTI" i="1">
+			<M-O-1>
+				<LANEthernetInterfaceNumberOfEntries t="unsignedInt">2</LANEthernetInterfaceNumberOfEntries>
+				<LANWLANConfigurationNumberOfEntries t="unsignedInt">0</LANWLANConfigurationNumberOfEntries>
+				<X_INNBOX_UserRestriction t="unsignedInt"></X_INNBOX_UserRestriction>
+				<X_INNBOX_DnrdHighWater t="unsignedInt">0</X_INNBOX_DnrdHighWater>
+				<X_INNBOX_DnrdLowWater t="unsignedInt">0</X_INNBOX_DnrdLowWater>
+				<X_INNBOX_DnrdCacheClean>0</X_INNBOX_DnrdCacheClean>
+				<X_INNBOX_WiFiScheduler t="boolean">0</X_INNBOX_WiFiScheduler>
+				<X_INNBOX_WiFiSchedulerSync t="boolean">1</X_INNBOX_WiFiSchedulerSync>
+				<X_INNBOX_GuestWiFi t="boolean">0</X_INNBOX_GuestWiFi>
+				<X_INNBOX_GuestWiFiHour t="unsignedInt">3</X_INNBOX_GuestWiFiHour>
+				<X_INNBOX_LoopProtection t="boolean">0</X_INNBOX_LoopProtection>
+				<X_INNBOX_SCHEDULER>
+					<WIFIEnable t="boolean">1</WIFIEnable>
+					<Daily t="boolean">1</Daily>
+					<DailyStartHour t="unsignedInt">0</DailyStartHour>
+					<DailyStartMin t="unsignedInt">0</DailyStartMin>
+					<DailyEndHour t="unsignedInt">0</DailyEndHour>
+					<DailyEndMin t="unsignedInt">0</DailyEndMin>
+					<ScheduleWeekDayNumberOfEntries t="unsignedInt">0</ScheduleWeekDayNumberOfEntries>
+					<ScheduleWeekDay t="MULTI"></ScheduleWeekDay>
+				</X_INNBOX_SCHEDULER>
+				<LANHostConfigManagement>
+					<MACAddress></MACAddress>
+					<DHCPServerConfigurable t="boolean">0</DHCPServerConfigurable>
+					<DHCPServerEnable t="boolean">0</DHCPServerEnable>
+					<DHCPRelay t="boolean">0</DHCPRelay>
+					<DHCPRelayServer></DHCPRelayServer>
+					<MinAddress>192.168.1.2</MinAddress>
+					<MaxAddress>192.168.1.199</MaxAddress>
+					<ReservedAddresses></ReservedAddresses>
+					<SubnetMask>255.255.255.0</SubnetMask>
+					<DNSServers>192.168.1.1</DNSServers>
+					<X_INNBOX_NTPServers></X_INNBOX_NTPServers>
+					<DomainName></DomainName>
+					<IPRouters>192.168.1.1</IPRouters>
+					<DHCPLeaseTime t="int">86400</DHCPLeaseTime>
+					<UseAllocatedWAN></UseAllocatedWAN>
+					<AssociatedConnection></AssociatedConnection>
+					<PassthroughLease t="unsignedInt"></PassthroughLease>
+					<PassthroughMACAddress></PassthroughMACAddress>
+					<AllowedMACAddresses></AllowedMACAddresses>
+					<IPInterfaceNumberOfEntries t="unsignedInt">1</IPInterfaceNumberOfEntries>
+					<DHCPStaticAddressNumberOfEntries t="unsignedInt"></DHCPStaticAddressNumberOfEntries>
+					<IPInterface t="MULTI" i="1">
+						<M-O-1>
+							<Enable t="boolean">1</Enable>
+							<IPInterfaceIPAddress>192.168.1.1</IPInterfaceIPAddress>
+							<IPInterfaceSubnetMask>255.255.255.0</IPInterfaceSubnetMask>
+							<IPInterfaceAddressingType>Static</IPInterfaceAddressingType>
+							<InterfaceName>LAN0</InterfaceName>
+							<X_INNBOX_FilterReference></X_INNBOX_FilterReference>
+							<X_INNBOX_BridgeName></X_INNBOX_BridgeName>
+							<X_INNBOX_IPv6InterfaceAddressingType>
+								<StaticDelegated t="int">2</StaticDelegated>
+							</X_INNBOX_IPv6InterfaceAddressingType>
+							<X_INNBOX_IPv6LanIntfAddress>
+								<UniqueLocalAddress></UniqueLocalAddress>
+								<DelegatedAddressNumberOfEntries t="unsignedInt">1</DelegatedAddressNumberOfEntries>
+								<DelegatedAddress t="MULTI" i="1">
+									<M-O-1>
+										<Mode>WANDelegated</Mode>
+										<DelegatedConnection></DelegatedConnection>
+										<IPv6InterfaceAddress></IPv6InterfaceAddress>
+										<IPv6PrefixAddress></IPv6PrefixAddress>
+										<IPv6PrefixLength t="unsignedInt">0</IPv6PrefixLength>
+									</M-O-1>
+								</DelegatedAddress>
+							</X_INNBOX_IPv6LanIntfAddress>
+						</M-O-1>
+					</IPInterface>
+					<DHCPStaticAddress t="MULTI"></DHCPStaticAddress>
+					<Opt60VendorClassID></Opt60VendorClassID>
+					<Opt43VendorSpecInfo></Opt43VendorSpecInfo>
+					<DHCPConditionalPoolNumberOfEntries t="unsignedInt">1</DHCPConditionalPoolNumberOfEntries>
+					<DHCPConditionalServingPool t="MULTI" i="1">
+						<M-O-1>
+							<Enable t="boolean">1</Enable>
+							<PoolOrder t="unsignedInt">1</PoolOrder>
+							<SourceInterface></SourceInterface>
+							<VendorClassID>MSFT_IPTV</VendorClassID>
+							<VendorClassIDExclude t="boolean"></VendorClassIDExclude>
+							<VendorClassIDMode></VendorClassIDMode>
+							<ClientID></ClientID>
+							<ClientIDExclude t="boolean"></ClientIDExclude>
+							<UserClassID></UserClassID>
+							<UserClassIDExclude t="boolean"></UserClassIDExclude>
+							<Chaddr></Chaddr>
+							<ChaddrMask></ChaddrMask>
+							<ChaddrExclude t="boolean"></ChaddrExclude>
+							<LocallyServed t="boolean"></LocallyServed>
+							<MinAddress>192.168.1.240</MinAddress>
+							<MaxAddress>192.168.1.254</MaxAddress>
+							<ReservedAddresses></ReservedAddresses>
+							<SubnetMask>255.255.255.0</SubnetMask>
+							<DNSServers></DNSServers>
+							<DomainName></DomainName>
+							<IPRouters>192.168.1.254</IPRouters>
+							<DHCPLeaseTime t="int">10000</DHCPLeaseTime>
+							<UseAllocatedWAN></UseAllocatedWAN>
+							<AssociatedConnection></AssociatedConnection>
+							<DHCPServerIPAddress></DHCPServerIPAddress>
+							<DHCPStaticAddressNumberOfEntries t="unsignedInt"></DHCPStaticAddressNumberOfEntries>
+							<DHCPStaticAddress t="MULTI"></DHCPStaticAddress>
+							<DHCPOptionNumberOfEntries t="unsignedInt"></DHCPOptionNumberOfEntries>
+							<DHCPOption t="MULTI"></DHCPOption>
+						</M-O-1>
+					</DHCPConditionalServingPool>
+					<DHCPOptionNumberOfEntries t="unsignedInt"></DHCPOptionNumberOfEntries>
+					<DHCPOption t="MULTI"></DHCPOption>
+				</LANHostConfigManagement>
+				<Hosts>
+					<HostNumberOfEntries t="unsignedInt"></HostNumberOfEntries>
+					<Enable t="boolean"></Enable>
+				</Hosts>
+				<X_INNBOX_Hosts>
+					<HostNumberOfEntries t="unsignedInt"></HostNumberOfEntries>
+					<Enable t="boolean"></Enable>
+					<Host t="MULTI"></Host>
+				</X_INNBOX_Hosts>
+				<Sys_Hosts>
+					<HostNumberOfEntries t="unsignedInt"></HostNumberOfEntries>
+					<Enable t="boolean"></Enable>
+				</Sys_Hosts>
+				<Persist_Hosts>
+					<HostNumberOfEntries t="unsignedInt"></HostNumberOfEntries>
+					<Enable t="boolean"></Enable>
+					<Persist_Host t="MULTI"></Persist_Host>
+				</Persist_Hosts>
+				<X_INNBOX_TypeHosts>
+					<HostNumberOfEntries t="unsignedInt"></HostNumberOfEntries>
+					<Enable t="boolean"></Enable>
+					<Host t="MULTI"></Host>
+				</X_INNBOX_TypeHosts>
+				<LANEthernetInterfaceConfig t="MULTI" i="2">
+					<M-O-1>
+						<Enable t="boolean">1</Enable>
+						<Status></Status>
+						<Name>eth1</Name>
+						<MACAddress></MACAddress>
+						<MACAddressControlEnabled t="boolean"></MACAddressControlEnabled>
+						<MaxBitRate>Auto</MaxBitRate>
+						<DuplexMode>Auto</DuplexMode>
+						<Stats>
+							<BytesSent t="unsignedInt"></BytesSent>
+							<BytesReceived t="unsignedInt"></BytesReceived>
+							<PacketsSent t="unsignedInt"></PacketsSent>
+							<PacketsReceived t="unsignedInt"></PacketsReceived>
+							<ErrorsSent t="unsignedInt"></ErrorsSent>
+							<ErrorsReceived t="unsignedInt"></ErrorsReceived>
+							<UnicastPacketsSent t="unsignedInt"></UnicastPacketsSent>
+							<UnicastPacketsReceived t="unsignedInt"></UnicastPacketsReceived>
+							<DiscardPacketsSent t="unsignedInt"></DiscardPacketsSent>
+							<DiscardPacketsReceived t="unsignedInt"></DiscardPacketsReceived>
+							<MulticastPacketsSent t="unsignedInt"></MulticastPacketsSent>
+							<MulticastPacketsReceived t="unsignedInt"></MulticastPacketsReceived>
+							<BroadcastPacketsSent t="unsignedInt"></BroadcastPacketsSent>
+							<BroadcastPacketsReceived t="unsignedInt"></BroadcastPacketsReceived>
+							<UnknownProtoPacketsReceived t="unsignedInt"></UnknownProtoPacketsReceived>
+							<DropsSent t="unsignedInt"></DropsSent>
+							<DropsReceived t="unsignedInt"></DropsReceived>
+							<X_INNBOX_StatsClear t="boolean"></X_INNBOX_StatsClear>
+							<X_INNBOX_BytesSent t="unsignedInt"></X_INNBOX_BytesSent>
+							<X_INNBOX_BytesReceived t="unsignedInt"></X_INNBOX_BytesReceived>
+							<X_INNBOX_PacketsSent t="unsignedInt"></X_INNBOX_PacketsSent>
+							<X_INNBOX_PacketsReceived t="unsignedInt"></X_INNBOX_PacketsReceived>
+							<X_INNBOX_ErrorsSent t="unsignedInt"></X_INNBOX_ErrorsSent>
+							<X_INNBOX_ErrorsReceived t="unsignedInt"></X_INNBOX_ErrorsReceived>
+							<X_INNBOX_DropsSent t="unsignedInt"></X_INNBOX_DropsSent>
+							<X_INNBOX_DropsReceived t="unsignedInt"></X_INNBOX_DropsReceived>
+							<X_INNBOX_MulticastPacketsSent t="unsignedInt"></X_INNBOX_MulticastPacketsSent>
+							<X_INNBOX_MulticastPacketsReceived t="unsignedInt"></X_INNBOX_MulticastPacketsReceived>
+							<X_INNBOX_BroadcastPacketsSent t="unsignedInt"></X_INNBOX_BroadcastPacketsSent>
+							<X_INNBOX_BroadcastPacketsReceived t="unsignedInt"></X_INNBOX_BroadcastPacketsReceived>
+							<X_INNBOX_DiscardPacketsSent t="unsignedInt"></X_INNBOX_DiscardPacketsSent>
+							<X_INNBOX_DiscardPacketsReceived t="unsignedInt"></X_INNBOX_DiscardPacketsReceived>
+							<X_INNBOX_UnicastPacketsSent t="unsignedInt"></X_INNBOX_UnicastPacketsSent>
+							<X_INNBOX_UnicastPacketsReceived t="unsignedInt"></X_INNBOX_UnicastPacketsReceived>
+						</Stats>
+						<X_INNBOX_BridgeName></X_INNBOX_BridgeName>
+						<X_INNBOX_SecialAccess t="boolean">0</X_INNBOX_SecialAccess>
+						<X_INNBOX_shaper_enable t="unsignedInt">0</X_INNBOX_shaper_enable>
+						<X_INNBOX_shaper_cir t="unsignedInt">0</X_INNBOX_shaper_cir>
+						<X_INNBOX_shaper_cbs t="unsignedInt">0</X_INNBOX_shaper_cbs>
+					</M-O-1>
+					<M-O-2>
+						<Enable t="boolean">1</Enable>
+						<Status></Status>
+						<Name>eth0.1</Name>
+						<MACAddress></MACAddress>
+						<MACAddressControlEnabled t="boolean"></MACAddressControlEnabled>
+						<MaxBitRate>Auto</MaxBitRate>
+						<DuplexMode>Auto</DuplexMode>
+						<Stats>
+							<BytesSent t="unsignedInt"></BytesSent>
+							<BytesReceived t="unsignedInt"></BytesReceived>
+							<PacketsSent t="unsignedInt"></PacketsSent>
+							<PacketsReceived t="unsignedInt"></PacketsReceived>
+							<ErrorsSent t="unsignedInt"></ErrorsSent>
+							<ErrorsReceived t="unsignedInt"></ErrorsReceived>
+							<UnicastPacketsSent t="unsignedInt"></UnicastPacketsSent>
+							<UnicastPacketsReceived t="unsignedInt"></UnicastPacketsReceived>
+							<DiscardPacketsSent t="unsignedInt"></DiscardPacketsSent>
+							<DiscardPacketsReceived t="unsignedInt"></DiscardPacketsReceived>
+							<MulticastPacketsSent t="unsignedInt"></MulticastPacketsSent>
+							<MulticastPacketsReceived t="unsignedInt"></MulticastPacketsReceived>
+							<BroadcastPacketsSent t="unsignedInt"></BroadcastPacketsSent>
+							<BroadcastPacketsReceived t="unsignedInt"></BroadcastPacketsReceived>
+							<UnknownProtoPacketsReceived t="unsignedInt"></UnknownProtoPacketsReceived>
+							<DropsSent t="unsignedInt"></DropsSent>
+							<DropsReceived t="unsignedInt"></DropsReceived>
+							<X_INNBOX_StatsClear t="boolean"></X_INNBOX_StatsClear>
+							<X_INNBOX_BytesSent t="unsignedInt"></X_INNBOX_BytesSent>
+							<X_INNBOX_BytesReceived t="unsignedInt"></X_INNBOX_BytesReceived>
+							<X_INNBOX_PacketsSent t="unsignedInt"></X_INNBOX_PacketsSent>
+							<X_INNBOX_PacketsReceived t="unsignedInt"></X_INNBOX_PacketsReceived>
+							<X_INNBOX_ErrorsSent t="unsignedInt"></X_INNBOX_ErrorsSent>
+							<X_INNBOX_ErrorsReceived t="unsignedInt"></X_INNBOX_ErrorsReceived>
+							<X_INNBOX_DropsSent t="unsignedInt"></X_INNBOX_DropsSent>
+							<X_INNBOX_DropsReceived t="unsignedInt"></X_INNBOX_DropsReceived>
+							<X_INNBOX_MulticastPacketsSent t="unsignedInt"></X_INNBOX_MulticastPacketsSent>
+							<X_INNBOX_MulticastPacketsReceived t="unsignedInt"></X_INNBOX_MulticastPacketsReceived>
+							<X_INNBOX_BroadcastPacketsSent t="unsignedInt"></X_INNBOX_BroadcastPacketsSent>
+							<X_INNBOX_BroadcastPacketsReceived t="unsignedInt"></X_INNBOX_BroadcastPacketsReceived>
+							<X_INNBOX_DiscardPacketsSent t="unsignedInt"></X_INNBOX_DiscardPacketsSent>
+							<X_INNBOX_DiscardPacketsReceived t="unsignedInt"></X_INNBOX_DiscardPacketsReceived>
+							<X_INNBOX_UnicastPacketsSent t="unsignedInt"></X_INNBOX_UnicastPacketsSent>
+							<X_INNBOX_UnicastPacketsReceived t="unsignedInt"></X_INNBOX_UnicastPacketsReceived>
+						</Stats>
+						<X_INNBOX_BridgeName></X_INNBOX_BridgeName>
+						<X_INNBOX_SecialAccess t="boolean">0</X_INNBOX_SecialAccess>
+						<X_INNBOX_shaper_enable t="unsignedInt">0</X_INNBOX_shaper_enable>
+						<X_INNBOX_shaper_cir t="unsignedInt">0</X_INNBOX_shaper_cir>
+						<X_INNBOX_shaper_cbs t="unsignedInt">0</X_INNBOX_shaper_cbs>
+					</M-O-2>
+				</LANEthernetInterfaceConfig>
+				<X_INNBOX_IGMPSnoopingConfig>
+					<Enable t="boolean">1</Enable>
+					<Mode>Blocking</Mode>
+				</X_INNBOX_IGMPSnoopingConfig>
+				<X_INNBOX_IPv6LANHostConfigManagement>
+					<AutoConfigurationAddress t="boolean">1</AutoConfigurationAddress>
+					<IPv6DNSWanConnection></IPv6DNSWanConnection>
+					<IPv6SitePrefixConfigType>
+						<StaticDelegated t="boolean">0</StaticDelegated>
+					</IPv6SitePrefixConfigType>
+					<IPv6PDWanConnection>
+						<Interface></Interface>
+					</IPv6PDWanConnection>
+					<IPv6InterfaceNumberOfEntries>
+						<Nentries t="unsignedInt">1</Nentries>
+					</IPv6InterfaceNumberOfEntries>
+					<RADVD>
+						<Enabled t="boolean">1</Enabled>
+					</RADVD>
+					<RadVDConfigManagement>
+						<ULAPrefixInfo>
+							<Enable t="boolean">0</Enable>
+							<Prefix></Prefix>
+							<PreferredLifeTime t="int">-1</PreferredLifeTime>
+							<ValidLifeTime t="int">-1</ValidLifeTime>
+							<UseDefaultULAPrefix t="boolean">0</UseDefaultULAPrefix>
+							<CurrentULAPrefix></CurrentULAPrefix>
+							<LANIPv6ULA></LANIPv6ULA>
+						</ULAPrefixInfo>
+						<PrefixInformationNumberOfEntries t="unsignedInt">1</PrefixInformationNumberOfEntries>
+						<PrefixInformation t="MULTI" i="1">
+							<M-O-1>
+								<Mode>WANDelegated</Mode>
+								<DelegatedConnection></DelegatedConnection>
+								<Prefix></Prefix>
+								<PreferredLifeTime t="int">-1</PreferredLifeTime>
+								<ValidLifeTime t="int">-1</ValidLifeTime>
+								<Enabled t="boolean">0</Enabled>
+							</M-O-1>
+						</PrefixInformation>
+					</RadVDConfigManagement>
+					<ServerType>
+						<Stateless t="boolean">1</Stateless>
+						<OtherConfiguration t="boolean">1</OtherConfiguration>
+						<StatefullDHCPv6>
+							<MinInterfaceID>2</MinInterfaceID>
+							<MaxInterfaceID>1f</MaxInterfaceID>
+							<DHCPv6LeaseTime t="int">7200</DHCPv6LeaseTime>
+							<IPv6DomainName></IPv6DomainName>
+							<IPv6DNSConfigType></IPv6DNSConfigType>
+							<IPv6DNSServers></IPv6DNSServers>
+							<DHCPv6PrefixDelegation t="boolean">0</DHCPv6PrefixDelegation>
+						</StatefullDHCPv6>
+					</ServerType>
+				</X_INNBOX_IPv6LANHostConfigManagement>
+			</M-O-1>
+		</LANDevice>
+		<LANInterfaces>
+			<LANEthernetInterfaceNumberOfEntries t="unsignedInt">0</LANEthernetInterfaceNumberOfEntries>
+			<LANWLANConfigurationNumberOfEntries t="unsignedInt">0</LANWLANConfigurationNumberOfEntries>
+			<LANEthernetInterfaceConfig t="MULTI"></LANEthernetInterfaceConfig>
+		</LANInterfaces>
+		<LANConfigSecurity>
+			<ConfigPassword>admin</ConfigPassword>
+		</LANConfigSecurity>
+		<StorageService t="MULTI" i="1">
+			<M-O-1>
+				<Enable t="boolean">1</Enable>
+				<PhysicalMediumNumberOfEntries t="unsignedInt"></PhysicalMediumNumberOfEntries>
+				<LogicalVolumeNumberOfEntries t="unsignedInt">0</LogicalVolumeNumberOfEntries>
+				<Capabilites>
+					<FTPCapable t="boolean"></FTPCapable>
+					<SFTPCapable t="boolean"></SFTPCapable>
+					<HTTPCapable t="boolean"></HTTPCapable>
+					<HTTPSCapable t="boolean"></HTTPSCapable>
+					<HTTPWritable t="boolean"></HTTPWritable>
+					<SupportedNetworkProtocols>SMB</SupportedNetworkProtocols>
+					<SupportedFileSystemTypes></SupportedFileSystemTypes>
+					<VolumeEncryptionCapable t="boolean"></VolumeEncryptionCapable>
+				</Capabilites>
+				<NetInfo>
+					<HostName></HostName>
+					<DomainName></DomainName>
+				</NetInfo>
+				<NetworkServer>
+					<AFPEnable t="boolean"></AFPEnable>
+					<NFSEnable t="boolean"></NFSEnable>
+					<SMBEnable t="boolean"></SMBEnable>
+					<NetworkProtocolAuthReq t="boolean"></NetworkProtocolAuthReq>
+				</NetworkServer>
+				<PhysicalMedium t="MULTI"></PhysicalMedium>
+				<LogicalVolume t="MULTI"></LogicalVolume>
+			</M-O-1>
+		</StorageService>
+		<X_INNBOX_LoginCfg>
+			<AdminPassword></AdminPassword>
+			<SupportPassword></SupportPassword>
+			<UserPassword></UserPassword>
+			<AdminEnable t="boolean">0</AdminEnable>
+			<SupportEnable t="boolean">0</SupportEnable>
+			<UserEnable t="boolean">0</UserEnable>
+		</X_INNBOX_LoginCfg>
+		<X_INNBOX_System>
+			<Log>
+				<Enable t="boolean">0</Enable>
+				<Server></Server>
+			</Log>
+		</X_INNBOX_System>
+		<X_INNBOX_Applications>
+			<Dashboard t="boolean">1</Dashboard>
+			<ParentalControl t="boolean">1</ParentalControl>
+			<Share t="boolean">1</Share>
+			<Meet t="boolean">1</Meet>
+			<VPN t="boolean">1</VPN>
+			<Scheduler t="boolean">1</Scheduler>
+			<GuestWifi t="boolean">1</GuestWifi>
+			<StatsDaemon t="boolean">1</StatsDaemon>
+			<UDPProxy t="boolean">1</UDPProxy>
+			<SpeedTest t="boolean">1</SpeedTest>
+			<Ookla_SpeedTest t="boolean">1</Ookla_SpeedTest>
+			<LXC t="boolean">1</LXC>
+		</X_INNBOX_Applications>
+		<ExternalApplicationNumberOfEntries t="unsignedInt">0</ExternalApplicationNumberOfEntries>
+		<X_INNBOX_ExternalApplication t="MULTI"></X_INNBOX_ExternalApplication>
+		<QueueManagement>
+			<Enable t="boolean">0</Enable>
+			<MaxQueues t="unsignedInt"></MaxQueues>
+			<MaxClassificationEntries t="unsignedInt">20</MaxClassificationEntries>
+			<ClassificationNumberOfEntries t="unsignedInt">0</ClassificationNumberOfEntries>
+			<MaxAppEntries t="unsignedInt"></MaxAppEntries>
+			<AppNumberOfEntries t="unsignedInt"></AppNumberOfEntries>
+			<MaxFlowEntries t="unsignedInt"></MaxFlowEntries>
+			<FlowNumberOfEntries t="unsignedInt"></FlowNumberOfEntries>
+			<MaxPolicerEntries t="unsignedInt"></MaxPolicerEntries>
+			<PolicerNumberOfEntries t="unsignedInt"></PolicerNumberOfEntries>
+			<MaxQueueEntries t="unsignedInt">20</MaxQueueEntries>
+			<QueueNumberOfEntries t="unsignedInt">16</QueueNumberOfEntries>
+			<DefaultForwardingPolicy t="unsignedInt"></DefaultForwardingPolicy>
+			<DefaultTrafficClass t="int"></DefaultTrafficClass>
+			<DefaultPolicer t="int"></DefaultPolicer>
+			<DefaultQueue t="unsignedInt"></DefaultQueue>
+			<DefaultDSCPMark t="int">-1</DefaultDSCPMark>
+			<DefaultEthernetPriorityMark t="int"></DefaultEthernetPriorityMark>
+			<AvailableAppList></AvailableAppList>
+			<X_INNBOX_discipline>SP</X_INNBOX_discipline>
+			<Classification t="MULTI"></Classification>
+			<Queue t="MULTI" i="16">
+				<M-O-1>
+					<QueueKey t="unsignedInt">1</QueueKey>
+					<QueueEnable t="boolean">0</QueueEnable>
+					<QueueStatus>Disabled</QueueStatus>
+					<TrafficClasses></TrafficClasses>
+					<QueueInterface></QueueInterface>
+					<QueueBufferLength t="unsignedInt"></QueueBufferLength>
+					<QueueWeight t="unsignedInt">0</QueueWeight>
+					<QueuePrecedence t="unsignedInt">1</QueuePrecedence>
+					<REDThreshold t="unsignedInt">0</REDThreshold>
+					<REDPercentage t="unsignedInt">0</REDPercentage>
+					<DropAlgorithm>DT</DropAlgorithm>
+					<SchedulerAlgorithm>SP</SchedulerAlgorithm>
+					<ShapingRate t="int">-1</ShapingRate>
+					<ShapingBurstSize t="unsignedInt"></ShapingBurstSize>
+					<X_INNBOX_SchedPri t="unsignedInt">0</X_INNBOX_SchedPri>
+					<X_INNBOX_QueueName></X_INNBOX_QueueName>
+					<X_INNBOX_QueueId t="unsignedInt"></X_INNBOX_QueueId>
+					<X_INNBOX_QueueEgr t="unsignedInt">2</X_INNBOX_QueueEgr>
+					<X_INNBOX_QueueCarDirection></X_INNBOX_QueueCarDirection>
+				</M-O-1>
+				<M-O-2>
+					<QueueKey t="unsignedInt">2</QueueKey>
+					<QueueEnable t="boolean">0</QueueEnable>
+					<QueueStatus>Disabled</QueueStatus>
+					<TrafficClasses></TrafficClasses>
+					<QueueInterface></QueueInterface>
+					<QueueBufferLength t="unsignedInt"></QueueBufferLength>
+					<QueueWeight t="unsignedInt">0</QueueWeight>
+					<QueuePrecedence t="unsignedInt">1</QueuePrecedence>
+					<REDThreshold t="unsignedInt">0</REDThreshold>
+					<REDPercentage t="unsignedInt">0</REDPercentage>
+					<DropAlgorithm>DT</DropAlgorithm>
+					<SchedulerAlgorithm>SP</SchedulerAlgorithm>
+					<ShapingRate t="int">-1</ShapingRate>
+					<ShapingBurstSize t="unsignedInt"></ShapingBurstSize>
+					<X_INNBOX_SchedPri t="unsignedInt">0</X_INNBOX_SchedPri>
+					<X_INNBOX_QueueName></X_INNBOX_QueueName>
+					<X_INNBOX_QueueId t="unsignedInt"></X_INNBOX_QueueId>
+					<X_INNBOX_QueueEgr t="unsignedInt">2</X_INNBOX_QueueEgr>
+					<X_INNBOX_QueueCarDirection></X_INNBOX_QueueCarDirection>
+				</M-O-2>
+				<M-O-3>
+					<QueueKey t="unsignedInt">3</QueueKey>
+					<QueueEnable t="boolean">0</QueueEnable>
+					<QueueStatus>Disabled</QueueStatus>
+					<TrafficClasses></TrafficClasses>
+					<QueueInterface></QueueInterface>
+					<QueueBufferLength t="unsignedInt"></QueueBufferLength>
+					<QueueWeight t="unsignedInt">0</QueueWeight>
+					<QueuePrecedence t="unsignedInt">1</QueuePrecedence>
+					<REDThreshold t="unsignedInt">0</REDThreshold>
+					<REDPercentage t="unsignedInt">0</REDPercentage>
+					<DropAlgorithm>DT</DropAlgorithm>
+					<SchedulerAlgorithm>SP</SchedulerAlgorithm>
+					<ShapingRate t="int">-1</ShapingRate>
+					<ShapingBurstSize t="unsignedInt"></ShapingBurstSize>
+					<X_INNBOX_SchedPri t="unsignedInt">0</X_INNBOX_SchedPri>
+					<X_INNBOX_QueueName></X_INNBOX_QueueName>
+					<X_INNBOX_QueueId t="unsignedInt"></X_INNBOX_QueueId>
+					<X_INNBOX_QueueEgr t="unsignedInt">2</X_INNBOX_QueueEgr>
+					<X_INNBOX_QueueCarDirection></X_INNBOX_QueueCarDirection>
+				</M-O-3>
+				<M-O-4>
+					<QueueKey t="unsignedInt">4</QueueKey>
+					<QueueEnable t="boolean">0</QueueEnable>
+					<QueueStatus>Disabled</QueueStatus>
+					<TrafficClasses></TrafficClasses>
+					<QueueInterface></QueueInterface>
+					<QueueBufferLength t="unsignedInt"></QueueBufferLength>
+					<QueueWeight t="unsignedInt">0</QueueWeight>
+					<QueuePrecedence t="unsignedInt">1</QueuePrecedence>
+					<REDThreshold t="unsignedInt">0</REDThreshold>
+					<REDPercentage t="unsignedInt">0</REDPercentage>
+					<DropAlgorithm>DT</DropAlgorithm>
+					<SchedulerAlgorithm>SP</SchedulerAlgorithm>
+					<ShapingRate t="int">-1</ShapingRate>
+					<ShapingBurstSize t="unsignedInt"></ShapingBurstSize>
+					<X_INNBOX_SchedPri t="unsignedInt">0</X_INNBOX_SchedPri>
+					<X_INNBOX_QueueName></X_INNBOX_QueueName>
+					<X_INNBOX_QueueId t="unsignedInt"></X_INNBOX_QueueId>
+					<X_INNBOX_QueueEgr t="unsignedInt">2</X_INNBOX_QueueEgr>
+					<X_INNBOX_QueueCarDirection></X_INNBOX_QueueCarDirection>
+				</M-O-4>
+				<M-O-5>
+					<QueueKey t="unsignedInt">5</QueueKey>
+					<QueueEnable t="boolean">0</QueueEnable>
+					<QueueStatus>Disabled</QueueStatus>
+					<TrafficClasses></TrafficClasses>
+					<QueueInterface></QueueInterface>
+					<QueueBufferLength t="unsignedInt"></QueueBufferLength>
+					<QueueWeight t="unsignedInt">0</QueueWeight>
+					<QueuePrecedence t="unsignedInt">1</QueuePrecedence>
+					<REDThreshold t="unsignedInt">0</REDThreshold>
+					<REDPercentage t="unsignedInt">0</REDPercentage>
+					<DropAlgorithm>DT</DropAlgorithm>
+					<SchedulerAlgorithm>SP</SchedulerAlgorithm>
+					<ShapingRate t="int">-1</ShapingRate>
+					<ShapingBurstSize t="unsignedInt"></ShapingBurstSize>
+					<X_INNBOX_SchedPri t="unsignedInt">0</X_INNBOX_SchedPri>
+					<X_INNBOX_QueueName></X_INNBOX_QueueName>
+					<X_INNBOX_QueueId t="unsignedInt"></X_INNBOX_QueueId>
+					<X_INNBOX_QueueEgr t="unsignedInt">2</X_INNBOX_QueueEgr>
+					<X_INNBOX_QueueCarDirection></X_INNBOX_QueueCarDirection>
+				</M-O-5>
+				<M-O-6>
+					<QueueKey t="unsignedInt">6</QueueKey>
+					<QueueEnable t="boolean">0</QueueEnable>
+					<QueueStatus>Disabled</QueueStatus>
+					<TrafficClasses></TrafficClasses>
+					<QueueInterface></QueueInterface>
+					<QueueBufferLength t="unsignedInt"></QueueBufferLength>
+					<QueueWeight t="unsignedInt">0</QueueWeight>
+					<QueuePrecedence t="unsignedInt">1</QueuePrecedence>
+					<REDThreshold t="unsignedInt">0</REDThreshold>
+					<REDPercentage t="unsignedInt">0</REDPercentage>
+					<DropAlgorithm>DT</DropAlgorithm>
+					<SchedulerAlgorithm>SP</SchedulerAlgorithm>
+					<ShapingRate t="int">-1</ShapingRate>
+					<ShapingBurstSize t="unsignedInt"></ShapingBurstSize>
+					<X_INNBOX_SchedPri t="unsignedInt">0</X_INNBOX_SchedPri>
+					<X_INNBOX_QueueName></X_INNBOX_QueueName>
+					<X_INNBOX_QueueId t="unsignedInt"></X_INNBOX_QueueId>
+					<X_INNBOX_QueueEgr t="unsignedInt">2</X_INNBOX_QueueEgr>
+					<X_INNBOX_QueueCarDirection></X_INNBOX_QueueCarDirection>
+				</M-O-6>
+				<M-O-7>
+					<QueueKey t="unsignedInt">7</QueueKey>
+					<QueueEnable t="boolean">0</QueueEnable>
+					<QueueStatus>Disabled</QueueStatus>
+					<TrafficClasses></TrafficClasses>
+					<QueueInterface></QueueInterface>
+					<QueueBufferLength t="unsignedInt"></QueueBufferLength>
+					<QueueWeight t="unsignedInt">0</QueueWeight>
+					<QueuePrecedence t="unsignedInt">1</QueuePrecedence>
+					<REDThreshold t="unsignedInt">0</REDThreshold>
+					<REDPercentage t="unsignedInt">0</REDPercentage>
+					<DropAlgorithm>DT</DropAlgorithm>
+					<SchedulerAlgorithm>SP</SchedulerAlgorithm>
+					<ShapingRate t="int">-1</ShapingRate>
+					<ShapingBurstSize t="unsignedInt"></ShapingBurstSize>
+					<X_INNBOX_SchedPri t="unsignedInt">0</X_INNBOX_SchedPri>
+					<X_INNBOX_QueueName></X_INNBOX_QueueName>
+					<X_INNBOX_QueueId t="unsignedInt"></X_INNBOX_QueueId>
+					<X_INNBOX_QueueEgr t="unsignedInt">2</X_INNBOX_QueueEgr>
+					<X_INNBOX_QueueCarDirection></X_INNBOX_QueueCarDirection>
+				</M-O-7>
+				<M-O-8>
+					<QueueKey t="unsignedInt">8</QueueKey>
+					<QueueEnable t="boolean">0</QueueEnable>
+					<QueueStatus>Disabled</QueueStatus>
+					<TrafficClasses></TrafficClasses>
+					<QueueInterface></QueueInterface>
+					<QueueBufferLength t="unsignedInt"></QueueBufferLength>
+					<QueueWeight t="unsignedInt">0</QueueWeight>
+					<QueuePrecedence t="unsignedInt">1</QueuePrecedence>
+					<REDThreshold t="unsignedInt">0</REDThreshold>
+					<REDPercentage t="unsignedInt">0</REDPercentage>
+					<DropAlgorithm>DT</DropAlgorithm>
+					<SchedulerAlgorithm>SP</SchedulerAlgorithm>
+					<ShapingRate t="int">-1</ShapingRate>
+					<ShapingBurstSize t="unsignedInt"></ShapingBurstSize>
+					<X_INNBOX_SchedPri t="unsignedInt">0</X_INNBOX_SchedPri>
+					<X_INNBOX_QueueName></X_INNBOX_QueueName>
+					<X_INNBOX_QueueId t="unsignedInt"></X_INNBOX_QueueId>
+					<X_INNBOX_QueueEgr t="unsignedInt">2</X_INNBOX_QueueEgr>
+					<X_INNBOX_QueueCarDirection></X_INNBOX_QueueCarDirection>
+				</M-O-8>
+				<M-O-9>
+					<QueueKey t="unsignedInt">1</QueueKey>
+					<QueueEnable t="boolean">0</QueueEnable>
+					<QueueStatus>Disabled</QueueStatus>
+					<TrafficClasses></TrafficClasses>
+					<QueueInterface>WAN</QueueInterface>
+					<QueueBufferLength t="unsignedInt"></QueueBufferLength>
+					<QueueWeight t="unsignedInt">0</QueueWeight>
+					<QueuePrecedence t="unsignedInt">1</QueuePrecedence>
+					<REDThreshold t="unsignedInt">0</REDThreshold>
+					<REDPercentage t="unsignedInt">0</REDPercentage>
+					<DropAlgorithm>DT</DropAlgorithm>
+					<SchedulerAlgorithm>SP</SchedulerAlgorithm>
+					<ShapingRate t="int">-1</ShapingRate>
+					<ShapingBurstSize t="unsignedInt"></ShapingBurstSize>
+					<X_INNBOX_SchedPri t="unsignedInt">0</X_INNBOX_SchedPri>
+					<X_INNBOX_QueueName></X_INNBOX_QueueName>
+					<X_INNBOX_QueueId t="unsignedInt">0</X_INNBOX_QueueId>
+					<X_INNBOX_QueueEgr t="unsignedInt">2</X_INNBOX_QueueEgr>
+					<X_INNBOX_QueueCarDirection></X_INNBOX_QueueCarDirection>
+				</M-O-9>
+				<M-O-10>
+					<QueueKey t="unsignedInt">2</QueueKey>
+					<QueueEnable t="boolean">0</QueueEnable>
+					<QueueStatus>Disabled</QueueStatus>
+					<TrafficClasses></TrafficClasses>
+					<QueueInterface>WAN</QueueInterface>
+					<QueueBufferLength t="unsignedInt"></QueueBufferLength>
+					<QueueWeight t="unsignedInt">0</QueueWeight>
+					<QueuePrecedence t="unsignedInt">1</QueuePrecedence>
+					<REDThreshold t="unsignedInt">0</REDThreshold>
+					<REDPercentage t="unsignedInt">0</REDPercentage>
+					<DropAlgorithm>DT</DropAlgorithm>
+					<SchedulerAlgorithm>SP</SchedulerAlgorithm>
+					<ShapingRate t="int">-1</ShapingRate>
+					<ShapingBurstSize t="unsignedInt"></ShapingBurstSize>
+					<X_INNBOX_SchedPri t="unsignedInt">1</X_INNBOX_SchedPri>
+					<X_INNBOX_QueueName></X_INNBOX_QueueName>
+					<X_INNBOX_QueueId t="unsignedInt">1</X_INNBOX_QueueId>
+					<X_INNBOX_QueueEgr t="unsignedInt">2</X_INNBOX_QueueEgr>
+					<X_INNBOX_QueueCarDirection></X_INNBOX_QueueCarDirection>
+				</M-O-10>
+				<M-O-11>
+					<QueueKey t="unsignedInt">3</QueueKey>
+					<QueueEnable t="boolean">0</QueueEnable>
+					<QueueStatus>Disabled</QueueStatus>
+					<TrafficClasses></TrafficClasses>
+					<QueueInterface>WAN</QueueInterface>
+					<QueueBufferLength t="unsignedInt"></QueueBufferLength>
+					<QueueWeight t="unsignedInt">0</QueueWeight>
+					<QueuePrecedence t="unsignedInt">2</QueuePrecedence>
+					<REDThreshold t="unsignedInt">0</REDThreshold>
+					<REDPercentage t="unsignedInt">0</REDPercentage>
+					<DropAlgorithm>DT</DropAlgorithm>
+					<SchedulerAlgorithm>SP</SchedulerAlgorithm>
+					<ShapingRate t="int">-1</ShapingRate>
+					<ShapingBurstSize t="unsignedInt"></ShapingBurstSize>
+					<X_INNBOX_SchedPri t="unsignedInt">2</X_INNBOX_SchedPri>
+					<X_INNBOX_QueueName></X_INNBOX_QueueName>
+					<X_INNBOX_QueueId t="unsignedInt">2</X_INNBOX_QueueId>
+					<X_INNBOX_QueueEgr t="unsignedInt">2</X_INNBOX_QueueEgr>
+					<X_INNBOX_QueueCarDirection></X_INNBOX_QueueCarDirection>
+				</M-O-11>
+				<M-O-12>
+					<QueueKey t="unsignedInt">4</QueueKey>
+					<QueueEnable t="boolean">0</QueueEnable>
+					<QueueStatus>Disabled</QueueStatus>
+					<TrafficClasses></TrafficClasses>
+					<QueueInterface>WAN</QueueInterface>
+					<QueueBufferLength t="unsignedInt"></QueueBufferLength>
+					<QueueWeight t="unsignedInt">0</QueueWeight>
+					<QueuePrecedence t="unsignedInt">3</QueuePrecedence>
+					<REDThreshold t="unsignedInt">0</REDThreshold>
+					<REDPercentage t="unsignedInt">0</REDPercentage>
+					<DropAlgorithm>DT</DropAlgorithm>
+					<SchedulerAlgorithm>SP</SchedulerAlgorithm>
+					<ShapingRate t="int">-1</ShapingRate>
+					<ShapingBurstSize t="unsignedInt"></ShapingBurstSize>
+					<X_INNBOX_SchedPri t="unsignedInt">3</X_INNBOX_SchedPri>
+					<X_INNBOX_QueueName></X_INNBOX_QueueName>
+					<X_INNBOX_QueueId t="unsignedInt">3</X_INNBOX_QueueId>
+					<X_INNBOX_QueueEgr t="unsignedInt">2</X_INNBOX_QueueEgr>
+					<X_INNBOX_QueueCarDirection></X_INNBOX_QueueCarDirection>
+				</M-O-12>
+				<M-O-13>
+					<QueueKey t="unsignedInt">5</QueueKey>
+					<QueueEnable t="boolean">0</QueueEnable>
+					<QueueStatus>Disabled</QueueStatus>
+					<TrafficClasses></TrafficClasses>
+					<QueueInterface>WAN</QueueInterface>
+					<QueueBufferLength t="unsignedInt"></QueueBufferLength>
+					<QueueWeight t="unsignedInt">0</QueueWeight>
+					<QueuePrecedence t="unsignedInt">4</QueuePrecedence>
+					<REDThreshold t="unsignedInt">0</REDThreshold>
+					<REDPercentage t="unsignedInt">0</REDPercentage>
+					<DropAlgorithm>DT</DropAlgorithm>
+					<SchedulerAlgorithm>SP</SchedulerAlgorithm>
+					<ShapingRate t="int">-1</ShapingRate>
+					<ShapingBurstSize t="unsignedInt"></ShapingBurstSize>
+					<X_INNBOX_SchedPri t="unsignedInt">4</X_INNBOX_SchedPri>
+					<X_INNBOX_QueueName></X_INNBOX_QueueName>
+					<X_INNBOX_QueueId t="unsignedInt">4</X_INNBOX_QueueId>
+					<X_INNBOX_QueueEgr t="unsignedInt">2</X_INNBOX_QueueEgr>
+					<X_INNBOX_QueueCarDirection></X_INNBOX_QueueCarDirection>
+				</M-O-13>
+				<M-O-14>
+					<QueueKey t="unsignedInt">6</QueueKey>
+					<QueueEnable t="boolean">0</QueueEnable>
+					<QueueStatus>Disabled</QueueStatus>
+					<TrafficClasses></TrafficClasses>
+					<QueueInterface>WAN</QueueInterface>
+					<QueueBufferLength t="unsignedInt"></QueueBufferLength>
+					<QueueWeight t="unsignedInt">0</QueueWeight>
+					<QueuePrecedence t="unsignedInt">5</QueuePrecedence>
+					<REDThreshold t="unsignedInt">0</REDThreshold>
+					<REDPercentage t="unsignedInt">0</REDPercentage>
+					<DropAlgorithm>DT</DropAlgorithm>
+					<SchedulerAlgorithm>SP</SchedulerAlgorithm>
+					<ShapingRate t="int">-1</ShapingRate>
+					<ShapingBurstSize t="unsignedInt"></ShapingBurstSize>
+					<X_INNBOX_SchedPri t="unsignedInt">5</X_INNBOX_SchedPri>
+					<X_INNBOX_QueueName></X_INNBOX_QueueName>
+					<X_INNBOX_QueueId t="unsignedInt">5</X_INNBOX_QueueId>
+					<X_INNBOX_QueueEgr t="unsignedInt">2</X_INNBOX_QueueEgr>
+					<X_INNBOX_QueueCarDirection></X_INNBOX_QueueCarDirection>
+				</M-O-14>
+				<M-O-15>
+					<QueueKey t="unsignedInt">7</QueueKey>
+					<QueueEnable t="boolean">0</QueueEnable>
+					<QueueStatus>Disabled</QueueStatus>
+					<TrafficClasses></TrafficClasses>
+					<QueueInterface>WAN</QueueInterface>
+					<QueueBufferLength t="unsignedInt"></QueueBufferLength>
+					<QueueWeight t="unsignedInt">0</QueueWeight>
+					<QueuePrecedence t="unsignedInt">6</QueuePrecedence>
+					<REDThreshold t="unsignedInt">0</REDThreshold>
+					<REDPercentage t="unsignedInt">0</REDPercentage>
+					<DropAlgorithm>DT</DropAlgorithm>
+					<SchedulerAlgorithm>SP</SchedulerAlgorithm>
+					<ShapingRate t="int">-1</ShapingRate>
+					<ShapingBurstSize t="unsignedInt"></ShapingBurstSize>
+					<X_INNBOX_SchedPri t="unsignedInt">6</X_INNBOX_SchedPri>
+					<X_INNBOX_QueueName></X_INNBOX_QueueName>
+					<X_INNBOX_QueueId t="unsignedInt">6</X_INNBOX_QueueId>
+					<X_INNBOX_QueueEgr t="unsignedInt">2</X_INNBOX_QueueEgr>
+					<X_INNBOX_QueueCarDirection></X_INNBOX_QueueCarDirection>
+				</M-O-15>
+				<M-O-16>
+					<QueueKey t="unsignedInt">8</QueueKey>
+					<QueueEnable t="boolean">0</QueueEnable>
+					<QueueStatus>Disabled</QueueStatus>
+					<TrafficClasses></TrafficClasses>
+					<QueueInterface>WAN</QueueInterface>
+					<QueueBufferLength t="unsignedInt"></QueueBufferLength>
+					<QueueWeight t="unsignedInt">0</QueueWeight>
+					<QueuePrecedence t="unsignedInt">7</QueuePrecedence>
+					<REDThreshold t="unsignedInt">0</REDThreshold>
+					<REDPercentage t="unsignedInt">0</REDPercentage>
+					<DropAlgorithm>DT</DropAlgorithm>
+					<SchedulerAlgorithm>SP</SchedulerAlgorithm>
+					<ShapingRate t="int">-1</ShapingRate>
+					<ShapingBurstSize t="unsignedInt"></ShapingBurstSize>
+					<X_INNBOX_SchedPri t="unsignedInt">7</X_INNBOX_SchedPri>
+					<X_INNBOX_QueueName></X_INNBOX_QueueName>
+					<X_INNBOX_QueueId t="unsignedInt">7</X_INNBOX_QueueId>
+					<X_INNBOX_QueueEgr t="unsignedInt">2</X_INNBOX_QueueEgr>
+					<X_INNBOX_QueueCarDirection></X_INNBOX_QueueCarDirection>
+				</M-O-16>
+			</Queue>
+			<X_INNBOX_QosCurrWanUpRate t="unsignedInt">0</X_INNBOX_QosCurrWanUpRate>
+			<X_INNBOX_QosCurrWanDownRate t="unsignedInt">0</X_INNBOX_QosCurrWanDownRate>
+			<App t="MULTI"></App>
+			<Flow t="MULTI"></Flow>
+			<QueueStatsNumberOfEntries t="unsignedInt"></QueueStatsNumberOfEntries>
+			<Policer t="MULTI"></Policer>
+			<QueueStats t="MULTI"></QueueStats>
+		</QueueManagement>
+		<Layer2Bridging>
+			<MaxBridgeEntries t="unsignedInt">32</MaxBridgeEntries>
+			<MaxDBridgeEntries t="unsignedInt">16</MaxDBridgeEntries>
+			<MaxQBridgeEntries t="unsignedInt">16</MaxQBridgeEntries>
+			<MaxFilterEntries t="unsignedInt">64</MaxFilterEntries>
+			<MaxMarkingEntries t="unsignedInt">64</MaxMarkingEntries>
+			<BridgeNumberOfEntries t="unsignedInt">1</BridgeNumberOfEntries>
+			<FilterNumberOfEntries t="unsignedInt">4</FilterNumberOfEntries>
+			<MarkingNumberOfEntries t="unsignedInt">3</MarkingNumberOfEntries>
+			<AvailableInterfaceNumberOfEntries t="unsignedInt">5</AvailableInterfaceNumberOfEntries>
+			<Bridge t="MULTI" i="1">
+				<M-O-1>
+					<BridgeKey t="unsignedInt">0</BridgeKey>
+					<BridgeStandard>802.1D</BridgeStandard>
+					<BridgeEnable t="boolean">1</BridgeEnable>
+					<BridgeStatus></BridgeStatus>
+					<BridgeName>br0</BridgeName>
+					<VLANID t="unsignedInt">0</VLANID>
+					<X_INNBOX_OMCI_Bridge t="unsignedInt">0</X_INNBOX_OMCI_Bridge>
+					<X_INNBOX_MACLimit t="int">0</X_INNBOX_MACLimit>
+					<X_INNBOX_IPInterfaceReference t="unsignedInt"></X_INNBOX_IPInterfaceReference>
+					<X_INNBOX_BridgeWANCount t="int">0</X_INNBOX_BridgeWANCount>
+					<X_INNBOX_RoutingWANCount t="int">0</X_INNBOX_RoutingWANCount>
+					<X_INNBOX_SlaveHosts>
+						<SlaveMACAddressNumberOfEntries t="unsignedInt">0</SlaveMACAddressNumberOfEntries>
+						<SlaveVendorClassIDNumberOfEntries t="unsignedInt">0</SlaveVendorClassIDNumberOfEntries>
+						<SlaveMACAddress t="MULTI"></SlaveMACAddress>
+						<SlaveVendorClassID t="MULTI"></SlaveVendorClassID>
+					</X_INNBOX_SlaveHosts>
+					<PortNumberOfEntries t="unsignedInt">16</PortNumberOfEntries>
+					<VLANNumberOfEntries t="unsignedInt">16</VLANNumberOfEntries>
+					<Port t="MULTI"></Port>
+					<VLAN t="MULTI"></VLAN>
+				</M-O-1>
+			</Bridge>
+			<Filter t="MULTI" i="4">
+				<M-O-1>
+					<FilterKey t="unsignedInt">1</FilterKey>
+					<FilterEnable t="boolean">1</FilterEnable>
+					<FilterStatus></FilterStatus>
+					<FilterBridgeReference t="int">-1</FilterBridgeReference>
+					<ExclusivityOrder t="unsignedInt">0</ExclusivityOrder>
+					<FilterInterface>1</FilterInterface>
+					<VLANIDFilter t="int">-1</VLANIDFilter>
+					<AdmitOnlyVLANTagged t="boolean">0</AdmitOnlyVLANTagged>
+					<EthertypeFilterList></EthertypeFilterList>
+					<EthertypeFilterExclude t="boolean">1</EthertypeFilterExclude>
+					<SourceMACAddressFilterList></SourceMACAddressFilterList>
+					<SourceMACAddressFilterExclude t="boolean">1</SourceMACAddressFilterExclude>
+					<DestMACAddressFilterList></DestMACAddressFilterList>
+					<DestMACAddressFilterExclude t="boolean">1</DestMACAddressFilterExclude>
+					<SourceMACFromVendorClassIDFilter></SourceMACFromVendorClassIDFilter>
+					<SourceMACFromVendorClassIDFilterExclude t="boolean">1</SourceMACFromVendorClassIDFilterExclude>
+					<SourceMACFromVendorClassIDMode>Exact</SourceMACFromVendorClassIDMode>
+					<DestMACFromVendorClassIDFilter></DestMACFromVendorClassIDFilter>
+					<DestMACFromVendorClassIDFilterExclude t="boolean">1</DestMACFromVendorClassIDFilterExclude>
+					<DestMACFromVendorClassIDMode>Exact</DestMACFromVendorClassIDMode>
+					<SourceMACFromClientIDFilter></SourceMACFromClientIDFilter>
+					<SourceMACFromClientIDFilterExclude t="boolean">1</SourceMACFromClientIDFilterExclude>
+					<DestMACFromClientIDFilter></DestMACFromClientIDFilter>
+					<DestMACFromClientIDFilterExclude t="boolean">1</DestMACFromClientIDFilterExclude>
+					<SourceMACFromUserClassIDFilter></SourceMACFromUserClassIDFilter>
+					<SourceMACFromUserClassIDFilterExclude t="boolean">1</SourceMACFromUserClassIDFilterExclude>
+					<DestMACFromUserClassIDFilter></DestMACFromUserClassIDFilter>
+					<DestMACFromUserClassIDFilterExclude t="boolean">1</DestMACFromUserClassIDFilterExclude>
+					<X_INNBOX_InterfaceReference></X_INNBOX_InterfaceReference>
+					<X_INNBOX_InterfaceName></X_INNBOX_InterfaceName>
+					<X_INNBOX_Name></X_INNBOX_Name>
+					<X_INNBOX_ConnectionType></X_INNBOX_ConnectionType>
+					<X_INNBOX_VLANTrunkEnable t="boolean">0</X_INNBOX_VLANTrunkEnable>
+				</M-O-1>
+				<M-O-2>
+					<FilterKey t="unsignedInt">2</FilterKey>
+					<FilterEnable t="boolean">1</FilterEnable>
+					<FilterStatus></FilterStatus>
+					<FilterBridgeReference t="int">0</FilterBridgeReference>
+					<ExclusivityOrder t="unsignedInt">0</ExclusivityOrder>
+					<FilterInterface>2</FilterInterface>
+					<VLANIDFilter t="int">-1</VLANIDFilter>
+					<AdmitOnlyVLANTagged t="boolean">0</AdmitOnlyVLANTagged>
+					<EthertypeFilterList></EthertypeFilterList>
+					<EthertypeFilterExclude t="boolean">1</EthertypeFilterExclude>
+					<SourceMACAddressFilterList></SourceMACAddressFilterList>
+					<SourceMACAddressFilterExclude t="boolean">1</SourceMACAddressFilterExclude>
+					<DestMACAddressFilterList></DestMACAddressFilterList>
+					<DestMACAddressFilterExclude t="boolean">1</DestMACAddressFilterExclude>
+					<SourceMACFromVendorClassIDFilter></SourceMACFromVendorClassIDFilter>
+					<SourceMACFromVendorClassIDFilterExclude t="boolean">1</SourceMACFromVendorClassIDFilterExclude>
+					<SourceMACFromVendorClassIDMode>Exact</SourceMACFromVendorClassIDMode>
+					<DestMACFromVendorClassIDFilter></DestMACFromVendorClassIDFilter>
+					<DestMACFromVendorClassIDFilterExclude t="boolean">1</DestMACFromVendorClassIDFilterExclude>
+					<DestMACFromVendorClassIDMode>Exact</DestMACFromVendorClassIDMode>
+					<SourceMACFromClientIDFilter></SourceMACFromClientIDFilter>
+					<SourceMACFromClientIDFilterExclude t="boolean">1</SourceMACFromClientIDFilterExclude>
+					<DestMACFromClientIDFilter></DestMACFromClientIDFilter>
+					<DestMACFromClientIDFilterExclude t="boolean">1</DestMACFromClientIDFilterExclude>
+					<SourceMACFromUserClassIDFilter></SourceMACFromUserClassIDFilter>
+					<SourceMACFromUserClassIDFilterExclude t="boolean">1</SourceMACFromUserClassIDFilterExclude>
+					<DestMACFromUserClassIDFilter></DestMACFromUserClassIDFilter>
+					<DestMACFromUserClassIDFilterExclude t="boolean">1</DestMACFromUserClassIDFilterExclude>
+					<X_INNBOX_InterfaceReference></X_INNBOX_InterfaceReference>
+					<X_INNBOX_InterfaceName></X_INNBOX_InterfaceName>
+					<X_INNBOX_Name></X_INNBOX_Name>
+					<X_INNBOX_ConnectionType></X_INNBOX_ConnectionType>
+					<X_INNBOX_VLANTrunkEnable t="boolean">0</X_INNBOX_VLANTrunkEnable>
+				</M-O-2>
+				<M-O-3>
+					<FilterKey t="unsignedInt">3</FilterKey>
+					<FilterEnable t="boolean">1</FilterEnable>
+					<FilterStatus></FilterStatus>
+					<FilterBridgeReference t="int">0</FilterBridgeReference>
+					<ExclusivityOrder t="unsignedInt">0</ExclusivityOrder>
+					<FilterInterface>3</FilterInterface>
+					<VLANIDFilter t="int">-1</VLANIDFilter>
+					<AdmitOnlyVLANTagged t="boolean">0</AdmitOnlyVLANTagged>
+					<EthertypeFilterList></EthertypeFilterList>
+					<EthertypeFilterExclude t="boolean">1</EthertypeFilterExclude>
+					<SourceMACAddressFilterList></SourceMACAddressFilterList>
+					<SourceMACAddressFilterExclude t="boolean">1</SourceMACAddressFilterExclude>
+					<DestMACAddressFilterList></DestMACAddressFilterList>
+					<DestMACAddressFilterExclude t="boolean">1</DestMACAddressFilterExclude>
+					<SourceMACFromVendorClassIDFilter></SourceMACFromVendorClassIDFilter>
+					<SourceMACFromVendorClassIDFilterExclude t="boolean">1</SourceMACFromVendorClassIDFilterExclude>
+					<SourceMACFromVendorClassIDMode>Exact</SourceMACFromVendorClassIDMode>
+					<DestMACFromVendorClassIDFilter></DestMACFromVendorClassIDFilter>
+					<DestMACFromVendorClassIDFilterExclude t="boolean">1</DestMACFromVendorClassIDFilterExclude>
+					<DestMACFromVendorClassIDMode>Exact</DestMACFromVendorClassIDMode>
+					<SourceMACFromClientIDFilter></SourceMACFromClientIDFilter>
+					<SourceMACFromClientIDFilterExclude t="boolean">1</SourceMACFromClientIDFilterExclude>
+					<DestMACFromClientIDFilter></DestMACFromClientIDFilter>
+					<DestMACFromClientIDFilterExclude t="boolean">1</DestMACFromClientIDFilterExclude>
+					<SourceMACFromUserClassIDFilter></SourceMACFromUserClassIDFilter>
+					<SourceMACFromUserClassIDFilterExclude t="boolean">1</SourceMACFromUserClassIDFilterExclude>
+					<DestMACFromUserClassIDFilter></DestMACFromUserClassIDFilter>
+					<DestMACFromUserClassIDFilterExclude t="boolean">1</DestMACFromUserClassIDFilterExclude>
+					<X_INNBOX_InterfaceReference></X_INNBOX_InterfaceReference>
+					<X_INNBOX_InterfaceName></X_INNBOX_InterfaceName>
+					<X_INNBOX_Name></X_INNBOX_Name>
+					<X_INNBOX_ConnectionType></X_INNBOX_ConnectionType>
+					<X_INNBOX_VLANTrunkEnable t="boolean">0</X_INNBOX_VLANTrunkEnable>
+				</M-O-3>
+				<M-O-4>
+					<FilterKey t="unsignedInt">4</FilterKey>
+					<FilterEnable t="boolean">1</FilterEnable>
+					<FilterStatus></FilterStatus>
+					<FilterBridgeReference t="int">0</FilterBridgeReference>
+					<ExclusivityOrder t="unsignedInt">0</ExclusivityOrder>
+					<FilterInterface>4</FilterInterface>
+					<VLANIDFilter t="int">-1</VLANIDFilter>
+					<AdmitOnlyVLANTagged t="boolean">0</AdmitOnlyVLANTagged>
+					<EthertypeFilterList></EthertypeFilterList>
+					<EthertypeFilterExclude t="boolean">1</EthertypeFilterExclude>
+					<SourceMACAddressFilterList></SourceMACAddressFilterList>
+					<SourceMACAddressFilterExclude t="boolean">1</SourceMACAddressFilterExclude>
+					<DestMACAddressFilterList></DestMACAddressFilterList>
+					<DestMACAddressFilterExclude t="boolean">1</DestMACAddressFilterExclude>
+					<SourceMACFromVendorClassIDFilter></SourceMACFromVendorClassIDFilter>
+					<SourceMACFromVendorClassIDFilterExclude t="boolean">1</SourceMACFromVendorClassIDFilterExclude>
+					<SourceMACFromVendorClassIDMode>Exact</SourceMACFromVendorClassIDMode>
+					<DestMACFromVendorClassIDFilter></DestMACFromVendorClassIDFilter>
+					<DestMACFromVendorClassIDFilterExclude t="boolean">1</DestMACFromVendorClassIDFilterExclude>
+					<DestMACFromVendorClassIDMode>Exact</DestMACFromVendorClassIDMode>
+					<SourceMACFromClientIDFilter></SourceMACFromClientIDFilter>
+					<SourceMACFromClientIDFilterExclude t="boolean">1</SourceMACFromClientIDFilterExclude>
+					<DestMACFromClientIDFilter></DestMACFromClientIDFilter>
+					<DestMACFromClientIDFilterExclude t="boolean">1</DestMACFromClientIDFilterExclude>
+					<SourceMACFromUserClassIDFilter></SourceMACFromUserClassIDFilter>
+					<SourceMACFromUserClassIDFilterExclude t="boolean">1</SourceMACFromUserClassIDFilterExclude>
+					<DestMACFromUserClassIDFilter></DestMACFromUserClassIDFilter>
+					<DestMACFromUserClassIDFilterExclude t="boolean">1</DestMACFromUserClassIDFilterExclude>
+					<X_INNBOX_InterfaceReference></X_INNBOX_InterfaceReference>
+					<X_INNBOX_InterfaceName></X_INNBOX_InterfaceName>
+					<X_INNBOX_Name></X_INNBOX_Name>
+					<X_INNBOX_ConnectionType></X_INNBOX_ConnectionType>
+					<X_INNBOX_VLANTrunkEnable t="boolean">0</X_INNBOX_VLANTrunkEnable>
+				</M-O-4>
+			</Filter>
+			<Marking t="MULTI" i="3">
+				<M-O-1>
+					<MarkingKey t="unsignedInt">1</MarkingKey>
+					<MarkingEnable t="boolean">1</MarkingEnable>
+					<MarkingStatus></MarkingStatus>
+					<MarkingBridgeReference t="int">0</MarkingBridgeReference>
+					<MarkingInterface>3</MarkingInterface>
+					<VLANIDUntag t="boolean">1</VLANIDUntag>
+					<VLANIDMark t="int">-1</VLANIDMark>
+					<VLANIDMarkOverride t="boolean">0</VLANIDMarkOverride>
+					<EthernetPriorityMark t="int">-1</EthernetPriorityMark>
+					<EthernetPriorityOverride t="boolean">0</EthernetPriorityOverride>
+					<X_INNBOX_InterfaceReference></X_INNBOX_InterfaceReference>
+					<X_INNBOX_InterfaceReferenceXML></X_INNBOX_InterfaceReferenceXML>
+					<X_INNBOX_InterfaceName></X_INNBOX_InterfaceName>
+				</M-O-1>
+				<M-O-2>
+					<MarkingKey t="unsignedInt">2</MarkingKey>
+					<MarkingEnable t="boolean">1</MarkingEnable>
+					<MarkingStatus></MarkingStatus>
+					<MarkingBridgeReference t="int">0</MarkingBridgeReference>
+					<MarkingInterface>4</MarkingInterface>
+					<VLANIDUntag t="boolean">1</VLANIDUntag>
+					<VLANIDMark t="int">-1</VLANIDMark>
+					<VLANIDMarkOverride t="boolean">0</VLANIDMarkOverride>
+					<EthernetPriorityMark t="int">-1</EthernetPriorityMark>
+					<EthernetPriorityOverride t="boolean">0</EthernetPriorityOverride>
+					<X_INNBOX_InterfaceReference></X_INNBOX_InterfaceReference>
+					<X_INNBOX_InterfaceReferenceXML></X_INNBOX_InterfaceReferenceXML>
+					<X_INNBOX_InterfaceName></X_INNBOX_InterfaceName>
+				</M-O-2>
+				<M-O-3>
+					<MarkingKey t="unsignedInt">3</MarkingKey>
+					<MarkingEnable t="boolean">1</MarkingEnable>
+					<MarkingStatus></MarkingStatus>
+					<MarkingBridgeReference t="int">0</MarkingBridgeReference>
+					<MarkingInterface>15</MarkingInterface>
+					<VLANIDUntag t="boolean">0</VLANIDUntag>
+					<VLANIDMark t="int">10</VLANIDMark>
+					<VLANIDMarkOverride t="boolean">1</VLANIDMarkOverride>
+					<EthernetPriorityMark t="int">0</EthernetPriorityMark>
+					<EthernetPriorityOverride t="boolean">0</EthernetPriorityOverride>
+					<X_INNBOX_InterfaceReference></X_INNBOX_InterfaceReference>
+					<X_INNBOX_InterfaceReferenceXML></X_INNBOX_InterfaceReferenceXML>
+					<X_INNBOX_InterfaceName></X_INNBOX_InterfaceName>
+				</M-O-3>
+			</Marking>
+			<AvailableInterface t="MULTI" i="5">
+				<M-O-1>
+					<AvailableInterfaceKey t="unsignedInt">1</AvailableInterfaceKey>
+					<InterfaceType>LANRouterConnection</InterfaceType>
+					<InterfaceReference>InternetGatewayDevice.LANDevice.1</InterfaceReference>
+					<X_INNBOX_InterfaceName></X_INNBOX_InterfaceName>
+					<X_INNBOX_Name></X_INNBOX_Name>
+					<X_INNBOX_ConnectionType></X_INNBOX_ConnectionType>
+				</M-O-1>
+				<M-O-2>
+					<AvailableInterfaceKey t="unsignedInt">2</AvailableInterfaceKey>
+					<InterfaceType>LANInterface</InterfaceType>
+					<InterfaceReference>InternetGatewayDevice.LANDevice.1.LANHostConfigManagement.IPInterface.1</InterfaceReference>
+					<X_INNBOX_InterfaceName>LAN0</X_INNBOX_InterfaceName>
+					<X_INNBOX_Name></X_INNBOX_Name>
+					<X_INNBOX_ConnectionType></X_INNBOX_ConnectionType>
+				</M-O-2>
+				<M-O-3>
+					<AvailableInterfaceKey t="unsignedInt">3</AvailableInterfaceKey>
+					<InterfaceType>LANInterface</InterfaceType>
+					<InterfaceReference>InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.1</InterfaceReference>
+					<X_INNBOX_InterfaceName>eth1</X_INNBOX_InterfaceName>
+					<X_INNBOX_Name></X_INNBOX_Name>
+					<X_INNBOX_ConnectionType></X_INNBOX_ConnectionType>
+				</M-O-3>
+				<M-O-4>
+					<AvailableInterfaceKey t="unsignedInt">4</AvailableInterfaceKey>
+					<InterfaceType>LANInterface</InterfaceType>
+					<InterfaceReference>InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.2</InterfaceReference>
+					<X_INNBOX_InterfaceName>eth0.1</X_INNBOX_InterfaceName>
+					<X_INNBOX_Name></X_INNBOX_Name>
+					<X_INNBOX_ConnectionType></X_INNBOX_ConnectionType>
+				</M-O-4>
+				<M-O-5>
+					<AvailableInterfaceKey t="unsignedInt">5</AvailableInterfaceKey>
+					<InterfaceType>WANInterface</InterfaceType>
+					<InterfaceReference>InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1</InterfaceReference>
+					<X_INNBOX_InterfaceName></X_INNBOX_InterfaceName>
+					<X_INNBOX_Name></X_INNBOX_Name>
+					<X_INNBOX_ConnectionType></X_INNBOX_ConnectionType>
+				</M-O-5>
+			</AvailableInterface>
+			<MaxVLANEntries t="unsignedInt">16</MaxVLANEntries>
+		</Layer2Bridging>
+		<X_INNBOX_PortMirror>
+			<WANInterface></WANInterface>
+			<Inbound>
+				<Enable t="boolean">0</Enable>
+				<MirrorPort></MirrorPort>
+			</Inbound>
+			<Outbound>
+				<Enable t="boolean">0</Enable>
+				<MirrorPort></MirrorPort>
+			</Outbound>
+		</X_INNBOX_PortMirror>
+		<Time>
+			<Enable t="boolean">1</Enable>
+			<Status></Status>
+			<NTPServer1>ntp.local</NTPServer1>
+			<NTPServer2>pool.ntp.org</NTPServer2>
+			<CurrentLocalTime t="dateTime"></CurrentLocalTime>
+			<LocalTimeZone></LocalTimeZone>
+			<LocalTimeZoneName>Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna</LocalTimeZoneName>
+			<DaylightSavingsUsed t="boolean">0</DaylightSavingsUsed>
+			<X_INNBOX_TimeZone t="unsignedInt">28</X_INNBOX_TimeZone>
+			<X_INNBOX_Interval t="unsignedInt">3600</X_INNBOX_Interval>
+			<X_INNBOX_Querytime t="unsignedInt">45</X_INNBOX_Querytime>
+			<X_INNBOX_Interface></X_INNBOX_Interface>
+		</Time>
+		<IPPingDiagnostics>
+			<DiagnosticsState></DiagnosticsState>
+			<Interface></Interface>
+			<Host></Host>
+			<NumberOfRepetitions t="unsignedInt"></NumberOfRepetitions>
+			<Timeout t="unsignedInt"></Timeout>
+			<DataBlockSize t="unsignedInt"></DataBlockSize>
+			<DSCP t="unsignedInt"></DSCP>
+			<SuccessCount t="unsignedInt"></SuccessCount>
+			<FailureCount t="unsignedInt"></FailureCount>
+			<AverageResponseTime t="unsignedInt"></AverageResponseTime>
+			<MinimumResponseTime t="unsignedInt"></MinimumResponseTime>
+			<MaximumResponseTime t="unsignedInt"></MaximumResponseTime>
+		</IPPingDiagnostics>
+		<TraceRouteDiagnostics>
+			<DiagnosticsState></DiagnosticsState>
+			<Interface></Interface>
+			<Host></Host>
+			<NumberOfTries t="unsignedInt"></NumberOfTries>
+			<Timeout t="unsignedInt"></Timeout>
+			<DataBlockSize t="unsignedInt"></DataBlockSize>
+			<DSCP t="unsignedInt"></DSCP>
+			<MaxHopCount t="unsignedInt"></MaxHopCount>
+			<ResponseTime t="unsignedInt"></ResponseTime>
+			<RouteHopsNumberOfEntries t="unsignedInt"></RouteHopsNumberOfEntries>
+			<RouteHops t="MULTI"></RouteHops>
+		</TraceRouteDiagnostics>
+		<Capabilities>
+			<PerformanceDiagnostic>
+				<DownloadTransports>HTTP,FTP</DownloadTransports>
+				<UploadTransports>HTTP,FTP</UploadTransports>
+			</PerformanceDiagnostic>
+		</Capabilities>
+		<DownloadDiagnostics>
+			<DiagnosticsState></DiagnosticsState>
+			<Interface></Interface>
+			<DownloadURL></DownloadURL>
+			<DSCP t="unsignedInt"></DSCP>
+			<EthernetPriority t="unsignedInt"></EthernetPriority>
+			<ROMTime t="dateTime"></ROMTime>
+			<BOMTime t="dateTime"></BOMTime>
+			<EOMTime t="dateTime"></EOMTime>
+			<TestBytesReceived t="unsignedInt"></TestBytesReceived>
+			<TotalBytesReceived t="unsignedInt"></TotalBytesReceived>
+			<TCPOpenRequestTime t="dateTime"></TCPOpenRequestTime>
+			<TCPOpenResponseTime t="dateTime"></TCPOpenResponseTime>
+		</DownloadDiagnostics>
+		<UploadDiagnostics>
+			<DiagnosticsState></DiagnosticsState>
+			<Interface></Interface>
+			<UploadURL></UploadURL>
+			<DSCP t="unsignedInt"></DSCP>
+			<EthernetPriority t="unsignedInt"></EthernetPriority>
+			<TestFileLength t="unsignedInt"></TestFileLength>
+			<ROMTime t="dateTime"></ROMTime>
+			<BOMTime t="dateTime"></BOMTime>
+			<EOMTime t="dateTime"></EOMTime>
+			<TotalBytesSent t="unsignedInt"></TotalBytesSent>
+			<TestBytesSent t="unsignedInt"></TestBytesSent>
+			<TCPOpenRequestTime t="dateTime"></TCPOpenRequestTime>
+			<TCPOpenResponseTime t="dateTime"></TCPOpenResponseTime>
+		</UploadDiagnostics>
+		<UDPEchoConfig>
+			<Enable t="boolean"></Enable>
+			<Interface></Interface>
+			<SourceIPAddress></SourceIPAddress>
+			<UDPPort t="unsignedInt"></UDPPort>
+			<EchoPlusSupported t="boolean"></EchoPlusSupported>
+			<PacketsReceived t="unsignedInt"></PacketsReceived>
+			<PacketsResponded t="unsignedInt"></PacketsResponded>
+			<BytesReceived t="unsignedInt"></BytesReceived>
+			<BytesResponded t="unsignedInt"></BytesResponded>
+			<TimeFirstPacketReceived t="dateTime"></TimeFirstPacketReceived>
+			<TimeLastPacketReceived t="dateTime"></TimeLastPacketReceived>
+			<EchoPlusEnabled t="boolean"></EchoPlusEnabled>
+		</UDPEchoConfig>
+		<X_INNBOX_CustomRule>
+			<DefaultRouteIPTVNumberOfEntries t="unsignedInt">3</DefaultRouteIPTVNumberOfEntries>
+			<ExFirewallRuleNumberOfEntries t="unsignedInt">1</ExFirewallRuleNumberOfEntries>
+			<DefaultRouteIPTV t="MULTI" i="3">
+				<M-O-1>
+					<IPAddress>172.31.128.0</IPAddress>
+					<Mask>255.255.255.240</Mask>
+				</M-O-1>
+				<M-O-2>
+					<IPAddress>176.43.0.128</IPAddress>
+					<Mask>255.255.255.128</Mask>
+				</M-O-2>
+				<M-O-3>
+					<IPAddress>82.222.179.0</IPAddress>
+					<Mask>255.255.255.0</Mask>
+				</M-O-3>
+			</DefaultRouteIPTV>
+			<ExFirewallRule t="MULTI" i="1">
+				<M-O-1>
+					<Enabled t="boolean">1</Enabled>
+					<Protocol>ICMP</Protocol>
+					<Action>Permit</Action>
+					<Origin>
+						<IPAddress>82.222.179.0</IPAddress>
+						<Mask>255.255.255.0</Mask>
+					</Origin>
+					<Destination>
+						<IPAddress>82.222.179.0</IPAddress>
+						<Mask>255.255.255.0</Mask>
+					</Destination>
+				</M-O-1>
+			</ExFirewallRule>
+		</X_INNBOX_CustomRule>
+		<XMPP>
+			<ConnectionNumberOfEntries t="unsignedInt"></ConnectionNumberOfEntries>
+			<Connection t="MULTI"></Connection>
+		</XMPP>
+		<Services>
+			<VoiceServiceNumberOfEntries t="unsignedInt">1</VoiceServiceNumberOfEntries>
+			<VoiceService t="MULTI" i="1">
+				<M-O-1>
+					<Capabilities>
+						<MaxProfileCount t="unsignedInt">5</MaxProfileCount>
+						<MaxLineCount t="unsignedInt">2</MaxLineCount>
+						<MaxSessionsPerLine t="unsignedInt">2</MaxSessionsPerLine>
+						<MaxSessionCount t="unsignedInt">4</MaxSessionCount>
+						<SignalingProtocols>SIP</SignalingProtocols>
+						<Regions>AT;BE;BR;CH;CL;CN;DE;DK;ES;FI;FR;GB;HU;IE;IL;IT;JP;LK;NL;RU;SE;US;VN;EE;SI</Regions>
+						<RTCP t="boolean">0</RTCP>
+						<SRTP t="boolean">0</SRTP>
+						<RTPRedundancy t="boolean">0</RTPRedundancy>
+						<DSCPCoupled t="boolean">0</DSCPCoupled>
+						<EthernetTaggingCoupled t="boolean">1</EthernetTaggingCoupled>
+						<PSTNSoftSwitchOver t="boolean">0</PSTNSoftSwitchOver>
+						<FaxT38 t="boolean">1</FaxT38>
+						<FaxPassThrough t="boolean">1</FaxPassThrough>
+						<ModemPassThrough t="boolean">0</ModemPassThrough>
+						<DigitMap></DigitMap>
+						<ToneGeneration t="boolean">0</ToneGeneration>
+						<RingGeneration t="boolean">0</RingGeneration>
+						<NumberingPlan t="boolean">0</NumberingPlan>
+						<ButtonMap t="boolean">0</ButtonMap>
+						<VoicePortTests t="boolean">0</VoicePortTests>
+						<Codecs>
+							<M-O-1>
+								<EntryID t="unsignedInt">1</EntryID>
+								<Codec>G.711MuLaw</Codec>
+								<BitRate t="unsignedInt">64000</BitRate>
+								<PacketizationPeriod>10, 20, 30</PacketizationPeriod>
+								<SilenceSuppression t="boolean">1</SilenceSuppression>
+							</M-O-1>
+							<M-O-2>
+								<EntryID t="unsignedInt">2</EntryID>
+								<Codec>G.711ALaw</Codec>
+								<BitRate t="unsignedInt">64000</BitRate>
+								<PacketizationPeriod>10, 20, 30</PacketizationPeriod>
+								<SilenceSuppression t="boolean">1</SilenceSuppression>
+							</M-O-2>
+							<M-O-3>
+								<EntryID t="unsignedInt">3</EntryID>
+								<Codec>G.722</Codec>
+								<BitRate t="unsignedInt">64000</BitRate>
+								<PacketizationPeriod>10, 20, 30</PacketizationPeriod>
+								<SilenceSuppression t="boolean">1</SilenceSuppression>
+							</M-O-3>
+							<M-O-4>
+								<EntryID t="unsignedInt">4</EntryID>
+								<Codec>G.729a</Codec>
+								<BitRate t="unsignedInt">8000</BitRate>
+								<PacketizationPeriod>20, 30, 40</PacketizationPeriod>
+								<SilenceSuppression t="boolean">1</SilenceSuppression>
+							</M-O-4>
+							<M-O-5>
+								<EntryID t="unsignedInt">5</EntryID>
+								<Codec>G.726</Codec>
+								<BitRate t="unsignedInt">24000</BitRate>
+								<PacketizationPeriod>10, 20, 30</PacketizationPeriod>
+								<SilenceSuppression t="boolean">1</SilenceSuppression>
+							</M-O-5>
+							<M-O-6>
+								<EntryID t="unsignedInt">6</EntryID>
+								<Codec>G.723.1</Codec>
+								<BitRate t="unsignedInt">6300</BitRate>
+								<PacketizationPeriod>30, 60</PacketizationPeriod>
+								<SilenceSuppression t="boolean">1</SilenceSuppression>
+							</M-O-6>
+						</Codecs>
+						<SIP>
+							<Role>UserAgent</Role>
+							<Extensions>INVITE, ACK, CANCEL, BYE, REFER, NOTIFY, OPTIONS, PRACK, UPDATE, INFO</Extensions>
+							<Transports>UDP, TCP, TLS</Transports>
+							<URISchemes>sip, tel</URISchemes>
+							<EventSubscription t="boolean">0</EventSubscription>
+							<ResponseMap t="boolean">0</ResponseMap>
+							<TLSAuthenticationProtocols></TLSAuthenticationProtocols>
+							<TLSAuthenticationKeySizes></TLSAuthenticationKeySizes>
+							<TLSEncryptionProtocols></TLSEncryptionProtocols>
+							<TLSEncryptionKeySizes></TLSEncryptionKeySizes>
+							<TLSKeyExchangeProtocols></TLSKeyExchangeProtocols>
+							<RegExpireIteration></RegExpireIteration>
+						</SIP>
+					</Capabilities>
+					<VoiceProfileNumberOfEntries t="unsignedInt">1</VoiceProfileNumberOfEntries>
+					<VoiceProfile t="MULTI" i="1">
+						<M-O-1>
+							<Enable>Enabled</Enable>
+							<Interface></Interface>
+							<Reset t="boolean">0</Reset>
+							<NumberOfLines t="unsignedInt">1</NumberOfLines>
+							<Name></Name>
+							<SignalingProtocol></SignalingProtocol>
+							<MaxSessions t="unsignedInt">0</MaxSessions>
+							<DTMFMethod>RFC2833</DTMFMethod>
+							<DTMFMethodG711></DTMFMethodG711>
+							<Region>SI</Region>
+							<DigitMap></DigitMap>
+							<DigitMapEnable t="boolean">1</DigitMapEnable>
+							<PSTNFailOver t="boolean">0</PSTNFailOver>
+							<FaxPassThrough>Force</FaxPassThrough>
+							<ModemPassThrough t="boolean"></ModemPassThrough>
+							<STUNEnable t="boolean">0</STUNEnable>
+							<STUNServer></STUNServer>
+							<STUNServerPort t="unsignedInt">3478</STUNServerPort>
+							<STUNRequestInterval t="unsignedInt">60</STUNRequestInterval>
+							<STUNNATType></STUNNATType>
+							<SessionNumber t="unsignedInt">0</SessionNumber>
+							<X_INNBOX_PRACK t="boolean">0</X_INNBOX_PRACK>
+							<RTP>
+								<LocalPortMin t="unsignedInt">50000</LocalPortMin>
+								<LocalPortMax t="unsignedInt">50010</LocalPortMax>
+								<DSCPMark t="unsignedInt">46</DSCPMark>
+								<VLANIDMark t="int">-1</VLANIDMark>
+								<EthernetPriorityMark t="int">0</EthernetPriorityMark>
+								<TelephoneEventPayloadType t="unsignedInt">101</TelephoneEventPayloadType>
+								<RTCP>
+									<Enable t="boolean">1</Enable>
+									<TxRepeatInterval t="unsignedInt">5000</TxRepeatInterval>
+									<LocalCName></LocalCName>
+								</RTCP>
+							</RTP>
+							<FaxT38>
+								<Enable t="boolean">1</Enable>
+								<BitRate t="unsignedInt">14400</BitRate>
+								<HighSpeedPacketRate t="unsignedInt">20</HighSpeedPacketRate>
+								<HighSpeedRedundancy t="unsignedInt">0</HighSpeedRedundancy>
+								<LowSpeedRedundancy t="unsignedInt">0</LowSpeedRedundancy>
+								<TCFMethod>Network</TCFMethod>
+								<StartPort t="unsignedInt">7051</StartPort>
+								<Version>0</Version>
+								<UseRTPPort t="unsignedInt">0</UseRTPPort>
+								<TransportPort t="unsignedInt"></TransportPort>
+								<MaxBufferSize t="unsignedInt">4096</MaxBufferSize>
+								<MaxDatagram t="unsignedInt">512</MaxDatagram>
+								<UDPRedundant t="unsignedInt">1</UDPRedundant>
+							</FaxT38>
+							<NumberingPlan>
+								<M-O-1>
+									<MinimumNumberOfDigits t="unsignedInt"></MinimumNumberOfDigits>
+									<MaximumNumberOfDigits t="unsignedInt"></MaximumNumberOfDigits>
+									<InterDigitTimerStd t="unsignedInt"></InterDigitTimerStd>
+									<InterDigitTimerOpen t="unsignedInt"></InterDigitTimerOpen>
+									<InvalidNumberTone t="unsignedInt"></InvalidNumberTone>
+									<PrefixInfoMaxEntries t="unsignedInt"></PrefixInfoMaxEntries>
+									<PrefixInfoNumberOfEntries t="unsignedInt"></PrefixInfoNumberOfEntries>
+									<PrefixInfo>
+										<M-O-1>
+											<Alias></Alias>
+											<Enable t="boolean">0</Enable>
+											<PrefixRange></PrefixRange>
+											<PrefixMinNumberOfDigits t="unsignedInt"></PrefixMinNumberOfDigits>
+											<PrefixMaxNumberOfDigits t="unsignedInt"></PrefixMaxNumberOfDigits>
+											<NumberOfDigitsToRemove t="unsignedInt"></NumberOfDigitsToRemove>
+											<PosOfDigitsToRemove t="unsignedInt"></PosOfDigitsToRemove>
+											<DialTone></DialTone>
+											<FacilityAction></FacilityAction>
+											<FacilityActionArgument></FacilityActionArgument>
+										</M-O-1>
+									</PrefixInfo>
+								</M-O-1>
+							</NumberingPlan>
+							<Line t="MULTI" i="1">
+								<M-O-1>
+									<Enable>Disabled</Enable>
+									<DirectoryNumber></DirectoryNumber>
+									<Name>Line-1</Name>
+									<Status>Disabled</Status>
+									<CallState>Idle</CallState>
+									<RingMuteStatus></RingMuteStatus>
+									<RingVolumeStatus></RingVolumeStatus>
+									<VoiceProcessing>
+										<ReceiveGain t="int"></ReceiveGain>
+										<TransmitGain t="int"></TransmitGain>
+										<EchoCancellationEnable t="boolean">1</EchoCancellationEnable>
+										<EchoCancellationInUse></EchoCancellationInUse>
+										<EchoCancellationTail></EchoCancellationTail>
+									</VoiceProcessing>
+									<Codec>
+										<TransmitCodec></TransmitCodec>
+										<ReceiveCodec></ReceiveCodec>
+										<TransmitBitRate t="unsignedInt"></TransmitBitRate>
+										<ReceiveBitRate t="unsignedInt"></ReceiveBitRate>
+										<TransmitSilenceSuppression t="boolean"></TransmitSilenceSuppression>
+										<ReceiveSilenceSuppression t="boolean"></ReceiveSilenceSuppression>
+										<TransmitPacketizationPeriod t="unsignedInt"></TransmitPacketizationPeriod>
+										<List>
+											<M-O-1>
+												<EntryID t="unsignedInt">1</EntryID>
+												<Codec>G.711MuLaw</Codec>
+												<BitRate t="unsignedInt">64000</BitRate>
+												<PacketizationPeriod>20</PacketizationPeriod>
+												<SilenceSuppression t="boolean">1</SilenceSuppression>
+												<Enable t="boolean">1</Enable>
+												<Priority t="unsignedInt">1</Priority>
+											</M-O-1>
+											<M-O-2>
+												<EntryID t="unsignedInt">2</EntryID>
+												<Codec>G.711ALaw</Codec>
+												<BitRate t="unsignedInt">64000</BitRate>
+												<PacketizationPeriod>20</PacketizationPeriod>
+												<SilenceSuppression t="boolean">1</SilenceSuppression>
+												<Enable t="boolean">1</Enable>
+												<Priority t="unsignedInt">2</Priority>
+											</M-O-2>
+											<M-O-3>
+												<EntryID t="unsignedInt">3</EntryID>
+												<Codec>G.722</Codec>
+												<BitRate t="unsignedInt">64000</BitRate>
+												<PacketizationPeriod>20</PacketizationPeriod>
+												<SilenceSuppression t="boolean">1</SilenceSuppression>
+												<Enable t="boolean">1</Enable>
+												<Priority t="unsignedInt">4</Priority>
+											</M-O-3>
+											<M-O-4>
+												<EntryID t="unsignedInt">4</EntryID>
+												<Codec>G.729a</Codec>
+												<BitRate t="unsignedInt">8000</BitRate>
+												<PacketizationPeriod>20</PacketizationPeriod>
+												<SilenceSuppression t="boolean">1</SilenceSuppression>
+												<Enable t="boolean">1</Enable>
+												<Priority t="unsignedInt">3</Priority>
+											</M-O-4>
+											<M-O-5>
+												<EntryID t="unsignedInt">5</EntryID>
+												<Codec>G.726</Codec>
+												<BitRate t="unsignedInt">24000</BitRate>
+												<PacketizationPeriod>20</PacketizationPeriod>
+												<SilenceSuppression t="boolean">1</SilenceSuppression>
+												<Enable t="boolean">1</Enable>
+												<Priority t="unsignedInt">5</Priority>
+											</M-O-5>
+											<M-O-6>
+												<EntryID t="unsignedInt">6</EntryID>
+												<Codec>G.723.1</Codec>
+												<BitRate t="unsignedInt">6300</BitRate>
+												<PacketizationPeriod>30</PacketizationPeriod>
+												<SilenceSuppression t="boolean">1</SilenceSuppression>
+												<Enable t="boolean">0</Enable>
+												<Priority t="unsignedInt">6</Priority>
+											</M-O-6>
+										</List>
+									</Codec>
+									<Session t="MULTI"></Session>
+									<Stats>
+										<ResetStatistics t="boolean">0</ResetStatistics>
+										<PacketsSent t="unsignedInt"></PacketsSent>
+										<PacketsReceived t="unsignedInt"></PacketsReceived>
+										<BytesSent t="unsignedInt"></BytesSent>
+										<BytesReceived t="unsignedInt"></BytesReceived>
+										<PacketsLost t="unsignedInt"></PacketsLost>
+										<Overruns t="unsignedInt"></Overruns>
+										<Underruns t="unsignedInt"></Underruns>
+										<IncomingCallsReceived t="unsignedInt"></IncomingCallsReceived>
+										<IncomingCallsAnswered t="unsignedInt"></IncomingCallsAnswered>
+										<IncomingCallsConnected t="unsignedInt"></IncomingCallsConnected>
+										<IncomingCallsFailed t="unsignedInt"></IncomingCallsFailed>
+										<OutgoingCallsAttempted t="unsignedInt"></OutgoingCallsAttempted>
+										<OutgoingCallsAnswered t="unsignedInt"></OutgoingCallsAnswered>
+										<OutgoingCallsConnected t="unsignedInt"></OutgoingCallsConnected>
+										<OutgoingCallsFailed t="unsignedInt"></OutgoingCallsFailed>
+										<CallsDropped t="unsignedInt"></CallsDropped>
+										<TotalCallTime t="unsignedInt"></TotalCallTime>
+										<ServerDownTime t="unsignedInt"></ServerDownTime>
+										<ReceivePacketLossRate t="unsignedInt"></ReceivePacketLossRate>
+										<FarEndPacketLossRate t="unsignedInt"></FarEndPacketLossRate>
+										<ReceiveInterarrivalJitter t="unsignedInt"></ReceiveInterarrivalJitter>
+										<FarEndInterarrivalJitter t="unsignedInt"></FarEndInterarrivalJitter>
+										<RoundTripDelay t="unsignedInt"></RoundTripDelay>
+										<AverageReceiveInterarrivalJitter t="unsignedInt"></AverageReceiveInterarrivalJitter>
+										<AverageFarEndInterarrivalJitter t="unsignedInt"></AverageFarEndInterarrivalJitter>
+										<AverageRoundTripDelay t="unsignedInt"></AverageRoundTripDelay>
+									</Stats>
+									<CallingFeatures>
+										<EchoCancellingEnable t="boolean"></EchoCancellingEnable>
+										<CallerIDEnable t="boolean">1</CallerIDEnable>
+										<CallerIDNameEnable t="boolean">1</CallerIDNameEnable>
+										<CallerIDName></CallerIDName>
+										<CallWaitingEnable t="boolean">1</CallWaitingEnable>
+										<CallWaitingStatus></CallWaitingStatus>
+										<MaxSessions t="unsignedInt"></MaxSessions>
+										<ConferenceCallingStatus></ConferenceCallingStatus>
+										<ConferenceCallingSessionCount t="unsignedInt"></ConferenceCallingSessionCount>
+										<CallForwardUnconditionalEnable t="boolean"></CallForwardUnconditionalEnable>
+										<CallForwardUnconditionalNumber></CallForwardUnconditionalNumber>
+										<CallForwardOnBusyEnable t="boolean"></CallForwardOnBusyEnable>
+										<CallForwardOnBusyNumber></CallForwardOnBusyNumber>
+										<CallForwardOnNoAnswerEnable t="boolean"></CallForwardOnNoAnswerEnable>
+										<CallForwardOnNoAnswerNumber></CallForwardOnNoAnswerNumber>
+										<CallForwardOnNoAnswerRingCount t="unsignedInt"></CallForwardOnNoAnswerRingCount>
+										<CallTransferEnable t="boolean"></CallTransferEnable>
+										<MWIEnable t="boolean"></MWIEnable>
+										<MessageWaiting t="boolean"></MessageWaiting>
+										<AnonymousCallBlockEnable t="boolean"></AnonymousCallBlockEnable>
+										<AnonymousCalEnable t="boolean"></AnonymousCalEnable>
+										<DoNotDisturbEnable t="boolean"></DoNotDisturbEnable>
+										<CallReturnEnable t="boolean"></CallReturnEnable>
+										<RepeatDialEnable t="boolean">0</RepeatDialEnable>
+										<X_RTK_3PTY t="int">0</X_RTK_3PTY>
+										<X_RTK_3PTY_IMS>
+											<conference-uri></conference-uri>
+										</X_RTK_3PTY_IMS>
+									</CallingFeatures>
+									<SIP>
+										<SourceOfAuthUserName></SourceOfAuthUserName>
+										<AuthUserName></AuthUserName>
+										<AuthPassword></AuthPassword>
+										<URI></URI>
+										<SIPEventSubscribeNumberOfElements t="unsignedInt"></SIPEventSubscribeNumberOfElements>
+										<EventSubscribe>
+											<Event></Event>
+											<AuthUserName></AuthUserName>
+											<AuthPassword></AuthPassword>
+										</EventSubscribe>
+										<UserAgentPort t="unsignedInt">0</UserAgentPort>
+									</SIP>
+									<PhyReferenceList></PhyReferenceList>
+								</M-O-1>
+							</Line>
+							<MiKey>
+								<Enable t="boolean"></Enable>
+								<Mode></Mode>
+								<PSK></PSK>
+							</MiKey>
+							<RFC4568>
+								<Enable t="boolean"></Enable>
+								<LifeTime></LifeTime>
+								<Suite></Suite>
+							</RFC4568>
+							<FaxCodec>
+								<Enable t="boolean">1</Enable>
+								<Priority t="unsignedInt">1</Priority>
+							</FaxCodec>
+							<X_RTK_DTMFMethodSIPInfoBody>DTMFRelay</X_RTK_DTMFMethodSIPInfoBody>
+							<X_INNBOX_HookFlashMin t="unsignedInt">100</X_INNBOX_HookFlashMin>
+							<X_INNBOX_HookFlashMax t="unsignedInt">600</X_INNBOX_HookFlashMax>
+							<X_INNBOX_HookOnTime t="unsignedInt">700</X_INNBOX_HookOnTime>
+							<X_INNBOX_HookOffTime t="unsignedInt">200</X_INNBOX_HookOffTime>
+							<X_INNBOX_InterDigitTime t="unsignedInt">160</X_INNBOX_InterDigitTime>
+							<X_INNBOX_MakeTimeMin t="unsignedInt">30</X_INNBOX_MakeTimeMin>
+							<X_INNBOX_MakeTimeMax t="unsignedInt">80</X_INNBOX_MakeTimeMax>
+							<X_INNBOX_BreakTimeMin t="unsignedInt">30</X_INNBOX_BreakTimeMin>
+							<X_INNBOX_BreakTimeMax t="unsignedInt">80</X_INNBOX_BreakTimeMax>
+							<PingInterval t="unsignedInt">0</PingInterval>
+							<SIP>
+								<ConferenceCallURI></ConferenceCallURI>
+								<LANFailover t="boolean">0</LANFailover>
+								<ProxyServer></ProxyServer>
+								<ProxyServerPort t="unsignedInt">5060</ProxyServerPort>
+								<ProxyServer2>0.0.0.0</ProxyServer2>
+								<ProxyServerPort2 t="unsignedInt">5060</ProxyServerPort2>
+								<ProxyServerTransport>UDP</ProxyServerTransport>
+								<RegistrarServer>0.0.0.0</RegistrarServer>
+								<SourceOfRegistrarServer></SourceOfRegistrarServer>
+								<SourceOfRegistrarServer2></SourceOfRegistrarServer2>
+								<RegistrarServerPort t="unsignedInt">5060</RegistrarServerPort>
+								<RegistrarServer2>0.0.0.0</RegistrarServer2>
+								<RegistrarServerPort2 t="unsignedInt">5060</RegistrarServerPort2>
+								<RegistrarServerTransport>UDP</RegistrarServerTransport>
+								<X_INNBOX_UserAgentDomainOption15Enable t="boolean">1</X_INNBOX_UserAgentDomainOption15Enable>
+								<UserAgentDomain></UserAgentDomain>
+								<SourceOfUserAgentDomain></SourceOfUserAgentDomain>
+								<UserAgentPort t="unsignedInt">5060</UserAgentPort>
+								<UserAgentTransport>UDP</UserAgentTransport>
+								<OutboundProxyEnable t="boolean"></OutboundProxyEnable>
+								<OutboundProxy></OutboundProxy>
+								<OutboundProxyPort t="unsignedInt">5060</OutboundProxyPort>
+								<Organization></Organization>
+								<RegistrationPeriod t="unsignedInt"></RegistrationPeriod>
+								<InviteExpires t="unsignedInt">3600</InviteExpires>
+								<ReInviteExpires t="unsignedInt"></ReInviteExpires>
+								<MinSessionExpires t="unsignedInt">90</MinSessionExpires>
+								<SessionExpiresRefresher>UAC</SessionExpiresRefresher>
+								<URLScheme>SIP</URLScheme>
+								<UserParameter>none</UserParameter>
+								<InitialUnregister t="unsignedInt">0</InitialUnregister>
+								<InfoFlashHook t="unsignedInt">0</InfoFlashHook>
+								<EnableRport t="boolean">1</EnableRport>
+								<DspHoldToneEnable t="boolean">0</DspHoldToneEnable>
+								<EnableUseragentHeader t="boolean"></EnableUseragentHeader>
+								<TimerT1 t="unsignedInt"></TimerT1>
+								<TimerT2 t="unsignedInt"></TimerT2>
+								<TimerT4 t="unsignedInt"></TimerT4>
+								<TimerA t="unsignedInt"></TimerA>
+								<TimerB t="unsignedInt"></TimerB>
+								<TimerC t="unsignedInt"></TimerC>
+								<TimerD t="unsignedInt"></TimerD>
+								<TimerE t="unsignedInt"></TimerE>
+								<TimerF t="unsignedInt"></TimerF>
+								<TimerG t="unsignedInt"></TimerG>
+								<TimerH t="unsignedInt"></TimerH>
+								<TimerI t="unsignedInt"></TimerI>
+								<TimerJ t="unsignedInt"></TimerJ>
+								<TimerK t="unsignedInt"></TimerK>
+								<RegisterExpires t="unsignedInt">3600</RegisterExpires>
+								<RegisterDelayBeforeRefresh t="unsignedInt">30</RegisterDelayBeforeRefresh>
+								<RegisterMinExpires t="unsignedInt"></RegisterMinExpires>
+								<RegisterRetryInterval t="unsignedInt">30</RegisterRetryInterval>
+								<UseCodecPriorityInSDPResponse t="boolean">0</UseCodecPriorityInSDPResponse>
+								<DSCPMark t="unsignedInt">46</DSCPMark>
+								<VLANIDMark t="int">-1</VLANIDMark>
+								<EthernetPriorityMark t="int">0</EthernetPriorityMark>
+								<SIPEventSubscribeNumberOfElements t="unsignedInt"></SIPEventSubscribeNumberOfElements>
+								<EventSubscribe>
+									<Event></Event>
+									<Notifier></Notifier>
+									<NotifierPort t="unsignedInt">5060</NotifierPort>
+									<NotifierTransport>UDP</NotifierTransport>
+									<ExpireTime t="unsignedInt">3600</ExpireTime>
+								</EventSubscribe>
+								<X_RTK_SubscribeEnable t="int">0</X_RTK_SubscribeEnable>
+							</SIP>
+						</M-O-1>
+					</VoiceProfile>
+					<X_WANReferenceList t="unsignedInt"></X_WANReferenceList>
+					<PhyInterfaceNumberOfEntries t="unsignedInt">1</PhyInterfaceNumberOfEntries>
+					<PhyInterface t="MULTI" i="1">
+						<M-O-1>
+							<PhyPort>1</PhyPort>
+							<InterfaceID t="unsignedInt">1</InterfaceID>
+							<Description>AnalogPhone1</Description>
+							<Tests>
+								<TestSelector></TestSelector>
+								<PhoneConnectivity t="boolean"></PhoneConnectivity>
+								<TestState>None</TestState>
+								<X_RTK_LineTest>
+									<Conclusion>Normal</Conclusion>
+									<IsTestOnBusy t="boolean">0</IsTestOnBusy>
+								</X_RTK_LineTest>
+								<X_RTK_InnerTest>
+									<OnOffHookTestResult>PhoneOnhook</OnOffHookTestResult>
+								</X_RTK_InnerTest>
+							</Tests>
+						</M-O-1>
+					</PhyInterface>
+				</M-O-1>
+			</VoiceService>
+			<X_INNBOX_VoiceServiceNumberOfEntries t="unsignedInt">1</X_INNBOX_VoiceServiceNumberOfEntries>
+			<X_INNBOX_VoiceService t="MULTI" i="1">
+				<M-O-1>
+					<UserAgent></UserAgent>
+					<DigitMapCallLimit t="boolean">0</DigitMapCallLimit>
+					<DigitEODEnable t="boolean">0</DigitEODEnable>
+					<DigitEODSend t="boolean">0</DigitEODSend>
+					<CallHoldEnable t="boolean">1</CallHoldEnable>
+					<HookFlashOption t="unsignedInt">1</HookFlashOption>
+					<SipOptionsEnable t="boolean">0</SipOptionsEnable>
+					<SipOptionsTimer t="unsignedInt">30</SipOptionsTimer>
+					<CallerIDStandard t="unsignedInt">1</CallerIDStandard>
+					<RegisterPollingInterval t="unsignedInt">120</RegisterPollingInterval>
+					<RegisterRetryInterval t="unsignedInt">120</RegisterRetryInterval>
+					<SOLBusyCode t="unsignedInt">580</SOLBusyCode>
+					<ACR>
+						<PrefixFXOPattern>*1x*</PrefixFXOPattern>
+						<PrefixFXOSIndex>1</PrefixFXOSIndex>
+						<PrefixVoIPPattern>*2x*</PrefixVoIPPattern>
+						<PrefixVoIPSIndex>1</PrefixVoIPSIndex>
+					</ACR>
+					<DefaultAccount></DefaultAccount>
+					<P2PTable>
+						<Mode t="unsignedInt">0</Mode>
+						<P2PEntryNumberOfEntries t="unsignedInt"></P2PEntryNumberOfEntries>
+						<P2PEntry t="MULTI"></P2PEntry>
+					</P2PTable>
+					<ICRNumberOfEntries t="unsignedInt"></ICRNumberOfEntries>
+					<IncomingCallRules t="MULTI"></IncomingCallRules>
+					<ODRNumberOfEntries t="unsignedInt"></ODRNumberOfEntries>
+					<OutDialRules t="MULTI"></OutDialRules>
+					<SDLNumberOfEntries t="unsignedInt"></SDLNumberOfEntries>
+					<SpeedDialing t="MULTI"></SpeedDialing>
+					<CBNumberOfEntries t="unsignedInt"></CBNumberOfEntries>
+					<CallBlock t="MULTI"></CallBlock>
+					<ECFNumberOfEntries t="unsignedInt"></ECFNumberOfEntries>
+					<ExternalCallForward t="MULTI"></ExternalCallForward>
+					<FXSNumberOfEntries t="unsignedInt">1</FXSNumberOfEntries>
+					<FXS t="MULTI" i="1">
+						<M-O-1>
+							<Account>
+								<Enable t="boolean">1</Enable>
+								<Name>AnalogPhone1</Name>
+								<Extension>21</Extension>
+								<ConnectVia>Line-1</ConnectVia>
+								<InternalRingerID t="unsignedInt"></InternalRingerID>
+								<TXGain>0</TXGain>
+								<RXGain>-6</RXGain>
+								<ECType t="unsignedInt">1</ECType>
+								<VAD t="boolean">1</VAD>
+								<AGC t="boolean">0</AGC>
+								<CNG t="boolean">1</CNG>
+								<FAX_V18 t="boolean">0</FAX_V18>
+								<OffhookTimer t="unsignedInt"></OffhookTimer>
+								<NoAnswerTimer t="unsignedInt"></NoAnswerTimer>
+								<InterdigitTimer t="unsignedInt">4</InterdigitTimer>
+								<DigitmapTPartial t="unsignedInt">4</DigitmapTPartial>
+								<DigitmapTCritical t="unsignedInt">4</DigitmapTCritical>
+								<CallerIDDisplay t="boolean">1</CallerIDDisplay>
+								<CallerIDDelivery t="boolean">1</CallerIDDelivery>
+								<CallWaiting t="boolean">1</CallWaiting>
+								<CallTransfer t="boolean">1</CallTransfer>
+								<CallConference t="boolean">1</CallConference>
+								<CWToneRemoteNotify t="boolean"></CWToneRemoteNotify>
+								<SupportVOIPOOSTone t="unsignedInt"></SupportVOIPOOSTone>
+								<RButtonHookflash t="boolean"></RButtonHookflash>
+								<RButtonVariation t="boolean"></RButtonVariation>
+								<NoToneUnregistered t="boolean">0</NoToneUnregistered>
+								<PoundKeyFasDial t="boolean">1</PoundKeyFasDial>
+								<FallbackEnable t="boolean">0</FallbackEnable>
+								<FallbackVia>PSTN_LINE</FallbackVia>
+								<IncomingAccountNumberOfEntries t="unsignedInt">1</IncomingAccountNumberOfEntries>
+								<IncomingAccount t="MULTI" i="1">
+									<M-O-1>
+										<Enable t="boolean">1</Enable>
+										<Name>Line-1</Name>
+										<RingerID></RingerID>
+										<WaitingTime t="unsignedInt"></WaitingTime>
+									</M-O-1>
+								</IncomingAccount>
+								<CallerID_type>FSK</CallerID_type>
+								<JitterBuffer t="boolean">1</JitterBuffer>
+							</Account>
+							<COD>
+								<Volume>
+									<EncGain>0</EncGain>
+									<DecGain>0</DecGain>
+								</Volume>
+								<Encoder>
+									<AGC>
+										<Mode>0</Mode>
+										<CompareLevel>0</CompareLevel>
+										<MaxGain>0</MaxGain>
+										<MaxAttenuation>0</MaxAttenuation>
+										<MinInputLevel>0</MinInputLevel>
+									</AGC>
+									<VAD t="boolean">0</VAD>
+								</Encoder>
+								<Decoder>
+									<HPFilter t="unsignedInt">0</HPFilter>
+								</Decoder>
+								<JitterBuffer>
+									<Type t="unsignedInt">2</Type>
+									<PacketAdaptive t="boolean">0</PacketAdaptive>
+									<LocalAdaptive t="boolean">0</LocalAdaptive>
+									<Scaling t="unsignedInt">16</Scaling>
+									<IniSize t="unsignedInt">720</IniSize>
+									<MaxSize t="unsignedInt">1440</MaxSize>
+									<MinSize t="unsignedInt">80</MinSize>
+								</JitterBuffer>
+								<RTCPCFG>
+									<Events t="boolean">1</Events>
+									<EventPT t="unsignedInt">96</EventPT>
+								</RTCPCFG>
+								<CountryCode>792</CountryCode>
+								<CID>
+									<Delay_timer t="unsignedInt">600</Delay_timer>
+									<standard t="unsignedInt">0</standard>
+									<Timing>
+										<BeforeData t="unsignedInt">300</BeforeData>
+										<DataOut2RestoreTimeOnhook t="unsignedInt">300</DataOut2RestoreTimeOnhook>
+										<DataOut2RestoreTimeOffhook t="unsignedInt">60</DataOut2RestoreTimeOffhook>
+										<Ack2DataOutTime t="unsignedInt">55</Ack2DataOutTime>
+										<Cas2AckTime t="unsignedInt">160</Cas2AckTime>
+										<AfterAckTimeout t="unsignedInt">50</AfterAckTimeout>
+										<AfterFirstRing t="unsignedInt">600</AfterFirstRing>
+										<AfterRingPulse t="unsignedInt">600</AfterRingPulse>
+										<AfterDTASOnhook t="unsignedInt">45</AfterDTASOnhook>
+										<AfterLineReversal t="unsignedInt">100</AfterLineReversal>
+										<AfterOSI t="unsignedInt">300</AfterOSI>
+									</Timing>
+									<DTMFCFG>
+										<StartTone>A</StartTone>
+										<StopTone>C</StopTone>
+										<InfosStartTone>B</InfosStartTone>
+										<RedirStartTone>D</RedirStartTone>
+										<DigitTime t="unsignedInt">50</DigitTime>
+										<InterDigitTime t="unsignedInt">50</InterDigitTime>
+									</DTMFCFG>
+									<FSKCFG>
+										<LevelTX t="int">-140</LevelTX>
+										<LevelRX t="int">-380</LevelRX>
+										<SeizureTX t="unsignedInt">300</SeizureTX>
+										<SeizureRX t="unsignedInt">200</SeizureRX>
+										<MarkTXOnhook t="unsignedInt">180</MarkTXOnhook>
+										<MarkTXOffhook t="unsignedInt">80</MarkTXOffhook>
+										<MarkRXOnhook t="unsignedInt">150</MarkRXOnhook>
+										<MarkRXOffhook t="unsignedInt">55</MarkRXOffhook>
+									</FSKCFG>
+									<ABSReason>
+										<Length t="unsignedInt">2</Length>
+										<UnavailableSTR t="boolean">0</UnavailableSTR>
+										<PrivateSTR t="boolean">1</PrivateSTR>
+									</ABSReason>
+									<ETSIAlertRing t="unsignedInt">0</ETSIAlertRing>
+									<ETSIAlertNoRing t="unsignedInt">2</ETSIAlertNoRing>
+									<AlertToneOffhook t="boolean">0</AlertToneOffhook>
+									<AlertToneOnhook t="boolean">0</AlertToneOnhook>
+									<RingPulseTime t="unsignedInt">500</RingPulseTime>
+									<RingPulseOffTime t="unsignedInt">500</RingPulseOffTime>
+									<RingPulseTimeLoop t="unsignedInt">5</RingPulseTimeLoop>
+									<AckTone>D</AckTone>
+									<DataOut2IncomingTimeout>7000</DataOut2IncomingTimeout>
+									<OSIOffhook>0</OSIOffhook>
+									<OSITime>200</OSITime>
+								</CID>
+							</COD>
+							<ALM>
+								<Volume>
+									<GainTX>0</GainTX>
+									<GainRX>0</GainRX>
+								</Volume>
+								<LEchoCanceller>
+									<Type>2</Type>
+									<NLPSwitch>2</NLPSwitch>
+								</LEchoCanceller>
+								<Offhook>
+									<MinTime>0</MinTime>
+								</Offhook>
+								<Onhook>
+									<MinTime>0</MinTime>
+								</Onhook>
+								<Flashhook>
+									<MinTime>0</MinTime>
+									<MaxTime>0</MaxTime>
+								</Flashhook>
+								<RingCadence>
+									<OnTime>2</OnTime>
+									<OffTime>4</OffTime>
+								</RingCadence>
+							</ALM>
+						</M-O-1>
+					</FXS>
+					<FXONumberOfEntries t="unsignedInt"></FXONumberOfEntries>
+					<FXO t="MULTI"></FXO>
+					<DECTNumberOfEntries t="unsignedInt"></DECTNumberOfEntries>
+					<DECT t="MULTI"></DECT>
+					<Hotline>
+						<Enable t="boolean">0</Enable>
+						<Number></Number>
+						<Timeout t="unsignedInt">5</Timeout>
+					</Hotline>
+					<Notify>
+						<Hotline>
+							<Enable t="boolean"></Enable>
+							<Number></Number>
+							<Timeout t="unsignedInt"></Timeout>
+						</Hotline>
+					</Notify>
+					<PhoneSettings>
+						<FlashHookMinTime t="unsignedInt">85</FlashHookMinTime>
+						<FlashHookMaxTime t="unsignedInt">350</FlashHookMaxTime>
+						<HookTime t="unsignedInt">600</HookTime>
+					</PhoneSettings>
+					<WatchdogRestartTimes t="unsignedInt">0</WatchdogRestartTimes>
+				</M-O-1>
+			</X_INNBOX_VoiceService>
+			<X_INNBOX_LedControl>
+				<X_INNBOX_LedIndication t="unsignedInt"></X_INNBOX_LedIndication>
+			</X_INNBOX_LedControl>
+			<X_RTK_DeviceLogEnable t="unsignedInt"></X_RTK_DeviceLogEnable>
+			<X_RTK_RemoteLogEnable t="unsignedInt"></X_RTK_RemoteLogEnable>
+			<X_RTK_RemoteLogServer></X_RTK_RemoteLogServer>
+		</Services>
+		<X_INNBOX_4G_info>
+			<current_plmn>
+				<State></State>
+				<FullName></FullName>
+				<ShortName></ShortName>
+				<Numeric></Numeric>
+				<Rat></Rat>
+				<Spn></Spn>
+			</current_plmn>
+			<signal>
+				<pci></pci>
+				<sc></sc>
+				<cell_id></cell_id>
+				<rsrq></rsrq>
+				<rsrp></rsrp>
+				<rssi></rssi>
+				<sinr></sinr>
+				<rscp></rscp>
+				<ecio></ecio>
+				<mode></mode>
+				<ulbandwidth></ulbandwidth>
+				<dlbandwidth></dlbandwidth>
+				<txpower></txpower>
+				<tdd></tdd>
+				<ul_mcs></ul_mcs>
+				<dl_mcs></dl_mcs>
+				<earfcn></earfcn>
+				<rrc_status></rrc_status>
+				<rac></rac>
+				<lac></lac>
+				<tac></tac>
+				<band></band>
+				<nei_cellid></nei_cellid>
+				<plmn></plmn>
+				<ims></ims>
+				<wdlfreq></wdlfreq>
+				<lteulfreq></lteulfreq>
+				<ltedlfreq></ltedlfreq>
+				<transmode></transmode>
+				<enodeb_id></enodeb_id>
+				<cqi0></cqi0>
+				<cqi1></cqi1>
+				<ulfrequency></ulfrequency>
+				<dlfrequency></dlfrequency>
+				<arfcn></arfcn>
+				<bsic></bsic>
+				<rxlev></rxlev>
+			</signal>
+		</X_INNBOX_4G_info>
+		<Firewall>
+			<Enable t="boolean">1</Enable>
+			<Config>Advanced</Config>
+			<AdvancedLevel>InternetGatewayDevice.Firewall.Level.1.</AdvancedLevel>
+			<Type>Stateful</Type>
+			<Version></Version>
+			<LastChange t="dateTime"></LastChange>
+			<LevelNumberOfEntries t="unsignedInt">1</LevelNumberOfEntries>
+			<ChainNumberOfEntries t="unsignedInt">1</ChainNumberOfEntries>
+			<Level t="MULTI" i="1">
+				<M-O-1>
+					<Alias>cpe-InnboxX24-DEF</Alias>
+					<Name></Name>
+					<Description></Description>
+					<Order t="unsignedInt">1</Order>
+					<Chain>InternetGatewayDevice.Firewall.Chain.1.</Chain>
+					<PortMappingEnabled t="boolean">1</PortMappingEnabled>
+					<DefaultPolicy>Drop</DefaultPolicy>
+					<X_INNBOX_DefaultPolicyV6>Drop</X_INNBOX_DefaultPolicyV6>
+					<DefaultLogPolicy t="boolean">0</DefaultLogPolicy>
+					<X_INNBOX_OrderInvalid t="unsignedInt">0</X_INNBOX_OrderInvalid>
+					<X_INNBOX_OrderShift t="unsignedInt">0</X_INNBOX_OrderShift>
+				</M-O-1>
+			</Level>
+			<Chain t="MULTI" i="1">
+				<M-O-1>
+					<Enable t="boolean">1</Enable>
+					<Alias>cpe-InnboxX24-DEF</Alias>
+					<Name></Name>
+					<Creator>Defaults</Creator>
+					<RuleNumberOfEntries t="unsignedInt">0</RuleNumberOfEntries>
+					<Rule t="MULTI"></Rule>
+				</M-O-1>
+			</Chain>
+			<DDOSConfigNumberOfEntries t="unsignedInt">0</DDOSConfigNumberOfEntries>
+			<DDOSConfig t="MULTI"></DDOSConfig>
+		</Firewall>
+		<X_INNBOX_URLFilter>
+			<Enable t="boolean">0</Enable>
+			<Policy>FORWARD</Policy>
+			<URLFilterConfig t="MULTI"></URLFilterConfig>
+		</X_INNBOX_URLFilter>
+		<X_INNBOX_DomainFilter>
+			<Enable t="boolean">0</Enable>
+			<Policy>FORWARD</Policy>
+			<DomainFilterConfig t="MULTI"></DomainFilterConfig>
+		</X_INNBOX_DomainFilter>
+		<X_INNBOX_MACFilter>
+			<Enable t="boolean">0</Enable>
+			<Policy>FORWARD</Policy>
+			<MACFilterConfigNumberOfEntries t="unsignedInt">0</MACFilterConfigNumberOfEntries>
+			<MACFilterConfig t="MULTI"></MACFilterConfig>
+		</X_INNBOX_MACFilter>
+		<X_INNBOX_SystemState>
+			<Mem>
+				<MemTotal t="unsignedInt"></MemTotal>
+				<MemTotalFree t="unsignedInt"></MemTotalFree>
+			</Mem>
+			<CPU>
+				<CPULoad t="unsignedInt"></CPULoad>
+			</CPU>
+			<NatSessionTable>
+				<Total t="unsignedInt"></Total>
+				<Used t="unsignedInt"></Used>
+			</NatSessionTable>
+		</X_INNBOX_SystemState>
+		<X_INNBOX_IGMPCfg>
+			<IGMPVer>2</IGMPVer>
+			<IGMPQI>25</IGMPQI>
+			<IGMPQRI>10</IGMPQRI>
+			<IGMPLMQI>10</IGMPLMQI>
+			<IGMPRV>2</IGMPRV>
+			<IGMPMaxGroups>32</IGMPMaxGroups>
+			<IGMPMaxSources>10</IGMPMaxSources>
+			<IGMPMaxMembers>32</IGMPMaxMembers>
+			<IGMPFastLeaveEnable>1</IGMPFastLeaveEnable>
+			<IGMPLan2LanMulticastEnable>0</IGMPLan2LanMulticastEnable>
+			<IGMPJoinImmediate>1</IGMPJoinImmediate>
+			<IGMPProxyEnable>1</IGMPProxyEnable>
+		</X_INNBOX_IGMPCfg>
+		<X_INNBOX_IGMP>
+			<IGMPFilter>
+				<Enable t="boolean">1</Enable>
+				<Policy>FORWARD</Policy>
+				<IGMPFilterConfigNumberOfEntries t="unsignedInt">1</IGMPFilterConfigNumberOfEntries>
+				<IGMPFilterConfig t="MULTI" i="1">
+					<M-O-1>
+						<Enable t="boolean">1</Enable>
+						<IGMPGroup>239.255.255.250</IGMPGroup>
+						<IGMPGroupMask></IGMPGroupMask>
+					</M-O-1>
+				</IGMPFilterConfig>
+			</IGMPFilter>
+		</X_INNBOX_IGMP>
+		<X_INNBOX_UDPHTTPProxy>
+			<Enable t="boolean">0</Enable>
+			<TCPPort t="unsignedInt">4022</TCPPort>
+			<Buffer t="unsignedInt">5000</Buffer>
+			<ProxyIP></ProxyIP>
+			<Timeout t="unsignedInt">5</Timeout>
+		</X_INNBOX_UDPHTTPProxy>
+		<X_INNBOX_IPv6PingDiagnostics>
+			<DiagnosticsState></DiagnosticsState>
+			<Interface></Interface>
+			<Host></Host>
+			<NumberOfRepetitions t="unsignedInt"></NumberOfRepetitions>
+			<Timeout t="unsignedInt"></Timeout>
+			<DataBlockSize t="unsignedInt"></DataBlockSize>
+			<DSCP t="unsignedInt"></DSCP>
+			<SuccessCount t="unsignedInt"></SuccessCount>
+			<FailureCount t="unsignedInt"></FailureCount>
+			<AverageResponseTime t="unsignedInt"></AverageResponseTime>
+			<MinimumResponseTime t="unsignedInt"></MinimumResponseTime>
+			<MaximumResponseTime t="unsignedInt"></MaximumResponseTime>
+		</X_INNBOX_IPv6PingDiagnostics>
+		<IPTunnelNumberOfEntries t="unsignedInt">0</IPTunnelNumberOfEntries>
+		<X_INNBOX_IPTunnel t="MULTI"></X_INNBOX_IPTunnel>
+		<X_INNBOX_IPv6Layer3Forwarding>
+			<DefaultConnectionService></DefaultConnectionService>
+			<ActiveDefaultInterface>1</ActiveDefaultInterface>
+			<IPv6ForwardNumberOfEntries t="unsignedInt" n="1">1</IPv6ForwardNumberOfEntries>
+			<IPv6Forwarding t="MULTI" i="1">
+				<M-O-1>
+					<Enable t="boolean">0</Enable>
+					<Status>Enabled</Status>
+					<Type></Type>
+					<DestIPv6Address></DestIPv6Address>
+					<DestIPv6PrefixLength t="unsignedInt">0</DestIPv6PrefixLength>
+					<SourceIPv6Address></SourceIPv6Address>
+					<SourceIfName>LAN0</SourceIfName>
+					<GatewayIPv6Address></GatewayIPv6Address>
+					<Interface></Interface>
+					<ForwardingMetric t="int">-1</ForwardingMetric>
+					<MTU t="unsignedInt">1280</MTU>
+					<PolicyRoutingName>ipv6default</PolicyRoutingName>
+				</M-O-1>
+			</IPv6Forwarding>
+		</X_INNBOX_IPv6Layer3Forwarding>
+		<X_INNBOX_CIFS>
+			<Enable t="boolean">1</Enable>
+			<WorkgroupName>Workgroup</WorkgroupName>
+			<CIFSNumberOfEntries t="unsignedInt">0</CIFSNumberOfEntries>
+			<UserNumberOfEntries t="unsignedInt">0</UserNumberOfEntries>
+			<CIFS t="MULTI"></CIFS>
+			<User t="MULTI"></User>
+			<NetbiosName>InnboxDrive</NetbiosName>
+			<Workgroup>Workgroup</Workgroup>
+			<AccessMode t="boolean">0</AccessMode>
+			<IsSimpleSecurityMode t="boolean">1</IsSimpleSecurityMode>
+		</X_INNBOX_CIFS>
+		<X_INNBOX_ALG>
+			<FTP>
+				<Enable t="boolean">1</Enable>
+			</FTP>
+			<TFTP>
+				<Enable t="boolean">1</Enable>
+			</TFTP>
+			<H323>
+				<Enable t="boolean">1</Enable>
+			</H323>
+			<SIP>
+				<Enable t="boolean">1</Enable>
+			</SIP>
+			<RTSP>
+				<Enable t="boolean">1</Enable>
+			</RTSP>
+			<IRC>
+				<Enable t="boolean">1</Enable>
+			</IRC>
+			<PPTP>
+				<Enable t="boolean">1</Enable>
+			</PPTP>
+			<DTX8>
+				<Enable t="boolean">0</Enable>
+			</DTX8>
+			<PT>
+				<Enable t="boolean">0</Enable>
+			</PT>
+			<IPSEC>
+				<Enable t="boolean">0</Enable>
+			</IPSEC>
+			<WM>
+				<Enable t="boolean">0</Enable>
+			</WM>
+			<SNMP>
+				<Enable t="boolean">0</Enable>
+			</SNMP>
+		</X_INNBOX_ALG>
+		<X_INNBOX_App>
+			<tr069>
+				<ssl_mode></ssl_mode>
+				<port></port>
+				<uri></uri>
+				<debug_level></debug_level>
+				<stun_listen_port></stun_listen_port>
+				<inform_retry_mode></inform_retry_mode>
+				<connect_retry_mode></connect_retry_mode>
+				<inform_retry_interval></inform_retry_interval>
+				<inform_retry_interval2></inform_retry_interval2>
+				<max_inform_retry_interval></max_inform_retry_interval>
+				<connect_retry_interval></connect_retry_interval>
+				<connect_retry_interval2></connect_retry_interval2>
+				<max_connect_retry_interval></max_connect_retry_interval>
+				<wan_inf></wan_inf>
+				<externalip_num></externalip_num>
+			</tr069>
+			<tr064>
+				<upnp_enable t="boolean">1</upnp_enable>
+			</tr064>
+			<dlna>
+				<dlna_enable t="boolean">0</dlna_enable>
+			</dlna>
+			<telnetd>
+				<enable t="boolean">0</enable>
+				<port t="unsignedInt">55523</port>
+			</telnetd>
+			<sshd>
+				<enable t="boolean">0</enable>
+				<port t="unsignedInt">55522</port>
+			</sshd>
+			<ftpd>
+				<enable t="boolean">0</enable>
+			</ftpd>
+			<tftpd>
+				<enable t="boolean">0</enable>
+			</tftpd>
+			<lpd>
+				<enable t="boolean">1</enable>
+				<queue>myprinter</queue>
+			</lpd>
+			<captive_portal>
+				<enable>1</enable>
+			</captive_portal>
+			<iperf>
+				<enable>0</enable>
+				<udp>0</udp>
+				<port>5001</port>
+				<max_conns>0</max_conns>
+			</iperf>
+			<ddns>
+				<enable>0</enable>
+				<provider>1</provider>
+				<hostname></hostname>
+				<user></user>
+				<password></password>
+				<generatedurl></generatedurl>
+				<server>vmcpeddns.myinnbox.net</server>
+				<domain>myinnbox.net</domain>
+				<port>6443</port>
+			</ddns>
+			<igmp>
+				<enable>1</enable>
+				<interface>1</interface>
+				<mode>3</mode>
+				<enhancement>1</enhancement>
+			</igmp>
+			<snmp>
+				<enable t="boolean">0</enable>
+			</snmp>
+			<homeplugd>
+				<enable t="boolean">1</enable>
+			</homeplugd>
+			<wgd>
+				<enable t="boolean">0</enable>
+			</wgd>
+			<parentctl>
+				<enable t="boolean">1</enable>
+				<safe_mode_enabled t="boolean">0</safe_mode_enabled>
+			</parentctl>
+			<ntsd>
+				<enable t="boolean">1</enable>
+			</ntsd>
+			<lxcd>
+				<enable t="boolean">0</enable>
+			</lxcd>
+		</X_INNBOX_App>
+		<X_INNBOX_CATV>
+			<Enable t="boolean">1</Enable>
+			<Stats>
+				<Temperature>0</Temperature>
+				<Vcc>0</Vcc>
+				<VideoPower>0</VideoPower>
+				<TxBias>0</TxBias>
+				<TxPower>0</TxPower>
+				<RxPower>0</RxPower>
+				<VendorName>0</VendorName>
+				<VendorPn>0</VendorPn>
+				<VendorSn>0</VendorSn>
+			</Stats>
+		</X_INNBOX_CATV>
+		<X_INNBOX_XPON>
+			<LinkCfg>
+				<Mode t="unsignedInt">0</Mode>
+				<LinkSta t="unsignedInt">0</LinkSta>
+			</LinkCfg>
+			<Common>
+				<oltType></oltType>
+				<phyStatus>down</phyStatus>
+				<trafficStatus>down</trafficStatus>
+				<startXpon>No</startXpon>
+				<LanVidTransparent>No</LanVidTransparent>
+				<GponBindIfc>No</GponBindIfc>
+			</Common>
+			<IPHost>
+				<WanIf></WanIf>
+				<commitWan t="boolean">1</commitWan>
+			</IPHost>
+		</X_INNBOX_XPON>
+		<X_INNBOX_OMCI>
+			<Version>MTK1.0</Version>
+			<Active>Yes</Active>
+			<DebugLevel t="unsignedInt">1</DebugLevel>
+			<LanDebug t="unsignedInt">0</LanDebug>
+			<PMDebugLevel t="unsignedInt">0</PMDebugLevel>
+			<Ready>down</Ready>
+			<QOS></QOS>
+			<QOSType></QOSType>
+			<QOSMask></QOSMask>
+			<QOSCfg></QOSCfg>
+			<IPHost>
+				<InterfaceReference></InterfaceReference>
+				<MACAddress></MACAddress>
+			</IPHost>
+			<L2VPN>
+				<InterfaceReference></InterfaceReference>
+			</L2VPN>
+		</X_INNBOX_OMCI>
+		<X_INNBOX_GPON>
+			<Common>
+				<Enable t="boolean">1</Enable>
+				<CurrentAttribute></CurrentAttribute>
+			</Common>
+			<ONU>
+				<Version>1.0</Version>
+				<VendorId>MTKG</VendorId>
+				<SerialNumber>FHTT002460E2</SerialNumber>
+				<OnuType t="unsignedInt">0</OnuType>
+				<Password>00000001</Password>
+				<TMOption t="unsignedInt">2</TMOption>
+				<ONUSurvivalTime t="unsignedInt">10</ONUSurvivalTime>
+				<ExtendedTClayer t="unsignedInt">3</ExtendedTClayer>
+				<EquipmentId>InnboxX24</EquipmentId>
+				<OMCCVersion>160</OMCCVersion>
+				<VendorProCode t="unsignedInt">340</VendorProCode>
+				<SecurityCap>1</SecurityCap>
+				<TotalPQNum t="unsignedInt">160</TotalPQNum>
+				<TotalTSNum t="unsignedInt">16</TotalTSNum>
+				<TotalGEMPortNum t="unsignedInt">256</TotalGEMPortNum>
+				<ConnectivityCap>7f</ConnectivityCap>
+				<QosConfFlex>0x18</QosConfFlex>
+				<MaxPorts t="unsignedInt">6</MaxPorts>
+				<PortList1>48,248,47,47,47,47,0,0</PortList1>
+				<EnhancedPSK>01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f 00</EnhancedPSK>
+				<ModelName>Innbox</ModelName>
+				<EmergencyState t="boolean">0</EmergencyState>
+			</ONU>
+			<ANI>
+				<TotalTCONTNum t="unsignedInt">16</TotalTCONTNum>
+				<SRIndication t="unsignedInt">1</SRIndication>
+				<GEMBlockLength t="unsignedInt">48</GEMBlockLength>
+				<PiggybackDBA t="unsignedInt">0</PiggybackDBA>
+				<SFThd t="unsignedInt">5</SFThd>
+				<SDThd t="unsignedInt">9</SDThd>
+				<ONUResponseTime t="unsignedInt">35000</ONUResponseTime>
+				<PhyTransParameters></PhyTransParameters>
+				<RxOpticalLevel></RxOpticalLevel>
+			</ANI>
+			<OLT>
+				<VendorId></VendorId>
+				<EquipmentId></EquipmentId>
+				<Version></Version>
+				<ToD></ToD>
+			</OLT>
+			<SoftImage0>
+				<Version>image0</Version>
+				<Committed t="boolean">0</Committed>
+				<Active t="boolean">0</Active>
+				<Valid t="boolean">1</Valid>
+			</SoftImage0>
+			<SoftImage1>
+				<Version>image1</Version>
+				<Committed t="boolean">0</Committed>
+				<Active t="boolean">0</Active>
+				<Valid t="boolean">1</Valid>
+			</SoftImage1>
+			<Capability>
+				<OperatorID>CTC</OperatorID>
+				<SpecVersion t="unsignedInt">0</SpecVersion>
+				<ONU_type>0</ONU_type>
+				<ONU_PowerCtr t="unsignedInt">0</ONU_PowerCtr>
+			</Capability>
+			<LOIDAuth>
+				<OperatorID>CTC</OperatorID>
+				<LOID>mtk1111</LOID>
+				<Password>1111</Password>
+				<AuthStatus t="unsignedInt">0</AuthStatus>
+			</LOIDAuth>
+		</X_INNBOX_GPON>
+		<Optical>
+			<InterfaceNumberOfEntries t="unsignedInt"></InterfaceNumberOfEntries>
+			<Interface t="MULTI"></Interface>
+		</Optical>
+		<UserInterface>
+			<RemoteAccessNumberOfEntries t="unsignedInt">0</RemoteAccessNumberOfEntries>
+			<RemoteAccess t="MULTI"></RemoteAccess>
+			<X_INNBOX_RemoteAccessV6NumberOfEntries t="unsignedInt">0</X_INNBOX_RemoteAccessV6NumberOfEntries>
+			<X_INNBOX_RemoteAccessV6 t="MULTI"></X_INNBOX_RemoteAccessV6>
+		</UserInterface>
+		<X_INNBOX_NTSD>
+			<Enable t="boolean">1</Enable>
+			<Mode t="unsignedInt">1</Mode>
+			<MACAddress></MACAddress>
+			<ClientNumberOfEntries t="unsignedInt"></ClientNumberOfEntries>
+		</X_INNBOX_NTSD>
+		<Diagnostics>
+			<X_INNBOX_SpeedtestFileName></X_INNBOX_SpeedtestFileName>
+			<X_INNBOX_SpeedtestServerIP></X_INNBOX_SpeedtestServerIP>
+			<X_INNBOX_SpeedtestServerPort></X_INNBOX_SpeedtestServerPort>
+			<X_INNBOX_OoklaSpeedtestFileName></X_INNBOX_OoklaSpeedtestFileName>
+			<X_INNBOX_OoklaSpeedtestServerIP></X_INNBOX_OoklaSpeedtestServerIP>
+			<X_INNBOX_OoklaSpeedtestServerName></X_INNBOX_OoklaSpeedtestServerName>
+			<X_INNBOX_OoklaSpeedtestServerPort></X_INNBOX_OoklaSpeedtestServerPort>
+			<X_INNBOX_OoklaSpeedtestUserSetParam></X_INNBOX_OoklaSpeedtestUserSetParam>
+		</Diagnostics>
+		<X_INNBOX_Networkinfo>
+			<Enable t="boolean">0</Enable>
+		</X_INNBOX_Networkinfo>
+		<X_INNBOX_TestMode>
+			<ParentalControl>
+				<AutoEnable t="boolean">0</AutoEnable>
+				<SafeModeShowOffset t="unsignedInt">1</SafeModeShowOffset>
+			</ParentalControl>
+		</X_INNBOX_TestMode>
+	</InternetGatewayDevice>
+	<sys>
+		<igmp_path>init</igmp_path>
+		<leddisplay>1</leddisplay>
+		<network>
+			<wan>
+				<ip></ip>
+			</wan>
+		</network>
+		<log>
+			<loglevel>0</loglevel>
+			<maxrow>50</maxrow>
+			<security>
+				<devicelogenable>1</devicelogenable>
+				<systeminfo>1</systeminfo>
+				<debuginfo>0</debuginfo>
+				<attackinfo>1</attackinfo>
+				<droppacketinfo>0</droppacketinfo>
+				<noticeinfo>1</noticeinfo>
+				<priority>0</priority>
+			</security>
+			<logserverenable>0</logserverenable>
+			<logserver></logserver>
+		</log>
+		<WANKeepAlive>
+			<Enable t="boolean">0</Enable>
+			<TargetIPAddress></TargetIPAddress>
+			<PrimaryConnection></PrimaryConnection>
+			<BackupConnection></BackupConnection>
+			<IntervalTime t="unsignedInt">0</IntervalTime>
+			<Threshold t="unsignedInt">0</Threshold>
+		</WANKeepAlive>
+		<wan_mirror>0</wan_mirror>
+		<menu>
+			<status i="12">
+				<M-O-1>
+					<name>info</name>
+					<html>status/st_deviceinfo_tl.htm</html>
+					<lan_var>mn_info</lan_var>
+				</M-O-1>
+				<M-O-2>
+					<name>wan_info</name>
+					<html>status/st_waninfo_tl.htm</html>
+					<lan_var>mn_wan_service</lan_var>
+				</M-O-2>
+				<M-O-3>
+					<name>network_setup</name>
+					<html>status/st_network_setup_tl.htm</html>
+					<lan_var>mn_network_setup</lan_var>
+				</M-O-3>
+				<M-O-4>
+					<name>client</name>
+					<html>status/st_arp_tl.htm</html>
+					<lan_var>mn_arp</lan_var>
+				</M-O-4>
+				<M-O-5>
+					<name>voice_log</name>
+					<html>status/st_voice_log_tl.htm</html>
+					<lan_var>mn_voice_logs</lan_var>
+				</M-O-5>
+				<M-O-6>
+					<name>route</name>
+					<html>status/st_route_tl.htm</html>
+					<lan_var>mn_route</lan_var>
+				</M-O-6>
+				<M-O-7>
+					<name>ipv6</name>
+					<html>status/st_ipv6_status_tl.htm</html>
+					<lan_var>mn_ipv6_status</lan_var>
+				</M-O-7>
+				<M-O-8>
+					<name>log</name>
+					<html>status/st_log_tl.htm</html>
+					<lan_var>mn_log</lan_var>
+				</M-O-8>
+				<M-O-9>
+					<name>usb</name>
+					<html>status/st_usb_tl.htm</html>
+					<lan_var>mn_usb</lan_var>
+				</M-O-9>
+				<M-O-10>
+					<name>vpn</name>
+					<html>status/st_vpn_tl.htm</html>
+					<lan_var>mn_vpn_info</lan_var>
+				</M-O-10>
+				<M-O-11>
+					<name>3g_info</name>
+					<html>status/st_3g_status_tl.htm</html>
+					<lan_var>mn_3g</lan_var>
+				</M-O-11>
+				<M-O-12>
+					<name>5g_info</name>
+					<html>status/st_5g_status_tl.htm</html>
+					<lan_var>mn_5g</lan_var>
+				</M-O-12>
+			</status>
+			<StatusOfEntries>12</StatusOfEntries>
+			<wireless i="3">
+				<M-O-1>
+					<name>wifi</name>
+					<html>wireless/wl_wireless_auth_tl.htm</html>
+					<lan_var>mn_wifi</lan_var>
+					<submenu i="2">
+						<M-O-1>
+							<name>2G</name>
+							<html>wireless/wl_wireless_auth_tl.htm</html>
+							<father>wireless/wl_wireless_auth_tl.htm</father>
+							<lan_var>mn_2G4Hz</lan_var>
+						</M-O-1>
+						<M-O-2>
+							<name>5G</name>
+							<html>wireless/wl_wireless_5g_tl.htm</html>
+							<father>wireless/wl_wireless_auth_tl.htm</father>
+							<lan_var>mn_5GHz</lan_var>
+						</M-O-2>
+					</submenu>
+					<SubMenuOfEntries>2</SubMenuOfEntries>
+				</M-O-1>
+				<M-O-2>
+					<name>wps</name>
+					<html>wireless/wl_wps_tl.htm</html>
+					<lan_var>mn_wps_new</lan_var>
+					<submenu i="2">
+						<M-O-1>
+							<name>2G</name>
+							<html>wireless/wl_wps_tl.htm</html>
+							<father>wireless/wl_wps_tl.htm</father>
+							<lan_var>mn_2G4Hz</lan_var>
+						</M-O-1>
+						<M-O-2>
+							<name>5G</name>
+							<html>wireless/wl_wp5g_tl.htm</html>
+							<father>wireless/wl_wps_tl.htm</father>
+							<lan_var>mn_5GHz</lan_var>
+						</M-O-2>
+					</submenu>
+					<SubMenuOfEntries>2</SubMenuOfEntries>
+				</M-O-2>
+				<M-O-3>
+					<name>performance</name>
+					<html>wireless/wl_wlan_performance_tl.htm</html>
+					<lan_var>mn_wlan_performance_new</lan_var>
+					<submenu i="2">
+						<M-O-1>
+							<name>2G</name>
+							<html>wireless/wl_wlan_performance_tl.htm</html>
+							<father>wireless/wl_wlan_performance_tl.htm</father>
+							<lan_var>mn_2G4Hz</lan_var>
+						</M-O-1>
+						<M-O-2>
+							<name>5G</name>
+							<html>wireless/wl_wlan_perf_5g_tl.htm</html>
+							<father>wireless/wl_wlan_performance_tl.htm</father>
+							<lan_var>mn_5GHz</lan_var>
+						</M-O-2>
+					</submenu>
+					<SubMenuOfEntries>2</SubMenuOfEntries>
+				</M-O-3>
+			</wireless>
+			<WirelessOfEntries>3</WirelessOfEntries>
+			<network i="19">
+				<M-O-1>
+					<name>layer2</name>
+					<html>setup/sp_layer2_tl.htm</html>
+					<lan_var>mn_layer_2</lan_var>
+				</M-O-1>
+				<M-O-2>
+					<name>wan</name>
+					<html>setup/sp_serv_tl.htm</html>
+					<lan_var>mn_wan_service</lan_var>
+				</M-O-2>
+				<M-O-3>
+					<name>portmap</name>
+					<html>setup/sp_port_mapping_tl.htm</html>
+					<lan_var>mn_layer_bridge</lan_var>
+				</M-O-3>
+				<M-O-4>
+					<name>lan</name>
+					<html>setup/sp_lan_tl.htm</html>
+					<lan_var>mn_lan_tl</lan_var>
+				</M-O-4>
+				<M-O-5>
+					<name>portforward</name>
+					<html>setup/sp_virtual_server_tl.htm</html>
+					<lan_var>mn_port_forwarding</lan_var>
+				</M-O-5>
+				<M-O-6>
+					<name>dmz</name>
+					<html>setup/sp_dmz_tl.htm</html>
+					<lan_var>mn_dmz_tl</lan_var>
+				</M-O-6>
+				<M-O-7>
+					<name>dhcp</name>
+					<html>setup/sp_dhcp_tl.htm</html>
+					<lan_var>mn_dhcp_server</lan_var>
+				</M-O-7>
+				<M-O-8>
+					<name>ipv6</name>
+					<html>setup/sp_ipv6_tl.htm</html>
+					<lan_var>mn_ipv6</lan_var>
+					<submenu i="4">
+						<M-O-1>
+							<name>wan</name>
+							<html>setup/sp_ipv6_tl.htm</html>
+							<father>setup/sp_ipv6_tl.htm</father>
+							<lan_var>mn_ipv6_wan</lan_var>
+						</M-O-1>
+						<M-O-2>
+							<name>lan</name>
+							<html>setup/sp_ipv6_lan_tl.htm</html>
+							<father>setup/sp_ipv6_tl.htm</father>
+							<lan_var>mn_ipv6_lan</lan_var>
+						</M-O-2>
+						<M-O-3>
+							<name>tunnel</name>
+							<html>setup/sp_ipv6_tunnel_tl.htm</html>
+							<father>setup/sp_ipv6_tl.htm</father>
+							<lan_var>mn_ipv6_tunnel</lan_var>
+						</M-O-3>
+						<M-O-4>
+							<name>route</name>
+							<html>setup/sp_ipv6_routing_tl.htm</html>
+							<father>setup/sp_ipv6_tl.htm</father>
+							<lan_var>mn_ipv6_routing</lan_var>
+						</M-O-4>
+					</submenu>
+					<SubMenuOfEntries>4</SubMenuOfEntries>
+				</M-O-8>
+				<M-O-9>
+					<name>rip</name>
+					<html>setup/sp_rip_tl.htm</html>
+					<lan_var>mn_rip</lan_var>
+				</M-O-9>
+				<M-O-10>
+					<name>route</name>
+					<html>setup/sp_routing_tl.htm</html>
+					<lan_var>mn_routing</lan_var>
+				</M-O-10>
+				<M-O-11>
+					<name>vpn</name>
+					<html>setup/sp_ipsec_tl.htm</html>
+					<lan_var>mn_vpn</lan_var>
+					<submenu i="4">
+						<M-O-1>
+							<name>ipsec</name>
+							<html>setup/sp_ipsec_tl.htm</html>
+							<father>setup/sp_ipsec_tl.htm</father>
+							<lan_var>mn_ipsec</lan_var>
+						</M-O-1>
+						<M-O-2>
+							<name>pptp</name>
+							<html>setup/sp_pptp_tl.htm</html>
+							<father>setup/sp_ipsec_tl.htm</father>
+							<lan_var>mn_pptp</lan_var>
+						</M-O-2>
+						<M-O-3>
+							<name>l2tp</name>
+							<html>setup/sp_l2tp_tl.htm</html>
+							<father>setup/sp_ipsec_tl.htm</father>
+							<lan_var>mn_l2tp</lan_var>
+						</M-O-3>
+						<M-O-4>
+							<name>gre</name>
+							<html>setup/sp_gre_tl.htm</html>
+							<father>setup/sp_ipsec_tl.htm</father>
+							<lan_var>mn_gre</lan_var>
+						</M-O-4>
+					</submenu>
+					<SubMenuOfEntries>4</SubMenuOfEntries>
+				</M-O-11>
+				<M-O-12>
+					<name>upnp</name>
+					<html>setup/sp_upnp_tl.htm</html>
+					<lan_var>mn_UPnP</lan_var>
+				</M-O-12>
+				<M-O-13>
+					<name>mac_filter</name>
+					<html>setup/sp_filter_mac_tl.htm</html>
+					<lan_var>mn_macfilter</lan_var>
+				</M-O-13>
+				<M-O-14>
+					<name>igmp</name>
+					<html>setup/sp_filter_igmp_tl.htm</html>
+					<lan_var>mn_igmpfilter</lan_var>
+				</M-O-14>
+				<M-O-15>
+					<name>security</name>
+					<html>setup/sp_firewall_tl.htm</html>
+					<lan_var>mn_security</lan_var>
+					<submenu i="2">
+						<M-O-1>
+							<name>firewall</name>
+							<html>setup/sp_firewall_tl.htm</html>
+							<father>setup/sp_firewall_tl.htm</father>
+							<lan_var>m_firewal</lan_var>
+						</M-O-1>
+						<M-O-2>
+							<name>ddos</name>
+							<html>setup/sp_firewall_ddos_tl.htm</html>
+							<father>setup/sp_firewall_tl.htm</father>
+							<lan_var>m_firewall_ddos</lan_var>
+						</M-O-2>
+					</submenu>
+					<SubMenuOfEntries>2</SubMenuOfEntries>
+				</M-O-15>
+				<M-O-16>
+					<name>qos_queue</name>
+					<html>setup/sp_qqos_tl.htm</html>
+					<lan_var>mn_qos_queue</lan_var>
+				</M-O-16>
+				<M-O-17>
+					<name>qos_class</name>
+					<html>setup/sp_qos_class_tl.htm</html>
+					<lan_var>mn_qos_class</lan_var>
+				</M-O-17>
+				<M-O-18>
+					<name>voice</name>
+					<html>setup/sp_voice_tl.htm</html>
+					<lan_var>mn_voice</lan_var>
+				</M-O-18>
+				<M-O-19>
+					<name>cwmp</name>
+					<html>setup/sp_tr069_tl.htm</html>
+					<lan_var>mn_tr069</lan_var>
+				</M-O-19>
+			</network>
+			<NetworkOfEntries>19</NetworkOfEntries>
+			<app i="15">
+				<M-O-1>
+					<name>dashboard</name>
+					<html>maintenance/mt_dashboard_tl.htm</html>
+					<lan_var>mn_dashboard</lan_var>
+				</M-O-1>
+				<M-O-2>
+					<name>parent</name>
+					<html>setup/sp_parental_control_tl.htm</html>
+					<lan_var>mn_parental_control</lan_var>
+				</M-O-2>
+				<M-O-3>
+					<name>wgvpn</name>
+					<html>setup/sp_innbox_vpn_tl.htm</html>
+					<lan_var>mn_innbox_VPN</lan_var>
+					<submenu i="2">
+						<M-O-1>
+							<name>advwg</name>
+							<html>setup/sp_innbox_vpn_advanced_tl.htm</html>
+							<father>setup/sp_innbox_vpn_tl.htm</father>
+							<lan_var>mn_innbox_VPN_advanced</lan_var>
+						</M-O-1>
+						<M-O-2>
+							<name>wgclpeer</name>
+							<html>setup/sp_innbox_vpn_client_peer_tl.htm</html>
+							<father>setup/sp_innbox_vpn_tl.htm</father>
+							<lan_var>mn_innbox_VPN_client_mode</lan_var>
+						</M-O-2>
+					</submenu>
+					<SubMenuOfEntries>2</SubMenuOfEntries>
+				</M-O-3>
+				<M-O-4>
+					<name>scheduler</name>
+					<html>wireless/wl_scheduler_tl.htm</html>
+					<lan_var>mn_wlan_scheduler</lan_var>
+				</M-O-4>
+				<M-O-5>
+					<name>led</name>
+					<html>maintenance/mt_leddisplay_tl.htm</html>
+					<lan_var>mn_leddisplay</lan_var>
+				</M-O-5>
+				<M-O-6>
+					<name>samba</name>
+					<html>advanced/ad_samba_tl.htm</html>
+					<lan_var>mn_samba</lan_var>
+				</M-O-6>
+				<M-O-7>
+					<name>dlna</name>
+					<html>advanced/ad_dlna_tl.htm</html>
+					<lan_var>mn_dlna</lan_var>
+				</M-O-7>
+				<M-O-8>
+					<name>printer</name>
+					<html>advanced/ad_printer_tl.htm</html>
+					<lan_var>mn_printer</lan_var>
+				</M-O-8>
+				<M-O-9>
+					<name>stats_daemon</name>
+					<html>setup/sp_stats_daemon_tl.htm</html>
+					<lan_var>mn_stats_daemon</lan_var>
+				</M-O-9>
+				<M-O-10>
+					<name>ddns</name>
+					<html>setup/sp_dynamic_dns_tl.htm</html>
+					<lan_var>mn_Dynamic_dns</lan_var>
+				</M-O-10>
+				<M-O-11>
+					<name>udpproxy</name>
+					<html>wireless/wl_udpxy_tl.htm</html>
+					<lan_var>mn_wlan_udpxy</lan_var>
+				</M-O-11>
+				<M-O-12>
+					<name>homeplug</name>
+					<html>setup/sp_homeplug_tl.htm</html>
+					<lan_var>m_homeplug</lan_var>
+				</M-O-12>
+				<M-O-13>
+					<name>speedtest</name>
+					<html>maintenance/mt_speedtest_tl.htm</html>
+					<lan_var>mn_speedtest</lan_var>
+				</M-O-13>
+				<M-O-14>
+					<name>ookla_speedtest</name>
+					<html>maintenance/mt_ookla_speedtest_tl.htm</html>
+					<lan_var>mn_ookla_speedtest</lan_var>
+				</M-O-14>
+				<M-O-15>
+					<name>guest</name>
+					<html></html>
+					<lan_var></lan_var>
+				</M-O-15>
+			</app>
+			<APPOfEntries>15</APPOfEntries>
+			<system i="12">
+				<M-O-1>
+					<name>users</name>
+					<html>maintenance/mt_admin_new_tl.htm</html>
+					<lan_var>mn_users</lan_var>
+				</M-O-1>
+				<M-O-2>
+					<name>time</name>
+					<html>maintenance/mt_time_tl.htm</html>
+					<lan_var>mn_time</lan_var>
+				</M-O-2>
+				<M-O-3>
+					<name>diag</name>
+					<html>maintenance/mt_test_tl.htm</html>
+					<lan_var>mn_diagnostics</lan_var>
+					<submenu i="2">
+						<M-O-1>
+							<name>diag</name>
+							<html>maintenance/mt_test_tl.htm</html>
+							<father>maintenance/mt_test_tl.htm</father>
+							<lan_var>mn_diagnostics</lan_var>
+						</M-O-1>
+						<M-O-2>
+							<name>iperf</name>
+							<html>maintenance/mt_iperf_tl.htm</html>
+							<father>maintenance/mt_test_tl.htm</father>
+							<lan_var>mn_iperf</lan_var>
+						</M-O-2>
+					</submenu>
+					<SubMenuOfEntries>2</SubMenuOfEntries>
+				</M-O-3>
+				<M-O-4>
+					<name>access_manage</name>
+					<html>maintenance/mt_acremote_tl.htm</html>
+					<lan_var>mn_access_remote</lan_var>
+					<submenu i="2">
+						<M-O-1>
+							<name>access_manage</name>
+							<html>maintenance/mt_acremote_tl.htm</html>
+							<father>maintenance/mt_acremote_tl.htm</father>
+							<lan_var>mn_access_title_v4</lan_var>
+						</M-O-1>
+						<M-O-2>
+							<name>access_v6_manage</name>
+							<html>maintenance/mt_acremotev6_tl.htm</html>
+							<father>maintenance/mt_acremote_tl.htm</father>
+							<lan_var>mn_access_title_v6</lan_var>
+						</M-O-2>
+					</submenu>
+					<SubMenuOfEntries>2</SubMenuOfEntries>
+				</M-O-4>
+				<M-O-5>
+					<name>log</name>
+					<html>maintenance/mt_remotelog_tl.htm</html>
+					<lan_var>mn_remotelog</lan_var>
+				</M-O-5>
+				<M-O-6>
+					<name>misc</name>
+					<html>maintenance/mt_misc_tl.htm</html>
+					<lan_var>mn_misc</lan_var>
+					<submenu i="1">
+						<M-O-1>
+							<name>license</name>
+							<html>maintenance/mt_license_tl.htm</html>
+							<father>maintenance/mt_misc_tl.htm</father>
+							<lan_var>mn_license</lan_var>
+						</M-O-1>
+					</submenu>
+					<SubMenuOfEntries>1</SubMenuOfEntries>
+				</M-O-6>
+				<M-O-7>
+					<name>statistics</name>
+					<html>maintenance/mt_stat_tl.htm</html>
+					<lan_var>mn_stats</lan_var>
+				</M-O-7>
+				<M-O-8>
+					<name>traffic</name>
+					<html>maintenance/mt_traffic_tl.htm</html>
+					<lan_var>mn_traffic</lan_var>
+				</M-O-8>
+				<M-O-9>
+					<name>mirror</name>
+					<html>maintenance/mt_mirror_tl.htm</html>
+					<lan_var>mn_mirror</lan_var>
+				</M-O-9>
+				<M-O-10>
+					<name>config</name>
+					<html>maintenance/mt_system_tl.htm</html>
+					<lan_var>mn_reboot_factory</lan_var>
+				</M-O-10>
+				<M-O-11>
+					<name>firmware</name>
+					<html>maintenance/mt_firmware_tl.htm</html>
+					<lan_var>mn_firmware</lan_var>
+				</M-O-11>
+				<M-O-12>
+					<name>customization</name>
+					<html>maintenance/mt_admin_manufacturer_tl.htm</html>
+					<lan_var>mn_customization</lan_var>
+					<submenu i="3">
+						<M-O-1>
+							<name>saas_user</name>
+							<html>maintenance/mt_admin_manufacturer_tl.htm</html>
+							<father>maintenance/mt_admin_manufacturer_tl.htm</father>
+							<lan_var>mn_users</lan_var>
+						</M-O-1>
+						<M-O-2>
+							<name>saas_language</name>
+							<html>maintenance/mt_language_tl.htm</html>
+							<father>maintenance/mt_admin_manufacturer_tl.htm</father>
+							<lan_var>mn_language</lan_var>
+						</M-O-2>
+						<M-O-3>
+							<name>saas_config</name>
+							<html>maintenance/mt_system_manufacturer_tl.htm</html>
+							<father>maintenance/mt_admin_manufacturer_tl.htm</father>
+							<lan_var>mn_color_config</lan_var>
+						</M-O-3>
+					</submenu>
+					<SubMenuOfEntries>3</SubMenuOfEntries>
+				</M-O-12>
+			</system>
+			<SystemOfEntries>12</SystemOfEntries>
+		</menu>
+		<www>
+			<LanguageOfEntries>9</LanguageOfEntries>
+			<language i="9">
+				<M-O-1>
+					<enable>1</enable>
+					<name>en</name>
+					<lan_var>str_lan_en</lan_var>
+				</M-O-1>
+				<M-O-2>
+					<enable>1</enable>
+					<name>ru</name>
+					<lan_var>str_lan_ru</lan_var>
+				</M-O-2>
+				<M-O-3>
+					<enable>1</enable>
+					<name>si</name>
+					<lan_var>str_lan_si</lan_var>
+				</M-O-3>
+				<M-O-4>
+					<enable>1</enable>
+					<name>de</name>
+					<lan_var>str_lan_de</lan_var>
+				</M-O-4>
+				<M-O-5>
+					<enable>1</enable>
+					<name>fr</name>
+					<lan_var>str_lan_fr</lan_var>
+				</M-O-5>
+				<M-O-6>
+					<enable>1</enable>
+					<name>es</name>
+					<lan_var>str_lan_es</lan_var>
+				</M-O-6>
+				<M-O-7>
+					<enable>1</enable>
+					<name>hu</name>
+					<lan_var>str_lan_hu</lan_var>
+				</M-O-7>
+				<M-O-8>
+					<enable>1</enable>
+					<name>sr</name>
+					<lan_var>str_lan_sr</lan_var>
+				</M-O-8>
+				<M-O-9>
+					<enable>1</enable>
+					<name>il</name>
+					<lan_var>str_lan_il</lan_var>
+				</M-O-9>
+			</language>
+		</www>
+		<host_check>
+			<hostname i="11">
+				<M-O-1>
+					<name>airpurifier</name>
+					<type>alexa</type>
+				</M-O-1>
+				<M-O-2>
+					<name>light</name>
+					<type>smart_light</type>
+				</M-O-2>
+				<M-O-3>
+					<name>laundry</name>
+					<type>washing_machine</type>
+				</M-O-3>
+				<M-O-4>
+					<name>robo</name>
+					<type>vacuum_cleaner</type>
+				</M-O-4>
+				<M-O-5>
+					<name>plug</name>
+					<type>smart_plug</type>
+				</M-O-5>
+				<M-O-6>
+					<name>fan</name>
+					<type>smart_heating</type>
+				</M-O-6>
+				<M-O-7>
+					<name>TV</name>
+					<type>tv</type>
+				</M-O-7>
+				<M-O-8>
+					<name>HUAWEI</name>
+					<type>mobile</type>
+				</M-O-8>
+				<M-O-9>
+					<name>MI</name>
+					<type>mobile</type>
+				</M-O-9>
+				<M-O-10>
+					<name>BOSCH</name>
+					<type>washing_machine</type>
+				</M-O-10>
+				<M-O-11>
+					<name>antscam</name>
+					<type>ip_camera</type>
+				</M-O-11>
+			</hostname>
+			<HostNameOfEntries>11</HostNameOfEntries>
+			<vendor_class i="2">
+				<M-O-1>
+					<name>MSFT</name>
+					<type>notebook</type>
+				</M-O-1>
+				<M-O-2>
+					<name>android</name>
+					<type>mobile</type>
+				</M-O-2>
+			</vendor_class>
+			<VendorClassOfEntries>2</VendorClassOfEntries>
+		</host_check>
+		<UserOfEntries t="unsignedInt">4</UserOfEntries>
+		<user i="4">
+			<M-O-1>
+				<disable t="boolean">0</disable>
+				<name>admin</name>
+				<password>U2FsdGVkX18C8hH0ADzGky2BdLI5McGYp/IhqX3jps6XMyFh7kkJhjuPyY8ZO+fo</password> <!-- c79@NkZ5LJgZ33+Lp6@% -->
+				<group t="unsignedInt">0</group>
+				<menu>
+					<SystemOfEntries>1</SystemOfEntries>
+					<system i="1">
+						<M-O-1>
+							<name>customization</name>
+							<disable>1</disable>
+						</M-O-1>
+					</system>
+				</menu>
+			</M-O-1>
+			<M-O-2>
+				<disable t="boolean">1</disable>
+				<name>poweruser</name>
+				<password>U2FsdGVkX1/4SlfxMBT6MPWQo2qqtoVbHiCpJ23JlVU=</password>
+				<group t="unsignedInt">1</group>
+				<menu>
+					<NetworkOfEntries>7</NetworkOfEntries>
+					<network i="7">
+						<M-O-1>
+							<name>rip</name>
+							<disable>1</disable>
+						</M-O-1>
+						<M-O-2>
+							<name>route</name>
+							<disable>1</disable>
+						</M-O-2>
+						<M-O-3>
+							<name>vpn</name>
+							<disable>1</disable>
+						</M-O-3>
+						<M-O-4>
+							<name>qos_queue</name>
+							<disable>1</disable>
+						</M-O-4>
+						<M-O-5>
+							<name>qos_class</name>
+							<disable>1</disable>
+						</M-O-5>
+						<M-O-6>
+							<name>voice</name>
+							<disable>1</disable>
+						</M-O-6>
+						<M-O-7>
+							<name>cwmp</name>
+							<disable>1</disable>
+						</M-O-7>
+					</network>
+					<APPOfEntries>1</APPOfEntries>
+					<app i="1">
+						<M-O-1>
+							<name>ser2net</name>
+							<disable>1</disable>
+						</M-O-1>
+					</app>
+					<SystemOfEntries>5</SystemOfEntries>
+					<system i="5">
+						<M-O-1>
+							<name>log</name>
+							<disable>1</disable>
+						</M-O-1>
+						<M-O-2>
+							<name>misc</name>
+							<disable>1</disable>
+						</M-O-2>
+						<M-O-3>
+							<name>traffic</name>
+							<disable>1</disable>
+						</M-O-3>
+						<M-O-4>
+							<name>mirror</name>
+							<disable>1</disable>
+						</M-O-4>
+						<M-O-5>
+							<name>customization</name>
+							<disable>1</disable>
+						</M-O-5>
+					</system>
+				</menu>
+			</M-O-2>
+			<M-O-3>
+				<disable t="boolean">1</disable>
+				<name>user</name>
+				<password>U2FsdGVkX1+YHnUrqJcMix5vYTbRFx3sfWPM8O1G078=</password>
+				<group t="unsignedInt">2</group>
+				<menu>
+					<NetworkOfEntries>14</NetworkOfEntries>
+					<network i="14">
+						<M-O-1>
+							<name>rip</name>
+							<disable>1</disable>
+						</M-O-1>
+						<M-O-2>
+							<name>route</name>
+							<disable>1</disable>
+						</M-O-2>
+						<M-O-3>
+							<name>vpn</name>
+							<disable>1</disable>
+						</M-O-3>
+						<M-O-4>
+							<name>qos_queue</name>
+							<disable>1</disable>
+						</M-O-4>
+						<M-O-5>
+							<name>qos_class</name>
+							<disable>1</disable>
+						</M-O-5>
+						<M-O-6>
+							<name>voice</name>
+							<disable>1</disable>
+						</M-O-6>
+						<M-O-7>
+							<name>cwmp</name>
+							<disable>1</disable>
+						</M-O-7>
+						<M-O-8>
+							<name>security</name>
+							<disable>1</disable>
+						</M-O-8>
+						<M-O-9>
+							<name>layer2</name>
+							<disable>1</disable>
+						</M-O-9>
+						<M-O-10>
+							<name>wan</name>
+							<disable>1</disable>
+						</M-O-10>
+						<M-O-11>
+							<name>portmap</name>
+							<disable>1</disable>
+						</M-O-11>
+						<M-O-12>
+							<name>ipv6</name>
+							<disable>1</disable>
+						</M-O-12>
+						<M-O-13>
+							<name>mac_filter</name>
+							<disable>1</disable>
+						</M-O-13>
+						<M-O-14>
+							<name>igmp</name>
+							<disable>1</disable>
+						</M-O-14>
+					</network>
+					<APPOfEntries>2</APPOfEntries>
+					<app i="2">
+						<M-O-1>
+							<name>ser2net</name>
+							<disable>1</disable>
+						</M-O-1>
+						<M-O-2>
+							<name>homeplug</name>
+							<disable>1</disable>
+						</M-O-2>
+					</app>
+					<SystemOfEntries>12</SystemOfEntries>
+					<system i="12">
+						<M-O-1>
+							<name>log</name>
+							<disable>1</disable>
+						</M-O-1>
+						<M-O-2>
+							<name>misc</name>
+							<disable>1</disable>
+						</M-O-2>
+						<M-O-3>
+							<name>traffic</name>
+							<disable>1</disable>
+						</M-O-3>
+						<M-O-4>
+							<name>mirror</name>
+							<disable>1</disable>
+						</M-O-4>
+						<M-O-5>
+							<name>led</name>
+							<disable>1</disable>
+						</M-O-5>
+						<M-O-6>
+							<name>customization</name>
+							<disable>1</disable>
+						</M-O-6>
+						<M-O-7>
+							<name>time</name>
+							<disable>1</disable>
+						</M-O-7>
+						<M-O-8>
+							<name>diag</name>
+							<disable>1</disable>
+						</M-O-8>
+						<M-O-9>
+							<name>statistics</name>
+							<disable>1</disable>
+						</M-O-9>
+						<M-O-10>
+							<name>config</name>
+							<disable>1</disable>
+						</M-O-10>
+						<M-O-11>
+							<name>firmware</name>
+							<disable>1</disable>
+						</M-O-11>
+						<M-O-12>
+							<name>lxc</name>
+							<disable>1</disable>
+						</M-O-12>
+					</system>
+				</menu>
+			</M-O-3>
+			<M-O-4>
+				<disable t="boolean">0</disable>
+				<name>manufacturer</name>
+				<password>**********</password>
+				<group t="unsignedInt">99</group>
+				<menu>
+					<SystemOfEntries>7</SystemOfEntries>
+					<system i="7">
+						<M-O-1>
+							<name>users</name>
+							<disable>1</disable>
+						</M-O-1>
+						<M-O-2>
+							<name>diag</name>
+							<disable>1</disable>
+						</M-O-2>
+						<M-O-3>
+							<name>misc</name>
+							<disable>1</disable>
+						</M-O-3>
+						<M-O-4>
+							<name>statistics</name>
+							<disable>1</disable>
+						</M-O-4>
+						<M-O-5>
+							<name>traffic</name>
+							<disable>1</disable>
+						</M-O-5>
+						<M-O-6>
+							<name>led</name>
+							<disable>1</disable>
+						</M-O-6>
+						<M-O-7>
+							<name>config</name>
+							<disable>1</disable>
+						</M-O-7>
+					</system>
+					<APPOfEntries>1</APPOfEntries>
+					<app i="1">
+						<M-O-1>
+							<name>led</name>
+							<disable>1</disable>
+						</M-O-1>
+					</app>
+				</menu>
+			</M-O-4>
+		</user>
+		<ethwan></ethwan>
+		<xponwan>pon</xponwan>
+		<fad>
+			<debug>0</debug>
+			<memfree>16138</memfree>
+		</fad>
+		<bridge>0</bridge>
+		<hostname>InnboxX24</hostname>
+		<type>ResidentialGatewayWithVoIPWiFi</type>
+		<devicename>Kontron ADSL/VDSL router</devicename>
+		<modeldescription>ADSL/VDSL Router</modeldescription>
+		<modelname>InnboxX24</modelname>
+		<vendor>Kontron</vendor>
+		<url>www.innbox.net</url>
+		<regdomain>fcc</regdomain>
+		<language>en</language>
+		<basicmode>0</basicmode>
+		<supportlang>auto,en,de</supportlang>
+		<oid>1.3.6.1.4.1.171.30.1.1</oid>
+		<fw_sign_unlock>0</fw_sign_unlock>
+		<wan>
+			<startup>
+				<delay>10</delay>
+			</startup>
+		</wan>
+		<nopostfix>1</nopostfix>
+		<slic_country>16</slic_country>
+		<auth i="4">
+			<M-O-1>
+				<module>httpd</module>
+				<lan>4</lan>
+				<wan>4</wan>
+			</M-O-1>
+			<M-O-2>
+				<module>telnetd</module>
+				<lan>4</lan>
+				<wan>4</wan>
+			</M-O-2>
+			<M-O-3>
+				<module>sshd</module>
+				<lan>4</lan>
+				<wan>4</wan>
+			</M-O-3>
+			<M-O-4>
+				<module>ftpd</module>
+				<lan>4</lan>
+				<wan>4</wan>
+			</M-O-4>
+		</auth>
+	</sys>
+	<tmp>
+		<tz>
+			<zone i="75">
+				<M-O-1>
+					<name>(GMT-12:00) International Date Line West</name>
+					<gen>GMT+12:00</gen>
+					<dst></dst>
+					<dst_tzdata></dst_tzdata>
+				</M-O-1>
+				<M-O-2>
+					<name>(GMT-11:00) Midway Island, Samoa</name>
+					<gen>GMT+11:00</gen>
+					<dst></dst>
+					<dst_tzdata></dst_tzdata>
+				</M-O-2>
+				<M-O-3>
+					<name>(GMT-10:00) Hawaii</name>
+					<gen>GMT+10:00</gen>
+					<dst></dst>
+					<dst_tzdata></dst_tzdata>
+				</M-O-3>
+				<M-O-4>
+					<name>(GMT-09:00) Alaska</name>
+					<gen>GMT+09:00</gen>
+					<dst>GDT,M4.1.0/02:00:00,M10.5.0/02:00:00</dst>
+					<dst_tzdata>America/Anchorage</dst_tzdata>
+				</M-O-4>
+				<M-O-5>
+					<name>(GMT-08:00) Pacific Time (US &amp; Canada); Tijuana</name>
+					<gen>PST+08:00</gen>
+					<dst>PDT,M4.1.0/02:00:00,M10.5.0/02:00:00</dst>
+					<dst_tzdata>America/Tijuana</dst_tzdata>
+				</M-O-5>
+				<M-O-6>
+					<name>(GMT-07:00) Arizona</name>
+					<gen>GMT+07:00</gen>
+					<dst></dst>
+					<dst_tzdata></dst_tzdata>
+				</M-O-6>
+				<M-O-7>
+					<name>(GMT-07:00) Chihuahua, La Paz, Mazatlan</name>
+					<gen>GMT+07:00</gen>
+					<dst>GDT,M4.1.0/02:00:00,M10.5.0/02:00:00</dst>
+					<dst_tzdata>America/Chihuahua</dst_tzdata>
+				</M-O-7>
+				<M-O-8>
+					<name>(GMT-07:00) Mountain Time (US &amp; Canada)</name>
+					<gen>GMT+07:00</gen>
+					<dst>GDT,M4.1.0/02:00:00,M10.5.0/02:00:00</dst>
+					<dst_tzdata>America/Denver</dst_tzdata>
+				</M-O-8>
+				<M-O-9>
+					<name>(GMT-06:00) Central America</name>
+					<gen>GMT+06:00</gen>
+					<dst></dst>
+					<dst_tzdata></dst_tzdata>
+				</M-O-9>
+				<M-O-10>
+					<name>(GMT-06:00) Central Time (US &amp; Canada)</name>
+					<gen>GMT+06:00</gen>
+					<dst>GDT,M4.1.0/02:00:00,M10.5.0/02:00:00</dst>
+					<dst_tzdata>America/Chicago</dst_tzdata>
+				</M-O-10>
+				<M-O-11>
+					<name>(GMT-06:00) Guadalajara, Mexico City, Monterrey</name>
+					<gen>GMT+06:00</gen>
+					<dst>GDT,M4.1.0/02:00:00,M10.5.0/02:00:00</dst>
+					<dst_tzdata>America/Mexico_City</dst_tzdata>
+				</M-O-11>
+				<M-O-12>
+					<name>(GMT-06:00) Saskatchewan</name>
+					<gen>GMT+06:00</gen>
+					<dst></dst>
+					<dst_tzdata></dst_tzdata>
+				</M-O-12>
+				<M-O-13>
+					<name>(GMT-05:00) Bogota, Lima, Quito</name>
+					<gen>GMT+05:00</gen>
+					<dst></dst>
+					<dst_tzdata></dst_tzdata>
+				</M-O-13>
+				<M-O-14>
+					<name>(GMT-05:00) Eastern Time (US &amp; Canada)</name>
+					<gen>EST+05:00</gen>
+					<dst>EDT,M4.1.0/02:00:00,M10.5.0/02:00:00</dst>
+					<dst_tzdata>America/New_York</dst_tzdata>
+				</M-O-14>
+				<M-O-15>
+					<name>(GMT-05:00) Indiana (East)</name>
+					<gen>EST+05:00</gen>
+					<dst></dst>
+					<dst_tzdata></dst_tzdata>
+				</M-O-15>
+				<M-O-16>
+					<name>(GMT-04:00) Atlantic Time (Canada)</name>
+					<gen>GMT+04:00</gen>
+					<dst>GDT,M4.1.0/02:00:00,M10.5.0/02:00:00</dst>
+					<dst_tzdata>America/Halifax</dst_tzdata>
+				</M-O-16>
+				<M-O-17>
+					<name>(GMT-04:00) Caracas, La Paz</name>
+					<gen>GMT+04:00</gen>
+					<dst></dst>
+					<dst_tzdata></dst_tzdata>
+				</M-O-17>
+				<M-O-18>
+					<name>(GMT-04:00) Santiago</name>
+					<gen>GMT+04:00</gen>
+					<dst>GDT,M10.2.6/00:00:00,M3.2.6/00:00:00</dst>
+					<dst_tzdata>America/Santiago</dst_tzdata>
+				</M-O-18>
+				<M-O-19>
+					<name>(GMT-03:30) Newfoundland</name>
+					<gen>GMT+03:30</gen>
+					<dst>GDT,M4.1.0/02:00:00,M10.5.0/02:00:00</dst>
+					<dst_tzdata>America/St_Johns</dst_tzdata>
+				</M-O-19>
+				<M-O-20>
+					<name>(GMT-03:00) Brasilia</name>
+					<gen>GMT+03:00</gen>
+					<dst>GDT,M11.1.0/00:00:00,M2.5.0/00:00:00</dst>
+					<dst_tzdata>America/Sao_Paul</dst_tzdata>
+				</M-O-20>
+				<M-O-21>
+					<name>(GMT-03:00) Buenos Aires, Georgetown</name>
+					<gen>GMT+03:00</gen>
+					<dst></dst>
+					<dst_tzdata></dst_tzdata>
+				</M-O-21>
+				<M-O-22>
+					<name>(GMT-03:00) Greenland</name>
+					<gen>GMT+03:00</gen>
+					<dst>GDT,M4.1.0/02:00:00,M10.5.0/02:00:00</dst>
+					<dst_tzdata>America/Godthab</dst_tzdata>
+				</M-O-22>
+				<M-O-23>
+					<name>(GMT-02:00) Mid-Atlantic</name>
+					<gen>GMT+02:00</gen>
+					<dst>GDT,M3.5.0/02:00:00,M9.5.0/02:00:00</dst>
+					<dst_tzdata>Etc/GMT+2</dst_tzdata>
+				</M-O-23>
+				<M-O-24>
+					<name>(GMT-01:00) Azores</name>
+					<gen>GMT+01:00</gen>
+					<dst>GDT,M3.5.0/02:00:00,M10.5.0/03:00:00</dst>
+					<dst_tzdata>Atlantic/Azores</dst_tzdata>
+				</M-O-24>
+				<M-O-25>
+					<name>(GMT-01:00) Cape Verde Is.</name>
+					<gen>GMT+01:00</gen>
+					<dst></dst>
+					<dst_tzdata></dst_tzdata>
+				</M-O-25>
+				<M-O-26>
+					<name>(GMT) Casablanca, Monrovia</name>
+					<gen>GMT+00:00</gen>
+					<dst></dst>
+					<dst_tzdata></dst_tzdata>
+				</M-O-26>
+				<M-O-27>
+					<name>(GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London</name>
+					<gen>GMT+00:00</gen>
+					<dst>GDT,M3.5.0/01:00:00,M10.5.0/02:00:00</dst>
+					<dst_tzdata>Europe/London</dst_tzdata>
+				</M-O-27>
+				<M-O-28>
+					<name>(GMT+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna</name>
+					<gen>GMT-01:00</gen>
+					<dst>GDT,M3.5.0/02:00:00,M10.5.0/03:00:00</dst>
+					<dst_tzdata>Europe/Berlin</dst_tzdata>
+				</M-O-28>
+				<M-O-29>
+					<name>(GMT+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague</name>
+					<gen>GMT-01:00</gen>
+					<dst>GDT,M3.5.0/02:00:00,M10.5.0/03:00:00</dst>
+					<dst_tzdata>Europe/Budapest</dst_tzdata>
+				</M-O-29>
+				<M-O-30>
+					<name>(GMT+01:00) Brussels, Copenhagen, Madrid, Paris</name>
+					<gen>GMT-01:00</gen>
+					<dst>GDT,M3.5.0/02:00:00,M10.5.0/03:00:00</dst>
+					<dst_tzdata>Europe/Paris</dst_tzdata>
+				</M-O-30>
+				<M-O-31>
+					<name>(GMT+01:00) Sarajevo, Skopje, Warsaw, Zagreb</name>
+					<gen>GMT-01:00</gen>
+					<dst>GDT,M3.5.0/02:00:00,M10.5.0/03:00:00</dst>
+					<dst_tzdata>Europe/Warsaw</dst_tzdata>
+				</M-O-31>
+				<M-O-32>
+					<name>(GMT+01:00) West Central Africa</name>
+					<gen>GMT-01:00</gen>
+					<dst></dst>
+					<dst_tzdata></dst_tzdata>
+				</M-O-32>
+				<M-O-33>
+					<name>(GMT+02:00) Athens, Istanbul, Minsk</name>
+					<gen>GMT-02:00</gen>
+					<dst>GDT,M3.5.0/03:00:00,M10.5.0/04:00:00</dst>
+					<dst_tzdata>Europe/Istanbul</dst_tzdata>
+				</M-O-33>
+				<M-O-34>
+					<name>(GMT+02:00) Bucharest</name>
+					<gen>GMT-02:00</gen>
+					<dst>GDT,M3.5.0/03:00:00,M10.5.0/04:00:00</dst>
+					<dst_tzdata>Europe/Istanbul</dst_tzdata>
+				</M-O-34>
+				<M-O-35>
+					<name>(GMT+02:00) Cairo</name>
+					<gen>GMT-02:00</gen>
+					<dst>GDT,M4.5.5/00:00:00,M9.5.4/00:00:00</dst>
+					<dst_tzdata>Africa/Cairo</dst_tzdata>
+				</M-O-35>
+				<M-O-36>
+					<name>(GMT+02:00) Harare, Pretoria</name>
+					<gen>GMT-02:00</gen>
+					<dst></dst>
+					<dst_tzdata></dst_tzdata>
+				</M-O-36>
+				<M-O-37>
+					<name>(GMT+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius</name>
+					<gen>GMT-02:00</gen>
+					<dst>GDT,M3.5.0/03:00:00,M10.5.0/04:00:00</dst>
+					<dst_tzdata>Europe/Kiev</dst_tzdata>
+				</M-O-37>
+				<M-O-38>
+					<name>(GMT+02:00) Jerusalem</name>
+					<gen>GMT-02:00</gen>
+					<dst>GDT,M3.5.0/02:00:00,M10.5.0/02:00:00</dst>
+					<dst_tzdata>Asia/Jerusalem</dst_tzdata>
+				</M-O-38>
+				<M-O-39>
+					<name>(GMT+03:00) Baghdad</name>
+					<gen>GMT-03:00</gen>
+					<dst>GDT,M4.1.0/03:00:00,M10.1.0/04:00:00</dst>
+					<dst_tzdata>Asia/Baghdad</dst_tzdata>
+				</M-O-39>
+				<M-O-40>
+					<name>(GMT+03:00) Kuwait, Riyadh</name>
+					<gen>GMT-03:00</gen>
+					<dst></dst>
+					<dst_tzdata></dst_tzdata>
+				</M-O-40>
+				<M-O-41>
+					<name>(GMT+03:00) Moscow, St. Petersburg, Volgograd</name>
+					<gen>GMT-03:00</gen>
+					<dst>GDT,M3.5.0/02:00:00,M10.5.0/03:00:00</dst>
+					<dst_tzdata>Europe/Moscow</dst_tzdata>
+				</M-O-41>
+				<M-O-42>
+					<name>(GMT+03:00) Nairobi</name>
+					<gen>GMT-03:00</gen>
+					<dst></dst>
+					<dst_tzdata></dst_tzdata>
+				</M-O-42>
+				<M-O-43>
+					<name>(GMT+03:30) Tehran</name>
+					<gen>GMT-03:30</gen>
+					<dst></dst>
+					<dst_tzdata></dst_tzdata>
+				</M-O-43>
+				<M-O-44>
+					<name>(GMT+04:00) Abu Dhabi, Muscat</name>
+					<gen>GMT-04:00</gen>
+					<dst></dst>
+					<dst_tzdata></dst_tzdata>
+				</M-O-44>
+				<M-O-45>
+					<name>(GMT+04:00) Baku, Tbilisi, Yerevan</name>
+					<gen>GMT-04:00</gen>
+					<dst>GDT,M3.5.0/02:00:00,M10.5.0/03:00:00</dst>
+					<dst_tzdata>Asia/Baku</dst_tzdata>
+				</M-O-45>
+				<M-O-46>
+					<name>(GMT+04:30) Kabul</name>
+					<gen>GMT-04:30</gen>
+					<dst></dst>
+					<dst_tzdata></dst_tzdata>
+				</M-O-46>
+				<M-O-47>
+					<name>(GMT+05:00) Yekaterinburg</name>
+					<gen>GMT-05:00</gen>
+					<dst>GDT,M3.5.0/02:00:00,M10.5.0/03:00:00</dst>
+					<dst_tzdata>Asia/Yekaterinburg</dst_tzdata>
+				</M-O-47>
+				<M-O-48>
+					<name>(GMT+05:00) Islamabad, Karachi, Tashkent</name>
+					<gen>GMT-05:00</gen>
+					<dst></dst>
+					<dst_tzdata></dst_tzdata>
+				</M-O-48>
+				<M-O-49>
+					<name>(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi</name>
+					<gen>GMT-05:30</gen>
+					<dst></dst>
+					<dst_tzdata></dst_tzdata>
+				</M-O-49>
+				<M-O-50>
+					<name>(GMT+05:45) Kathmandu</name>
+					<gen>GMT-05:45</gen>
+					<dst></dst>
+					<dst_tzdata></dst_tzdata>
+				</M-O-50>
+				<M-O-51>
+					<name>(GMT+06:00) Almaty, Novosibirsk</name>
+					<gen>GMT-06:00</gen>
+					<dst>GDT,M3.5.0/02:00:00,M10.5.0/03:00:00</dst>
+					<dst_tzdata>Asia/Almaty</dst_tzdata>
+				</M-O-51>
+				<M-O-52>
+					<name>(GMT+06:00) Astana, Dhaka</name>
+					<gen>GMT-06:00</gen>
+					<dst></dst>
+					<dst_tzdata></dst_tzdata>
+				</M-O-52>
+				<M-O-53>
+					<name>(GMT+06:00) Sri Jayawardenepura</name>
+					<gen>GMT-06:00</gen>
+					<dst></dst>
+					<dst_tzdata></dst_tzdata>
+				</M-O-53>
+				<M-O-54>
+					<name>(GMT+06:30) Rangoon</name>
+					<gen>GMT-06:30</gen>
+					<dst></dst>
+					<dst_tzdata></dst_tzdata>
+				</M-O-54>
+				<M-O-55>
+					<name>(GMT+07:00) Bangkok, Hanoi, Jakarta</name>
+					<gen>GMT-07:00</gen>
+					<dst></dst>
+					<dst_tzdata></dst_tzdata>
+				</M-O-55>
+				<M-O-56>
+					<name>(GMT+07:00) Krasnoyarsk</name>
+					<gen>GMT-07:00</gen>
+					<dst>GDT,M3.5.0/02:00:00,M10.5.0/03:00:00</dst>
+					<dst_tzdata>Asia/Krasnoyarsk</dst_tzdata>
+				</M-O-56>
+				<M-O-57>
+					<name>(GMT+08:00) Beijing, Chongqing, Hong Kong, Urumqi</name>
+					<gen>CST-08:00</gen>
+					<dst></dst>
+					<dst_tzdata></dst_tzdata>
+				</M-O-57>
+				<M-O-58>
+					<name>(GMT+08:00) Irkutsk, Ulaan Bataar</name>
+					<gen>GMT-08:00</gen>
+					<dst>GDT,M3.5.0/02:00:00,M10.5.0/03:00:00</dst>
+					<dst_tzdata>Asia/Irkutsk</dst_tzdata>
+				</M-O-58>
+				<M-O-59>
+					<name>(GMT+08:00) Kuala Lumpur, Singapore</name>
+					<gen>GMT-08:00</gen>
+					<dst></dst>
+					<dst_tzdata></dst_tzdata>
+				</M-O-59>
+				<M-O-60>
+					<name>(GMT+08:00) Perth</name>
+					<gen>GMT-08:00</gen>
+					<dst>GDT,M10.5.0/02:00:00,M3.5.0/03:00:00</dst>
+					<dst_tzdata>Australia/Perth</dst_tzdata>
+				</M-O-60>
+				<M-O-61>
+					<name>(GMT+08:00) Taipei</name>
+					<gen>GMT-08:00</gen>
+					<dst></dst>
+					<dst_tzdata></dst_tzdata>
+				</M-O-61>
+				<M-O-62>
+					<name>(GMT+09:00) Osaka, Sapporo, Tokyo</name>
+					<gen>GMT-09:00</gen>
+					<dst></dst>
+					<dst_tzdata></dst_tzdata>
+				</M-O-62>
+				<M-O-63>
+					<name>(GMT+09:00) Seoul</name>
+					<gen>GMT-09:00</gen>
+					<dst></dst>
+					<dst_tzdata></dst_tzdata>
+				</M-O-63>
+				<M-O-64>
+					<name>(GMT+09:00) Yakutsk</name>
+					<gen>GMT-09:00</gen>
+					<dst>GDT,M3.5.0/02:00:00,M10.5.0/03:00:00</dst>
+					<dst_tzdata>Asia/Yakutsk</dst_tzdata>
+				</M-O-64>
+				<M-O-65>
+					<name>(GMT+09:30) Adelaide</name>
+					<gen>GMT-09:30</gen>
+					<dst>GDT,M10.5.0/02:00:00,M3.5.0/03:00:00</dst>
+					<dst_tzdata>Australia/Adelaide</dst_tzdata>
+				</M-O-65>
+				<M-O-66>
+					<name>(GMT+09:30) Darwin</name>
+					<gen>GMT-09:30</gen>
+					<dst></dst>
+					<dst_tzdata></dst_tzdata>
+				</M-O-66>
+				<M-O-67>
+					<name>(GMT+10:00) Brisbane</name>
+					<gen>GMT-10:00</gen>
+					<dst></dst>
+					<dst_tzdata></dst_tzdata>
+				</M-O-67>
+				<M-O-68>
+					<name>(GMT+10:00) Canberra, Melbourne, Sydney</name>
+					<gen>GMT-10:00</gen>
+					<dst>GDT,M10.5.0/02:00:00,M3.5.0/03:00:00</dst>
+					<dst_tzdata>Australia/Sydney</dst_tzdata>
+				</M-O-68>
+				<M-O-69>
+					<name>(GMT+10:00) Guam, Port Moresby</name>
+					<gen>GMT-10:00</gen>
+					<dst></dst>
+					<dst_tzdata></dst_tzdata>
+				</M-O-69>
+				<M-O-70>
+					<name>(GMT+10:00) Hobart</name>
+					<gen>GMT-10:00</gen>
+					<dst>GDT,M10.1.0/02:00:00,M3.5.0/03:00:00</dst>
+					<dst_tzdata>Australia/Hobart</dst_tzdata>
+				</M-O-70>
+				<M-O-71>
+					<name>(GMT+10:00) Vladivostok</name>
+					<gen>GMT-10:00</gen>
+					<dst>GDT,M3.5.0/02:00:00,M10.5.0/03:00:00</dst>
+					<dst_tzdata>Asia/Vladivostok</dst_tzdata>
+				</M-O-71>
+				<M-O-72>
+					<name>(GMT+11:00) Magadan, Solomon Is., New Caledonia</name>
+					<gen>GMT-11:00</gen>
+					<dst></dst>
+					<dst_tzdata></dst_tzdata>
+				</M-O-72>
+				<M-O-73>
+					<name>(GMT+12:00) Auckland, Wellington</name>
+					<gen>GMT-12:00</gen>
+					<dst>GDT,M10.1.0/02:00:00,M3.5.0/03:00:00</dst>
+					<dst_tzdata>Pacific/Auckland</dst_tzdata>
+				</M-O-73>
+				<M-O-74>
+					<name>(GMT+12:00) Fiji, Kamchatka, Marshall Is.</name>
+					<gen>GMT-12:00</gen>
+					<dst></dst>
+					<dst_tzdata></dst_tzdata>
+				</M-O-74>
+				<M-O-75>
+					<name>(GMT+13:00) Nuku&apos;alofa</name>
+					<gen>GMT-13:00</gen>
+					<dst></dst>
+					<dst_tzdata></dst_tzdata>
+				</M-O-75>
+			</zone>
+		</tz>
+		<ddns>
+			<M-O-1>
+				<provider>1</provider>
+				<dns>www.dyndns.org</dns>
+				<domain>dyndns.org</domain>
+			</M-O-1>
+			<M-O-2>
+				<provider>2</provider>
+				<dns>www.no-ip.com</dns>
+				<domain>no-ip.com</domain>
+			</M-O-2>
+			<M-O-3>
+				<provider>3</provider>
+				<dns>domains.google</dns>
+				<domain>domains.google</domain>
+			</M-O-3>
+			<M-O-4>
+				<provider>4</provider>
+				<dns>www.dnsomatic.com</dns>
+				<domain>dnsomatic.com</domain>
+			</M-O-4>
+			<M-O-5>
+				<provider>5</provider>
+				<dns>www.easydns.com</dns>
+				<domain>easydns.com</domain>
+			</M-O-5>
+			<M-O-6>
+				<provider>6</provider>
+				<dns>changeip.com</dns>
+				<domain>changeip.com</domain>
+			</M-O-6>
+			<M-O-7>
+				<provider>7</provider>
+				<dns>dnsExit.com</dns>
+				<domain>dnsexit.com</domain>
+			</M-O-7>
+			<M-O-8>
+				<provider>8</provider>
+				<dns>myinnbox.net</dns>
+				<domain>myinnbox.net</domain>
+			</M-O-8>
+			<M-O-9>
+				<provider>9</provider>
+				<dns>customization</dns>
+				<domain>customization</domain>
+			</M-O-9>
+		</ddns>
+	</tmp>
+	<X_INNBOX_IPv6Enabled>0</X_INNBOX_IPv6Enabled>
+	<dnsrelay>
+		<mode>3</mode>
+		<server>
+			<primarydns></primarydns>
+			<secondarydns></secondarydns>
+		</server>
+	</dnsrelay>
+	<upnp>
+		<enable>1</enable>
+		<log>1</log>
+		<pppoesession>0</pppoesession>
+		<allow_disconnect_wan>1</allow_disconnect_wan>
+		<port>50000</port>
+		<pvcid>0</pvcid>
+		<upnp_ctl_enable>0</upnp_ctl_enable>
+		<upnp_av_enable>1</upnp_av_enable>
+	</upnp>
+	<routing>
+		<rip>
+			<mode>1</mode>
+			<lan i="1">
+				<M-O-1>
+					<in>0</in>
+					<out>0</out>
+				</M-O-1>
+			</lan>
+			<wan i="8">
+				<M-O-1>
+					<in>0</in>
+					<out>0</out>
+				</M-O-1>
+				<M-O-2>
+					<in>0</in>
+					<out>0</out>
+				</M-O-2>
+				<M-O-3>
+					<in>0</in>
+					<out>0</out>
+				</M-O-3>
+				<M-O-4>
+					<in>0</in>
+					<out>0</out>
+				</M-O-4>
+				<M-O-5>
+					<in>0</in>
+					<out>0</out>
+				</M-O-5>
+				<M-O-6>
+					<in>0</in>
+					<out>0</out>
+				</M-O-6>
+				<M-O-7>
+					<in>0</in>
+					<out>0</out>
+				</M-O-7>
+				<M-O-8>
+					<in>0</in>
+					<out>0</out>
+				</M-O-8>
+			</wan>
+		</rip>
+	</routing>
+	<function>
+		<norip>0</norip>
+		<tr069>1</tr069>
+	</function>
+	<snmp>
+		<agent>
+			<enable>0</enable>
+			<trap>
+				<entry i="1">
+					<M-O-1>
+						<ip>0.0.0.0</ip>
+						<community>public</community>
+						<snmp_version>2</snmp_version>
+					</M-O-1>
+				</entry>
+			</trap>
+			<community i="1">
+				<M-O-1>
+					<name>public</name>
+					<access>rocommunity</access>
+				</M-O-1>
+			</community>
+		</agent>
+		<mib2>
+			<name>InnboxX24</name>
+			<location>Kontron</location>
+			<contact>Kontron</contact>
+		</mib2>
+	</snmp>
+</Root>

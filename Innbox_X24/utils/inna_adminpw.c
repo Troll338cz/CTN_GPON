@@ -320,6 +320,11 @@ LABEL_219:
 
 
 int main(int argc, char *argv[]) {
+        // Other samples found
+        // 13 - WiFi pw == SN
+        // 10 - %s%s "ISP Name from SSID allcaps" or "INNBOX", SN
+        // "Ozone" or == "Vitis" - 10 WiFi pw == SN
+
         const char* a;
         puts("-------------------------------------");
         // SN type 10 char:
@@ -347,9 +352,4 @@ int main(int argc, char *argv[]) {
         printf( "wifi_passwd_generator_other: %s\n", wifi_passwd_generator_other(b, a, 10));
         printf( "generate_ssl_passwd: %s\n", generate_ssl_passwd(1, b, a, v40, 0x10u));
         puts("-------------------------------------");
-        // Other samples found
-        // Old SN type 10 or 13 char:
-        // 13 - WiFi pw == SN
-        // 10 - %s%s "ISP Name from SSID allcaps" or "INNBOX", SN
-        // WPS PIN = SN last 8, maybe needs tweak to follow WPS rules
 }
