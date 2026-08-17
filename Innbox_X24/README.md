@@ -65,16 +65,19 @@ mtd15: 00240000 00020000 "reservearea"
 - Reset to unlock
 
 > ## ⚠️ Important
-> Do not write mtd9 with any tools present on device, it will brick the device!
+> Do not write mtd9 with any tools other present on device, it will brick the device!
 > Crash of main process is not recoverable due to missing login credentials, nand rewrite is needed to fix this!
 
 ## Config edit
 ```
 # Readout info
 # Many commands have no help to get all arguments
-# fad decompile has alot of helpfull code to learn from
+# fad binary decompile has alot of helpfull code to learn from
+# tcapi tool is used to set parameters on startup and to read /proc subsystem
+# Changes here won't survive reboot
 /userfs/bin/tcapi show GPON_ONU
 /userfs/bin/tcapi show SysInfo_Entry
+# fad command can be used to edit both config MTDs
 # Set env value
 # Set GPON SN + Vendor ID
 fad config setenv serial_gpon ISKTA1B2C3D4
@@ -101,4 +104,5 @@ Fun fact: tclinux_slave mtd seems to contain fill patern suggesting that no firm
 
 ## Usefull links
 [Econet Linux](https://econet-linux.pkt.wiki/en/bootloader)
+
 [Econet GPL code](https://github.com/cjdelisle/EN751221-Linux26/)
