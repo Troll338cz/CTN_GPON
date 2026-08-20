@@ -1,0 +1,31 @@
+#!/bin/sh
+
+ENCRYPT_INPUT_FILE="$1"
+ENCRYPT_OUTPUT_FILE="$2"
+ENCRYPT_OPTION="$3"
+ENCRYPT_KEY_FILE="kaon_key2" # "/overlay/upper/etc/.kaon_key2"
+
+# key generation
+if [ ! -f ${ENCRYPT_KEY_FILE} ]; then
+       echo "make a key first..."
+       exit 1
+fi
+
+# Important!
+# 1. This hashes RAW output from fw_printenv, "ethaddr=" and a newline at the end included.
+# 2. 10:32 looses prefix and first symbol of the hash eg. "(stdin)= x", then writes this into overlayfs with a newline.
+# You must include quirks when building your own key!
+
+#if [ ! -f ${ENCRYPT_KEY_FILE} ]; then
+#	ENCRYPT_KEY_SRC=`fw_printenv ethaddr | openssl sha512`
+#	ENCRYPT_KEY=`echo ${ENCRYPT_KEY_SRC:10:32}`
+#	echo "${ENCRYPT_KEY}" > ${ENCRYPT_KEY_FILE}
+#fi
+
+# /sbin/encrypt /overlay/upper/etc/scfg/scfg.encrypt /tmp/scfg.output -d
+openssl enc ${ENCRYPT_OPTION} -aes-256-cbc -salt -pbkdf2 -in ${ENCRYPT_INPUT_FILE} -out ${ENCRYPT_OUTPUT_FILE} -pass file:${ENCRYPT_KEY_FILE}
+ret=$?
+#if [ -z "${ENCRYPT_OPTION}" -a $ret -eq 0 ]; then
+#	rm -f ${ENCRYPT_INPUT_FILE}
+#fi
+exit $ret
