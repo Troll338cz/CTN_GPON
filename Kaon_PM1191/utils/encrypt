@@ -22,7 +22,8 @@ fi
 #	echo "${ENCRYPT_KEY}" > ${ENCRYPT_KEY_FILE}
 #fi
 
-# /sbin/encrypt /overlay/upper/etc/scfg/scfg.encrypt /tmp/scfg.output -d
+# Example use: /sbin/encrypt /overlay/upper/etc/scfg/scfg.encrypt /tmp/scfg.output -d
+# Can also decrypt text by saving it to /tmp (as the OEM code does)
 openssl enc ${ENCRYPT_OPTION} -aes-256-cbc -salt -pbkdf2 -in ${ENCRYPT_INPUT_FILE} -out ${ENCRYPT_OUTPUT_FILE} -pass file:${ENCRYPT_KEY_FILE}
 ret=$?
 #if [ -z "${ENCRYPT_OPTION}" -a $ret -eq 0 ]; then
