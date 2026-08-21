@@ -13,7 +13,7 @@
 | IP address      | 192.168.1.1/24                                                             |
 | Web Gui         | ❓ (Depends on version, not many features)                                 |
 | SSH             | ✅                                                                         |
-| Telnet          | ❌ (Cortina cli on localhost:2332)                                         |
+| Telnet          | ❌ (Cortina cli on localhost:2323)                                         |
 | FTP             | ❌                                                                         |
 | Serial          | ❌ (U-Boot only, no shell)                                                 |
 | Serial baud     | 115200                                                                     |
@@ -24,6 +24,54 @@
 > The encryption key for each device is bound to the MAC address in the U-Boot ENV.
 > This includes the administrator password and the scfg.txt file, a backup is recommended.
 > If the key is regenerated after changing the MAC address, permanent data loss may occur!
+
+## Firware commands
+Boot image0
+```
+# fw_setenv mg_active 1
+# fw_setenv img_commit 1
+dev:    size   erasesize  name
+mtd0: 00400000 00020000 "ssb"
+mtd1: 00200000 00020000 "uboot-env"
+mtd2: 00100000 00020000 "dtb0"
+mtd3: 00600000 00020000 "kernel0"
+mtd4: 02800000 00020000 "rootfs0"
+mtd5: 00100000 00020000 "dtb1"
+mtd6: 00600000 00020000 "kernel1"
+mtd7: 02800000 00020000 "rootfs1"
+mtd8: 01400000 00020000 "userdata"
+mtd9: 00800000 00020000 "logdata"
+mtd10: 01129000 0001f000 "squashfs_ubi"
+mtd11: 01078000 0001f000 "userdata"
+```
+
+Boot image1
+```
+# fw_setenv mg_active 2
+# fw_setenv img_commit 2
+dev:    size   erasesize  name
+mtd0: 00400000 00020000 "ssb"
+mtd1: 00200000 00020000 "uboot-env"
+mtd2: 00100000 00020000 "dtb1"
+mtd3: 00600000 00020000 "kernel1"
+mtd4: 02800000 00020000 "rootfs1"
+mtd5: 00100000 00020000 "dtb0"
+mtd6: 00600000 00020000 "kernel0"
+mtd7: 02800000 00020000 "rootfs0"
+mtd8: 01400000 00020000 "userdata"
+mtd9: 00800000 00020000 "logdata"
+mtd10: 01129000 0001f000 "squashfs_ubi"
+mtd11: 01078000 0001f000 "userdata"
+```
+
+Update firmware
+```
+# cd /tmp
+# wget 192.168.1.XXX:8080/new_rootfs1.img
+# flash_eraseall /dev/mtdX
+# flashcp -v new_rootfs1.img /dev/mtdX
+```
+
 
 ## FW Warning
 T-Mobile version with hardcoded TR-069!
