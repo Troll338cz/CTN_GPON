@@ -7,7 +7,7 @@ Firmware collection for cheap GPON bridges
 | Comtrend GRG-4284 	| ✅ | ✅ | ✅ | ✅ | ❌ | Cetin |
 | Comtrend GRG-4362 	| ✅ | ✅ | ✅ | ❌ | ❌ | Cetin |
 | Iskratel Innbox G23	| ✅ | ✅ | ✅ | ❓ | ❌ | Cetin |
-| Kaon PM1191			| ✅ | ❌ | ❓ | ❌ | ❓ | T-Mobile |
+| Kaon PM1191			| ✅ | ✅ | ❓ | ❌ | ❌ | T-Mobile |
 | Orange G-25E			| ✅ | ✅ | ❓ | ❓ | ❌ | Orange.sk |
 | Sercomm FG1000R	(WIP)	| ✅ | ❌ | ❓ | ❓ | ✅ | - |
 | Sercomm RHG3006	(WIP)	| ❓ | ❌ | ❌ | ❓ | ✅ | - |
@@ -36,9 +36,9 @@ Zyxel PM5100-T0 - For easy unlock zyeng, SPI dump or known login is needed, has 
 
 Innbox X24 - Limited by software and SDK, no good documentation.
 
-## TODO
-Kaon PM1191 - Currently not intrested in working on this device, (and probably shouldn't since its ISP owned), no secure boot so mod is possible.
+Kaon PM1191 - XGS-PON, firmware mod removes ISP branding.
 
+## TODO
 Flash GRG-4284 firmware into G23 - Crashed for me unsure why, hardware should support it.
 
 ISP testing - Info on Vodafone custom ONT support, look into CEZNET
