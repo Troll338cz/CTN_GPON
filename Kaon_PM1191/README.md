@@ -28,7 +28,7 @@
 ## Firware commands
 Boot image0
 ```
-# fw_setenv mg_active 1
+# fw_setenv img_active 1
 # fw_setenv img_commit 1
 dev:    size   erasesize  name
 mtd0: 00400000 00020000 "ssb"
@@ -47,7 +47,7 @@ mtd11: 01078000 0001f000 "userdata"
 
 Boot image1
 ```
-# fw_setenv mg_active 2
+# fw_setenv img_active 2
 # fw_setenv img_commit 2
 dev:    size   erasesize  name
 mtd0: 00400000 00020000 "ssb"
@@ -76,7 +76,7 @@ Update firmware
 ## Extra info
 Non _eng builds don't start getty on serial and have deleted webserver binary.
 
+On _eng builds getty waits for all init services, lighttpd takes a while to start.
 
-
-
+U-Boot has non-working networking
 
