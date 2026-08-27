@@ -74,6 +74,12 @@ Update firmware
 # flashcp -v new_rootfs1.img /dev/mtdX
 ```
 
+Change PON settings
+```
+/sbin/fw_setenv gpon_passwd KAONA1B2C3D4
+/sbin/fw_setenv loid LoidUSer
+/sbin/fw_setenv loid_passwd LoidPass
+```
 
 ## Extra info
 Make sure to check what image is active, switching doesn't change the mtd number only its name.
