@@ -1,5 +1,26 @@
-
 # Bonus content!
+
+|                 |                                                                            |
+| --------------- | -------------------------------------------------------------------------- |
+| Vendor/Brand    | VSOL                                                                       |
+| Model           | V1600GS-R                                                                  |
+| Chipset         | Realtek RTL9615C (Cortina CA8289 variant)                                  |
+| Flash           | SPI NAND 128MiB                                                            |
+| RAM             | 512MiB                                                                     |
+| CPU             | Dualcore AArch64 A55                                                       |
+| Bootloader      | U-Boot 2022.10                                                             |
+| System          | Linux 5.10.70 (Realtek ASDK64-10.2.0 Build 3544)                           |
+| Ethernet ports  | 1x10G SFP+ and 2x 1000 Base-T Ethernet                                     |
+| Optics          | SC/UPC                                                                     |
+| IP address      | 192.168.8.200/24                                                           |
+| Web Gui         | ✅                            `                                            |
+| SSH             | ✅                                                                         |
+| Telnet          | ✅                                                                         |
+| FTP             | ✅                                                                         |
+| Serial          | ✅ USB-C Console                                                           |
+| Serial baud     | 115200                                                                     |
+| Serial encoding | 8-N-1                                                                      | 
+| Form Factor     | Mini Single-port OLT                                                       |
 
 ## OLT Jailbreak
 After flashing my cheap OLT to FW 1.0.4 the funny "start-shell" command seems to have stopped working.
