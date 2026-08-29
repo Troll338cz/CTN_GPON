@@ -44,6 +44,8 @@ File offset	0x0
 Loading size
 ```
 
+Result is firmware loaded and decomiles into readable functions.
+
 ## Flash dump and layout
 Huge thanks to OpenWRT forum user @centaur for digging into this device and providing flash dump
  
@@ -64,6 +66,10 @@ Huge thanks to OpenWRT forum user @centaur for digging into this device and prov
 image0 pid_addr 0x2a0ce8
 image1 pid_addr 0x620ce8
 64 bytes long encrypted gpon password at 0x7F0168
+
+Byteswap Image:
+xxd -e -g4 img0.bin | xxd -r > img0.byteswap
+
 ```
 
 environ values

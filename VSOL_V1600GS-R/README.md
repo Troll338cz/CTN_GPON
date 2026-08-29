@@ -5,7 +5,7 @@
 | Vendor/Brand    | VSOL                                                                       |
 | Model           | V1600GS-R                                                                  |
 | Chipset         | Realtek RTL9615C (Cortina CA8289 variant)                                  |
-| Flash           | SPI NAND 128MiB                                                            |
+| Flash           | SPI NAND 256MiB                                                            |
 | RAM             | 512MiB                                                                     |
 | CPU             | Dualcore AArch64 A55                                                       |
 | Bootloader      | U-Boot 2022.10                                                             |
