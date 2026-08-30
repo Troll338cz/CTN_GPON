@@ -32,6 +32,8 @@ Testing for setting to 1 later...
 ## Load into IDA
 Grab image0/1 without the 256 byte header
 
+Byteswap the file
+
 Set CPU to MIPSBE
 
 Fill out "Disassembly memory organisation":
@@ -77,4 +79,14 @@ environ values
 Config   - ['ethaddr', 'nSerial', 'image0_version', 'image1_version', 'user', 'qos_reservation', 'hua_vlan_sort', 'LOG_CURRENT_START_BLOCK', 'nPassword']
 Factory  - ['ethaddr', 'nSerial', 'date_code', 'bosa_type', 'pcbasn', 'ft_flag', 'nSerial', 'ipaddr', 'nPassword']
 uboot??? - ['c_img', 'sc_dl', 'committed_image']
+
+# sub_10063398
+mib_file=HWTC or ALCL
+# Huawei and Nokia OLT specific mode??
+
 ```
+
+## Firmware Upgrade
+When upgradeing from TFTP or OMCI do not include the 512 header, it is accualy built oin code after file is recived
+
+If SPI editing then rewrite both header and image
