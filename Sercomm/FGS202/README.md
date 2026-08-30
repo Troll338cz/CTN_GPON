@@ -87,6 +87,6 @@ mib_file=HWTC or ALCL
 ```
 
 ## Firmware Upgrade
-When upgradeing from TFTP or OMCI do not include the 512 header, it is accualy built oin code after file is recived
+When upgradeing from TFTP or OMCI do not include the 256 header, it is accualy built oin code after file is recived
 
 If SPI editing then rewrite both header and image
