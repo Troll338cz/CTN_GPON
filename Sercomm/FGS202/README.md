@@ -23,9 +23,9 @@ In function sub_100510D4 we see:
 
 eth0 i presume is SFP host interface
 
-ft_flag - Factory / Factory telnet ?
+ft_flag - Factory Telnet - 4 mentions in the whole file, telnet LAN check, start network stack and telnet on boot and keeping its value upon factory reset.
 
-Looking at the flash dump its set to 0
+Looking at the flash dump its set to 0 by default
 
 Testing for setting to 1 later...
 
@@ -43,13 +43,12 @@ Create ROM section	checked
 ROM start address	0x10000000
 Loading address	0x10000000
 File offset	0x0
-Loading size
 ```
 
 Result is firmware loaded and decomiles into readable functions.
 
 ## Flash dump and layout
-Huge thanks to OpenWRT forum user @centaur for digging into this device and providing flash dump
+Huge thanks to OpenWRT forum user @centaur for digging into this device and providing a second flash dump
  
 ```
 0x000000-0x03FFFF  0000000-0262143  #U-Boot/ magic number=0xFFDD0022
@@ -67,26 +66,27 @@ Huge thanks to OpenWRT forum user @centaur for digging into this device and prov
 
 image0 pid_addr 0x2a0ce8
 image1 pid_addr 0x620ce8
-64 bytes long encrypted gpon password at 0x7F0168
+64 bytes long encrypted gpon password at 0x7F0168 - Cracked, see util/decrypt_encrypt_data.py 
 
 Byteswap Image:
 xxd -e -g4 img0.bin | xxd -r > img0.byteswap
 
 ```
 
-environ values
+environ values mentioned in code
 ```
-Config   - ['ethaddr', 'nSerial', 'image0_version', 'image1_version', 'user', 'qos_reservation', 'hua_vlan_sort', 'LOG_CURRENT_START_BLOCK', 'nPassword']
+Config   - ['ethaddr', 'nSerial', 'image0_version', 'image1_version', 'user', 'qos_reservation', 'hua_vlan_sort', 'LOG_CURRENT_START_BLOCK', 'nPassword', 'mib_file']
 Factory  - ['ethaddr', 'nSerial', 'date_code', 'bosa_type', 'pcbasn', 'ft_flag', 'nSerial', 'ipaddr', 'nPassword']
 uboot??? - ['c_img', 'sc_dl', 'committed_image']
 
 # sub_10063398
 mib_file=HWTC or ALCL
 # Huawei and Nokia OLT specific mode??
+# Other OLT types should be unset probably (may explain issue with VSOL)
 
 ```
 
 ## Firmware Upgrade
-When upgradeing from TFTP or OMCI do not include the 256 header, it is accualy built oin code after file is recived
+When upgradeing from TFTP or OMCI do not include the 256 header, it is accualy built in code after file is recived.
 
 If SPI editing then rewrite both header and image
