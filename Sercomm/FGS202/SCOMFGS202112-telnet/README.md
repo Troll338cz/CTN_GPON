@@ -1,11 +1,13 @@
-# Test TODO
+# Tested in a Mikrotik RB5009
 
-## ENV method
+## v0 - ENV method
 set ft_flag=1 Factory info, does same as bellow, will survive config resets
 
-but you need to desolder the flash, fw can be loeaded with tftp or OMCI but you can't edit envs
+but you need to desolder the flash, fw can be loeaded with tftp or OMCI ( if your OLT works ) but you can't edit envs.
 
-## SCOMFGS202112-telnet-v1.bin
+
+
+## v1 - SCOMFGS202112-telnet-v1.bin
 Simple patch to remove LAN check, you still need telnet and mgmt interface to be UP
 ```
 # Hex patch, start at offset 0x0005140c
@@ -29,12 +31,13 @@ Patched:
         {
 ```
 
-## SCOMFGS202112-telnet-v2.bin
+## v2 - SCOMFGS202112-telnet-v2.bin
 Starts the network on boot, combined with the v1 check
 Unless OMCI disables the network again it should boot up and be accesible
 
 ```
 # Hex patch, start at offset 0x100526B0
++08-11  00 00 00 00
 +14	00 40 20 21 ->	24 A5 8D 74
 +1C	24 A5 8D 74 ->	00 A0 20 21
 
@@ -55,7 +58,6 @@ Original:
     }
 
 Patched:
-    sub_1001DBF8("ft_flag", 1);
     if ( !sub_1002FA54("1", "1") )
     {
       if ( sub_1004EF94(*(_BYTE *)(v3 + 12)) )
@@ -70,3 +72,5 @@ Patched:
     }
 
 ```
+
+This patch acts as if factory flag was set...

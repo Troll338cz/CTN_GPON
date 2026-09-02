@@ -27,7 +27,7 @@ ft_flag - Factory Telnet - 4 mentions in the whole file, telnet LAN check, start
 
 Looking at the flash dump its set to 0 by default
 
-Testing for setting to 1 later...
+~~Testing for setting to 1 later...~~ - Too lazy, patched FW instead :) 
 
 ## Load into IDA
 Grab image0/1 without the 256 byte header
@@ -51,25 +51,29 @@ Result is firmware loaded and decomiles into readable functions.
 Huge thanks to OpenWRT forum user @centaur for digging into this device and providing a second flash dump
  
 ```
-0x000000-0x03FFFF  0000000-0262143  #U-Boot/ magic number=0xFFDD0022
-0x040000-0x04FFFF  0262144-0327679  #uboot_env
-0x050000-0x05FFFF  0327680-0393215  #Factory info/ at 0x50000 CRC32 for (0x050005-0x05FFFF)
-0x060000-0x06FFFF  0393216-0458751  #Config storage  / at 0x60000 CRC32 for (0x060005-0x06FFFF)
-0x070000-0x07FFFF  0458752-0524287  #syslog storage
-0x080000-0x08FFFF  0524288-0589823  #uboot_env(redund) /at 0x80000 CRC32 for (0x080005-0x08FFFF)
-0x0FFF00-0x0FFFFF  1048320-1048575  #256 bytes image0 header/CRC32 at 0x0FFF18(reversed) for(0x100000-0x2A0CE7)
-0x100000-0x2A0CE7  1048576-2755815  #Image0/magic number=0x2100FF03
-0x47FF00-0x47FFFF  4718336-4718591  #256 bytes image1 header/CRC32 at 0x47FF18(reversed) for(0x480000-0x620CE7)
-0x480000-0x620CE7  4718592-6425831  #Image1/magic number=0x2100FF03
-0x7D0000-0x7DFFFF  8192000-8257535  #syslog storage(redund)
-0x7F0000-0x7FFFFF  8323072-8388607  #Config storage  / at 0x7F0000 CRC32 for (0x7F0005-0x7FFFFF)
+0x000000-0x03FFFF  0000000-0262143  # U-Boot/ magic number=0xFFDD0022
+0x040000-0x04FFFF  0262144-0327679  # uboot_env
+0x050000-0x05FFFF  0327680-0393215  # Factory info/ at 0x50000 CRC32 for (0x050005-0x05FFFF)
+0x060000-0x06FFFF  0393216-0458751  # Config storage  / at 0x60000 CRC32 for (0x060005-0x06FFFF)
+0x070000-0x07FFFF  0458752-0524287  # syslog storage
+0x080000-0x08FFFF  0524288-0589823  # uboot_env(redund) /at 0x80000 CRC32 for (0x080005-0x08FFFF)
+0x0FFF00-0x0FFFFF  1048320-1048575  # 256 bytes image0 header/CRC32 at 0x0FFF18(reversed) for(0x100000-0x2A0CE7)
+0x100000-0x2A0CE7  1048576-2755815  # Image0/magic number=0x2100FF03
+0x47FF00-0x47FFFF  4718336-4718591  # 256 bytes image1 header/CRC32 at 0x47FF18(reversed) for(0x480000-0x620CE7)
+0x480000-0x620CE7  4718592-6425831  # Image1/magic number=0x2100FF03
+0x7D0000-0x7DFFFF  8192000-8257535  # syslog storage(redund)
+0x7F0000-0x7FFFFF  8323072-8388607  # Config storage  / at 0x7F0000 CRC32 for (0x7F0005-0x7FFFFF)
 
 image0 pid_addr 0x2a0ce8
 image1 pid_addr 0x620ce8
 64 bytes long encrypted gpon password at 0x7F0168 - Cracked, see util/decrypt_encrypt_data.py 
 
-Byteswap Image:
+Byteswap Image, run again to swap back:
 xxd -e -g4 img0.bin | xxd -r > img0.byteswap
+
+The empty areas between images are usualy 0xFF sometimes Sercomm stuff (ex. U-Boot 0x3FFB0-0x3FFF0)
+
+There is 2 null bytes after each image, after the version, its not checked by CRC or probably the code but i worth a mention.
 
 ```
 

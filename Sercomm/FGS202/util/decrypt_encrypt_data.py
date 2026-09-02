@@ -1,6 +1,9 @@
 import hashlib
 from Crypto.Cipher import AES
 
+# Decrypts "encrypt_data" into its raw ENV
+# TODO: This might possible patch out..
+
 # from Factory environ
 ethaddr = "78:94:B4:27:5F:2A"
 nSerial = "SCOM21040A14"
