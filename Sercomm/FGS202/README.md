@@ -1,5 +1,28 @@
 # Total eCos death
 
+## HW Info
+|                 |                                                                            |
+| --------------- | -------------------------------------------------------------------------- |
+| CPU             | Intel Lantiq PEB98036                                                      |
+| DRAM            | 1 MB Inside SoC                                                            |
+| Flash Size      | 8 MB MX25L6435E                                                            |
+| CPU Arch        | MIPSBE 34Kc                                                                |
+| CPU Clock       | 400MHz                                                                     |
+| Bootloader      | U-Boot 2011.12-lantiq-gpon-1.2.20.1-svn20 (Aug 10 2015 - 13:49:58)         |
+| System          | eCos                                                                       |
+| Ethernet ports  | 1x 1000Base-X                                                              |
+| Optics          | SC/APC                                                                     |
+| IP address      | 192.168.2.200/24                                                           |
+| Web Gui         | ❌                                                                         |
+| SSH             | ❌                                                                         |
+| Telnet          | ✅                                                                         |
+| FTP             | ❌                                                                         |
+| Serial          | ❓                                                                         |
+| Serial baud     | 115200                                                                     |
+| Serial encoding | 8-N-1                                                                      | 
+| Form Factor     | Mini ONT SFP                                                               |
+
+
 ## Telnet
 Since my OLT is a pice of crap i can't suceessfully setup IPHost to telnet into the stick from there
 

@@ -1,5 +1,7 @@
 # Tested in a Mikrotik RB5009
 
+![pic](TELNET_MOD.png)
+
 ## v0 - ENV method
 set ft_flag=1 Factory info, does same as bellow, will survive config resets
 
