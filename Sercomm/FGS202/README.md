@@ -52,6 +52,20 @@ Looking at the flash dump its set to 0 by default
 
 ~~Testing for setting to 1 later...~~ - Too lazy, patched FW instead :) 
 
+## Get GPON paremeters
+```
+FGS202:/# show device
+Returns IPs, GPON SN, Image versions and UPTIME
+FGS202:/# show i2c
+Hexdump of simulated I2C 0x000-0x1FF
+Gpon password *should* be in there
+
+Mikrotik stops reading at 0xFF, external I2C maybe?
+You can chance SN with env editor, just make sure to backup encrypt_data first.
+OMCI Editing unknown (most likely with embeded mib)
+This device was never meant to be reconfigured beyond setting the GPON password, it lacks buildin env editor.
+```
+
 ## Load into IDA
 Grab image0/1 without the 256 byte header
 
@@ -71,7 +85,7 @@ File offset	0x0
 Result is firmware loaded and decomiles into readable functions.
 
 ## Flash dump and layout
-Huge thanks to OpenWRT forum user @centaur for digging into this device and providing a second flash dump
+Huge thanks to OpenWRT forum user @centaur for [digging into this device](https://forum.openwrt.org/t/support-for-gpon-sfp-fgs202/42641) and providing a second flash dump
  
 ```
 0x000000-0x03FFFF  0000000-0262143  # U-Boot/ magic number=0xFFDD0022
@@ -114,6 +128,8 @@ mib_file=HWTC or ALCL
 ```
 
 ## Firmware Upgrade
+From the decompile it looks like:
+
 When upgradeing from TFTP or OMCI do not include the 256 header, it is accualy built in code after file is recived.
 
 If SPI editing then rewrite both header and image
