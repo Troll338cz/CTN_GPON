@@ -5,7 +5,7 @@
 | --------------- | -------------------------------------------------------------------------- |
 | CPU             | Intel Lantiq PEB98036                                                      |
 | DRAM            | 1 MB Inside SoC                                                            |
-| Flash Size      | 8 MB MX25L6435E                                                            |
+| Flash Size      | 8 MB MX25L6405D                                                            |
 | CPU Arch        | MIPSBE 34Kc                                                                |
 | CPU Clock       | 400MHz                                                                     |
 | Bootloader      | U-Boot 2011.12-lantiq-gpon-1.2.20.1-svn20 (Aug 10 2015 - 13:49:58)         |
@@ -61,7 +61,8 @@ Hexdump of simulated I2C 0x000-0x1FF
 Gpon password *should* be in there
 
 Mikrotik stops reading at 0xFF, external I2C maybe?
-You can chance SN with env editor, just make sure to backup encrypt_data first.
+I2C will save the GPON Password to its persitent ENV if you write the correct offset 0xB8-0xC2 (see sub_1001A1B8)
+You can chance SN and mac with env editor, just make sure to backup encrypt_data first.
 OMCI Editing unknown (most likely with embeded mib)
 This device was never meant to be reconfigured beyond setting the GPON password, it lacks buildin env editor.
 ```
@@ -133,3 +134,55 @@ From the decompile it looks like:
 When upgradeing from TFTP or OMCI do not include the 256 header, it is accualy built in code after file is recived.
 
 If SPI editing then rewrite both header and image
+
+## U-Boot network flash
+> ## ⚠️ Important
+> DO NOT RUN THISE COMMANDS!! Not recoverable if you dont have the tools!
+
+Hidden command "sercomm_download", sets sc_dl=1 and reboots device.
+
+Drops you to Sercomm download mode, then you can upload new flash using github.com/danitool/sercomm-recovery/ rewrite both images and emtpy flash between.
+
+```
+DEBUG_INF:===================================================
+DEBUG_INF:Sercomm Upgrade(Module Ver 2.14.02.24) Start!
+DEBUG_INF:===================================================
+SF: Detected MX25L6405D with page size 64 KiB, total 8 MiB
+
+0x0000: 00  c0  02  XX  XX  XX
+SERDES: Link Speed is 1000 Mbps - FULL duplex connection
+DEBUG_INF:ecc bytes 0
+PCBASN = R.BNN72O048E
+DEBUG_INF:normal upgrade.
+DEBUG_INF:Erase Done.
+DEBUG_INF:Program Starting.
+DEBUG_INF:Verify Starting.
+DEBUG_INF:===================================================
+DEBUG_INF:=   Stats of this Sercomm Upgrade is as below:    =
+DEBUG_INF:===================================================
+DEBUG_INF:Following Partitions NOT Erased,
+DEBUG_INF: Index Name                Offset    Length
+DEBUG_INF:     0 u-boot              0         40000
+DEBUG_INF:     1 u-boot-env          40000     10000
+DEBUG_INF:     2 factory_data        50000     10000
+DEBUG_INF:     3 fw_config           60000     10000
+DEBUG_INF:     4 sercomm_log         70000     10000
+DEBUG_INF:     5 u-boot-env-second   80000     10000
+DEBUG_INF:    10 image1_reserve      7f0000    10000
+DEBUG_INF:---------------------------------------------------
+DEBUG_INF:Following Partitions Updated,
+DEBUG_INF: Index Name                Bad Cnt   Dropped
+DEBUG_INF:     6, reserved_area       0         0
+DEBUG_INF:     7, image0              0         0
+DEBUG_INF:     8, image0_reserve      0         0
+DEBUG_INF:     9, image1              0         0
+DEBUG_INF:===================================================
+```
+
+This custom protocol is undocumented, its pretty basic and wants the full 8Mb (8388608 bytes) dump, thankfully skips anything that is needed for device to boot back into recovery upon fail.
+
+Note that you need a dumb SFP to RJ45 converter, U-Boot leaves i2c blank and anything that reads it will just ignore the module.
+
+
+
+
