@@ -72,13 +72,17 @@ Update firmware
 # wget 192.168.1.XXX:8080/new_rootfs1.img
 # flash_eraseall /dev/mtdX
 # flashcp -v new_rootfs1.img /dev/mtdX
+
+U-Boot network does not work, for recovery use x/ymodem
 ```
 
 Change PON settings
 ```
+# From unknown httpd endpoint
 /sbin/fw_setenv gpon_passwd KAONA1B2C3D4
 /sbin/fw_setenv loid LoidUSer
 /sbin/fw_setenv loid_passwd LoidPass
+# Other setting are probably changable with common Cortina procedures
 ```
 
 ## Extra info

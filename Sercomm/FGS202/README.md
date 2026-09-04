@@ -141,7 +141,7 @@ If SPI editing then rewrite both header and image
 
 Hidden command "sercomm_download", sets sc_dl=1 and reboots device.
 
-Drops you to Sercomm download mode, then you can upload new flash using github.com/danitool/sercomm-recovery/ rewrite both images and emtpy flash between.
+Drops you to Sercomm download mode, then you can upload new flash using sercomm-recovery rewrite both images and empty flash between.
 
 ```
 DEBUG_INF:===================================================
@@ -179,10 +179,12 @@ DEBUG_INF:     9, image1              0         0
 DEBUG_INF:===================================================
 ```
 
-This custom protocol is undocumented, its pretty basic and wants the full 8Mb (8388608 bytes) dump, thankfully skips anything that is needed for device to boot back into recovery upon fail.
+Note the difference between @centaur's flash laylout and Sercomm's
+
+Redundant env and log are not mentioned, instead they are part of reserve areas.
+
+This custom protocol is undocumented, its pretty basic and wants the full 8Mb (8388608 bytes) dump, thankfully skips anything that is needed for device to boot back into recovery upon fails, its the device decides what areas to write.
 
 Note that you need a dumb SFP to RJ45 converter, U-Boot leaves i2c blank and anything that reads it will just ignore the module.
 
-
-
-
+Unsure what other secrets Sercomm's U-Boot holds, so far no results in trying to decompile or mod it...

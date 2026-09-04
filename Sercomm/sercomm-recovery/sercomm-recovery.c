@@ -370,7 +370,7 @@ int ReadResp(int s, unsigned char *mac, unsigned int seqno, unsigned int time)
 	  /* either wrong ethtype or 
 	     wrong source mac address */
 	  continue;
-				 
+
 	if (debug) {
 	  /* dump received data */
 	  print_pkt(__FUNCTION__, "", ibuf, rc);

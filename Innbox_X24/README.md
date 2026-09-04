@@ -48,15 +48,15 @@ mtd9: 00100000 00020000 "Equip"			- INNDAENV
 mtd10: 00100000 00020000 "WlanE2pData"		- Blank
 mtd11: 00100000 00020000 "bootEnv"		- INNDABOOT
 mtd12: 00100000 00020000 "VoiceLog"		- Blank
-mtd13: 00100000 00020000 "SystemLog"		
+mtd13: 00100000 00020000 "SystemLog"		- Proprietery format
 mtd14: 00200000 00020000 "SaaS"			- /var/SaaS/ jffs2
-mtd15: 00240000 00020000 "reservearea"
+mtd15: 00240000 00020000 "reservearea"		- Blank
 ```
 
 ## Unlock v1
 - Dump SPI
 - Flip a byte in nvram "customer"
-- Write back 
+- Write back
 - Reset will fallback and rewrite customer=Iskratel
 
 ## Unlock v2
