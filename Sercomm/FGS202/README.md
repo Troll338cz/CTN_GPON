@@ -183,7 +183,7 @@ Note the difference between @centaur's flash laylout and Sercomm's
 
 Redundant env and log are not mentioned, instead they are part of reserve areas.
 
-This custom protocol is undocumented, its pretty basic and wants the full 8Mb (8388608 bytes) dump, thankfully skips anything that is needed for device to boot back into recovery upon fails, its the device decides what areas to write.
+This custom protocol is undocumented, its pretty basic and wants the full 8Mb (8388608 bytes) dump, thankfully skips anything that is needed for device to boot back into recovery upon fails, its the device that decides what areas to write.
 
 Note that you need a dumb SFP to RJ45 converter, U-Boot leaves i2c blank and anything that reads it will just ignore the module.
 

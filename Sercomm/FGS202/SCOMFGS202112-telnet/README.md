@@ -76,3 +76,51 @@ Patched:
 ```
 
 This patch acts as if factory flag was set...
+
+## v3 - SCOMFGS202112-telnet-v3.bin
+
+```
+# Replace 6 calls, clean and simple
+# leaves us about 60 instruction window in the old function
+0x0C0080b9 -> 0x0C0076fe
+
+and
+
+# Nuke the encrypt code, if check and strlen are left to preserve register states...
+
+ROM:1001FF1C                 move    $a3, $s0
+ROM:1001FF20                 jal     sub_10107984
+ROM:1001FF24                 move    $a0, $s1
+ROM:1001FF28                 jal     sub_1003F200
+ROM:1001FF2C                 move    $a0, $s3
+ROM:1001FF30                 lui     $a1, 0x1012
+ROM:1001FF34                 move    $a0, $s3
+ROM:1001FF38                 li      $a1, aNpassword  # "nPassword"
+ROM:1001FF3C                 jal     sub_1002FA54
+ROM:1001FF40                 move    $s2, $v0
+ROM:1001FF44                 beqz    $v0, loc_1001FF60
+ROM:1001FF48                 lui     $a1, 0x1012
+ROM:1001FF4C                 move    $a0, $s3
+ROM:1001FF50                 jal     sub_1002FA54
+ROM:1001FF54                 li      $a1, aPassword_0  # "password"
+ROM:1001FF58                 bnez    $v0, loc_10020050
+ROM:1001FF5C                 li      $v0, 1
+ROM:1001FF60
+ROM:1001FF60 loc_1001FF60:                            # CODE XREF: sub_1001FEB4+90↑j
+ROM:1001FF60                 li      $v0, 1
+ROM:1001FF64                 j       loc_10020050
+ROM:1001FF68                 nop
+ROM:1001FF6C                 nop
+ROM:1001FF70                 nop
+ROM:1001FF74                 nop
+ROM:1001FF78                 nop
+ROM:1001FF7C                 nop
+ROM:1001FF80                 nop
+ROM:1001FF84                 nop
+.....
+ROM:10020046                 nop
+
+# This is middle version between telnet enable and adding env editor
+
+
+```
