@@ -124,3 +124,23 @@ ROM:10020046                 nop
 
 
 ```
+
+## v4 - SCOMFGS202112-telnet-v4.bin
+Test version with ENV editor.
+```
+ecos_vaddr=0x10000000
+image0_addr=0xB0100000
+boot_image0=tlb map ${ecos_vaddr} ${image0_addr} ${max_image_size} && go ${ecos_vaddr}
+# Entire image0 range mapped
+
+For testing patch code was placed after original firmware ending
+diag command was hijacked to point at 
+sub_10008270(a1, 0, " ", "diag", (int)sub_10002D24); <-- patch here 0x101A2000
+
+has the following:
+diag dump ADDR LEN - Dump RAM, limited to 256 bytes. WARNING: output at 0x8 to 0xF is corrupt, you must read this range again to get real value!
+diag get key - Get value from config env
+diag set key - Set value to key in config env, empty does not delete the key like U-Boot (todo)
+diag - Dump full env. WARNING: Crashes device :)
+```
+
