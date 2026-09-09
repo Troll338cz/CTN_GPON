@@ -126,21 +126,35 @@ ROM:10020046                 nop
 ```
 
 ## v4 - SCOMFGS202112-telnet-v4.bin
-Test version with ENV editor.
+TEST version with ENV editor. Used mainly to test quick patching by jumping behind the image into flash.
 ```
+# Why this works:
 ecos_vaddr=0x10000000
 image0_addr=0xB0100000
 boot_image0=tlb map ${ecos_vaddr} ${image0_addr} ${max_image_size} && go ${ecos_vaddr}
-# Entire image0 range mapped
+# Entire image0 range mapped...
 
 For testing patch code was placed after original firmware ending
 diag command was hijacked to point at 
-sub_10008270(a1, 0, " ", "diag", (int)sub_10002D24); <-- patch here 0x101A2000
+sub_10008270(a1, 0, " ", "diag", (int)sub_10002D24); <-- swaped here to 0x101A2000
 
-has the following:
+This test version has the following:
 diag dump ADDR LEN - Dump RAM, limited to 256 bytes. WARNING: output at 0x8 to 0xF is corrupt, you must read this range again to get real value!
 diag get key - Get value from config env
 diag set key - Set value to key in config env, empty does not delete the key like U-Boot (todo)
 diag - Dump full env. WARNING: Crashes device :)
 ```
 
+## v5 - SCOMFGS202112-telnet-v5.bin
+Final version for now, commands have been cleaned up and original diag restored.
+```
+Patch is now injected before image footer, 
+
+get — get prints all, get <name> returns key value
+set — set <name> deletes (empty "" value), set <name> <value> sets normally like U-Boot.  WARNING: You cannot fully delete 
+save — commit changes to flash
+selftest / selftest detail — original diag/diag detail command
+dump / peek — Hexdump of flash and RAM, dump <hex addr> <hex len>. WARNING: output at 0x8 to 0xF is still corrupt, not worth fixing, just re-read it with second command.
+
+
+```
