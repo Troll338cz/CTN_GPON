@@ -44,7 +44,7 @@ Kaon PM1191 - XGS-PON, firmware mod removes TR069 and fixes webui.
 ## TODO
 Flash GRG-4284 firmware into G23 - Crashed for me unsure why, hardware should support it.
 
-ISP testing - Info on Vodafone custom ONT support, look into CEZNET (Nokia ONU, todo....)
+ISP testing - [[Tabulka zde](CzechISP.md)] Info on Vodafone custom ONT support, look into CEZNET (Nokia ONU, todo....)
 
 Make archive with all Zyxel firmwares -  ✅  [Firmware files](https://files.qqwee.net/Zyxel/)
 
