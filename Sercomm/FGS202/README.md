@@ -13,6 +13,7 @@
 | Ethernet ports  | 1x 1000Base-X                                                              |
 | Optics          | SC/APC                                                                     |
 | IP address      | 192.168.2.200/24                                                           |
+| PON IP address  | DHCP via IPHost, default 192.168.1.2/24??                                  |
 | Web Gui         | ❌                                                                         |
 | SSH             | ❌                                                                         |
 | Telnet          | ✅                                                                         |

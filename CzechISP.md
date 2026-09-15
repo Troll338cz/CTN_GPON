@@ -4,7 +4,7 @@
 | T-Mobile        | T-Fibre          | XGS-PON        | SN clone[^first] | Funkční+Testováno | [GRG-4362](https://github.com/Troll338cz/Unlock-Comtrend-GRG-4362/blob/main/T-mobile.md) |
 | T-Mobile        | Cetin            | GPON           | SN clone | Asi funkční | - |
 | Telekom Slovakia | -            | GPON           | SN clone | Asi funkční | - |
-| O2.cz           | Cetin            | GPON           | Přes podporu / SN clone        | Working | [O2.cz](https://www.o2.cz/podpora/internet/zapojeni-pevny-internet/nastavit-vlastni-prevodnik-ont) |
+| O2.cz           | Cetin            | GPON           | Přes podporu / SN clone        | Funkční | [O2.cz](https://www.o2.cz/podpora/internet/zapojeni-pevny-internet/nastavit-vlastni-prevodnik-ont) |
 | O2.cz           | Cetin            | XGS-GPON       | SN clone        | Funkční | [Writeup](https://gist.github.com/arapov/7eb9d2a1c2186ede049548a8c77b508e) |
 | Vodafone.cz     | Cetin            | GPON       | SN Clone         | Asi funkční | -  |
 | Vodafone.cz     | Cetin            | XGS-GPON       | SN Clone         | Funkční | [techforum.cz](https://www.techforum.cz/topic/64188-vlastn%C3%AD-ont-na-s%C3%ADti-cetin/) |
