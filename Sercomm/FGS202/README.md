@@ -25,7 +25,9 @@
 
 
 ## Telnet
-Since my OLT is a pice of crap i can't suceessfully setup IPHost to telnet into the stick from there
+Since my OLT is incompatabile pice of crap i can't suceessfully setup IPHost to telnet into the stick from there.
+
+Unless there is OMCI messages send the OLT won't forward packets to the stick, forcing data to flow allows DHCP to complete and inconsistent telnet to be established.
 
 So the hard way it is....
 
@@ -51,7 +53,7 @@ ft_flag - Factory Telnet - 4 mentions in the whole file, telnet LAN check, start
 
 Looking at the flash dump its set to 0 by default
 
-~~Testing for setting to 1 later...~~ - Too lazy, patched FW instead :) 
+ft_flag tested and working on TIM SCOMFGS202306
 
 ## Get GPON paremeters
 ```

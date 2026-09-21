@@ -4,11 +4,11 @@ Modules without MAC are only the optical part of a normal ONU, they behave like 
 
 Although it is theoretically possible to find the necessary bits in a supported router firmware, it is unlikely that full functionality will even work on other devices (dependency on hardware features, closed binaries or kernel modules, and other possible incompatibilities).
 
-It's unlikely that we will ever see the day when Linux can accept a SFP module and just run entire GPON stack without dedicated ONU hardware.
+We will probably never see the day when Linux can accept a SFP module and just runs entire GPON stack without dedicated ONU hardware.
 
-Don't be fooled by sellers claiming this as a "Mini ONU, SFP Stick or GPON Module", this does not work the same as "smart" devices like the Hauwei MA5671A.
+Don't be fooled by sellers claiming this as a "Mini ONU", "SFP Stick" or "GPON Module", this does not work the same as "smart" devices like the Hauwei MA5671A.
 
-The purchase is a 100% waste of money as they can't even run normal ethernet traffic even with the appropriate matching pair of modules.
+The purchase is a 100% waste of money as they can't run normal ethernet traffic even with the appropriate matching pair of modules.
 
 ## Sercomm CS50001
 Sold as "SFP-EOLE XGSPON" or "10GB gpon onu CS50001 mini ont"
