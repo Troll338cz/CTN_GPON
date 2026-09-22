@@ -33,7 +33,7 @@ Sercomm RHG3006 (Vodafone Fiber Station) - Secure boot, don't have tools to dump
 
 Sercomm FGS202 - Simple PON stick, to mod firmware and change settings SPI flash has to be desoldered with hotair gun.
 
-ZTE F6005 - Writeup and firmware mod by @rgiorgiotech, missing unlocked bootloder files.
+ZTE F6005 - Writeup and firmware mod by @giorgiomess, missing unlocked bootloder files.
 
 Zyxel PM5100-T0 - For easy unlock zyeng, SPI dump or known login is needed, has per device password for bootloader and users.
 
