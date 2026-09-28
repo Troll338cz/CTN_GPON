@@ -4,18 +4,20 @@
 #
 # CIG SHA256 "Type 2"
 #
+# Currently untested...
+#
 import hashlib
 # from VOS_CfgParamGetByName("EepEqSerialNumber", a1, 16)
-# If the info is right this is case sensitive! - AAAAbbbbbb
-# Sadly untested
+# Must be in format 4 Uppercase and 8 lowercase AAAAbbbbbbbb
 GPON_SN = "ACLCa1b2c3d4"
+
+#  From /bin/Console - sub_4017F8, identical for SSH and telnet
+#  sprintf(v2, "%s-%s", v1, "ONTUSER");
 text = GPON_SN + "-ONTUSER"
 # from /usr/lib/libvos.so.0.0.0 - hmac_sha256_pwd
-charset = "ACDEFGHJKLMNPQRSTUVWXYZ2345679abcdefghijkmnpqrstuvwxyz"
+charset = "ACDEFGHJKLMNPQRSTUVWXYZ2345679abcdefghijkmnpqrstuvwxyz" # Base58
 rawdigest = hashlib.sha256(text.encode("utf-8")).digest()
 output = []
-#  From /bin/Console - sub_4017F8
-#  sprintf(v2, "%s-%s", v1, "ONTUSER");
 #  hmac_sha256_pwd(v2, &cli_password, 16);
 for i in range(16):
    byte_val = rawdigest[i]
