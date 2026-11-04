@@ -20,7 +20,6 @@
 | Serial encoding | 8-N-1                                                                      | 
 | Form Factor     | ONT                                                                        |
 
-Probably well capable hardware kept back by how awfull Econet and Iskratel code is.
 
 Bootloader is useless for recovery.
 
@@ -63,10 +62,6 @@ mtd15: 00240000 00020000 "reservearea"		- Blank
 - Login as admin / ```c79@NkZ5LJgZ33+Lp6@%``` TODO: UART tested, SSH should work too
 - fad config setenv customer_id Iskratel
 - Reset to unlock
-
-> ## ⚠️ Important
-> Do not write mtd9 with any tools other present on device, it will brick the device!
-> Crash of main process is not recoverable due to missing login credentials, nand rewrite is needed to fix this!
 
 ## Config edit
 ```

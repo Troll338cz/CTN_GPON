@@ -25,7 +25,7 @@ Innbox G23 - Most hardcoded MIBs removed, old 2.6 kernel.
 
 CIG G-25E - Old device, not worth looking into OMCI editing.
 
-Comtrend GRG-4362 - Info in my other repo, XGS-PON.
+Comtrend GRG-4362 - Info in my other [repo](https://github.com/Troll338cz/Unlock-Comtrend-GRG-4362), XGS-PON.
 
 Sercomm FG1000R - Secure boot, locked down firmware, probably will only provide dump.
 

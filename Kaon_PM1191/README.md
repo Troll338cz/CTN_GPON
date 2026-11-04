@@ -92,5 +92,5 @@ Non _eng builds don't start getty on serial and have deleted webserver binary.
 
 On _eng builds getty waits for all init services, lighttpd takes a while to start.
 
-U-Boot has non-working networking
+U-Boot has non-working network PHY
 

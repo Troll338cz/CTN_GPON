@@ -1,7 +1,7 @@
 # HW Info
 |                 |                                                                            |
 | --------------- | -------------------------------------------------------------------------- |
-| CPU             | Realtek RTL8696                                                            |
+| CPU             | Realtek RTL9606                                                            |
 | DRAM            | 128 MB                                                                     |
 | Flash Size      | 128 MB                                                                     |
 | CPU Arch        | MIPSBE Realtek Lexra                                                       |
@@ -11,7 +11,7 @@
 | Ethernet ports  | 4x 1000Base-T                                                              |
 | PHY Ethernet    | RTL8696GMAC                                                                |
 | Optics          | SEMTECH 25L95 SC/APC                                                       |
-| IP address      | 192.168.100.1/24                                                           |
+| IP address      | 192.168.100.1/24 - GE1                                                     |
 | Web Gui         | ❌                                                                         |
 | SSH             | ❌                                                                         |
 | Telnet          | ✅                                                                         |
@@ -87,8 +87,7 @@ upgdimage imageX
 eeprom set activeimage imageX
 
 # Use imagea for testing, imageb for running
-# CRC 4 bytes needs to be added to end of file
-# If you try to install img with invalid crc it should print the correct one when flashing from linux or booting uboot
+# CRC 4 bytes needs to be added to end of file (see CIG/CIG_CramFS_CRC.py)
 
 #ONT/system/fs>
 #ONT/system/fs>upgrade
@@ -128,7 +127,6 @@ lan0      Link encap:Ethernet  HWaddr E4:8E:10:AA:BB:CC
 # or from U-boot
 eeprom set adminen 1
 
-TLF_TELNET_ENABLE=1 can be set by adding sys.cfg into /mnt/rwdir but unlock tool still needed
 TODO: CLI debug submenu menu creds
 
 ```

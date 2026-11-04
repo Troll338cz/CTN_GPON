@@ -95,9 +95,8 @@ upgdimage imageX
 eeprom set activeimage imageX
 
 # Use imagea for testing, imageb for running
-# CRC needs to be added to end of file:
+# CRC needs to be added to end of file (see CIG/CIG_CramFS_CRC.py)
 # Stock firmware size 4530176, crc append 4 to size 4530180
-# If you try to install img with invalid crc it should print the correct one when flashing from linux or booting uboot
 
 #ONT/system/fs>
 #ONT/system/fs>upgrade

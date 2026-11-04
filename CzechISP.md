@@ -1,7 +1,7 @@
 | ISP             | Infrastruktura |  Technology      | Postup     | Status  | Dokumentace |
 | --------------- | ---------------|------------------|------------|---------|---------|
 | T-Mobile        | T-Fibre          | GPON           | SN clone[^first] | Funkční+Testováno | [Root.cz](https://forum.root.cz/index.php?topic=31138.15) |
-| T-Mobile        | T-Fibre          | XGS-PON        | SN clone[^first] | Funkční+Testováno | [GRG-4362](https://github.com/Troll338cz/Unlock-Comtrend-GRG-4362/blob/main/T-mobile.md) |
+| T-Mobile        | T-Fibre          | XGS-PON        | SN clone | Funkční+Testováno | [GRG-4362](https://github.com/Troll338cz/Unlock-Comtrend-GRG-4362/blob/main/T-mobile.md) |
 | T-Mobile        | Cetin            | GPON           | SN clone | Asi funkční | - |
 | Telekom Slovakia | -            | GPON           | SN clone | Asi funkční | - |
 | O2.cz           | Cetin            | GPON           | Přes podporu / SN clone        | Funkční | [O2.cz](https://www.o2.cz/podpora/internet/zapojeni-pevny-internet/nastavit-vlastni-prevodnik-ont) |
@@ -12,13 +12,13 @@
 | Vodafone.cz     | Vodafone            | XGS-GPON       | ?         | ? | - |
 | Ceznet     | -            | GPON       | ?         | Mají infra mix na Nokia/Huawei | Asi SN/full clone |
 
-[^first]: Musíte nastavit také "OMCI vendor ID (ME 256)" na 4 první znaky SN, jinak vám OLT ze strany TMO vrátí status fake-O5 kde na ONU nedojde provisioning VLANů.
+[^first]: Krom GPON SN *musíte* nastavit také "OMCI vendor ID (ME 256)" na 4 první znaky SN, jinak vám OLT vrátí status fake-O5 kde na ONU nedojde provisioning VLANů.
 
 
 ## GPON
 Pro všechny partnery Cetin by mněl být stejný postup.
 
-Při výběru pro GPON doporučuji Realtek, na netu je hromada informací a projeků s custom firmware. Mají hardware v podobě bridge,router i SFP.
+Při výběru pro GPON doporučuji zařízení s Realtek SoC, na netu je hromada informací a projeků s custom firmware. Mají hardware v podobě bridge,router i SFP.
 
 V případě že si koupíte starší SFP stick s Lantiq čipem tak některé pokročilé věci to neumí.
 
@@ -28,15 +28,15 @@ Co nebrat:
 - Faraday / Galachip SFP: Není o nich dokumentace. Jen pokud si chcete pohrát s neznámím hardware jako já :-).
 - Sercomm / Sagemcom: Vetšina ONT od těchto firem mají secure boot a jsou zamčené, pro naše účely e-waste. 
 - Huawei SFU řady OptiXstar (př. HG8010H): Podle toho jaký firmware na zařízení je bude zamčené, nastavíte pouze SN a GPON auth, ostatní ME paramtry mněnit nelze.
-- Nokia SFU: Při výběru opatrně podle typu a firmware, jsou mraky druhů pod témněř identických typech  Nokia G-010?-? / Nokia XS-010?-?. Berte pouze pokud 100% víte že jde odemknout, npř. pro některé zatím nejsou login generátory nebo se spravovat nedají. 
+- Nokia SFU: Při výběru opatrně podle typu a firmware, jsou mraky druhů pod témněř identických typech  Nokia G-010?-? / Nokia XS-010?-?. Berte pouze pokud 100% víte že jde použít, npř. pro některé zatím nejsou login generátory nebo se spravovat nedají. 
 - Zyxel: Nové zařízení mají per-device hesla, pokud jej odemknete tak jde mněnit jenom SN. Cetin je taky už klientům nedává.
 
 ## XGS-PON
-Při výberu SFP raděj zaplate víc, dokumentace na [hack-gpon](https://hack-gpon.org/) a [CA8271x](https://github.com/YuukiJapanTech/CA8271x#ca8271--ca8289-gpon-devices) tam mají pár modulů už zdokumentovaných, a pak zvášt komunita okolo Maxlinear a varianty WAS110.
+Při výberu SFP raděj zaplate víc, dokumentace na [hack-gpon](https://hack-gpon.org/) a [CA8271x](https://github.com/YuukiJapanTech/CA8271x#ca8271--ca8289-gpon-devices) tam mají pár modulů už zdokumentovaných, a pak zvášt komunita okolo Maxlinear a varianty [WAS-110](https://pon.wiki/xgs-pon/ont/bfw-solutions/was-110/).
 
 Pokud chcete pouze jednoduchý bridge tak Comtrend GRG-4362 se dá odemknout přes UART, pak funguje pro Cetin i T-Fibre.
 
 Co nebrat:
-- Nokia SFU: Skoro vše je zamčené a pravděpodobně secureboot...
-- Huawei OptiXstar S800E: Občas dostupné levně, nikdo zatím nezkoušel jak moc je odemčené.
-- Innbox X24: Econet SoC je fuj, budou jen problémy.
+- Nokia SFU: Záleží na firmware, zažízení jsou jen typu HGU/SFU.
+- Huawei OptiXstar S800E: Secureboot, pravděpodobně omezené možnosti nastavení.
+- Innbox X24: Econet SoC je fuj, není dokumentace k jejich custom software (priprietery vrstvy Iskratel->Trendchip->HW).

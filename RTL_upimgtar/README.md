@@ -2,7 +2,7 @@ Quick look at Realtek tar file and multicast upgrade.
 
 Will be important to flash supported ONTs without needing serial.
 
-Note that not all devices have this feature enabled and in working state.
+Note that not all devices have this feature enabled and working.
 
 Basic files:
 ```
@@ -19,7 +19,7 @@ rootfs - rootfs image, mainly found squashfs, should work with jffs2 and cramfs 
 uImage - uImage kernel file
 ```
 
-Tar file must be POSIX 1003.1-1990, uncompressed
+Tar file must be POSIX 1003.1-1990 standard and uncompressed.
 
 Take care when repacking rootfs since it needs to fit and follow specific parameters. (Compression & block size)
 

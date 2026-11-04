@@ -23,11 +23,11 @@
 | Form Factor     | Mini Single-port OLT                                                       |
 
 ## OLT Jailbreak
-After flashing my cheap OLT to FW 1.0.4 the funny "start-shell" command seems to have stopped working.
+After flashing my cheap VSOL OLT to FW 1.0.4 the funny "start-shell" command seems to have stopped working.
 
 This made me quite unhappy, so a fix was needed.
 
-Didn't take long to find the following:
+Didn't take long to find the following exploit:
 
 ```
 gpon-olt# enable

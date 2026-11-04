@@ -20,7 +20,7 @@
 | Serial encoding | 8-N-1                                                                      | 
 | Form Factor     | ONT                                                                        |
 
-GRG-4284 and G23 is idential device, Comtrend software uses newer SDK and isnt locked but i haven't got crossflash to boot properly.
+GRG-4284 and G23 is similar device, Comtrend software uses newer SDK and isnt locked but i haven't got crossflash to boot properly.
 
-Unsure if this is due to U-Boot version or issue with hardware but Comtrend firmware will hang on boot and shorty after crash with OOM error.
+Unsure if this is due to U-Boot version or issue with hardware revision but Comtrend firmware will hang on boot and shorty after crash with OOM error trying to load laser driver.
 

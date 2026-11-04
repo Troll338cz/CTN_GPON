@@ -25,7 +25,7 @@
 
 
 ## Telnet
-Since my OLT is incompatabile pice of crap i can't suceessfully setup IPHost to telnet into the stick from there.
+eCos on this thing has only support for Huawei and Nokia OLTs, it didnt worth with my VSOL
 
 Unless there is OMCI messages send the OLT won't forward packets to the stick, forcing data to flow allows DHCP to complete and inconsistent telnet to be established.
 
@@ -130,10 +130,6 @@ Config   - ['ethaddr', 'nSerial', 'image0_version', 'image1_version', 'user', 'q
 Factory  - ['ethaddr', 'nSerial', 'date_code', 'bosa_type', 'pcbasn', 'ft_flag', 'nSerial', 'ipaddr', 'nPassword']
 uboot??? - ['c_img', 'sc_dl', 'committed_image']
 
-# sub_10063398
-mib_file=HWTC or ALCL
-# Huawei and Nokia OLT specific mode??
-# Other OLT types should be unset probably (may explain issue with VSOL)
 
 ```
 
