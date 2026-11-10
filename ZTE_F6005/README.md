@@ -5,7 +5,7 @@
 | DRAM            | 32 MB                                                                      |
 | Flash Size      | 16 MB                                                                      |
 | CPU Arch        | MIPSBE Realtek Lexra                                                       |
-| CPU Clock       | 300MHz                                                                     |
+| CPU Clock       | 450MHz                                                                     |
 | Bootloader      | U-Boot RSDK 2011                                                           |
 | System          | Linux 2.6                                                                  |
 | Ethernet ports  | 1x 2500Base-T                                                              |
@@ -22,6 +22,7 @@
 
 
 Flash Layout:
+
 | dev | size     | erasesize |  name    |
 | --- | -------- | --------- | -------- |
 | mtd0| 00080000 | 00001000  | "Boot"   | 
@@ -32,14 +33,14 @@ Flash Layout:
 
 # SSH
 
-SSH is present in firmware but it doesnt start sucessfully when enabled from /sbin/setup.sh
+SSH is present in firmware but it doesn't start sucessfully when forced from /sbin/setup.sh.
 
-setup.sh doesn't work since /bin/MecMgr reads config variables on startup and kills it.
+It doesn't work since /bin/MecMgr reads config variables on startup and kills it after setup.sh runs.
 
-MecMgr also hides a large number of settings that can be adjusted by sending custom OMCI messages from a ZTE OLT unit, sadly i cannot look into this one.
+MecMgr also hides a large number of settings that can be adjusted by sending custom OMCI messages from a OLT unit, sadly i cannot look into this one.
 
 
-GOOGLE_ENGINEERING_BUILD needs to be set, unset = disable
+To enable SSH GOOGLE_ENGINEERING_BUILD needs to be set, unset = disable
 
 "yes" starts it without second check,
 
@@ -52,9 +53,11 @@ SSH user is root and password needs to be generated from SN with a [tool](https:
 
 # UART
 
-Unless your bootloader is "blessed" there wont be any serial console. 
+Unless your bootloader is "blessed" there won't be any output on serial console. 
 
 It might be possible to combine unlocked pre-loader and existing second stage U-Boot to get it working but i didn't succeed.
+
+There is also a question where all its disabled. Preloader, second stage U-Boot and uImage itself can all have it disabled. 
 
 /bin/Console would enable CLI on serial headers but without blessed bootloader it maxes the cpu to 100% trying to open non-existent tty.
 
@@ -62,12 +65,19 @@ It might be possible to combine unlocked pre-loader and existing second stage U-
 # CIG Backdoor and why no telnet enable
 
 Standard CIG backdoor is present but limited:
-apollo_enet_rx_hook recives the packet and consumes it, checks for 00000001 and forwards it to NetMgr
 
-It also has extra required filends: 
-Type byte	Field	Max length	Destination 
-0x01	IPv4 address	4 bytes	gbgmTip     - /sys/ont/l2d/bgm/tip
-0x02	Username	16 bytes	gbgmTuser   - /sys/ont/l2d/bgm/tuser 
-0x03	Password	32 bytes	gbgmTpasswd - /sys/ont/l2d/bgm/tpasswd
+apollo_enet_rx_hook recives the packet and consumes it, checks for 0x00000001 and forwards it to NetMgr
 
-Sadly telnetd is stopped by GOOGLE_ENGINEERING_BUILD=="yes", so you can only push LOID,LOID Password and reset the device using it.
+It also has extra required fields encoded in TLV:
+
+This is remains of factory testing and sets sysfs variables to data from this packet:
+
+| Type | Field        |	Max length | Internal Name | sysfs path                |
+| ---- | -------------| ---------- | ------------- | ------------------------- |
+| 0x01 | IPv4 address | 4 bytes    | gbgmTip       | /sys/ont/l2d/bgm/tip      |
+| 0x02 | Username     | 16 bytes   | gbgmTuser     | /sys/ont/l2d/bgm/tuser    |
+| 0x03 | Password     | 32 bytes   | gbgmTpasswd   | /sys/ont/l2d/bgm/tpasswd  |
+
+Sadly unlike other CIG based devices telnetd is stopped by GOOGLE_ENGINEERING_BUILD == "yes", so you can only push LOID,LOID Password and reset the device using it.
+
+
