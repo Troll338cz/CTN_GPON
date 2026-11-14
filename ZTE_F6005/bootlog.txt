@@ -1,0 +1,184 @@
+<5>Linux version 2.6.30.9-cig-sfu-1 (limeng@u4) (gcc version 4.4.6 (Realtek RSDK-1.5.6p2) ) #1 Thu Feb 24 15:14:55 CST 2022 [luna SDK V1.9.0]
+<4>RTL9602C PLL
+<4>CPU revision is: 0000dc02
+<6>Determined physical RAM map:
+<6> memory: 016ff000 @ 00000000 (usable)
+<6> memory: 006ff000 @ 01800000 (usable)
+<4>Zone PFN ranges:
+<4>  Normal   0x00000000 -> 0x00001eff
+<4>Movable zone start PFN for each node
+<4>early_node_map[2] active PFN ranges
+<4>    0: 0x00000000 -> 0x000016ff
+<4>    0: 0x00001800 -> 0x00001eff
+<7>On node 0 totalpages: 7678
+<7>free_area_init_node: node 0, pgdat 801d54c0, node_mem_map 81000000
+<7>  Normal zone: 62 pages used for memmap
+<7>  Normal zone: 0 pages reserved
+<7>  Normal zone: 7616 pages, LIFO batch:0
+<4>Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 7616
+<5>Kernel command line: console=ttyS0,115200  root=/dev/mtdblock2 mtdparts=sflash:512K@0x0(Boot),0x180000@0x80000(Config),7M@0x200000(ImageA),7M@0x900000(ImageB) rootfstype=cramfs hasEeprom=0 5srst=0 uboot_version=V3.9.10 major=e5 minor=24
+<4>root_dev_setup line 180 root: /dev/mtdblock2
+<4>board major is 0xe5
+<4>board minor is 0x24
+<4>icache: 64kB/32B, dcache: 32kB/32B, scache: 0kB/0B
+<6>NR_IRQS:128
+<4>PID hash table entries: 128 (order: 7, 512 bytes)
+<6>Dentry cache hash table entries: 4096 (order: 2, 16384 bytes)
+<6>Inode-cache hash table entries: 2048 (order: 1, 8192 bytes)
+<6>Memory: 28300k/30712k available (1600k kernel code, 2412k reserved, 281k data, 88k init, 0k highmem)
+<6>Calibrating delay loop... 296.96 BogoMIPS (lpj=148480)
+<4>Mount-cache hash table entries: 512
+<4>IMEM section size = 0x998
+<6>net_namespace: 492 bytes
+<6>NET: Registered protocol family 16
+<4>bio: create slab <bio-0> at 0
+<6>NET: Registered protocol family 2
+<6>IP route cache hash table entries: 1024 (order: 0, 4096 bytes)
+<6>TCP established hash table entries: 1024 (order: 1, 8192 bytes)
+<6>TCP bind hash table entries: 1024 (order: 0, 4096 bytes)
+<6>TCP: Hash tables configured (established 1024 bind 1024)
+<6>TCP reno registered
+<6>NET: Registered protocol family 1
+<4>=================================
+<4>CONFIG_LUNA_SOC_GPIO: gpio_init()
+<4>=================================
+<4>=================================
+<4>luna_capabilities_init
+<4>=================================
+<4>=================================
+<4>luna_wdt_init
+<4>=================================
+<6>JFFS2 version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+<6>fuse init (API version 7.11)
+<6>msgmni has been set to 55
+<6>io scheduler noop registered (default)
+<6>Serial: 8250/16550 driver, 1 ports, IRQ sharing disabled
+<6>loop: module loaded
+<6>PPP generic driver version 2.4.2
+<6>NET: Registered protocol family 24
+<4>nf_conntrack version 0.5.0 (479 buckets, 1916 max)
+<6>ip_tables: (C) 2000-2006 Netfilter Core Team
+<6>TCP cubic registered
+<6>NET: Registered protocol family 17
+<4>Realtek GPIO Driver for Flash Reload Default
+<5>physmap platform flash device: 0b000000 at 14000000
+<4>Luna SPI NOR FLASH G3 driver-204018/MMIO16-1 <5>master->name sflash
+<5>cmd: cmdlinepart
+<5>4 cmdlinepart partitions found on MTD device sflash
+<5>Creating 4 MTD partitions on "sflash":
+<5>0x000000000000-0x000000080000 : "Boot"
+<5>0x000000080000-0x000000200000 : "Config"
+<5>0x000000200000-0x000000900000 : "ImageA"
+<5>0x000000900000-0x000001000000 : "ImageB"
+<4>VFS: Mounted root (cramfs filesystem) readonly on device 31:2.
+<6>Freeing unused kernel memory: 88k freed
+<4>Warning: unable to open an initial console.
+<4>misc driver init module 
+<4>mdr_EepInitGvar:65 flash type:1
+<4>*** !!! Check Result: EEPA and EEPB are all valid
+<4>misc driver init ok
+<4>Init I2C A0 data.
+<4>Init kernel event OK
+<5>init irq on open device
+<4>
+<4>gMdrGpioList[i].major=e5 
+<4>
+<4>Bosa transceiver L is [0]
+<4>mdr_led_init major = e5, minor = 24, hwver = 1
+<4>-------------------read olt vendor type is 0
+<4>is not Hybrid
+<4>current olt vendor type is <NULL>
+<6>M02099 transceiver is detected bosaver =  30
+<4>BOSA version_id (reg:0xa5):0x95
+<6>8686 Ethernet driver v0.0.1 (Feb 17, 2012)
+<4>TX[256,64,64,64,64] , RX[256,256,256,64,64,64]
+<6>eth0 (): not using net_device_ops yet
+<6>eth0: RTL-8686 at 0xb8012000, 00:00:00:01:00:02, IRQ 26
+<6>nas0 (): not using net_device_ops yet
+<6>nas0: RTL-8686 at 0xb8012000, 00:00:00:01:00:02, IRQ 26
+<6>pon0 (): not using net_device_ops yet
+<6>pon0: RTL-8686 at 0xb8012000, 00:00:00:01:00:02, IRQ 26
+<4>RTL8686 GMAC Probing..
+<4>first entry: 0, portmask 127, rx: c00773c4
+<4>insert here, priority: 3, portmask 4, rx: c007a594
+<4>register rtl_magic_packet_rx hook function successful!
+<4>insert here, priority: 2, portmask 127, rx: c007997c
+<4>register rtl_bgm_rx hook function successful!
+<4>insert here, priority: 1, portmask 127, rx: c007b348
+<4>register rtl_enet_rx hook function successful!
+<4>Init RTK Core Dev Module....OK
+<4>Init RTK Driver Module....OK
+<4>
+<4>create Device ponEvt
+<4>ponEvt device init done
+<4>/sys/ont_pon/pon/hw,5
+<4>/sys/ont_pon/pon/debug,23
+<4>/sys/ont_pon/pon/misc,12
+<5>gpon_drv Init Done
+<5>gpon_drv RELEASE dev#0
+<4>rtdrv: module license 'unspecified' taints kernel.
+<4>Disabling lock debugging due to kernel taint
+<4>
+<4> rtdrv_init !!! for netfilter
+<1>rtk_rtl8226b_detected
+<6>rtl8226b: rtk_rtl8226b_detected
+<6>rtl8226b: RTL8226B Device 0 (mdio set: 1, phyad: 1)
+<6>rtl8226b: Enable MDIO master PAD_LED14/PAD_LED15 ......
+<6>rtl8226b: VERID = 0x6720 (MDIO set 1 , PHY Addr 1)
+<6>rtl8226b: RTL8226B-VB (VERID=6720)
+<6>
+<6>rtl8226b: Init Device 0 Done.
+<6>rtl8226b: Device0 unit 1 port 1 RTL8226 Rtl8226_serdes_option_set status = 0x1
+<4>rtk_gpon_evtHdlOmci_reg success, ret = 0
+<4>rtk pon init OK 
+<4>
+<4>uni[0] switch port is 0
+<4>
+<4>uni[1] switch port is 0
+<4>
+<4>uni[2] switch port is 2
+<4>
+<4>uni[3] switch port is 2
+<4>pon port is 2
+<4>eth0 dev: 819e8000
+<4>eth0 dev: 819e8000
+<4>rtl_enet_module_init platform type: 1 done
+<4>re8670_open 3135
+<5>igs_drv: igs_drv Init Done [igs_drv_init 1147]
+<6>Create ONT in sysfs
+<6>/sys/ont/l2d/bgm
+<6>/sys/ont/l2d/igmp
+<6>L2 debug sysfs init complete
+<5>l2_drv: l2_drv Init Done
+<5>---  --------- ioctl: BRDG_MGR_IOC_INIT_BRDG, (BGM_ioctl, 4301)
+<4>bgm_apollo_routine run 
+<4>APOLLO:l2_apollo_init,2008 !!chip id 96030002
+<4>APOLLO:l2_apollo_init,2009 !!chip revision   3
+<4>APOLLO:l2_apollo_init,2011 onttype major[0xe5] minor[0x24] hwver[0x1].
+<6>/sys/ont/l2d/rtl
+<4>APOLLO:rtl_pon_meter_init,1965 ++++++cpu port = 3+++++++++++
+<4>APOLLO:l2_apollo_init_default_rule,369 Init default rule
+<4>APOLLO:l2_apollo_init_default_rule,1005 Init default rule done,acl rule used to 5
+<4>APOLLO:l2_apollo_init_svlan,1936 rtk_svlan_portSvid_set failed !!!
+<6>igs_drv: register IGS driver type 27 ok, ret 0 [igs_Init 741] [igs_Init 807]
+<5>igs_drv: igs_Reset [igs_Reset 519]
+<6>igs_drv: init IGS driver for apollo
+<6> [igs_Drvapollo_Init 45]
+<6>igs_drv: igs_Drvapollo_Init rtk_gpon_macEntry_add OK !
+<6> [igs_Drvapollo_Init 62]
+<5>igs_Init V3, ageTime 0 inter 60, ret 0 
+<6>igs_drv: cfg domain vlan 0 act 1  QRV 2 QQIC 135000 LMQI 1000 MaxResp 10000 proxyMode 0 imLeave 1 hostTrack 3 domainNum 0 [igs_udpate_domain 691]
+<6>igs_drv: cfg domain member action 1 vlan 0 uni 1 maxGroup 128  snoopEn 1 aclNum 0 maxBw 0 exceedDeny 0 [igs_udpate_domain_member 633]
+<6>igs_drv: uniMem.partOfRangCnt: 0 hasSendNumOfRange 0  [igs_udpate_domain_member 636]
+<6>igs_drv: pMember->cacflag: 0 gIgsCacEnable 0  [igs_udpate_domain_member 639]
+<6>igs_drv: cfg domain vlan 0 act 1  QRV 2 QQIC 135000 LMQI 1000 MaxResp 10000 proxyMode 0 imLeave 1 hostTrack 3 domainNum 0 [igs_udpate_domain 691]
+<4>APOLLO:l2_apollo_cfg_uni_ext_phy_rtl8226,2455 cfg uni port 1 enable 1 mode 0 speed 0 duplex 0
+<4>APOLLO:l2_apollo_cfg_uni_ext_phy_rtl8226,2455 cfg uni port 1 enable 0 mode 0 speed 0 duplex 0
+<4>laser enable!! 1 
+<4>The index is: 2 
+<4>insert here, priority: 4, portmask 4, rx: c00ea28c
+<4>rtkpon link...OK
+<4>APOLLO:l2_apollo_cfg_uni_ext_phy_rtl8226,2455 cfg uni port 1 enable 1 mode 0 speed 0 duplex 0
+<4>APOLLO:l2_apollo_cfg_uni_ext_phy_rtl8226,2455 cfg uni port 1 enable 1 mode 0 speed 0 duplex 0
+<4>APOLLO:l2_apollo_cfg_uni_ext_phy_rtl8226,2455 cfg uni port 1 enable 1 mode 0 speed 0 duplex 0
+<4>APOLLO:l2_apollo_get_uni_status_ext_phy_rtl8226,2345 switch lan speed form [0:0] to [1000:1]

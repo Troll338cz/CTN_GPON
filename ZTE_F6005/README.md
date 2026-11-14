@@ -80,4 +80,10 @@ This is remains of factory testing and sets sysfs variables to data from this pa
 
 Sadly unlike other CIG based devices telnetd is stopped by GOOGLE_ENGINEERING_BUILD == "yes", so you can only push LOID,LOID Password and reset the device using it.
 
+# ENV
+
+CIG stores env with Eep* keys inside mtd0 at offsets 0x60000 and 0x70000, offsets and crc are hardcoded in MecMgr and libvos.
+
+Simple tool was added to verify, enable ssh and dump this table.
+
 
